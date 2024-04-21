@@ -42,8 +42,8 @@ export default function Faq() {
           implementation time by Workflow Made Easy <br />
           2. Collaborative build sessions with Workflow Made Easy (Video calls
           with screen sharing) <br /> 3.Importing Data from your current system
-          to Monday.com when needed <br /> <br /> 1. Group training sessions on
-          Monday.com features and the workflow that has been built <br /> 2.
+          to monday.com when needed <br /> <br /> 1. Group training sessions on
+          monday.com features and the workflow that has been built <br /> 2.
           Maintenance & Support after the workflow is built Once a package
           purchased, you will received a unique link where you can track the
           time balance remaining in your package. The details are live and you
@@ -88,7 +88,7 @@ export default function Faq() {
           id="panel3-header"
           className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
         >
-          How long will it take you to build my workflow on Monday.com?{" "}
+          How long will it take you to build my workflow on monday.com?{" "}
         </AccordionSummary>
         <AccordionDetails>
           The timeframe will depend of the complexity of your workflow, the
@@ -159,7 +159,7 @@ export default function Faq() {
         </AccordionSummary>
         <AccordionDetails>
           Currently not. <br /> <br /> We find the fixed price model to be rigid
-          when building a custom made solution on Monday.com. Great ideas often
+          when building a custom made solution on monday.com. Great ideas often
           emerge during our collaborative building session and you might want to
           make some changes on what was agreed initially. <br /> <br /> This is
           why we prefer the hourly model as it gives more flexibility to our

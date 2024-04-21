@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   // Tailles définies pour les images, modifiez selon vos besoins
   const imageSize = {
-    width: 400,
+    width: 500,
     height: 400,
   };
 

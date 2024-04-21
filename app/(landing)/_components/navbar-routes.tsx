@@ -151,7 +151,7 @@ export const NavbarRoutes = () => {
       <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4 mr-6 md:mt-0">
         <Link
           href="/contact-us"
-          className="hidden md:flex bg-[#f4d752] text-white py-2 sm:py-4 px-4 sm:px-6 rounded-xl justify-center items-center"
+          className="hidden md:flex bg-[#f4d752] text-black py-2 sm:py-4 px-4 sm:px-6 rounded-xl justify-center items-center"
         >
           <p className="font-bold text-sm">Book a Free Call</p>
         </Link>

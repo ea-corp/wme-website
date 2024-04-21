@@ -49,9 +49,9 @@ export default function IncitationButton() {
           />
         </div>
       </div>
-      <div className="bg-gray-100 py-8 px-4 md:px-32">
+      <div className="bg-gray-100 py-4 px-4 md:px-32">
         <h2 className="text-3xl py-8 text-gray-800 font-semibold text-center">
-          Overwhelmed trying to figure out Monday.com ?
+          Overwhelmed trying to figure out monday.com ?
         </h2>
         <p className="text-lg px-4 md:px-16 pb-16">
           When you get started with Monday.com, figuring out how to structure
@@ -66,9 +66,9 @@ export default function IncitationButton() {
           <a
             href="https://try.monday.com/wme"
             target="_blank"
-            className="text-blue-400"
+            className="text-blue-400 font-semibold"
           >
-            Monday.com
+            monday.com
           </a>
         </p>
       </div>

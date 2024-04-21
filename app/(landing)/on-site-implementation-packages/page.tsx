@@ -112,7 +112,7 @@ export default function ServicePage() {
           <a
             href="https://try.monday.com/wme"
             target="_blank"
-            className="bg-[#f4d752] text-white py-4 px-6 rounded-xl flex"
+            className="bg-[#f4d752] text-black py-4 px-6 rounded-xl flex"
           >
             <p className="font-bold text-sm">Book a Free Call</p>
           </a>
