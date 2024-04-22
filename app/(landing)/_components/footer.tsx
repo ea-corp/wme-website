@@ -88,7 +88,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="/contact-usg" className="hover:text-[#f4d752]">
+              <a href="/contact-us" className="hover:text-[#f4d752]">
                 Contact Us
               </a>
             </li>
