@@ -87,6 +87,11 @@ export default function Footer() {
                 Apps
               </a>
             </li>
+            <li>
+              <a href="/contact-usg" className="hover:text-[#f4d752]">
+                Contact Us
+              </a>
+            </li>
           </ul>
         </div>
       </div>

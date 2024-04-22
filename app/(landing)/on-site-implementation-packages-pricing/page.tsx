@@ -12,7 +12,7 @@ export default function ServicePage() {
   const packages = [
     {
       name: "Fast Track Package",
-      price: "1 week on-site*",
+      price: "1 week on-site - $12,000 + Travel expenses*",
       description:
         "Get up and running with Monday.com in no time. Ideal for small to medium-sized companies.",
       features: [
@@ -29,7 +29,7 @@ export default function ServicePage() {
     },
     {
       name: "Enterprise Package",
-      price: "2 to 3 weeks on-site*",
+      price: "2 to 3 weeks on-site - $10,000/week + Travel Expenses*",
       description:
         "Ideal for companies where the implementation of Monday.com is required in several divisions (e.g Sales, Operation, HR, Marketing, etc...)",
       features: [
@@ -103,9 +103,10 @@ export default function ServicePage() {
         ))}
       </div>
 
-      <div className="bg-gray-100 py-12 flex items-center justify-center flex-col mt-16">
+      <div className="bg-gray-100 py-16 flex items-center justify-center flex-col mt-16">
         <h3 className="text-2xl font-medium py-8 text-center">
-        Pricing varies depending on the location and the duration <br/> of each on-site implementation. Get in touch with us for more <br/> details and to receive a proposal.
+          *Price Quoted is indicative estimate only. In order to get an accurate{" "}
+          <br /> quotation, contact us now.
         </h3>
         <div className="flex w-full ml-4 mt-4 justify-center">
           <a
@@ -113,7 +114,7 @@ export default function ServicePage() {
             target="_blank"
             className="bg-[#f4d752] text-black py-4 px-6 rounded-xl flex"
           >
-            <p className="font-bold text-sm">Get in touch</p>
+            <p className="font-bold text-sm">Book a Free Call</p>
           </a>
         </div>
       </div>

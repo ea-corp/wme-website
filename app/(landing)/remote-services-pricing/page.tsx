@@ -2,7 +2,6 @@ import { Separator } from "@/components/ui/separator";
 import { Check, Package, ScreenShare } from "lucide-react";
 import Faq from "./_components/faq";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Services - Workflow Made Easy",
@@ -14,14 +13,14 @@ export default function ServicePage() {
   const packages = [
     {
       name: "Starter-Kit",
-      info : "Startup Essential",
+      price: "$2,750",
       description: "Most Popular",
       validity: "6 weeks",
       features: ["1 Advanced workflow", "25 hours package"],
     },
     {
       name: "Comprehensive",
-      info : "Business Ready",
+      price: "$5,000",
       description: "Recommended",
       validity: "3 months",
       features: ["1 to 2 Advanced Workflows", "50 hours package"],
@@ -29,7 +28,6 @@ export default function ServicePage() {
     {
       name: "Ultimate",
       price: "$9,000",
-      info : "Maximum Value",
       description: "Best value",
       validity: "6 months",
       features: ["3 to 4 Advanced workflows", "100 Hours Package"],
@@ -39,6 +37,8 @@ export default function ServicePage() {
   const otherPackages = [
     {
       name: "Ongoing Support",
+      price: "$390",
+      time: "month",
       validity: "6 weeks",
       features: [
         "4 hours per month",
@@ -52,6 +52,8 @@ export default function ServicePage() {
     },
     {
       name: "Ad Hoc Consultation",
+      price: "$150",
+      time: "hour",
       validity: "3 months",
       features: [
         "Session(s) of 60 mins with Monday Expert",
@@ -87,19 +89,14 @@ export default function ServicePage() {
                 <p className="text-sm text-gray-500">{pkg.description}</p>
               </h3>
               <div className="text-right">
+                <p className="text-sm text-gray-400">Starts at</p>
+                <p className="text-xl font-semibold">{pkg.price}</p>
                 <p className="text-sm text-gray-400">
                   Validity: {pkg.validity}
                 </p>
               </div>
             </div>
-            <div>
-              <p className="bg-green-300 py-2 mt-4 w-48 text-center text-sm">
-                {pkg.info}                
-              </p>
-              
-            </div>
             <Separator className="my-2" />
-          
 
             <div className="mt-2 mb-4"></div>
             <ul className="mb-4">
@@ -110,27 +107,16 @@ export default function ServicePage() {
                 </li>
               ))}
             </ul>
+            <a
+              href="https://forms.monday.com/forms/096ad93b812843c5fb105813a01755d6?r=use1"
+              target="_blank"
+              className="mt-4 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-[#f4d752] hover:bg-[#f4d752] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+            >
+              Buy Package
+            </a>
           </div>
         ))}
       </div>
-
-      <div className="flex items-center justify-center mx-8 md:mx-96 mt-16 border border-grey-700 rounded-lg"> 
-  <div className="bg-white shadow-xl rounded-lg p-8"> 
-    <h3 className="text-2xl font-semibold text-center mb-4">Custom Enterprise Solutions</h3>
-    <p className="text-center mb-8">Bespoke Development: Tailor software or systems specifically to the complex requirements of a Medium to large organization, including integration with existing infrastructure.</p>
-  </div>
-</div>
-
-
-<div className="text-center my-16">
-
-      <Link href="contact-us" className="bg-[#f4d752] text-2xl py-4 px-4 rounded-lg font-medium">
-        Request a Quote
-      </Link>
-
-</div>
-
-
       <div className="flex items-center justify-center py-12">
         <h2 className="text-2xl font-medium flex items-center">
           <Package size={35} className="text-[#f4d752]" />
@@ -144,10 +130,13 @@ export default function ServicePage() {
             className="w-full max-w-md bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
           >
             <div className="flex justify-between">
-              <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">
+              <h3 className="text-lg leading-6 font-medium text-gray-900">
                 {pkg.name}
               </h3>
-
+              <div className="text-right">
+                <p className="text-xl font-semibold">{pkg.price}</p>
+                <p className="text-sm text-gray-400">/{pkg.time}</p>
+              </div>
             </div>
             <Separator className="my-2" />
 
@@ -159,7 +148,13 @@ export default function ServicePage() {
                 </li>
               ))}
             </ul>
-          
+            <a
+              href="https://forms.monday.com/forms/096ad93b812843c5fb105813a01755d6?r=use1"
+              target="_blank"
+              className="mt-4 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-yellow-400 hover:bg-[#f4d752] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+            >
+              Buy Package
+            </a>
           </div>
         ))}
       </div>
