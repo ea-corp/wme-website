@@ -5,7 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 
 export default function Faq() {
   return (
-    <div className="px-8 md:px-72 py-16">
+    <div className="px-8 md:px-72 pb-16">
       <h2>FAQ</h2>
       <h3 className="text-3xl mb-16 font-semibold">
         Frequently asked questions
