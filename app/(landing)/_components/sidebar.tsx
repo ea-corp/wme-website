@@ -24,7 +24,7 @@ export const Sidebar = () => {
           <a
             href="https://try.monday.com/wme"
             target="_blank"
-            className="bg-[#5949d5] text-black py-4 px-6 rounded-xl flex w-56"
+            className="bg-[#f4d752] text-black py-4 px-6 rounded-xl flex w-56"
           >
             <p className="font-bold text-sm">Book a Free Call</p>
           </a>
