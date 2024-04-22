@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { Check, Package, ScreenShare } from "lucide-react";
-import Faq from "./_components/faq";
 import { Metadata } from "next";
+import Faq from "../../_components/faq";
 
 export const metadata: Metadata = {
   title: "Services - Workflow Made Easy",
