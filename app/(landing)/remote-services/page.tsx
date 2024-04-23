@@ -143,7 +143,6 @@ export default function ServicePage() {
             <div className="flex justify-between">
               <h3 className="text-lg leading-6 font-medium text-gray-900">
                 {pkg.name}
-                <p className="text-sm text-gray-500">{pkg.description}</p>
               </h3>
               <div className="text-right">
                 <p className="text-sm text-gray-400">
@@ -152,7 +151,7 @@ export default function ServicePage() {
               </div>
             </div>
             <div>
-              <p className="bg-green-300 py-2 mt-4 w-48 text-center text-sm">
+              <p className="bg-[#f4d752] py-2 mt-4 w-48 text-center text-sm">
                 {pkg.info}                
               </p>
               
@@ -173,8 +172,8 @@ export default function ServicePage() {
         ))}
       </div>
 
-      <div className="flex items-center justify-center mx-8 md:mx-96 mt-16 border border-grey-700 rounded-lg"> 
-  <div className="bg-white shadow-xl rounded-lg p-8"> 
+      <div className="flex items-center justify-center mx-8 lg:mx-96 md:mx-32 mt-16 rounded-lg"> 
+  <div className="bg-white shadow-xl rounded-lg p-8  border border-grey-700"> 
     <h3 className="text-2xl font-semibold text-center mb-4">Custom Enterprise Solutions</h3>
     <p className="text-center mb-8">Bespoke Development: Tailor software or systems specifically to the complex requirements of a Medium to large organization, including integration with existing infrastructure.</p>
   </div>
