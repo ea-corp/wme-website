@@ -53,6 +53,19 @@ export default function OrganizationUsingMonday() {
   const carouselRef1 = useRef<HTMLDivElement>(null);
   const carouselRef2 = useRef<HTMLDivElement>(null);
 
+  // Duplication des logos pour obtenir un effet de défilement continu
+  const duplicatedLogosLine1: Logo[] = [
+    ...logosLine1,
+    ...logosLine1,
+    ...logosLine1,
+  ];
+
+  const duplicatedLogosLine2: Logo[] = [
+    ...logosLine2,
+    ...logosLine2,
+    ...logosLine2,
+  ];
+
   const animateScroll = (carouselRef: React.RefObject<HTMLDivElement>) => {
     let scrollAmount = 0;
 
@@ -60,20 +73,20 @@ export default function OrganizationUsingMonday() {
       const carousel = carouselRef.current;
       if (!carousel) return;
 
-      // Reset the scroll if we've reached the end of the scroll width
+      // Réinitialiser le défilement une fois qu'on a atteint la fin
       if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
         scrollAmount = 0;
         carousel.scrollTo({ left: 0, behavior: "auto" });
       } else {
         carousel.scrollTo({ left: scrollAmount, behavior: "auto" });
-        scrollAmount += 1; // Adjust this to control scroll speed
+        scrollAmount += 1; // Ajustez pour contrôler la vitesse de défilement
       }
 
-      // Use requestAnimationFrame for smooth animation
+      // Utiliser requestAnimationFrame pour une animation fluide
       requestAnimationFrame(step);
     };
 
-    // Start the animation
+    // Démarrer l'animation
     step();
   };
 
@@ -96,7 +109,7 @@ export default function OrganizationUsingMonday() {
           </a>{" "}
           to run their work
         </h2>
-        {[logosLine1, logosLine2].map((logos, index) => (
+        {[duplicatedLogosLine1, duplicatedLogosLine2].map((logos, index) => (
           <div
             key={index}
             ref={index === 0 ? carouselRef1 : carouselRef2}
@@ -147,7 +160,7 @@ export default function OrganizationUsingMonday() {
             <a
               href="https://try.monday.com/wme"
               target="_blank"
-              className="bg-[#f4d752] text-white py-4 px-4 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
+              className="bg-[#f4d752] text-black py-4 px-4 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
             >
               <p className="font-bold pr-2 text-sm md:text-md">
                 Request a demo

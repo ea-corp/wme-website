@@ -26,6 +26,7 @@ export default function PortfolioWME() {
           className="flex flex-col items-center justify-center py-8"
         >
           <TabsList className="flex flex-wrap justify-center gap-4 md:flex-nowrap">
+            <div className="bg-gray-100 md:bg-transparent text-center py-4 md:py-0">
             <TabsTrigger value="logistic" className="whitespace-nowrap">
               Logistic
             </TabsTrigger>
@@ -50,6 +51,7 @@ export default function PortfolioWME() {
             <TabsTrigger value="time-tracking" className="whitespace-nowrap">
               Time tracking
             </TabsTrigger>
+            </div>
           </TabsList>
           <div className="mt-32 md:mt-16 mb-16">
             <TabsContent value="logistic">

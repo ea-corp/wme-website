@@ -19,14 +19,14 @@ export default function ServicePage() {
       name: "Starter-Kit",
       info : "Startup Essential",
       description: "Most Popular",
-      validity: "6 weeks",
+      validity: "Validity : 6 weeks",
       features: ["1 Advanced workflow", "25 hours package"],
     },
     {
       name: "Comprehensive",
       info : "Business Ready",
       description: "Recommended",
-      validity: "3 months",
+      validity: "Validity : 3 months",
       features: ["1 to 2 Advanced Workflows", "50 hours package"],
     },
     {
@@ -34,8 +34,12 @@ export default function ServicePage() {
       price: "$9,000",
       info : "Maximum Value",
       description: "Best value",
-      validity: "6 months",
+      validity: "Validity : 6 months",
       features: ["3 to 4 Advanced workflows", "100 Hours Package"],
+    },
+    {
+      name: "Custom Enterprise Solutions",
+      custom: "Bespoke Development: Tailor software or systems specifically to the complex requirements of a Medium to large organization, including integration with existing infrastructure."
     },
   ];
 
@@ -146,12 +150,12 @@ export default function ServicePage() {
               </h3>
               <div className="text-right">
                 <p className="text-sm text-gray-400">
-                  Validity: {pkg.validity}
+                  {pkg.validity}
                 </p>
               </div>
             </div>
             <div>
-              <p className="bg-[#f4d752] py-2 mt-4 w-48 text-center text-sm">
+              <p className="py-2 text-sm">
                 {pkg.info}                
               </p>
               
@@ -161,23 +165,20 @@ export default function ServicePage() {
 
             <div className="mt-2 mb-4"></div>
             <ul className="mb-4">
-              {pkg.features.map((feature, index) => (
+              {pkg.features && pkg.features.map((feature, index) => (
                 <li key={index} className="flex items-center py-2">
                   <Check className="flex-shrink-0 h-6 w-6 text-green-500 mr-4" />
                   <p className="text-medium text-gray-700 flex-1">{feature}</p>
                 </li>
               ))}
+            <p>{pkg.custom}</p>
+
             </ul>
           </div>
         ))}
       </div>
 
-      <div className="flex items-center justify-center mx-8 lg:mx-96 md:mx-32 mt-16 rounded-lg"> 
-  <div className="bg-white shadow-xl rounded-lg p-8  border border-grey-700"> 
-    <h3 className="text-2xl font-semibold text-center mb-4">Custom Enterprise Solutions</h3>
-    <p className="text-center mb-8">Bespoke Development: Tailor software or systems specifically to the complex requirements of a Medium to large organization, including integration with existing infrastructure.</p>
-  </div>
-</div>
+
 
 
 <div className="text-center my-16">
@@ -215,6 +216,7 @@ export default function ServicePage() {
                   <Check className="flex-shrink-0 h-6 w-6 text-green-500 mr-4" />
                   <p className="text-medium text-gray-700 flex-1">{feature}</p>
                 </li>
+
               ))}
             </ul>
           
@@ -242,7 +244,7 @@ export default function ServicePage() {
 
 
       <Faq />
-      <div className="bg-gray-100 pb-16 flex items-center justify-center flex-col">
+      <div className="bg-gray-100 pb-16 flex items-center justify-center flex-col pt-16">
         <h3 className="text-2xl font-medium py-4">
           Contact us now to find out which package suits you best
         </h3>
