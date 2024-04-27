@@ -76,7 +76,7 @@ export default function OurServices() {
               <h3 className="text-lg text-center font-semibold mt-5 mb-3">
                 {service.title}
               </h3>
-              <ul className="text-sm text-justify">
+              <ul className="text-sm md:text-justify">
                 {service.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="mb-2 ml-2 list-disc">
                     {item}
@@ -86,7 +86,7 @@ export default function OurServices() {
             </div>
           ))}
         </div>
-        <div className="text-center mt-8 py-8">
+        <div className="text-center mt-8 pt-8">
           <a
             href="/remote-services"
             className="bg-[#f4d752] text-white py-4 px-4 rounded transition-colors duration-300"

@@ -129,7 +129,7 @@ export default function ServicePage() {
 
   return (
     <div>
-      <div className="bg-gray-100 text-center py-16 overflow-x-hidden">
+      <div className="bg-gray-100 text-center pt-16 pb-6  md:py-16 overflow-x-hidden">
         <h2 className="text-4xl font-semibold">Remote services</h2>
       </div>
       <div className="flex items-center justify-center py-12">
@@ -190,7 +190,7 @@ export default function ServicePage() {
 </div>
 
 
-      <div className="flex items-center justify-center py-12">
+      <div className="flex items-center justify-center py-4 md:py-12">
         <h2 className="text-2xl font-medium flex items-center">
           <Package size={35} className="text-[#f4d752]" />
           &nbsp; Others Packages
@@ -244,8 +244,8 @@ export default function ServicePage() {
 
 
       <Faq />
-      <div className="bg-gray-100 pb-16 flex items-center justify-center flex-col pt-16">
-        <h3 className="text-2xl font-medium py-4">
+      <div className="bg-gray-100 py-8 md:py-16 flex items-center justify-center flex-col ">
+        <h3 className="text-2xl font-medium text-center pb-4">
           Contact us now to find out which package suits you best
         </h3>
         <div className="flex w-full ml-4 mt-4 justify-center">

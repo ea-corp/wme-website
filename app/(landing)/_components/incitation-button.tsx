@@ -49,11 +49,11 @@ export default function IncitationButton() {
           />
         </div>
       </div>
-      <div className="bg-gray-100 py-4 px-4 md:px-32">
-        <h2 className="text-3xl py-8 text-gray-800 font-semibold text-center">
+      <div className="bg-gray-100 px-4 md:px-32">
+        <h2 className="text-2xl py-8 text-gray-800 font-semibold text-center">
           Overwhelmed trying to figure out monday.com ?
         </h2>
-        <p className="text-lg px-4 md:px-16 pb-16">
+        <p className="text-lg px-4 md:px-16 pb-8">
           When you get started with Monday.com, figuring out how to structure
           your company workflow can be overwhelming. Monday.com is such a
           versatile tool, how do you know where to start and what features to

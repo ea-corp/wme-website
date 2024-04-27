@@ -62,7 +62,7 @@ export default function CustomizedAccordions() {
   const isExpanded = (panel: string) => expanded.includes(panel);
 
   return (
-    <div className="mb-32">
+    <div className="mb-4 md:mb-32">
       <Grid container spacing={2}>
         <Grid item xs={12} sm={4}>
           <Accordion
@@ -432,7 +432,7 @@ export default function CustomizedAccordions() {
           </Accordion>
         </Grid>
       </Grid>
-      <div className="py-8">
+      <div className="py-2 md:py-8">
         <h3 className="text-2xl font-semibold mt-16">
           Other Tools that can integrate with Monday.com
         </h3>

@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { getDatabase } from "@/lib/notion";
 import { Building, Check } from "lucide-react";
 import { Metadata } from "next";
 
@@ -7,8 +8,46 @@ export const metadata: Metadata = {
   description:
     "Discover our on-site consulting services tailored to optimize your business operations. Our expert consultants work closely with your team to analyze, strategize, and implement tailored solutions that drive efficiency and success.",
 };
+async function getPosts() {
+  const database = await getDatabase();
+  // Filtrer les données pour ne prendre que celles avec certains titres
+  const filteredPosts = database.filter((post: any) => {
+    // Ajoutez ici vos conditions pour filtrer selon les titres
+    return (
+      post.properties && 
+      post.properties.Title && 
+      post.properties.Title.title && 
+      post.properties.Title.title[0] && 
+      post.properties.Title.title[0].text && 
+      post.properties.Title.title[0].text.content &&
+      (
+        post.properties.Title.title[0].text.content.includes("A Week of Innovation and Collaboration: On-Site Consulting in the Heart of London") ||
+        post.properties.Title.title[0].text.content.includes("A Week of Transformative Collaboration in Oranmore")
+       
+      )
+    );
+  });
+  return filteredPosts;
+}
 
-export default function ServicePage() {
+export default async function ServicePage() {
+
+  let posts: any = await getPosts();
+
+  posts.sort((a: any, b: any) => {
+    const dateStringA = a.properties.Date.rich_text[0].text.content;
+    const dateStringB = b.properties.Date.rich_text[0].text.content;
+
+    const [monthA, yearA] = dateStringA.split(' ');
+    const [monthB, yearB] = dateStringB.split(' ');
+
+    const dateA = new Date(`${monthA} 1, ${yearA}`);
+    const dateB = new Date(`${monthB} 1, ${yearB}`);
+
+    return dateB.getTime() - dateA.getTime(); 
+  });
+
+
   const packages = [
     {
       name: "Fast Track Package",
@@ -45,7 +84,7 @@ export default function ServicePage() {
 
   return (
     <div>
-      <div className="bg-gray-100 text-center py-16">
+      <div className="bg-gray-100 text-center pt-16 pb-6 md:py-16">
         <h2 className="text-4xl font-semibold">Services</h2>
       </div>
       <div className="flex items-center justify-center py-12">
@@ -102,15 +141,66 @@ export default function ServicePage() {
           </div>
         ))}
       </div>
-
-      <div className="bg-gray-100 py-12 flex items-center justify-center flex-col mt-16">
-        <h3 className="text-2xl font-medium py-8 text-center">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {posts.slice(0, 20).map((post: any, index: number) => (
+          <a
+            key={index}
+            href={`/blog/${post.properties.Slug.rich_text[0].plain_text}`}
+            className="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <div>
+              {post.properties &&
+                post.properties.BannerImage &&
+                post.properties.BannerImage.url && (
+                  <img
+                    src={post.properties.BannerImage.url}
+                    alt={post.properties.Title.title[0].text.content}
+                    className="w-full h-[350px] object-cover"
+                  />
+                )}
+            </div>
+            <div className="p-6">
+              {post.properties &&
+                post.properties.Title &&
+                post.properties.Title.title &&
+                post.properties.Title.title[0] &&
+                post.properties.Title.title[0].text &&
+                post.properties.Title.title[0].text.content && (
+                  <h3 className="text-xl font-semibold mb-4">
+                    {post.properties.Title.title[0].text.content}
+                  </h3>
+                )}
+              {post.properties &&
+                post.properties.Location &&
+                post.properties.Location.rich_text &&
+                post.properties.Location.rich_text[0] &&
+                post.properties.Location.rich_text[0].text &&
+                post.properties.Location.rich_text[0].text.content && (
+                  <p className="text-lg font-medium">
+                    {post.properties.Location.rich_text[0].text.content}
+                  </p>
+                )}
+              {post.properties &&
+                post.properties.Date &&
+                post.properties.Date.rich_text &&
+                post.properties.Date.rich_text[0] &&
+                post.properties.Date.rich_text[0].text &&
+                post.properties.Date.rich_text[0].text.content && (
+                  <p className="text-lg font-medium">
+                    {post.properties.Date.rich_text[0].text.content}
+                  </p>
+                )}
+            </div>
+          </a>
+        ))}
+</div>
+      <div className="bg-gray-100 pt-4 pb-8 md:py-12 flex items-center justify-center flex-col mt-16">
+        <h3 className="text-xl md:text-2xl font-medium py-8 text-center mx-2">
         Pricing varies depending on the location and the duration <br/> of each on-site implementation. Get in touch with us for more <br/> details and to receive a proposal.
         </h3>
-        <div className="flex w-full ml-4 mt-4 justify-center">
+        <div className="flex w-full ml-4 mt-0 md:mt-4 justify-center">
           <a
             href="contact-us"
-            target="_blank"
             className="bg-[#f4d752] text-black py-4 px-6 rounded-xl flex"
           >
             <p className="font-bold text-sm">Get in touch</p>

@@ -35,7 +35,7 @@ const ContactUs = () => {
         </div>
 
         <div
-          className="calendly-inline-widget w-full mt-8 md:mt-0"
+          className="calendly-inline-widget w-full mt-0 md:mt-8 md:mt-0"
           data-url="https://calendly.com/w-m-e/discovery?hide_gdpr_banner=1"
           style={{ minWidth: "320px", height: "700px" }}
         ></div>

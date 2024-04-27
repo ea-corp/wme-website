@@ -97,7 +97,7 @@ export default function OrganizationUsingMonday() {
 
   return (
     <div>
-      <div className="py-16">
+      <div className="py-4">
         <h2 className="text-center text-gray-800 text-3xl font-semibold mb-16">
           Join over 152,000 leading organizations that use <br />{" "}
           <a

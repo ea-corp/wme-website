@@ -28,6 +28,9 @@ export default async function Page() {
   });
 
   return (
+    <div className="bg-gray-100 text-center pt-16 pb-6  md:py-16 overflow-x-hidden">
+        <h2 className="text-4xl font-semibold">Blog</h2>
+    
     <div className="bg-gray-100 min-h-screen py-8">
       <main className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.slice(0, 20).map((post: any, index: number) => (
@@ -82,6 +85,6 @@ export default async function Page() {
           </a>
         ))}
       </main>
-    </div>
+  </div>    </div>
   );
 }
