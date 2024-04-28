@@ -2,7 +2,13 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";import { Logo } from "./logo";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Logo } from "./logo";
 
 interface Route {
   label: string;
@@ -67,13 +73,13 @@ const SidebarItem = ({ label, href }: SidebarItemProps) => {
         ${isActive && "text-[#5949d5] font-bold bg-sky-200/20 hover:bg-sky-200/20"}
       `}
     >
-     
       <div
         className={`
         "ml-auto opacity-0 border-2 border-sky-400 h-full transition-all",
         ${isActive && "opacity-100"}
         `}
-      /> <div className="flex items-center gap-x-2 py-4">{label}</div>
+      />{" "}
+      <div className="flex items-center gap-x-2 py-4">{label}</div>
     </button>
   );
 };
@@ -89,17 +95,23 @@ export const MobileSidebar = () => {
           <div className="p-6">
             <Logo />
           </div>
-          
+
           <div className="flex flex-col w-full">
-            {guestRoutes.map((route, index) => ( // Ajout de la prop `key` ici
-              <SheetClose key={index}> {/* Utilisation de `index` comme clé */}
-                <SidebarItem label={route.label} href={route.href} />
-              </SheetClose>
-            ))}
+            {guestRoutes.map(
+              (
+                route,
+                index, // Ajout de la prop `key` ici
+              ) => (
+                <SheetClose key={index}>
+                  {" "}
+                  {/* Utilisation de `index` comme clé */}
+                  <SidebarItem label={route.label} href={route.href} />
+                </SheetClose>
+              ),
+            )}
           </div>
         </div>
       </SheetContent>
     </Sheet>
   );
 };
-

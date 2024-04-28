@@ -109,31 +109,45 @@ export default function OrganizationUsingMonday() {
           </a>{" "}
           to run their work
         </h2>
-        {[duplicatedLogosLine1, duplicatedLogosLine2].map((logos, index) => (
-          <div
-            key={index}
-            ref={index === 0 ? carouselRef1 : carouselRef2}
-            className="overflow-hidden whitespace-nowrap my-2"
-          >
-            <div className="flex">
-              {logos.map((logo, idx) => (
-                <div
-                  key={idx}
-                  className="inline-flex justify-center items-center px-4"
-                  style={{ minWidth: "200px" }}
-                >
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={200}
-                    height={100}
-                  />
-                </div>
-              ))}
+        {/* Carousel pour le format desktop */}
+        <div className="hidden md:block">
+          {[duplicatedLogosLine1, duplicatedLogosLine2].map((logos, index) => (
+            <div
+              key={index}
+              ref={index === 0 ? carouselRef1 : carouselRef2}
+              className="overflow-hidden whitespace-nowrap my-2"
+            >
+              <div className="flex">
+                {logos.map((logo, idx) => (
+                  <div
+                    key={idx}
+                    className="inline-flex justify-center items-center px-4"
+                    style={{ minWidth: "200px" }}
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={200}
+                      height={100}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Image pour le format mobile */}
+        <div className="md:hidden flex items-center justify-center">
+          <Image
+            src="/images/logos/all-logos.png"
+            alt="Mobile Image"
+            width={500}
+            height={100}
+          />
+        </div>
       </div>
+
       <div className="flex flex-col items-center bg-gray-100 py-16">
         <h2 className="text-3xl font-semibold text-center mb-8">
           Monday.com can be used as a work OS <br /> for almost any business.
