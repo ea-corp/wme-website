@@ -79,7 +79,6 @@ const SidebarItem = ({ label, href }: SidebarItemProps) => {
 };
 
 export const MobileSidebar = () => {
-
   return (
     <Sheet>
       <SheetTrigger className="md:hidden pr-4 hover:opacity-75 transition">
@@ -92,8 +91,10 @@ export const MobileSidebar = () => {
           </div>
           
           <div className="flex flex-col w-full">
-            {guestRoutes.map((route) => (<SheetClose>
-              <SidebarItem key={route.href} label={route.label} href={route.href} /></SheetClose>
+            {guestRoutes.map((route, index) => ( // Ajout de la prop `key` ici
+              <SheetClose key={index}> {/* Utilisation de `index` comme clé */}
+                <SidebarItem label={route.label} href={route.href} />
+              </SheetClose>
             ))}
           </div>
         </div>
@@ -101,3 +102,4 @@ export const MobileSidebar = () => {
     </Sheet>
   );
 };
+
