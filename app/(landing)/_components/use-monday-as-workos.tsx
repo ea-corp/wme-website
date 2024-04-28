@@ -73,6 +73,10 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
 );
 
 const MondayWorkOS: React.FC = () => {
+  // Diviser le tableau en deux parties
+  const topSolutions = solutions.slice(0, 4);
+  const bottomSolutions = solutions.slice(4, 7);
+
   return (
     <div className="container mx-auto my-8 p-4">
       <h1 className="text-2xl md:text-3xl font-semibold text-center my-4 px-4 md:px-32 mb-8 md:mb-16">
@@ -80,10 +84,31 @@ const MondayWorkOS: React.FC = () => {
         department and use case across your organization while maintaining
         seamless communication between all of them.
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {solutions.map((solution, index) => (
-          <SolutionCard key={index} {...solution} />
-        ))}
+      
+      {/* Desktop Layout */}
+      <div className="hidden md:block">
+        {/* Grid de 4 en haut */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+          {topSolutions.map((solution, index) => (
+            <SolutionCard key={index} {...solution} />
+          ))}
+        </div>
+        
+        {/* Grid de 3 en bas */}
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-4 justify-center mt-8 md:mx-32">
+          {bottomSolutions.map((solution, index) => (
+            <SolutionCard key={index} {...solution} />
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="block md:hidden">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+          {solutions.map((solution, index) => (
+            <SolutionCard key={index} {...solution} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -33,57 +33,69 @@ export default async function Page() {
       <h2 className="text-4xl font-semibold">Blog</h2>
       <div className="bg-gray-100 min-h-screen py-8">
         <main className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {posts.slice(0, 20).map((post: any, index: number) => (
-            <a
-              key={index}
-              href={`/blog/${post.properties.Slug.rich_text[0].plain_text}`}
-              className="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300"
-            >
-              <div>
-                {post.properties &&
-                  post.properties.BannerImage &&
-                  post.properties.BannerImage.url && (
-                    <img
-                      src={post.properties.BannerImage.url}
-                      alt={post.properties.Title.title[0].text.content}
-                      className="w-full h-[350px] object-cover"
-                    />
-                  )}
-              </div>
-              <div className="p-6">
-                {post.properties &&
-                  post.properties.Title &&
-                  post.properties.Title.title &&
-                  post.properties.Title.title[0] &&
-                  post.properties.Title.title[0].text &&
-                  post.properties.Title.title[0].text.content && (
-                    <h3 className="text-xl font-semibold mb-4">
-                      {post.properties.Title.title[0].text.content}
-                    </h3>
-                  )}
-                {post.properties &&
-                  post.properties.Location &&
-                  post.properties.Location.rich_text &&
-                  post.properties.Location.rich_text[0] &&
-                  post.properties.Location.rich_text[0].text &&
-                  post.properties.Location.rich_text[0].text.content && (
-                    <p className="text-lg font-medium">
-                      {post.properties.Location.rich_text[0].text.content}
-                    </p>
-                  )}
-                {post.properties &&
-                  post.properties.Date &&
-                  post.properties.Date.rich_text &&
-                  post.properties.Date.rich_text[0] &&
-                  post.properties.Date.rich_text[0].text &&
-                  post.properties.Date.rich_text[0].text.content && (
-                    <p className="text-lg font-medium">
-                      {post.properties.Date.rich_text[0].text.content}
-                    </p>
-                  )}
-              </div>
-            </a>
-          ))}
+        {posts
+            .filter((post: any) => {
+              // Exclure le poste avec le titre spécifique
+              return (
+                post.properties.Title &&
+                post.properties.Title.title &&
+                post.properties.Title.title[0] &&
+                post.properties.Title.title[0].text &&
+                post.properties.Title.title[0].text.content !== "Bridging Business and Technology: A Pivotal Week in Bangkok"
+              );
+            })
+            .slice(0, 20)
+            .map((post: any, index: number) => (
+              <a
+                key={index}
+                href={`/blog/${post.properties.Slug.rich_text[0].plain_text}`}
+                className="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300"
+              >
+                <div>
+                  {post.properties &&
+                    post.properties.BannerImage &&
+                    post.properties.BannerImage.url && (
+                      <img
+                        src={post.properties.BannerImage.url}
+                        alt={post.properties.Title.title[0].text.content}
+                        className="w-full h-[350px] object-cover"
+                      />
+                    )}
+                </div>
+                <div className="p-6">
+                  {post.properties &&
+                    post.properties.Title &&
+                    post.properties.Title.title &&
+                    post.properties.Title.title[0] &&
+                    post.properties.Title.title[0].text &&
+                    post.properties.Title.title[0].text.content && (
+                      <h3 className="text-xl font-semibold mb-4">
+                        {post.properties.Title.title[0].text.content}
+                      </h3>
+                    )}
+                  {post.properties &&
+                    post.properties.Location &&
+                    post.properties.Location.rich_text &&
+                    post.properties.Location.rich_text[0] &&
+                    post.properties.Location.rich_text[0].text &&
+                    post.properties.Location.rich_text[0].text.content && (
+                      <p className="text-lg font-medium">
+                        {post.properties.Location.rich_text[0].text.content}
+                      </p>
+                    )}
+                  {post.properties &&
+                    post.properties.Date &&
+                    post.properties.Date.rich_text &&
+                    post.properties.Date.rich_text[0] &&
+                    post.properties.Date.rich_text[0].text &&
+                    post.properties.Date.rich_text[0].text.content && (
+                      <p className="text-lg font-medium">
+                        {post.properties.Date.rich_text[0].text.content}
+                      </p>
+                    )}
+                </div>
+              </a>
+            ))}
         </main>
       </div>{" "}
     </div>

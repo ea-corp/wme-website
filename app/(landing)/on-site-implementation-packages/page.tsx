@@ -140,7 +140,8 @@ export default async function ServicePage() {
           </div>
         ))}
       </div>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div className="container mx-auto w-[800px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-16">
         {posts.slice(0, 20).map((post: any, index: number) => (
           <a
             key={index}
@@ -192,6 +193,7 @@ export default async function ServicePage() {
             </div>
           </a>
         ))}
+                
       </div>
       <div className="bg-gray-100 pt-4 pb-8 md:py-12 flex items-center justify-center flex-col mt-16">
         <h3 className="text-xl md:text-2xl font-medium py-8 text-center mx-2">
