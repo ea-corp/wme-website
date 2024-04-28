@@ -14,39 +14,38 @@ async function getPosts() {
   const filteredPosts = database.filter((post: any) => {
     // Ajoutez ici vos conditions pour filtrer selon les titres
     return (
-      post.properties && 
-      post.properties.Title && 
-      post.properties.Title.title && 
-      post.properties.Title.title[0] && 
-      post.properties.Title.title[0].text && 
+      post.properties &&
+      post.properties.Title &&
+      post.properties.Title.title &&
+      post.properties.Title.title[0] &&
+      post.properties.Title.title[0].text &&
       post.properties.Title.title[0].text.content &&
-      (
-        post.properties.Title.title[0].text.content.includes("A Week of Innovation and Collaboration: On-Site Consulting in the Heart of London") ||
-        post.properties.Title.title[0].text.content.includes("A Week of Transformative Collaboration in Oranmore")
-       
-      )
+      (post.properties.Title.title[0].text.content.includes(
+        "A Week of Innovation and Collaboration: On-Site Consulting in the Heart of London",
+      ) ||
+        post.properties.Title.title[0].text.content.includes(
+          "A Week of Transformative Collaboration in Oranmore",
+        ))
     );
   });
   return filteredPosts;
 }
 
 export default async function ServicePage() {
-
   let posts: any = await getPosts();
 
   posts.sort((a: any, b: any) => {
     const dateStringA = a.properties.Date.rich_text[0].text.content;
     const dateStringB = b.properties.Date.rich_text[0].text.content;
 
-    const [monthA, yearA] = dateStringA.split(' ');
-    const [monthB, yearB] = dateStringB.split(' ');
+    const [monthA, yearA] = dateStringA.split(" ");
+    const [monthB, yearB] = dateStringB.split(" ");
 
     const dateA = new Date(`${monthA} 1, ${yearA}`);
     const dateB = new Date(`${monthB} 1, ${yearB}`);
 
-    return dateB.getTime() - dateA.getTime(); 
+    return dateB.getTime() - dateA.getTime();
   });
-
 
   const packages = [
     {
@@ -142,7 +141,7 @@ export default async function ServicePage() {
         ))}
       </div>
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {posts.slice(0, 20).map((post: any, index: number) => (
+        {posts.slice(0, 20).map((post: any, index: number) => (
           <a
             key={index}
             href={`/blog/${post.properties.Slug.rich_text[0].plain_text}`}
@@ -193,10 +192,12 @@ export default async function ServicePage() {
             </div>
           </a>
         ))}
-</div>
+      </div>
       <div className="bg-gray-100 pt-4 pb-8 md:py-12 flex items-center justify-center flex-col mt-16">
         <h3 className="text-xl md:text-2xl font-medium py-8 text-center mx-2">
-        Pricing varies depending on the location and the duration <br/> of each on-site implementation. Get in touch with us for more <br/> details and to receive a proposal.
+          Pricing varies depending on the location and the duration <br /> of
+          each on-site implementation. Get in touch with us for more <br />{" "}
+          details and to receive a proposal.
         </h3>
         <div className="flex w-full ml-4 mt-0 md:mt-4 justify-center">
           <a

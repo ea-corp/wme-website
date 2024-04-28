@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const services = [
   {
-    icon: UserCog, 
+    icon: UserCog,
     title: "Consulting",
     items: [
       "Review current infrastructure",
@@ -38,7 +38,7 @@ const services = [
     ],
   },
   {
-    icon: HandHelping, 
+    icon: HandHelping,
     title: "Ongoing Support",
     items: [
       "Monthly review of the solution",

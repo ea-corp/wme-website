@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <Dialog>
         <DialogTrigger asChild>
           <Card className="w-[320px] md:w-[400px] p-4 cursor-pointer">
-          <img src={image} alt={title} className="w-full h-48 object-cover" />
+            <img src={image} alt={title} className="w-full h-48 object-cover" />
             <h3 className="font-semibold text-lg mt-2">{title}</h3>
             <p className="text-sm md:text-medium">{description}</p>
           </Card>
@@ -46,7 +46,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <CarouselContent>
               {imagesCarousel.map((img, index) => (
                 <CarouselItem key={index}>
-                  <img src={img} className="object-" alt={`${title} image ${index}`} />
+                  <img
+                    src={img}
+                    className="object-"
+                    alt={`${title} image ${index}`}
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -60,23 +64,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 export default function ConstructionPage() {
   const projects = [
     {
-        title: "Dashboard 1- Cost Analysis",
-        description: "",
-        image: "images/portfolio/construction/image-1.png",
-        imagesCarousel: ["images/portfolio/construction/image-1.png"],
-      },
-      {
-        title: "Dashboard 2- Projected Vs Actual Costs by project",
-        description: "",
-        image: "images/portfolio/construction/image-2.png",
-        imagesCarousel: ["images/portfolio/construction/image-2.png"],
-      },
-      {
-        title: "Dashboard 3 - Projected Vs Actual Costs",
-        description: "",
-        image: "images/portfolio/construction/image-3.png",
-        imagesCarousel: ["images/portfolio/construction/image-3.png"],
-      },
+      title: "Dashboard 1- Cost Analysis",
+      description: "",
+      image: "images/portfolio/construction/image-1.png",
+      imagesCarousel: ["images/portfolio/construction/image-1.png"],
+    },
+    {
+      title: "Dashboard 2- Projected Vs Actual Costs by project",
+      description: "",
+      image: "images/portfolio/construction/image-2.png",
+      imagesCarousel: ["images/portfolio/construction/image-2.png"],
+    },
+    {
+      title: "Dashboard 3 - Projected Vs Actual Costs",
+      description: "",
+      image: "images/portfolio/construction/image-3.png",
+      imagesCarousel: ["images/portfolio/construction/image-3.png"],
+    },
   ];
 
   return (

@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <Dialog>
         <DialogTrigger asChild>
           <Card className="w-[320px] md:w-[400px] p-4 cursor-pointer">
-          <img src={image} alt={title} className="w-full h-48 object-cover" />
+            <img src={image} alt={title} className="w-full h-48 object-cover" />
             <h3 className="font-semibold text-lg mt-2">{title}</h3>
             <p className="text-sm md:text-medium">{description}</p>
           </Card>
@@ -46,7 +46,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <CarouselContent>
               {imagesCarousel.map((img, index) => (
                 <CarouselItem key={index}>
-                  <img src={img} className="object-" alt={`${title} image ${index}`} />
+                  <img
+                    src={img}
+                    className="object-"
+                    alt={`${title} image ${index}`}
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -64,10 +68,7 @@ export default function ManufacturingPage() {
       description:
         "Scanning QR codes at the Factory changing automatically statuses and timers on the Monday board.",
       image: "images/portfolio/manufacturing/image-1.png",
-      imagesCarousel: [
-        "images/portfolio/manufacturing/image-1.png",
-
-      ],
+      imagesCarousel: ["images/portfolio/manufacturing/image-1.png"],
     },
     {
       title: "Sample Manufacturing Board 1",
@@ -78,22 +79,19 @@ export default function ManufacturingPage() {
     },
     {
       title: "Sample Manufacturing Board 2",
-      description:
-        "",
+      description: "",
       image: "images/portfolio/manufacturing/image-3.png",
       imagesCarousel: ["images/portfolio/manufacturing/image-3.png"],
     },
     {
       title: "Sample Automations in a Manufacturing Board",
-      description:
-        "",
+      description: "",
       image: "images/portfolio/manufacturing/image-4.png",
       imagesCarousel: ["images/portfolio/manufacturing/image-4.png"],
     },
     {
       title: "Inventory Management Board Sample",
-      description:
-        "",
+      description: "",
       image: "images/portfolio/manufacturing/image-5.png",
       imagesCarousel: ["images/portfolio/manufacturing/image-5.png"],
     },

@@ -66,14 +66,13 @@ export default function MarketingAgencyPage() {
     {
       title: "Dashboard Sample 1- Client Overview",
       description:
-      "Used by a Marketing Agency to see what are the activity for a particular account. The leads are connected from the client's website so that everything can be managed within Monday.com",
+        "Used by a Marketing Agency to see what are the activity for a particular account. The leads are connected from the client's website so that everything can be managed within Monday.com",
       image: "images/portfolio/marketing-agency/image-1.png",
       imagesCarousel: ["images/portfolio/marketing-agency/image-1.png"],
     },
     {
       title: "Sample Board 1- Marekting Agency",
-      description:
-      "Sample Board 1- Marketing Agency",
+      description: "Sample Board 1- Marketing Agency",
       image: "images/portfolio/marketing-agency/image-2.png",
       imagesCarousel: ["images/portfolio/marketing-agency/image-2.png"],
     },

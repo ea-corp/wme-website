@@ -20,17 +20,15 @@ export default function Footer() {
         </div>
         <div className="flex justify-center items-center flex-wrap space-x-4">
           <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative">
-<Image
+            <Image
               src="/images/advanced-workflow-badge.png"
               alt="Monday.com Advanced workflow certified badge"
               width={imageSize.width}
               height={imageSize.height}
-            />            
+            />
           </div>
           <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative">
-            
-
-<Image
+            <Image
               src="/images/master-badge.png"
               alt="Monday.com master certified badge"
               width={imageSize.width}
@@ -57,10 +55,7 @@ export default function Footer() {
         <div>
           <ul className="space-y-2 text-center sm:text-left mt-8 md:mt-0">
             <li>
-              <a
-                href="/"
-                className="hover:text-[#f4d752]"
-              >
+              <a href="/" className="hover:text-[#f4d752]">
                 Home
               </a>
             </li>

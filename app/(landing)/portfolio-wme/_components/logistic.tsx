@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <Dialog>
         <DialogTrigger asChild>
           <Card className="w-[320px] md:w-[400px] p-4 cursor-pointer">
-          <img src={image} alt={title} className="w-full h-48 object-cover" />
+            <img src={image} alt={title} className="w-full h-48 object-cover" />
             <h3 className="font-semibold text-lg mt-2">{title}</h3>
             <p className="text-sm md:text-medium">{description}</p>
           </Card>
@@ -46,7 +46,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <CarouselContent>
               {imagesCarousel.map((img, index) => (
                 <CarouselItem key={index}>
-                  <img src={img} className="object-" alt={`${title} image ${index}`} />
+                  <img
+                    src={img}
+                    className="object-"
+                    alt={`${title} image ${index}`}
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -64,10 +68,7 @@ export default function LogisticPage() {
       description:
         "View of Export, Import, domestic shipments on a world map where data can be seen and updated directly from the map or on the Monday.com board.",
       image: "images/portfolio/logistic/image-1.png",
-      imagesCarousel: [
-        "images/portfolio/logistic/image-1.png",
-
-      ],
+      imagesCarousel: ["images/portfolio/logistic/image-1.png"],
     },
     {
       title: "Board Sample - Outbounds shipments",

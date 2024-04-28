@@ -112,7 +112,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel2d-content"
               id="panel2d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/autofillgroupname.png"
@@ -152,7 +151,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel3d-content"
               id="panel3d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/approvalfeedback.png"
@@ -195,7 +193,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel4d-content"
               id="panel4d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/copypastemaster.png"
@@ -234,7 +231,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel5d-content"
               id="panel5d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/docugen.png"
@@ -276,7 +272,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel6d-content"
               id="panel6d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/opsign.webp"
@@ -319,7 +314,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel7d-content"
               id="panel7d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/subitemprotemplates.png"
@@ -359,7 +353,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel8d-content"
               id="panel8d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/timelinetodate.png"
@@ -400,7 +393,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel9d-content"
               id="panel9d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/tagtoaction.png"
@@ -447,7 +439,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel10d-content"
               id="panel10d-header"
               className="h-16"
-
             >
               <MessagesSquare className="text-blue-600" size={35} />
               <Typography>Click send</Typography>
@@ -485,7 +476,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel12d-content"
               id="panel12d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/make.png"
@@ -524,7 +514,6 @@ export default function CustomizedAccordions() {
               aria-controls="panel13d-content"
               id="panel13d-header"
               className="h-16"
-
             >
               <Image
                 src="/images/apps/todoist.png"

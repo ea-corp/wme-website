@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <Dialog>
         <DialogTrigger asChild>
           <Card className="w-[320px] md:w-[400px] p-4 cursor-pointer">
-          <img src={image} alt={title} className="w-full h-48 object-cover" />
+            <img src={image} alt={title} className="w-full h-48 object-cover" />
             <h3 className="font-semibold text-lg mt-2">{title}</h3>
             <p className="text-sm md:text-medium">{description}</p>
           </Card>
@@ -46,7 +46,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <CarouselContent>
               {imagesCarousel.map((img, index) => (
                 <CarouselItem key={index}>
-                  <img src={img} className="object-" alt={`${title} image ${index}`} />
+                  <img
+                    src={img}
+                    className="object-"
+                    alt={`${title} image ${index}`}
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -61,30 +65,25 @@ export default function TimeTrackingPage() {
   const projects = [
     {
       title: "Time tracking report on Toggl integrated with Monday",
-      description:"",
+      description: "",
       image: "images/portfolio/time-tracking/image-1.png",
-      imagesCarousel: [
-        "images/portfolio/time-tracking/image-1.png",
-
-      ],
+      imagesCarousel: ["images/portfolio/time-tracking/image-1.png"],
     },
     {
       title: "Time tracking report on Toggl integrated with Monday",
-      description:"",
+      description: "",
       image: "images/portfolio/time-tracking/image-2.png",
       imagesCarousel: ["images/portfolio/time-tracking/image-2.png"],
     },
     {
       title: "2 Way Sync of the tasks between Monday and Toggl",
-      description:
-        "",
+      description: "",
       image: "images/portfolio/time-tracking/image-3.png",
       imagesCarousel: ["images/portfolio/time-tracking/image-3.png"],
     },
     {
       title: "Sample o the scenario we have build using Make.com",
-      description:
-        "",
+      description: "",
       image: "images/portfolio/time-tracking/image-4.png",
       imagesCarousel: ["images/portfolio/time-tracking/image-4.png"],
     },

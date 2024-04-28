@@ -30,8 +30,10 @@ const ContactUs = () => {
           <h3 className="font-semibold text-2xl md:text-4xl mb-4 mt-16 ">
             Ready to get the most out of <br /> monday.com for your company ?
           </h3>
-          Do not wait and get in touch with us now to discuss your needs 
-          <h3 className="text-2xl font-semibold text-[#f4d752] my-2">Book a Free consultation now</h3>
+          Do not wait and get in touch with us now to discuss your needs
+          <h3 className="text-2xl font-semibold text-[#f4d752] my-2">
+            Book a Free consultation now
+          </h3>
         </div>
 
         <div
