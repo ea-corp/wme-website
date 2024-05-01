@@ -31,14 +31,21 @@ const ContactUs = () => {
             Ready to get the most out of <br /> monday.com for your company ?
           </h3>
           Do not wait and get in touch with us now to discuss your needs 
-          <h3 className="text-2xl font-semibold text-[#f4d752] my-2">Book a Free consultation now</h3>
+          {/* <h3 className="text-2xl font-semibold text-[#f4d752] my-2">Contact us now</h3> */}
         </div>
+         
+         <div className="mt-8">
+                  <iframe src="https://forms.monday.com/forms/embed/158a679e3264a56ba460b3f022dc56e4?r=use1" width="650" height="500"></iframe>
+         </div>
 
+
+{/*
         <div
           className="calendly-inline-widget w-full mt-0 md:mt-8 md:mt-0"
           data-url="https://calendly.com/w-m-e/discovery?hide_gdpr_banner=1"
           style={{ minWidth: "320px", height: "700px" }}
-        ></div>
+  ></div>
+  */}
       </div>
     </div>
   );

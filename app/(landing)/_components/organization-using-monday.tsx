@@ -158,8 +158,7 @@ export default function OrganizationUsingMonday() {
           </div>
           <div className="ml-4">
             <a
-              href="https://try.monday.com/wme"
-              target="_blank"
+              href="/contact-us"
               className="bg-[#f4d752] text-black py-4 px-4 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
             >
               <p className="font-bold pr-2 text-sm md:text-md">

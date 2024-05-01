@@ -153,7 +153,7 @@ export const NavbarRoutes = () => {
           href="/contact-us"
           className="hidden md:flex bg-[#f4d752] text-black py-2 sm:py-4 px-4 sm:px-6 rounded-xl justify-center items-center"
         >
-          <p className="font-bold text-sm">Book a Free Call</p>
+          <p className="font-bold text-sm">Contact us</p>
         </Link>
       </div>
 
