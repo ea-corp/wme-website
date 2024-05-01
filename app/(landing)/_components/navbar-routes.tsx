@@ -75,7 +75,7 @@ export const NavbarRoutes = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-black">
+              <NavigationMenuTrigger className="text-black text-lg">
                 Services
               </NavigationMenuTrigger>
               <NavigationMenuContent>
