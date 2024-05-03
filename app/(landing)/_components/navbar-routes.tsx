@@ -75,7 +75,7 @@ export const NavbarRoutes = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-black">
+              <NavigationMenuTrigger className="text-gray-700 text-md">
                 Services
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -84,7 +84,7 @@ export const NavbarRoutes = () => {
                     <div className="flex w-full">
                       <a
                         href="/remote-services"
-                        className="flex-1 py-2 px-2 text-sm rounded-lg hover:bg-gray-100 text-center"
+                        className="flex-1 py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
                       >
                         Remote implementation
                       </a>
@@ -92,7 +92,7 @@ export const NavbarRoutes = () => {
                     <div className="flex w-full">
                       <a
                         href="/on-site-implementation-packages"
-                        className="flex-1 py-2 px-2 w-[200px] text-sm rounded-lg hover:bg-gray-100 text-center"
+                        className="flex-1 py-2 px-2 w-[180px] text-sm rounded-lg hover:bg-gray-100"
                       >
                         On-site consulting
                       </a>

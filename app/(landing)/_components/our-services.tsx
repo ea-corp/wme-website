@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const services = [
   {
-    icon: UserCog, 
+    icon: UserCog,
     title: "Consulting",
     items: [
       "Review current infrastructure",
@@ -38,7 +38,7 @@ const services = [
     ],
   },
   {
-    icon: HandHelping, 
+    icon: HandHelping,
     title: "Ongoing Support",
     items: [
       "Monthly review of the solution",
@@ -89,7 +89,7 @@ export default function OurServices() {
         <div className="text-center mt-8 pt-8">
           <a
             href="/remote-services"
-            className="bg-[#f4d752] text-white py-4 px-4 rounded transition-colors duration-300"
+            className="bg-[#f4d752] text-black font-semibold py-4 px-4 rounded-lg transition-colors duration-300"
           >
             See our packages
           </a>

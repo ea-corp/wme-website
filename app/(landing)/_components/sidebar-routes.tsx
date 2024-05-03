@@ -38,11 +38,7 @@ export const SidebarRoutes = () => {
   return (
     <div className="flex flex-col w-full">
       {routes.map((route) => (
-        <SidebarItem
-          key={route.href}
-          label={route.label}
-          href={route.href}
-        />
+        <SidebarItem key={route.href} label={route.label} href={route.href} />
       ))}
     </div>
   );

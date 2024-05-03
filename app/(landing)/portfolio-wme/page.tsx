@@ -11,7 +11,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Portfolio - Workflow Made Easy",
-  description: "Discover our portfolio of exceptional workflow services, tailored to meet diverse client needs. From productivity enhancements to cost reduction, see how we've optimized processes for businesses across sectors. Trust our expertise to turn your challenges into opportunities.",
+  description:
+    "Discover our portfolio of exceptional workflow services, tailored to meet diverse client needs. From productivity enhancements to cost reduction, see how we've optimized processes for businesses across sectors. Trust our expertise to turn your challenges into opportunities.",
 };
 
 export default function PortfolioWME() {
@@ -27,30 +28,33 @@ export default function PortfolioWME() {
         >
           <TabsList className="flex flex-wrap justify-center gap-4 md:flex-nowrap">
             <div className="bg-gray-100 md:bg-transparent text-center py-4 md:py-0">
-            <TabsTrigger value="logistic" className="whitespace-nowrap">
-              Logistic
-            </TabsTrigger>
-            <TabsTrigger value="manufacturing" className="whitespace-nowrap">
-              Manufacturing
-            </TabsTrigger>
-            <TabsTrigger value="restaurant" className="whitespace-nowrap">
-              Restaurant
-            </TabsTrigger>
-            <TabsTrigger value="real-estate" className="whitespace-nowrap">
-              Real Estate
-            </TabsTrigger>
-            <TabsTrigger value="construction" className="whitespace-nowrap">
-              Construction
-            </TabsTrigger>
-            <TabsTrigger value="marketing-agency" className="whitespace-nowrap">
-              Marketing Agency
-            </TabsTrigger>
-            <TabsTrigger value="hr" className="whitespace-nowrap">
-              HR
-            </TabsTrigger>
-            <TabsTrigger value="time-tracking" className="whitespace-nowrap">
-              Time tracking
-            </TabsTrigger>
+              <TabsTrigger value="logistic" className="whitespace-nowrap">
+                Logistic
+              </TabsTrigger>
+              <TabsTrigger value="manufacturing" className="whitespace-nowrap">
+                Manufacturing
+              </TabsTrigger>
+              <TabsTrigger value="restaurant" className="whitespace-nowrap">
+                Restaurant
+              </TabsTrigger>
+              <TabsTrigger value="real-estate" className="whitespace-nowrap">
+                Real Estate
+              </TabsTrigger>
+              <TabsTrigger value="construction" className="whitespace-nowrap">
+                Construction
+              </TabsTrigger>
+              <TabsTrigger
+                value="marketing-agency"
+                className="whitespace-nowrap"
+              >
+                Marketing Agency
+              </TabsTrigger>
+              <TabsTrigger value="hr" className="whitespace-nowrap">
+                HR
+              </TabsTrigger>
+              <TabsTrigger value="time-tracking" className="whitespace-nowrap">
+                Time tracking
+              </TabsTrigger>
             </div>
           </TabsList>
           <div className="mt-32 md:mt-16 mb-16">

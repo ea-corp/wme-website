@@ -1,12 +1,14 @@
-
-import { getPageContent, getPageBySlug, notionClient } from "../../../../lib/notion";
+import {
+  getPageContent,
+  getPageBySlug,
+  notionClient,
+} from "../../../../lib/notion";
 import { NotionRenderer } from "@notion-render/client";
 import { notFound } from "next/navigation";
 
 import hljsPlugin from "@notion-render/hljs-plugin";
 import bookmarkPlugin from "@notion-render/bookmark-plugin";
 import { Post } from "../../_components/post";
-
 
 export default async function Page({ params }: { params: { slug: string } }) {
   console.log("Slug: ", params);
@@ -35,4 +37,4 @@ export default async function Page({ params }: { params: { slug: string } }) {
       date={(post.properties.Date as any).rich_text[0].text.content}
     />
   );
-} 
+}
