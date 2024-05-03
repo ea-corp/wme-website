@@ -3,7 +3,7 @@ import { YouTubeVideo } from "../_components/monday-os-video";
 
 export default function ServicePage() {
   return (
-    <div className="pb-16 md:mx-16">
+    <div className="mx-auto max-w-7xl px-4">
       <div className="bg-gray-100 text-center py-16">
         <h2 className="text-4xl font-semibold">Stories worth telling</h2>
       </div>
@@ -16,7 +16,7 @@ export default function ServicePage() {
       <div className="px-8 md:px-24 py-8">
         <div className="flex flex-col md:flex-row">
           <div className="bg-blue-900 py-16 px-4 h-full">
-            <h3 className="font-semibold text-xl md:text-3xl text-white text-center">
+            <h3 className="font-semibold text-xl md:text-2xl text-white text-center">
               <span className="text-center text-4xl">ZIPPO</span>
               <br />
               How <span className="text-blue-500">Zippo</span> Manufacturing
@@ -37,7 +37,7 @@ export default function ServicePage() {
         <div className="flex flex-col md:flex-row">
           <YouTubeVideo videoId="8NKL_nqSHMo" />
           <div className="bg-gray-200 py-16 px-4 md:px-16 h-full">
-            <h3 className="font-semibold text-xl md:text-3xl text-black text-center">
+            <h3 className="font-semibold text-xl md:text-2xl text-black text-center">
               &ldquo;With monday.com, we&apos;re
               <span className="text-blue-500">
                 30% <br />
@@ -56,7 +56,7 @@ export default function ServicePage() {
       <div className="px-8 md:px-24 py-8">
         <div className="flex flex-col md:flex-row">
           <div className="bg-gray-200 py-12 px-4 md:px-20 h-full">
-            <h3 className="font-semibold text-xl md:text-3xl text-black text-center">
+            <h3 className="font-semibold text-xl md:text-2xl text-black text-center">
               &ldquo;We were able to &nbsp;
               <span className="text-blue-500">
                 customize <br /> the CRM on top of <br /> monday.com Work OS
@@ -76,7 +76,7 @@ export default function ServicePage() {
           <YouTubeVideo videoId="j4Ttuceu388" />
 
           <div className="bg-gray-200 py-12 px-4 md:px-20 h-full">
-            <h3 className="font-semibold text-xl md:text-3xl text-black text-center">
+            <h3 className="font-semibold text-xl md:text-2xl text-black text-center">
               &ldquo;Now that we have <br /> monday.com Work OS as the <br />
               <span className="text-red-500">
                 backbone of our organization

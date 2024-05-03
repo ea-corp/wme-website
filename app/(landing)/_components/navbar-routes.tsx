@@ -72,7 +72,7 @@ export const NavbarRoutes = () => {
             Home
           </p>
         </Link>
-        <NavigationMenu>
+        <NavigationMenu delayDuration={100000000} >
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="text-gray-700 text-md">

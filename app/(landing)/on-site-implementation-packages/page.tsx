@@ -82,7 +82,7 @@ export default async function ServicePage() {
   ];
 
   return (
-    <div>
+    <div className="mx-auto max-w-7xl px-4">
       <div className="bg-gray-100 text-center pt-16 pb-6 md:py-16">
         <h2 className="text-4xl font-semibold">Services</h2>
       </div>
@@ -141,7 +141,7 @@ export default async function ServicePage() {
         ))}
       </div>
       
-      <div className="container mx-auto w-[800px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-16">
+      <div className="mt-12 container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {posts.slice(0, 20).map((post: any, index: number) => (
           <a
             key={index}

@@ -1,22 +1,35 @@
+"use client";
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import { ChevronDown, ChevronUp } from "lucide-react"; 
 
 export default function Faq() {
+  const [expanded, setExpanded] = React.useState<number | false>(false);
+
+  const handleChange = (panel: number) => (
+    event: React.SyntheticEvent,
+    newExpanded: boolean
+  ) => {
+    setExpanded(newExpanded ? panel : false);
+  };
+
   return (
-    <div className="px-8 md:px-72 pb-16">
+    <div className="px-8 md:px-60 pb-16">
       <h2>FAQ</h2>
       <h3 className="text-3xl mb-16 font-semibold">
         Frequently asked questions
       </h3>
-      <Accordion>
+
+      <Accordion expanded={expanded === 1} onChange={handleChange(1)}>
         <AccordionSummary
           aria-controls="panel1-content"
           id="panel1-header"
-          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
+          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
         >
-          I&apos;m interested, how do we get started?
+          <span>I&apos;m interested, how do we get started?</span>
+          {expanded === 1 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
           1-Schedule a Free Discovery call We’ll discuss your business needs,
@@ -29,13 +42,17 @@ export default function Faq() {
           can use at any time to schedule some time with us.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+
+      {/* Répétez ce modèle pour chaque accordéon */}
+
+      <Accordion expanded={expanded === 2} onChange={handleChange(2)}>
         <AccordionSummary
           aria-controls="panel2-content"
           id="panel2-header"
-          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
+          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
         >
-          How can the hours proposed in your package be used?{" "}
+          <span>How can the hours proposed in your package be used?</span>
+          {expanded === 2 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
           The hours can be used on the following: <br /> <br /> 1. Offline
@@ -52,13 +69,15 @@ export default function Faq() {
           sessions, offline build by Workflow Made Easy, etc..
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+
+      <Accordion expanded={expanded === 3} onChange={handleChange(3)}>
         <AccordionSummary
           aria-controls="panel3-content"
           id="panel3-header"
-          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
+          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
         >
-          Why is there a validity period in the packages you offer?{" "}
+          <span>Why is there a validity period in the packages you offer?</span>
+          {expanded === 3 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
           The main purpose of having a validity period is to get things done.
@@ -82,13 +101,17 @@ export default function Faq() {
           events that could justify pausing the work we have started.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+
+      {/* Répétez ce modèle pour chaque accordéon */}
+
+      <Accordion expanded={expanded === 4} onChange={handleChange(4)}>
         <AccordionSummary
-          aria-controls="panel3-content"
-          id="panel3-header"
-          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
+          aria-controls="panel4-content"
+          id="panel4-header"
+          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
         >
-          How long will it take you to build my workflow on monday.com?{" "}
+          <span>How long will it take you to build my workflow on monday.com?</span>
+          {expanded === 4 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
           The timeframe will depend of the complexity of your workflow, the
@@ -102,13 +125,15 @@ export default function Faq() {
           estimate
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+
+      <Accordion expanded={expanded === 5} onChange={handleChange(5)}>
         <AccordionSummary
-          aria-controls="panel3-content"
-          id="panel3-header"
-          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
+          aria-controls="panel5-content"
+          id="panel5-header"
+          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
         >
-          What if I do not use all the hours in my package, can I get a refund?
+          <span>What if I do not use all the hours in my package, can I get a refund?</span>
+          {expanded === 5 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
           Unused hours in your package are non refundable but can be used for
@@ -120,13 +145,15 @@ export default function Faq() {
           Support on the basis of 4 hours = 1 month of Review & Support package.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+
+      <Accordion expanded={expanded === 6} onChange={handleChange(6)}>
         <AccordionSummary
-          aria-controls="panel3-content"
-          id="panel3-header"
-          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
+          aria-controls="panel6-content"
+          id="panel6-header"
+          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
         >
-          How do I know which package to choose?{" "}
+          <span>How do I know which package to choose?</span>
+          {expanded === 6 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
           Get in touch with us now, schedule your free discovery call. We’ll
@@ -134,13 +161,15 @@ export default function Faq() {
           support you to get the most out of monday.com!
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+
+      <Accordion expanded={expanded === 7} onChange={handleChange(7)}>
         <AccordionSummary
-          aria-controls="panel3-content"
-          id="panel3-header"
-          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
+          aria-controls="panel7-content"
+          id="panel7-header"
+          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
         >
-          Where are you located and what is your availability?
+          <span>Where are you located and what is your availability?</span>
+          {expanded === 7 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
           Workflow Made Easy is a company based in Vietnam with consultants
@@ -149,13 +178,15 @@ export default function Faq() {
           in North America, Europe, Asia, and Oceania
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+
+      <Accordion expanded={expanded === 8} onChange={handleChange(8)}>
         <AccordionSummary
-          aria-controls="panel3-content"
-          id="panel3-header"
-          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2"
+          aria-controls="panel8-content"
+          id="panel8-header"
+          className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
         >
-          Do you have fixed price projects?{" "}
+          <span>Do you have fixed price projects?</span>
+          {expanded === 8 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
           Currently not. <br /> <br /> We find the fixed price model to be rigid

@@ -5,11 +5,17 @@ import MondayWorkOS from "./_components/use-monday-as-workos";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mx-auto max-w-7xl px-4">
       <IncitationButton />
-      <OrganizationUsingMonday />
-      <MondayWorkOS />
-      <OurServices />
+      <div className="my-8">
+        <OrganizationUsingMonday />
+      </div>
+      <div className="my-8">
+        <MondayWorkOS />
+      </div>
+      <div className="my-8">
+        <OurServices />
+      </div>
     </div>
   );
 }
