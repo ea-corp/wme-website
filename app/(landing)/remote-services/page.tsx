@@ -140,7 +140,7 @@ export default function ServicePage() {
   ];
 
   return (
-    <div>
+    <div className="mx-auto max-w-7xl px-4">
       <div className="bg-gray-100 text-center pt-16 pb-6  md:py-16 overflow-x-hidden">
         <h2 className="text-4xl font-semibold">Remote services</h2>
       </div>
@@ -174,7 +174,7 @@ export default function ServicePage() {
               {pkg.features &&
                 pkg.features.map((feature, index) => (
                   <li key={index} className="flex items-center py-2">
-                    <Check className="flex-shrink-0 h-6 w-6 text-green-500 mr-4" />
+                    <Check className="flex-shrink-0 h-6 w-6 text-yellow-400 mr-4" />
                     <p className="text-medium text-gray-700 flex-1">
                       {feature}
                     </p>
@@ -217,7 +217,7 @@ export default function ServicePage() {
             <ul className="mb-4">
               {pkg.features.map((feature, index) => (
                 <li key={index} className="flex items-center py-2">
-                  <Check className="flex-shrink-0 h-6 w-6 text-green-500 mr-4" />
+                  <Check className="flex-shrink-0 h-6 w-6 text-yellow-400 mr-4" />
                   <p className="text-medium text-gray-700 flex-1">{feature}</p>
                 </li>
               ))}
@@ -243,7 +243,7 @@ export default function ServicePage() {
       </div>
 
       <Faq />
-      <div className="bg-gray-100 py-8 md:py-16 flex items-center justify-center flex-col ">
+      <div className="py-8 md:py-16 flex items-center justify-center flex-col ">
         <h3 className="text-2xl font-medium text-center pb-4">
           Contact us now to find out which package suits you best
         </h3>

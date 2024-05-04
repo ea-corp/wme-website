@@ -21,8 +21,8 @@ export default function Footer() {
         <div className="flex justify-center items-center flex-wrap space-x-4">
           <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative">
             <Image
-              src="/images/advanced-workflow-badge.png"
-              alt="Monday.com Advanced workflow certified badge"
+              src="/images/product-certified-badge.png"
+              alt="Monday.com Product certified badge"
               width={imageSize.width}
               height={imageSize.height}
             />
@@ -37,8 +37,8 @@ export default function Footer() {
           </div>
           <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative">
             <Image
-              src="/images/product-certified-badge.png"
-              alt="Monday.com Product certified badge"
+              src="/images/advanced-workflow-badge.png"
+              alt="Monday.com Advanced workflow certified badge"
               width={imageSize.width}
               height={imageSize.height}
             />

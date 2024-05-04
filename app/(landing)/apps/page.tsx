@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function AppsPage() {
   return (
-    <div className="px-8 md:px-32 py-16">
+    <div className="mx-auto max-w-7xl px-4 mt-24">
       <h3 className="font-semibold text-2xl">
         Our Selection of Monday.com Apps for Advanced Productivity
       </h3>

@@ -49,7 +49,7 @@ export default function IncitationButton() {
           />
         </div>
       </div>
-      <div className="bg-gray-100 px-4 md:px-32">
+      <div className="bg-gray-100 px-4 md:px-12">
         <h2 className="text-2xl py-8 text-gray-800 font-semibold text-center">
           Overwhelmed trying to figure out monday.com ?
         </h2>
