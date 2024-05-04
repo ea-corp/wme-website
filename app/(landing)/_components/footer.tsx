@@ -10,12 +10,12 @@ export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white p-6">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap justify-around items-center">
-        <div className="mb-4 md:mb-0">
+        <div className="mb-4 md:mb-0 ml-8 md:ml-0">
           <Image
             src="/images/monday-bronze-partner.png"
             alt="Workflow Made Easy Logo"
-            width={imageSize.width}
-            height={imageSize.height / 2}
+            width={300}
+            height={150}
           />
         </div>
         <div className="flex justify-center items-center flex-wrap space-x-4">
