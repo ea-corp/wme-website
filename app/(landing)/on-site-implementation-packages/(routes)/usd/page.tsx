@@ -100,7 +100,7 @@ export default async function ServicePage() {
           &nbsp; On-Site Consulting
         </h2>
       </div>
-      <p className="px-8 md:px-64 py-8">
+      <p className="px-8 md:px-20 py-8">
         We travel worldwide to implement Monday.com at your premises. <br />{" "}
         <br />
         On-site implementations are very efficient as we will be able to
@@ -204,7 +204,7 @@ export default async function ServicePage() {
                 
       </div>
 
-      <div className="bg-gray-100 py-16 flex items-center justify-center flex-col mt-16">
+      <div className="py-16 flex items-center justify-center flex-col mt-16">
         <h3 className="text-2xl font-medium py-8 text-center">
           *Price Quoted is indicative estimate only. In order to get an accurate{" "}
           <br /> quotation, contact us now.

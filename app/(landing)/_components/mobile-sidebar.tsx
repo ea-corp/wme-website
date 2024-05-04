@@ -9,6 +9,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Logo } from "./logo";
+import Link from "next/link";
 
 interface Route {
   label: string;
@@ -69,7 +70,7 @@ const SidebarItem = ({ label, href }: SidebarItemProps) => {
       onClick={onClick}
       type="button"
       className={`
-        flex items-center gap-x-2 w-full text-slate-500 text-sm font-[500] pl-6 transition-all hover:bg-slate-300/20
+        flex items-center gap-x-2 w-full text-slate-500 font-bold text-sm font-[500] pl-6 transition-all hover:bg-slate-300/20
         ${isActive && "text-[#5949d5] font-bold bg-sky-200/20 hover:bg-sky-200/20"}
       `}
     >
@@ -93,7 +94,12 @@ export const MobileSidebar = () => {
       <SheetContent side="right" className="p-0 bg-white">
         <div className="h-full border-r flex flex-col overflow-y-auto bg-gray-white shadow-sm">
           <div className="p-6">
-            <Logo />
+           
+               <Link href="/"> <SheetClose>
+            <Logo />   </SheetClose>
+            </Link>
+         
+           
           </div>
 
           <div className="flex flex-col w-full">

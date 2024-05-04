@@ -245,7 +245,7 @@ export default function ServicePage() {
       </div>
 
       <Faq />
-      <div className="bg-gray-100 py-16 flex items-center justify-center flex-col">
+      <div className="py-16 flex items-center justify-center flex-col">
         <h3 className="text-2xl font-medium py-4">
           Contact us now to find out which package suits you best
         </h3>

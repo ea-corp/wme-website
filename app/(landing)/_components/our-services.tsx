@@ -1,5 +1,4 @@
 import { HandHelping, ScreenShare, Settings, UserCog } from "lucide-react";
-import Image from "next/image";
 
 const services = [
   {
@@ -52,7 +51,7 @@ export default function OurServices() {
   return (
     <div className="bg-gray-100 flex flex-col items-center py-16">
       <h2 className="font-semibold text-3xl">Our Services</h2>
-      <p className="py-8 px-8 md:px-40 lg:px-72 text-justify">
+      <p className="py-8 px-8 md:px-8 lg:px-8 text-justify">
         Because Monday.com is very easy to use some of us tend to jump into it
         too quickly and later on face limitations that cannot be solved and need
         to start all over again. We believe that your time is precious and tech

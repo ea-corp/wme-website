@@ -13,7 +13,7 @@ export default function Home() {
       <div className="my-8">
         <MondayWorkOS />
       </div>
-      <div className="my-8">
+      <div>
         <OurServices />
       </div>
     </div>

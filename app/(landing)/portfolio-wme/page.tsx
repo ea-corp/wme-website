@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function PortfolioWME() {
   return (
-    <div className="mx-auto max-w-7xl px-4">
+    <div>
       <div className="bg-gray-100 text-center py-16">
         <h2 className="text-4xl font-semibold">Portfolio</h2>
       </div>
