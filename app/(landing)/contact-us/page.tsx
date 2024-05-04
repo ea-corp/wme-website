@@ -35,7 +35,7 @@ const ContactUs = () => {
         </div>
          
          <div className="mt-8">
-                  <iframe src="https://forms.monday.com/forms/embed/158a679e3264a56ba460b3f022dc56e4?r=use1" width="650" height="500"></iframe>
+                  <iframe src="https://forms.monday.com/forms/embed/158a679e3264a56ba460b3f022dc56e4?r=use1" className="w-screen md:w-[650px] h-[1800px]"></iframe>
          </div>
 
 
