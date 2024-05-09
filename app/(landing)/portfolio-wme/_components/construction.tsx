@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import {
   Carousel,
@@ -27,6 +27,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
   imagesCarousel,
 }) => {
+  const nextButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (nextButtonRef.current) {
+      nextButtonRef.current.focus();
+    }
+  }, []);
+
   return (
     <div>
       <Dialog>
@@ -42,31 +50,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </Card>
         </DialogTrigger>
         <DialogContent className="max-w-screen-sm">
-  <Carousel className="w-screen md:w-full">
-    <CarouselContent className="w-96 md:w-full">
-      {imagesCarousel.map((imgs, projIndex) =>
-        imgs.map((img, imgIndex) => (
-          <CarouselItem key={`${projIndex}-${imgIndex}`}>
-            <h3 className="font-semibold text-2xl">{title[projIndex]}</h3>
-            <img
-              src={img}
-              className="object-cover w-full h-48 md:h-auto"
-              alt={`${title[projIndex]} image ${imgIndex}`}
-            />
-            <p className="font-medium text-lg">{description[projIndex]}</p>
-          </CarouselItem>
-        ))
-      )}
-    </CarouselContent>
-    <CarouselPrevious className="ml-16 md:ml-28">Previous</CarouselPrevious>
-    <CarouselNext className="mr-28 md:mr-20">Next</CarouselNext>
-  </Carousel>
-</DialogContent>
+          <Carousel className="w-screen md:w-full">
+            <CarouselContent className="w-96 md:w-full">
+              {imagesCarousel.map((imgs, projIndex) =>
+                imgs.map((img, imgIndex) => (
+                  <CarouselItem key={`${projIndex}-${imgIndex}`}>
+                    <h3 className="font-semibold text-2xl">{title[projIndex]}</h3>
+                    <img
+                      src={img}
+                      className="object-cover w-full h-48 md:h-auto"
+                      alt={`${title[projIndex]} image ${imgIndex}`}
+                    />
+                    <p className="font-medium text-lg">{description[projIndex]}</p>
+                  </CarouselItem>
+                ))
+              )}
+            </CarouselContent>
+            <CarouselPrevious className="ml-16 md:ml-28">Previous</CarouselPrevious>
+            <CarouselNext className="mr-28 md:mr-20" ref={nextButtonRef}>Next</CarouselNext>
+          </Carousel>
+        </DialogContent>
       </Dialog>
     </div>
   );
 };
-
 export default function ConstructionPage() {
   const projects = [
     {

@@ -75,14 +75,17 @@ export default function ConstructionPage() {
         "Dashboard 1- Resource Allocation Management 2",
         "Process Mapping for NGO with worldwide presence",
         "Dashboard 3- Workload Management",
-        "Resource Allocation Management 3"
+        "Resource Allocation Management 3",
+        "Navigating Talent: An Applicant Tracking System",
+
       ],
       description: [
         "Analysis of the time spent by each team members on specific projects and the combined effort.",
         "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
         "",
         "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
-        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
+        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
+        "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
       ],
       image: 
         "images/portfolio/hr/image-1.png",
@@ -92,7 +95,8 @@ export default function ConstructionPage() {
         ["images/portfolio/hr/image-2.png"],
         ["images/portfolio/hr/image-3.png"],
         ["images/portfolio/hr/image-4.png"],
-        ["images/portfolio/hr/image-5.png"]
+        ["images/portfolio/hr/image-5.png"],
+        ["images/portfolio/hr/image-6.png"]
       ]
     },
     {
@@ -102,13 +106,17 @@ export default function ConstructionPage() {
         "Process Mapping for NGO with worldwide presence",
         "Dashboard 3- Workload Management",
         "Resource Allocation Management 3","Dashboard 2- Resource Allocation Management 1",
+        "Navigating Talent: An Applicant Tracking System",
+        "Dashboard 2- Resource Allocation Management 1",
+
       ],
       description: [
         "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
         "",
         "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
         "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
-                "Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
+        "Analysis of the time spent by each team members on specific projects and the combined effort.",
 
       ],
       image: 
@@ -119,6 +127,7 @@ export default function ConstructionPage() {
         ["images/portfolio/hr/image-3.png"],
         ["images/portfolio/hr/image-4.png"],
         ["images/portfolio/hr/image-5.png"],
+        ["images/portfolio/hr/image-6.png"],
         ["images/portfolio/hr/image-1.png"]
       ]
     },
@@ -127,15 +136,19 @@ export default function ConstructionPage() {
        
         "Process Mapping for NGO with worldwide presence",
         "Dashboard 3- Workload Management",
-        "Resource Allocation Management 3", "Dashboard 2- Resource Allocation Management 1",
+        "Resource Allocation Management 3","Dashboard 2- Resource Allocation Management 1",
+        "Navigating Talent: An Applicant Tracking System",
+        "Dashboard 2- Resource Allocation Management 1",
         "Dashboard 1- Resource Allocation Management 2",
+
       ],
       description: [
        
         "",
         "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
-        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
-       ,"Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
+        "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
+        "Analysis of the time spent by each team members on specific projects and the combined effort.",
         "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",],
       image: 
         "images/portfolio/hr/image-3.png",
@@ -144,7 +157,9 @@ export default function ConstructionPage() {
       
         ["images/portfolio/hr/image-3.png"],
         ["images/portfolio/hr/image-4.png"],
-        ["images/portfolio/hr/image-5.png"] , ["images/portfolio/hr/image-1.png"],
+        ["images/portfolio/hr/image-5.png"] ,
+        ["images/portfolio/hr/image-6.png"] ,
+        ["images/portfolio/hr/image-1.png"],
         ["images/portfolio/hr/image-2.png"],
       ]
     },
@@ -152,15 +167,20 @@ export default function ConstructionPage() {
       title: [
        
         "Dashboard 3- Workload Management",
+        "Navigating Talent: An Applicant Tracking System",
         "Resource Allocation Management 3","Dashboard 2- Resource Allocation Management 1",
+        "Dashboard 2- Resource Allocation Management 1",
         "Dashboard 1- Resource Allocation Management 2",
         "Process Mapping for NGO with worldwide presence",
+
+
       ],
       description: [
       
         "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
-        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
-       ,"Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
+        "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
+        "Analysis of the time spent by each team members on specific projects and the combined effort.",
         "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
         "", ],
       image: 
@@ -169,13 +189,18 @@ export default function ConstructionPage() {
       imagesCarousel: [
        
         ["images/portfolio/hr/image-4.png"],
-        ["images/portfolio/hr/image-5.png"],["images/portfolio/hr/image-1.png"],
+        ["images/portfolio/hr/image-5.png"],
+        ["images/portfolio/hr/image-6.png"],
+
+        ["images/portfolio/hr/image-1.png"],
         ["images/portfolio/hr/image-2.png"],
         ["images/portfolio/hr/image-3.png"],
       ]
     },
     {
-      title: [  "Resource Allocation Management 3",
+      title: [  
+        "Resource Allocation Management 3",
+        "Navigating Talent: An Applicant Tracking System",
         "Dashboard 2- Resource Allocation Management 1",
         "Dashboard 1- Resource Allocation Management 2",
         "Process Mapping for NGO with worldwide presence",
@@ -183,7 +208,7 @@ export default function ConstructionPage() {
       
       ],
       description: [        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
-
+"A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
         "Analysis of the time spent by each team members on specific projects and the combined effort.",
         "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
         "",
@@ -194,12 +219,52 @@ export default function ConstructionPage() {
     
       imagesCarousel: [        
         ["images/portfolio/hr/image-5.png"],
+        ["images/portfolio/hr/image-6.png"],
         ["images/portfolio/hr/image-1.png"],
         ["images/portfolio/hr/image-2.png"],
         ["images/portfolio/hr/image-3.png"],
         ["images/portfolio/hr/image-4.png"],
       ]
     },
+
+
+    {
+      title: [  
+        "Navigating Talent: An Applicant Tracking System",
+        "Resource Allocation Management 3",
+        "Dashboard 2- Resource Allocation Management 1",
+        "Dashboard 1- Resource Allocation Management 2",
+        "Process Mapping for NGO with worldwide presence",
+        "Dashboard 3- Workload Management",
+      
+      ],
+      description: [        
+        "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
+        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
+
+        "Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
+        "",
+        "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
+      ],
+      image: 
+        "images/portfolio/hr/image-6.png",
+    
+      imagesCarousel: [  
+        ["images/portfolio/hr/image-6.png"],    
+        ["images/portfolio/hr/image-5.png"],
+        ["images/portfolio/hr/image-1.png"],
+        ["images/portfolio/hr/image-2.png"],
+        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-4.png"],
+      ]
+    },
+
+
+
+
+
+    
     
   ];
 
