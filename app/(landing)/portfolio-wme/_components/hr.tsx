@@ -15,57 +15,73 @@ import {
 } from "@/components/ui/dialog";
 
 interface ProjectCardProps {
-  title: string[];
-  description: string[];
+  isActive: boolean;
+  title: string;
+  description: string;
   image: string;
   imagesCarousel: string[];
-  projectIndex: number; // Utilisez projectIndex au lieu de activeIndex ici pour la carte
-  activeIndex: number; // Pour le carousel
+  onClick: () => void;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
+  isActive,
   title,
   description,
   image,
   imagesCarousel,
-  projectIndex,
-  activeIndex
+  onClick,
 }) => {
   return (
     <div>
       <Dialog>
         <DialogTrigger asChild>
-          <Card className="w-[320px] md:w-[400px] p-4 cursor-pointer">
-            <img src={image} alt={title[projectIndex]} className="w-full h-48 object-cover"/>
-            <h3 className="font-semibold text-lg mt-2">{title[projectIndex]}</h3>
-            <p className="text-sm md:text-medium">{description[projectIndex]}</p>
+          <Card
+            className="w-[320px] md:w-[400px] p-4 cursor-pointer"
+            onClick={onClick}
+          >
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-48 object-cover"
+            />
+            <h3 className="font-semibold text-lg mt-2">{title}</h3>
+            <p className="text-sm md:text-medium">{description}</p>
           </Card>
         </DialogTrigger>
-        <DialogContent className="max-w-screen-sm">
-          <Carousel className="w-screen md:w-full" defaultValue={projectIndex}>
-            <CarouselContent className="w-96 md:w-[1250px]">
-              {imagesCarousel.map((img, index) => (
-                <CarouselItem key={index}>
-                  <h3 className="font-semibold text-2xl">{title[index]}</h3>
-                  <img src={img} className="w-full h-auto max-h-screen object-contain" alt={`${title[index]} image`}/>
-                  <p className="font-medium text-lg">{description[index]}</p>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="ml-16 md:ml-28">Previous</CarouselPrevious>
-            <CarouselNext className="mr-28 md:mr-20">Next</CarouselNext>
-          </Carousel>
-        </DialogContent>
+        {isActive && (
+          <DialogContent className="max-w-screen-sm">
+            <Carousel className="w-screen md:w-full" defaultValue={0}>
+              <CarouselContent className="w-full flex">
+                {imagesCarousel.map((img, index) => (
+                  <CarouselItem key={index} className="w-full">
+                    <h3 className="font-semibold text-2xl">{title}</h3>
+                    <img
+                      src={img}
+                      className="w-full h-auto max-h-screen object-contain"
+                      alt={`${title} image`}
+                    />
+                    <p className="font-medium text-lg">{description}</p>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="ml-16 md:ml-28">
+                Previous
+              </CarouselPrevious>
+              <CarouselNext className="mr-28 md:mr-20">Next</CarouselNext>
+            </Carousel>
+          </DialogContent>
+        )}
       </Dialog>
     </div>
   );
 };
 
-
-
 export default function ConstructionPage() {
+  const [activeProjectIndex, setActiveProjectIndex] = useState(0);
 
-  const [activeIndex, setActiveIndex] = useState(0);  // Pour suivre le projet actuellement actif
+  const handleSetActiveIndex = (index: number) => {
+    setActiveProjectIndex(index);
+  };
 
   const projectTitles = [
     "Dashboard 2- Resource Allocation Management 1",
@@ -148,21 +164,22 @@ export default function ConstructionPage() {
     "images/portfolio/hr/image-24.png",
   ];
 
-
   const projects = projectTitles.map((title, index) => ({
-    title: projectTitles,
-    description: projectDescriptions,
+    title,
+    description: projectDescriptions[index],
     image: images[index],
-    imagesCarousel: images,
-    projectIndex: index, // Passez l'index de projet individuel ici
-    activeIndex // Passez l'index actif pour le carrousel
+    imagesCarousel: images.slice(index, index + 1),
   }));
 
   return (
     <div className="flex flex-wrap justify-center gap-8 p-4">
       {projects.map((project, index) => (
-        <div key={index} onClick={() => setActiveIndex(index)}>
-          <ProjectCard {...project} projectIndex={index} activeIndex={activeIndex} />
+        <div key={index}>
+          <ProjectCard
+            {...project}
+            isActive={index === activeProjectIndex}
+            onClick={() => handleSetActiveIndex(index)}
+          />
         </div>
       ))}
     </div>
