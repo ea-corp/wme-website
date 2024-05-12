@@ -19,15 +19,16 @@ interface ProjectCardProps {
   description: string[];
   image: string;
   imagesCarousel: string[];
-  activeIndex: number;
+  projectIndex: number; // Utilisez projectIndex au lieu de activeIndex ici pour la carte
+  activeIndex: number; // Pour le carousel
 }
 
-// Composant ProjectCard
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   image,
   imagesCarousel,
+  projectIndex,
   activeIndex
 }) => {
   return (
@@ -35,13 +36,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <Dialog>
         <DialogTrigger asChild>
           <Card className="w-[320px] md:w-[400px] p-4 cursor-pointer">
-            <img src={image} alt={title[0]} className="w-full h-48 object-cover"/>
-            <h3 className="font-semibold text-lg mt-2">{title[0]}</h3>
-            <p className="text-sm md:text-medium">{description[0]}</p>
+            <img src={image} alt={title[projectIndex]} className="w-full h-48 object-cover"/>
+            <h3 className="font-semibold text-lg mt-2">{title[projectIndex]}</h3>
+            <p className="text-sm md:text-medium">{description[projectIndex]}</p>
           </Card>
         </DialogTrigger>
         <DialogContent className="max-w-screen-sm">
-          <Carousel className="w-screen md:w-full">
+          <Carousel className="w-screen md:w-full" defaultValue={projectIndex}>
             <CarouselContent className="w-96 md:w-[1250px]">
               {imagesCarousel.map((img, index) => (
                 <CarouselItem key={index}>
@@ -59,6 +60,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     </div>
   );
 };
+
 
 
 export default function ConstructionPage() {
@@ -150,16 +152,17 @@ export default function ConstructionPage() {
   const projects = projectTitles.map((title, index) => ({
     title: projectTitles,
     description: projectDescriptions,
-    image: images[index % images.length],
+    image: images[index],
     imagesCarousel: images,
-    activeIndex
+    projectIndex: index, // Passez l'index de projet individuel ici
+    activeIndex // Passez l'index actif pour le carrousel
   }));
 
   return (
     <div className="flex flex-wrap justify-center gap-8 p-4">
       {projects.map((project, index) => (
         <div key={index} onClick={() => setActiveIndex(index)}>
-          <ProjectCard {...project} />
+          <ProjectCard {...project} projectIndex={index} activeIndex={activeIndex} />
         </div>
       ))}
     </div>
