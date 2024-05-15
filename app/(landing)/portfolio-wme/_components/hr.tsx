@@ -41,19 +41,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <p className="text-sm md:text-medium">{description[0]}</p>
           </Card>
         </DialogTrigger>
-        <DialogContent className="max-w-screen-sm">
+        <DialogContent className="max-w-screen-sm max-h-screen">
           <Carousel className="w-screen md:w-full">
             <CarouselContent className="w-96 md:w-full">
               {imagesCarousel.map((imgs, projIndex) =>
                 imgs.map((img, imgIndex) => (
                   <CarouselItem key={`${projIndex}-${imgIndex}`}>
                     <h3 className="font-semibold text-2xl">{title[projIndex]}</h3>
-                    <img
-                      src={img}
-                      className="object-cover w-full h-48 md:h-auto"
-                      alt={`${title[projIndex]} image ${imgIndex}`}
-                    />
-                    <p className="font-medium text-lg">{description[projIndex]}</p>
+                    <div className="flex justify-center items-center">
+                      <img
+                        src={img}
+                        className="object-cover max-h-full max-w-full"
+                        alt={`${title[projIndex]} image ${imgIndex}`}
+                      />
+                    </div>
+                    <p className="font-medium text-lg mb-16">{description[projIndex]}</p>
                   </CarouselItem>
                 ))
               )}
@@ -62,6 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <CarouselNext className="mr-28 md:mr-20">Next</CarouselNext>
           </Carousel>
         </DialogContent>
+
       </Dialog>
     </div>
   );
