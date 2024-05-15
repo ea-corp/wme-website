@@ -69,7 +69,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 export default function ConstructionPage() {
   const projects = [
-  
+
     {
       section: "Employee's Management",
 
@@ -84,14 +84,12 @@ export default function ConstructionPage() {
         "An interactive map displaying the geographic distribution of employees, with colored pins indicating different types of employees. This visualization helps in understanding the regional placement of various employee categories across the United States"
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-14.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-4.png"],
+        ["images/portfolio/hr/image-14.png"],
+        ["images/portfolio/hr/image-15.png"],
+        ["images/portfolio/hr/image-16.png"],
       ]
     },
     {
@@ -110,14 +108,13 @@ export default function ConstructionPage() {
 
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-15.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-4.png"],
+        ["images/portfolio/hr/image-15.png"],
+        ["images/portfolio/hr/image-16.png"],
+        ["images/portfolio/hr/image-14.png"],
+
       ]
     },
 
@@ -136,14 +133,13 @@ export default function ConstructionPage() {
         "A comprehensive view of an employee's profile page, featuring sections for personal information, employment details, and paid time off (PTO). The interface includes fields for name, contact details, employment position, salary, and leave balance.",
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-16.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-4.png"],
+        ["images/portfolio/hr/image-16.png"],
+        ["images/portfolio/hr/image-14.png"],
+        ["images/portfolio/hr/image-15.png"],
+
       ]
     },
 
@@ -167,14 +163,13 @@ export default function ConstructionPage() {
         "A detailed digital form titled \"Employee Surveys and Feedback (Detailed Version)\" designed for in-depth employee feedback. It includes multiple sections asking for personal details, job satisfaction, communication effectiveness, managerial support, team dynamics, and personal suggestions for improving the workplace."
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-17.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-4.png"],
+        ["images/portfolio/hr/image-17.png"],
+        ["images/portfolio/hr/image-18.png"],
+        ["images/portfolio/hr/image-19.png"],
+        ["images/portfolio/hr/image-20.png"],
       ]
     },
 
@@ -196,13 +191,13 @@ export default function ConstructionPage() {
 
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-18.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-18.png"],
+        ["images/portfolio/hr/image-19.png"],
+        ["images/portfolio/hr/image-20.png"],
+        ["images/portfolio/hr/image-17.png"],
       ]
     },
     {
@@ -221,13 +216,13 @@ export default function ConstructionPage() {
         "A screenshot displaying a 'Weekly Pulse Review' from an organizational feedback platform. The interface is segmented into categories such as 'New Reviews (Anonymous)', 'This month's Reviews', and 'Past Reviews', each listing reviews with details on productivity and emotional sentiment, along with star ratings and additional comments.",
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-19.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-19.png"],
+        ["images/portfolio/hr/image-20.png"],
+        ["images/portfolio/hr/image-17.png"],
+        ["images/portfolio/hr/image-18.png"],
       ]
     },
 
@@ -247,13 +242,13 @@ export default function ConstructionPage() {
         "A straightforward digital form titled \"Weekly Check In – You Are Our Priority (Simple Version)\" designed for employees to rate their week's productivity and emotional state using a star system, with space for open-ended responses and additional comments.",
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-20.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-20.png"],
+        ["images/portfolio/hr/image-17.png"],
+        ["images/portfolio/hr/image-18.png"],
+        ["images/portfolio/hr/image-19.png"],
       ]
     },
 
@@ -289,15 +284,15 @@ export default function ConstructionPage() {
 
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-8.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-8.png"],
+        ["images/portfolio/hr/image-9.png"],
+        ["images/portfolio/hr/image-10.png"],
+        ["images/portfolio/hr/image-11.png"],
+        ["images/portfolio/hr/image-22.png"],
+        ["images/portfolio/hr/image-23.png"],
       ]
     },
 
@@ -322,15 +317,15 @@ export default function ConstructionPage() {
 
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-9.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-9.png"],
+        ["images/portfolio/hr/image-10.png"],
+        ["images/portfolio/hr/image-11.png"],
+        ["images/portfolio/hr/image-22.png"],
+        ["images/portfolio/hr/image-23.png"],
+        ["images/portfolio/hr/image-8.png"],
       ]
     },
     {
@@ -354,23 +349,20 @@ export default function ConstructionPage() {
         "detailed calendar display of employee leave requests for a month, marking out individual time-offs and holidays, ensuring a clear visual representation of staff availability and planned absences. The layout provides an efficient overview for management and team coordination.",
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-10.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-10.png"],
+        ["images/portfolio/hr/image-11.png"],
+        ["images/portfolio/hr/image-22.png"],
+        ["images/portfolio/hr/image-23.png"],
+        ["images/portfolio/hr/image-8.png"],
+        ["images/portfolio/hr/image-9.png"],
       ]
     },
     {
       section: "Leave Management",
       title: [
-        "Analyzing Employee Leave Patterns",
-        "Organized Leave Schedule",
-        "Scheduled Holidays Overview",
         "Employee Leave Management Dashboard",
         "Leave Request Management System",
         "Employee Leave Form Submission Interface",
@@ -389,15 +381,15 @@ export default function ConstructionPage() {
 
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-11.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-11.png"],
+        ["images/portfolio/hr/image-22.png"],
+        ["images/portfolio/hr/image-23.png"],
+        ["images/portfolio/hr/image-8.png"],
+        ["images/portfolio/hr/image-9.png"],
+        ["images/portfolio/hr/image-10.png"],
       ]
     },
     {
@@ -421,15 +413,15 @@ export default function ConstructionPage() {
 
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-22.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-22.png"],
+        ["images/portfolio/hr/image-23.png"],
+        ["images/portfolio/hr/image-8.png"],
+        ["images/portfolio/hr/image-9.png"],
+        ["images/portfolio/hr/image-10.png"],
+        ["images/portfolio/hr/image-11.png"],
       ]
     },
     {
@@ -451,15 +443,15 @@ export default function ConstructionPage() {
         "An organized leave request platform showcasing different sections for 'Leave Requests Pending Approval by Management', 'Approved', and 'Request Declined'. This system details each request with information such as requester, type of leave, period, and approval status, providing a clear view of employee leave management.",
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-23.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-1.png"],
-        ["images/portfolio/hr/image-2.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
-        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-23.png"],
+        ["images/portfolio/hr/image-8.png"],
+        ["images/portfolio/hr/image-9.png"],
+        ["images/portfolio/hr/image-10.png"],
+        ["images/portfolio/hr/image-11.png"],
+        ["images/portfolio/hr/image-22.png"],
       ]
     },
 
@@ -471,14 +463,14 @@ export default function ConstructionPage() {
       ],
       description: [
         "A detailed view of an employee onboarding dashboard, illustrating various employees' onboarding stages, start dates, progress bars, positions, departments, and status of essential documents such as offer letters, contracts, and company policies. This interface helps track the onboarding progress effectively.",
-      
+
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-24.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-     
+        ["images/portfolio/hr/image-24.png"],
+
       ]
     },
 
@@ -491,14 +483,14 @@ export default function ConstructionPage() {
       ],
       description: [
         "An extensive HR KPI dashboard for tracking and evaluating various performance metrics for 2023. This interface displays KPIs such as employee turnover, satisfaction, recruitment costs, time-to-fill positions, and more, each with a status update indicating if they are on track, need attention, or exceed targets.",
-      
+
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-21.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-     
+        ["images/portfolio/hr/image-21.png"],
+
       ]
     },
 
@@ -521,73 +513,73 @@ export default function ConstructionPage() {
         "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
         "An interactive dashboard showing the contract management process across different stages, including new requests, contracts sent, and signed agreements. This dashboard also provides detailed insights into each employee’s position, department, salary details, and contract start dates.",
         "A detailed profile view of an employee, showcasing contract information such as start date, salary, job duties, and supervisory details, alongside options to generate and manage the contract status.",
-      
+
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-7.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-     
+        ["images/portfolio/hr/image-7.png"],
+        ["images/portfolio/hr/image-6.png"],
+        ["images/portfolio/hr/image-12.png"],
+        ["images/portfolio/hr/image-13.png"],
+
       ]
     },
 
     {
       section: "Recruitment",
       title: [
-        
+
         "Navigating Talent: An Applicant Tracking System",
         "Contract Management Workflow",
         "Employee Contract Detail View",
         "Candidate overview",
       ],
       description: [
-       
+
         "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
         "An interactive dashboard showing the contract management process across different stages, including new requests, contracts sent, and signed agreements. This dashboard also provides detailed insights into each employee’s position, department, salary details, and contract start dates.",
         "A detailed profile view of an employee, showcasing contract information such as start date, salary, job duties, and supervisory details, alongside options to generate and manage the contract status.",
         "A digital interface displays the profile of a job applicant, highlighting their application for a Social Media Manager position, sourced from LinkedIn, with detailed sections including contact details, application status, CV insights, and interview notes. The page also features AI-driven results evaluating their strengths and suitability for the role.",
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-6.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-     
+        ["images/portfolio/hr/image-6.png"],
+        ["images/portfolio/hr/image-12.png"],
+        ["images/portfolio/hr/image-13.png"],
+        ["images/portfolio/hr/image-7.png"],
+
       ]
     },
 
     {
       section: "Recruitment",
       title: [
-        
+
         "Contract Management Workflow",
         "Employee Contract Detail View",
         "Candidate overview",
         "Navigating Talent: An Applicant Tracking System",
       ],
       description: [
-       
+
         "An interactive dashboard showing the contract management process across different stages, including new requests, contracts sent, and signed agreements. This dashboard also provides detailed insights into each employee’s position, department, salary details, and contract start dates.",
         "A detailed profile view of an employee, showcasing contract information such as start date, salary, job duties, and supervisory details, alongside options to generate and manage the contract status.",
         "A digital interface displays the profile of a job applicant, highlighting their application for a Social Media Manager position, sourced from LinkedIn, with detailed sections including contact details, application status, CV insights, and interview notes. The page also features AI-driven results evaluating their strengths and suitability for the role.",
         "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-12.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-     
+        ["images/portfolio/hr/image-12.png"],
+        ["images/portfolio/hr/image-13.png"],
+        ["images/portfolio/hr/image-7.png"],
+        ["images/portfolio/hr/image-6.png"],
+
       ]
     },
 
@@ -600,21 +592,21 @@ export default function ConstructionPage() {
         "Contract Management Workflow",
       ],
       description: [
-        
+
         "A detailed profile view of an employee, showcasing contract information such as start date, salary, job duties, and supervisory details, alongside options to generate and manage the contract status.",
         "A digital interface displays the profile of a job applicant, highlighting their application for a Social Media Manager position, sourced from LinkedIn, with detailed sections including contact details, application status, CV insights, and interview notes. The page also features AI-driven results evaluating their strengths and suitability for the role.",
         "A screenshot of an applicant tracking board, displaying various stages of the recruitment process such as new applications, review, interviews, and hiring outcomes. The board meticulously categorizes candidates by job titles, sources, and application dates, enhancing the recruitment workflow.",
         "An interactive dashboard showing the contract management process across different stages, including new requests, contracts sent, and signed agreements. This dashboard also provides detailed insights into each employee’s position, department, salary details, and contract start dates.",
       ],
       image:
-        "images/portfolio/hr/image-5.png",
+        "images/portfolio/hr/image-13.png",
 
       imagesCarousel: [
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-        ["images/portfolio/hr/image-5.png"],
-     
+        ["images/portfolio/hr/image-13.png"],
+        ["images/portfolio/hr/image-7.png"],
+        ["images/portfolio/hr/image-6.png"],
+        ["images/portfolio/hr/image-12.png"],
+
       ]
     },
 
@@ -626,146 +618,146 @@ export default function ConstructionPage() {
 
 
 
-{
-    section : "Others",
-    title: [
-      "Dashboard 2- Resource Allocation Management 1",
-      "Dashboard 1- Resource Allocation Management 2",
-      "Process Mapping for NGO with worldwide presence",
-      "Dashboard 3- Workload Management",
-      "Resource Allocation Management 3"
-    ],
-    description: [
-      "Analysis of the time spent by each team members on specific projects and the combined effort.",
-      "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
-      "",
-      "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
-      "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
-    ],
-    image:
-      "images/portfolio/hr/image-1.png",
+    {
+      section: "Others",
+      title: [
+        "Dashboard 2- Resource Allocation Management 1",
+        "Dashboard 1- Resource Allocation Management 2",
+        "Process Mapping for NGO with worldwide presence",
+        "Dashboard 3- Workload Management",
+        "Resource Allocation Management 3"
+      ],
+      description: [
+        "Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
+        "",
+        "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
+        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
+      ],
+      image:
+        "images/portfolio/hr/image-1.png",
 
-    imagesCarousel: [
-      ["images/portfolio/hr/image-1.png"],
-      ["images/portfolio/hr/image-2.png"],
-      ["images/portfolio/hr/image-3.png"],
-      ["images/portfolio/hr/image-4.png"],
-      ["images/portfolio/hr/image-5.png"]
-    ]
-  },
-  {
-    section : "Others",
+      imagesCarousel: [
+        ["images/portfolio/hr/image-1.png"],
+        ["images/portfolio/hr/image-2.png"],
+        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-4.png"],
+        ["images/portfolio/hr/image-5.png"]
+      ]
+    },
+    {
+      section: "Others",
 
-    title: [
+      title: [
 
-      "Dashboard 1- Resource Allocation Management 2",
-      "Process Mapping for NGO with worldwide presence",
-      "Dashboard 3- Workload Management",
-      "Resource Allocation Management 3", "Dashboard 2- Resource Allocation Management 1",
-    ],
-    description: [
-      "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
-      "",
-      "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
-      "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
-      "Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "Dashboard 1- Resource Allocation Management 2",
+        "Process Mapping for NGO with worldwide presence",
+        "Dashboard 3- Workload Management",
+        "Resource Allocation Management 3", "Dashboard 2- Resource Allocation Management 1",
+      ],
+      description: [
+        "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
+        "",
+        "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
+        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
+        "Analysis of the time spent by each team members on specific projects and the combined effort.",
 
-    ],
-    image:
-      "images/portfolio/hr/image-2.png",
+      ],
+      image:
+        "images/portfolio/hr/image-2.png",
 
-    imagesCarousel: [
-      ["images/portfolio/hr/image-2.png"],
-      ["images/portfolio/hr/image-3.png"],
-      ["images/portfolio/hr/image-4.png"],
-      ["images/portfolio/hr/image-5.png"],
-      ["images/portfolio/hr/image-1.png"]
-    ]
-  },
-  {
-    section : "Others",
+      imagesCarousel: [
+        ["images/portfolio/hr/image-2.png"],
+        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-4.png"],
+        ["images/portfolio/hr/image-5.png"],
+        ["images/portfolio/hr/image-1.png"]
+      ]
+    },
+    {
+      section: "Others",
 
-    title: [
+      title: [
 
-      "Process Mapping for NGO with worldwide presence",
-      "Dashboard 3- Workload Management",
-      "Resource Allocation Management 3", "Dashboard 2- Resource Allocation Management 1",
-      "Dashboard 1- Resource Allocation Management 2",
-    ],
-    description: [
+        "Process Mapping for NGO with worldwide presence",
+        "Dashboard 3- Workload Management",
+        "Resource Allocation Management 3", "Dashboard 2- Resource Allocation Management 1",
+        "Dashboard 1- Resource Allocation Management 2",
+      ],
+      description: [
 
-      "",
-      "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
-      "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
-      , "Analysis of the time spent by each team members on specific projects and the combined effort.",
-      "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",],
-    image:
-      "images/portfolio/hr/image-3.png",
+        "",
+        "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
+        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
+        , "Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",],
+      image:
+        "images/portfolio/hr/image-3.png",
 
-    imagesCarousel: [
+      imagesCarousel: [
 
-      ["images/portfolio/hr/image-3.png"],
-      ["images/portfolio/hr/image-4.png"],
-      ["images/portfolio/hr/image-5.png"], ["images/portfolio/hr/image-1.png"],
-      ["images/portfolio/hr/image-2.png"],
-    ]
-  },
-  {
-    section : "Others",
+        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-4.png"],
+        ["images/portfolio/hr/image-5.png"], ["images/portfolio/hr/image-1.png"],
+        ["images/portfolio/hr/image-2.png"],
+      ]
+    },
+    {
+      section: "Others",
 
-    title: [
+      title: [
 
-      "Dashboard 3- Workload Management",
-      "Resource Allocation Management 3", "Dashboard 2- Resource Allocation Management 1",
-      "Dashboard 1- Resource Allocation Management 2",
-      "Process Mapping for NGO with worldwide presence",
-    ],
-    description: [
+        "Dashboard 3- Workload Management",
+        "Resource Allocation Management 3", "Dashboard 2- Resource Allocation Management 1",
+        "Dashboard 1- Resource Allocation Management 2",
+        "Process Mapping for NGO with worldwide presence",
+      ],
+      description: [
 
-      "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
-      "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
-      , "Analysis of the time spent by each team members on specific projects and the combined effort.",
-      "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
-      "",],
-    image:
-      "images/portfolio/hr/image-4.png",
+        "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
+        "Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees."
+        , "Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
+        "",],
+      image:
+        "images/portfolio/hr/image-4.png",
 
-    imagesCarousel: [
+      imagesCarousel: [
 
-      ["images/portfolio/hr/image-4.png"],
-      ["images/portfolio/hr/image-5.png"], ["images/portfolio/hr/image-1.png"],
-      ["images/portfolio/hr/image-2.png"],
-      ["images/portfolio/hr/image-3.png"],
-    ]
-  },
-  {
-    section : "Others",
+        ["images/portfolio/hr/image-4.png"],
+        ["images/portfolio/hr/image-5.png"], ["images/portfolio/hr/image-1.png"],
+        ["images/portfolio/hr/image-2.png"],
+        ["images/portfolio/hr/image-3.png"],
+      ]
+    },
+    {
+      section: "Others",
 
-    title: ["Resource Allocation Management 3",
-      "Dashboard 2- Resource Allocation Management 1",
-      "Dashboard 1- Resource Allocation Management 2",
-      "Process Mapping for NGO with worldwide presence",
-      "Dashboard 3- Workload Management",
+      title: ["Resource Allocation Management 3",
+        "Dashboard 2- Resource Allocation Management 1",
+        "Dashboard 1- Resource Allocation Management 2",
+        "Process Mapping for NGO with worldwide presence",
+        "Dashboard 3- Workload Management",
 
-    ],
-    description: ["Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
+      ],
+      description: ["Detailed reporting of the time spent by an individual on specific projects and compare it to the theorical time that was allocated. This reporting was used for one on one meeting between management and the employees.",
 
-      "Analysis of the time spent by each team members on specific projects and the combined effort.",
-      "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
-      "",
-      "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
-    ],
-    image:
-      "images/portfolio/hr/image-5.png",
+        "Analysis of the time spent by each team members on specific projects and the combined effort.",
+        "The workflow built allowed deep analysis of the team submitted work and compare it to time initially planned.",
+        "",
+        "Used to manage the workload capacity of each individual, to see who is available to take a new project, who is overloaded, etc...",
+      ],
+      image:
+        "images/portfolio/hr/image-5.png",
 
-    imagesCarousel: [
-      ["images/portfolio/hr/image-5.png"],
-      ["images/portfolio/hr/image-1.png"],
-      ["images/portfolio/hr/image-2.png"],
-      ["images/portfolio/hr/image-3.png"],
-      ["images/portfolio/hr/image-4.png"],
-    ]
-  },
+      imagesCarousel: [
+        ["images/portfolio/hr/image-5.png"],
+        ["images/portfolio/hr/image-1.png"],
+        ["images/portfolio/hr/image-2.png"],
+        ["images/portfolio/hr/image-3.png"],
+        ["images/portfolio/hr/image-4.png"],
+      ]
+    },
 
 
 
