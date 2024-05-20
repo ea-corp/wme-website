@@ -803,7 +803,7 @@ export default function ConstructionPage() {
     <div className="p-4">
       {Object.entries(projectsBySection).map(([section, projects]) => (
         <div key={section}>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-8 mt-8 text-center bg-gray-200 py-4 md:mx-32">{section}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 mt-8 text-center text-blue-800 py-4 md:mx-32">{section}</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {projects.map((project, index) => (
               <div key={index}>
