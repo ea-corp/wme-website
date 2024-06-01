@@ -53,6 +53,9 @@ const components: { title: string; href: string; description: string }[] = [
 export const NavbarRoutes = () => {
   const pathname = usePathname();
   const isBlogPage = pathname.startsWith("/blog/");
+  const isExcludedPath = 
+    pathname.startsWith("/remote-services/usd") || 
+    pathname.startsWith("/on-site-implementation-packages/usd");
 
   return (
     <div className="flex flex-wrap justify-between items-center w-full  px-8 py-4">
@@ -164,7 +167,7 @@ export const NavbarRoutes = () => {
           className="bg-[#5949d5] text-white py-2 px-4 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
         >
           <p className="font-bold pr-2 text-sm md:text-md">Try</p>
-          {!isBlogPage && ( // Affiche l'image du logo uniquement si ce n'est pas la page du blog
+          {!isBlogPage && !isExcludedPath && ( // Affiche l'image du logo uniquement si ce n'est pas la page du blog ou les chemins exclus
             <img
               src="images/monday-com_only_logo.svg"
               alt="monday.com logo"
