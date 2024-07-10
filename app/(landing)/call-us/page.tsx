@@ -3,17 +3,15 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select';
 
-const BookACall = () => {
+const BookACallUS = () => {
     const [duration, setDuration] = useState<string>('');
     const router = useRouter();
 
     const handleSubmit = () => {
         const urls: { [key: string]: string } = {
-            "30": "https://calendly.com/w-m-e/30min",
-            "60": "https://calendly.com/w-m-e/60min-",
-            "90": "https://calendly.com/w-m-e/90min",
-            "120": "https://calendly.com/w-m-e/120min",
-            "240": "https://calendly.com/w-m-e/halfday"
+            "60": "https://calendly.com/w-m-e/us-1h",
+            "90": "https://calendly.com/w-m-e/us-90min",
+            "120": "https://calendly.com/w-m-e/us-2h",
         };
 
         if (duration) {
@@ -42,17 +40,15 @@ const BookACall = () => {
                         Estimated Call Duration
                     </div>
                     <Select onValueChange={handleSelectChange}>
-                        <SelectTrigger className="w-full ">
+                        <SelectTrigger className="w-full">
                             <SelectValue placeholder="Select duration" />
                         </SelectTrigger>
                         <SelectContent>
                             <SelectGroup>
                                 <SelectLabel>Select</SelectLabel>
-                                <SelectItem value="30">30 Mins</SelectItem>
                                 <SelectItem value="60">1 Hour</SelectItem>
                                 <SelectItem value="90">1.5 Hours</SelectItem>
                                 <SelectItem value="120">2 Hours</SelectItem>
-                                <SelectItem value="240">4 Hours</SelectItem>
                             </SelectGroup>
                         </SelectContent>
                     </Select>
@@ -69,4 +65,4 @@ const BookACall = () => {
     );
 };
 
-export default BookACall;
+export default BookACallUS;
