@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
+// Liste des employés
 const employeeLocations = [
   { id: 2, name: "Kessi Adjari", position: "Senior Consultant", country: "Albania", img: "/images/employee-sample.png", lat: 54.5074, lon: 11.0 },
   { id: 4, name: "Hung Nguyen", position: "Developer", country: "Vietnam", img: "/images/employee-sample.png", lat: 15.8688, lon: 80.2093 },
@@ -11,9 +13,10 @@ const employeeLocations = [
   { id: 7, name: "Maksym Blyzniuk", position: "Solutions Architect", country: "Portugal", img: "/images/employee-sample.png", lat: 52.5074, lon: -9.1278 },
 ];
 
-const convertLatLonToPosition = (lat: any, lon: any) => {
-  const x = (lon + 180) * (100 / 360); // longitude scaling
-  const y = (90 - lat) * (100 / 180); // latitude scaling
+// Conversion des coordonnées en position sur la carte
+const convertLatLonToPosition = (lat: number, lon: number) => {
+  const x = (lon + 180) * (100 / 360); // échelle de la longitude
+  const y = (90 - lat) * (100 / 180); // échelle de la latitude
   return { x: `${x}%`, y: `${y}%` };
 };
 
@@ -21,16 +24,17 @@ const WorldMap = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredEmployeeId, setHoveredEmployeeId] = useState<number | null>(null);
 
+  // Apparition progressive des pins sur la carte
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 200); // 200ms delay
+    }, 200);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="py-6">
-      {/* Map section */}
+    <div className="py-12 md:py-6">
+      {/* Section carte du monde */}
       <div className="relative w-full h-auto mb-10 flex justify-center">
         <img src="/images/world.svg" className="w-3/4 h-auto" alt="World Map" />
         {employeeLocations.map((employee, index) => {
@@ -44,9 +48,11 @@ const WorldMap = () => {
               style={{
                 left: x,
                 top: y,
-                transform: "translate(-50%, -50%)",
+                transform: `translate(-50%, -50%) ${
+                  hoveredEmployeeId === employee.id ? "translateY(-20px)" : ""
+                }`,
                 transitionDelay: `${index * 200}ms`,
-                width: "3%", // Icon size slightly adjusted to fit the smaller map
+                width: "5vw", // Taille responsive
               }}
               onMouseEnter={() => setHoveredEmployeeId(employee.id)}
               onMouseLeave={() => setHoveredEmployeeId(null)}
@@ -56,8 +62,8 @@ const WorldMap = () => {
                   hoveredEmployeeId === employee.id ? "scale-150" : ""
                 } rounded-full`}
                 style={{
-                  width: "60px",
-                  height: "60px",
+                  width: "5vw",
+                  height: "5vw",
                 }}
               >
                 {/* Image de l'employé */}
@@ -67,7 +73,7 @@ const WorldMap = () => {
                   className="w-full h-full object-cover rounded-full"
                 />
 
-                {/* Pointe du pin */}
+                {/* Queue du pin */}
                 <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[12px] border-t-white"></div>
               </div>
             </div>
@@ -75,8 +81,34 @@ const WorldMap = () => {
         })}
       </div>
 
-      {/* Employee cards section */}
-      <div className="flex flex-wrap justify-center items-start gap-4">
+      {/* Carrousel mobile trié par ID */}
+      <div className="md:hidden mx-14">
+        <Carousel>
+          <CarouselContent className="flex gap-4">
+            {employeeLocations
+              .sort((a, b) => a.id - b.id) 
+              .map((employee) => (
+                <CarouselItem key={employee.id} className="basis-1/3 w-48 h-64 bg-gray-100/50 border border-gray-200 shadow-md p-4 text-center flex flex-col justify-between">
+                  <img
+                    src={employee.img}
+                    alt={employee.name}
+                    className="w-20 h-20 mx-auto mb-4 object-cover rounded-full border border-gray-300"
+                  />
+                  <h3 className="text-lg font-semibold text-blue-700 mb-2">{employee.name}</h3>
+                  <p className="text-gray-600 text-sm mb-1">{employee.position}</p>
+                  <p className="text-gray-500 text-xs">{employee.country}</p>
+                </CarouselItem>
+              ))}
+          </CarouselContent>
+
+          {/* Boutons Précédent et Suivant */}
+          <CarouselPrevious className="text-blue-700 hover:text-blue-900" />
+          <CarouselNext className="text-blue-700 hover:text-blue-900" />
+        </Carousel>
+      </div>
+
+      {/* Cartes d'employés (cachées sur mobile) */}
+      <div className="hidden md:flex flex-wrap justify-center items-start gap-4">
         {employeeLocations.map((employee) => (
           <div
             key={employee.id}
