@@ -5,8 +5,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 // Liste des employés
 const employeeLocations = [
   { id: 1, name: "Kessi Adjari", position: "Senior Consultant", country: "Albania", img: "/images/team/kessi.png", lat: 54.5074, lon: 11.0 },
-  { id: 2, name: "Hung Nguyen", position: "Developer", country: "Vietnam", img: "/images/team/hung.jpg", lat: 15.8688, lon: 80.2093 },
-  { id: 3, name: "Chan Myae Khine", position: "Developer", country: "Thailand", img: "/images/team/chan.jpg", lat: 24.8688, lon: 71.2093 },
+  { id: 2, name: "Hung Nguyen", position: "Developer", country: "Vietnam", img: "/images/team/hung.png", lat: 15.8688, lon: 80.2093 },
+  { id: 3, name: "Chan Myae Khine", position: "Developer", country: "Thailand", img: "/images/team/chan.png", lat: 24.8688, lon: 71.2093 },
   { id: 4, name: "Eddy Azoulay", position: "Founder & CEO", country: "Thailand", img: "/images/team/eddy.jpg", lat: 10.8688, lon: 72.2093 },
   { id: 5, name: "Bao Nguyen", position: "Head of App", country: "Germany", img: "/images/team/bao.png", lat: 69.5074, lon: 2.1278 },
   { id: 6, name: "Sandaruwan Gunathilake", position: "Senior Developer", country: "Chile", img: "/images/employee-sample.png", lat: -30.7128, lon: -55.0060 },
