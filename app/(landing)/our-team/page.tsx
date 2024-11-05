@@ -115,7 +115,7 @@ const EmployeeCard = ({
       onMouseLeave={onMouseLeave}
     >
       <div className="relative">
-        <div className={`h-16g bg-gradient-to-r ${
+        <div className={`h-20 bg-gradient-to-r ${
           employee.id === 4 ? "from-indigo-600 to-indigo-700" : "from-blue-500 to-blue-600"
         }`}></div>
         <img
