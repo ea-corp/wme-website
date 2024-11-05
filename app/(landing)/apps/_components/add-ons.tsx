@@ -93,7 +93,7 @@ export default function CustomizedAccordions() {
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
-                  href="https://www.b-lab.app/auto-increment-numbers/"
+                  href="https://www.b-lab.app/apps/auto-increment-numbers/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >
@@ -132,7 +132,7 @@ export default function CustomizedAccordions() {
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
-                  href="https://www.b-lab.app/autofill-group-name/"
+                  href="https://www.b-lab.app/apps/autofill-group-name/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >
@@ -174,7 +174,7 @@ export default function CustomizedAccordions() {
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
-                  href="https://www.b-lab.app/approval-feedback/"
+                  href="https://www.b-lab.app/apps/approval-and-feedback/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >
@@ -212,7 +212,7 @@ export default function CustomizedAccordions() {
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
-                  href="https://www.b-lab.app/copy-paste-master/"
+                  href="https://www.b-lab.app/apps/copy-paste-master/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >
@@ -334,7 +334,7 @@ export default function CustomizedAccordions() {
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
-                  href="https://www.b-lab.app/subitem-pro-templates/"
+                  href="https://www.b-lab.app/apps/subitem-pro-templates/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >
@@ -374,7 +374,7 @@ export default function CustomizedAccordions() {
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
-                  href="https://www.b-lab.app/timeline-to-date/"
+                  href="https://www.b-lab.app/apps/timeline-to-date/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >
@@ -413,7 +413,7 @@ export default function CustomizedAccordions() {
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
-                  href="https://www.b-lab.app/tag-to-action/"
+                  href="https://www.b-lab.app/apps/tag-to-action/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >
