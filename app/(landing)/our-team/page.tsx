@@ -178,8 +178,8 @@ const WorldMap = () => {
   }, []);
 
   return (
-    <div className="py-2 md:py-2">
-      <h2 className="text-4xl font-bold py-12 bg-gray-100 text-gray-800 text-center">
+    <div className="py-8 md:py-2">
+      <h2 className="text-4xl font-bold py-20 bg-gray-100 text-gray-800 text-center">
         Our Global Team
       </h2>
       
@@ -240,7 +240,7 @@ const WorldMap = () => {
                 onMouseLeave={() => setHoveredEmployeeId(null)}
               >
                 <div
-                  className={`relative p-2 bg-white border shadow-md transition-transform ${
+                  className={`relative md:p-2 bg-white border shadow-md transition-transform ${
                     isHovered ? "scale-150" : ""
                   } rounded-full`}
                   style={{
