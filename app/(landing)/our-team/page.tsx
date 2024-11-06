@@ -116,18 +116,19 @@ const EmployeeCard = ({
         <h3 className="text-base font-bold text-gray-900 text-center mb-1">
           {employee.name}
         </h3>
+        <div className="space-y-2 items-center w-full mx-auto">
+          <div className="flex items-center justify-center text-center text-gray-600 text-xs">
+            <MapPin className="w-3 h-3 mr-1.5" />
+            <span>{employee.country}</span>
+          </div>
+        </div>
         <p className={`text-xs font-semibold text-center mb-3 ${
           employee.id === 4 ? "text-indigo-600" : "text-blue-600"
         }`}>
           {employee.position}
         </p>
         
-        <div className="space-y-2">
-          <div className="flex items-center text-gray-600 text-xs">
-            <MapPin className="w-3 h-3 mr-1.5" />
-            <span>{employee.country}</span>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
