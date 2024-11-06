@@ -15,75 +15,76 @@ const employeeLocations = [
     lon: 72.2093, 
     offsetDirection: "left",
     offsetDistance: 15,
-    email: "eddy@company.com",
+    email: "",
     department: "Executive"
   },
   { 
     id: 1, 
     name: "Kessi Adjari", 
-    position: "Senior Consultant", 
+    position: "Senior Implementation Specialist", 
     country: "Albania", 
     img: "/images/team/kessi.png", 
     lat: 42.5074, 
     lon: 11.0, 
     offsetDirection: "right",
     offsetDistance: 15,
-    email: "kessi@company.com",
+    email: "",
     department: "Consulting"
-  },
-  { 
-    id: 2, 
-    name: "Hung Nguyen", 
-    position: "Developer", 
-    country: "Vietnam", 
-    img: "/images/team/hung.png", 
-    lat: 2.8688, 
-    lon: 78.2093, 
-    offsetDirection: "right",
-    offsetDistance: 20,
-    email: "hung@company.com",
-    department: "Engineering"
   },
   { 
     id: 3, 
     name: "Chan Myae Khine", 
-    position: "Developer", 
+    position: "Junior Implementation Specialist", 
     country: "Thailand", 
     img: "/images/team/chan.png", 
     lat: 10.8688, 
     lon: 70.2093, 
     offsetDirection: "left",
     offsetDistance: 35,
-    email: "chan@company.com",
+    email: "",
     department: "Engineering"
   },
   { 
     id: 5, 
     name: "Bao Nguyen", 
-    position: "Head of App", 
+    position: "Solutions Engineer", 
     country: "Germany", 
     img: "/images/team/bao.png", 
     lat: 53.5074, 
     lon: 2.1278, 
     offsetDirection: "left",
     offsetDistance: 18,
-    email: "bao@company.com",
+    email: "",
     department: "Product"
+  },
+  { 
+    id: 2, 
+    name: "Hung Nguyen", 
+    position: "Monday.com Platform Developer", 
+    country: "Vietnam", 
+    img: "/images/team/hung.png", 
+    lat: 2.8688, 
+    lon: 78.2093, 
+    offsetDirection: "right",
+    offsetDistance: 20,
+    email: "",
+    department: "Engineering"
   },
   { 
     id: 6, 
     name: "Sanda Guna", 
-    position: "Senior Developer", 
+    position: "Senior Software Architect", 
     country: "Chile", 
     img: "/images/team/sanda.png", 
     lat: -45.7128, 
     lon: -54.0060, 
     offsetDirection: "left",
     offsetDistance: 22,
-    email: "sanda@company.com",
+    email: "",
     department: "Engineering"
   },
 ] as const;
+
 
 const convertLatLonToPosition = (lat: number, lon: number, offset: number = 0) => {
   const x = (lon + offset + 180) * (100 / 360);
