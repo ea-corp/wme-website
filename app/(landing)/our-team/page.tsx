@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { MapPin, Mail, Globe2, Building2 } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 // Employee data remains the same
 const employeeLocations = [
@@ -15,12 +15,10 @@ const employeeLocations = [
     lon: 72.2093, 
     offsetDirection: "left",
     offsetDistance: 15,
-    email: "",
-    department: "Executive"
   },
   { 
     id: 1, 
-    name: "Kessi Adjari", 
+    name: "Kessi Adhjari", 
     position: "Senior Implementation Specialist", 
     country: "Albania", 
     img: "/images/team/kessi.png", 
@@ -28,8 +26,6 @@ const employeeLocations = [
     lon: 11.0, 
     offsetDirection: "right",
     offsetDistance: 15,
-    email: "",
-    department: "Consulting"
   },
   { 
     id: 3, 
@@ -41,8 +37,6 @@ const employeeLocations = [
     lon: 70.2093, 
     offsetDirection: "left",
     offsetDistance: 35,
-    email: "",
-    department: "Engineering"
   },
   { 
     id: 5, 
@@ -54,8 +48,6 @@ const employeeLocations = [
     lon: 2.1278, 
     offsetDirection: "left",
     offsetDistance: 18,
-    email: "",
-    department: "Product"
   },
   { 
     id: 2, 
@@ -67,8 +59,6 @@ const employeeLocations = [
     lon: 78.2093, 
     offsetDirection: "right",
     offsetDistance: 20,
-    email: "",
-    department: "Engineering"
   },
   { 
     id: 6, 
@@ -80,8 +70,6 @@ const employeeLocations = [
     lon: -54.0060, 
     offsetDirection: "left",
     offsetDistance: 22,
-    email: "",
-    department: "Engineering"
   },
 ] as const;
 
@@ -110,15 +98,13 @@ const EmployeeCard = ({
       className={`${
         isMobile 
           ? "w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 mb-6" 
-          : "w-48 bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300"
+          : "w-48 h-60 bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300"
       } ${isHovered ? "scale-105 shadow-xl" : ""}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       <div className="relative">
-        <div className={`h-20 bg-gradient-to-r ${
-          employee.id === 4 ? "from-indigo-600 to-indigo-700" : "from-blue-500 to-blue-600"
-        }`}></div>
+        <div className={`h-20 bg-gradient-to-r from-blue-500 to-blue-600`}></div>
         <img
           src={employee.img}
           alt={employee.name}
@@ -138,16 +124,8 @@ const EmployeeCard = ({
         
         <div className="space-y-2">
           <div className="flex items-center text-gray-600 text-xs">
-            <Building2 className="w-3 h-3 mr-1.5" />
-            <span>{employee.department}</span>
-          </div>
-          <div className="flex items-center text-gray-600 text-xs">
             <MapPin className="w-3 h-3 mr-1.5" />
             <span>{employee.country}</span>
-          </div>
-          <div className="flex items-center text-gray-600 text-xs">
-            <Mail className="w-3 h-3 mr-1.5" />
-            <span className="truncate">{employee.email}</span>
           </div>
         </div>
       </div>
