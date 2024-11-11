@@ -53,18 +53,8 @@ export default function OrganizationUsingMonday() {
   const carouselRef1 = useRef<HTMLDivElement>(null);
   const carouselRef2 = useRef<HTMLDivElement>(null);
 
-  // Duplication des logos pour obtenir un effet de défilement continu
-  const duplicatedLogosLine1: Logo[] = [
-    ...logosLine1,
-    ...logosLine1,
-    ...logosLine1,
-  ];
-
-  const duplicatedLogosLine2: Logo[] = [
-    ...logosLine2,
-    ...logosLine2,
-    ...logosLine2,
-  ];
+  const duplicatedLogosLine1: Logo[] = [...logosLine1, ...logosLine1, ...logosLine1];
+  const duplicatedLogosLine2: Logo[] = [...logosLine2, ...logosLine2, ...logosLine2];
 
   const animateScroll = (carouselRef: React.RefObject<HTMLDivElement>) => {
     let scrollAmount = 0;
@@ -73,20 +63,17 @@ export default function OrganizationUsingMonday() {
       const carousel = carouselRef.current;
       if (!carousel) return;
 
-      // Réinitialiser le défilement une fois qu'on a atteint la fin
       if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
         scrollAmount = 0;
         carousel.scrollTo({ left: 0, behavior: "auto" });
       } else {
         carousel.scrollTo({ left: scrollAmount, behavior: "auto" });
-        scrollAmount += 1; // Ajustez pour contrôler la vitesse de défilement
+        scrollAmount += 1;
       }
 
-      // Utiliser requestAnimationFrame pour une animation fluide
       requestAnimationFrame(step);
     };
 
-    // Démarrer l'animation
     step();
   };
 
@@ -97,9 +84,10 @@ export default function OrganizationUsingMonday() {
 
   return (
     <div>
-      <div className="py-4">
-        <h2 className="text-center text-gray-800 text-3xl font-semibold mb-16">
-          Join over 152,000 leading organizations that use <br />{" "}
+      <div className="py-4 px-4 md:px-0">
+        <h2 className="text-center text-gray-800 text-2xl md:text-3xl font-semibold mb-8 md:mb-16">
+          Join over 152,000 leading organizations that use{" "}
+          <br className="hidden md:block" />{" "}
           <a
             href="https://try.monday.com/wme"
             className="text-blue-500"
@@ -109,7 +97,7 @@ export default function OrganizationUsingMonday() {
           </a>{" "}
           to run their work
         </h2>
-        {/* Carousel pour le format desktop */}
+
         <div className="hidden md:block">
           {[duplicatedLogosLine1, duplicatedLogosLine2].map((logos, index) => (
             <div
@@ -137,50 +125,44 @@ export default function OrganizationUsingMonday() {
           ))}
         </div>
 
-        {/* Image pour le format mobile */}
         <div className="md:hidden flex items-center justify-center">
           <Image
             src="/images/logos/all-logos.png"
             alt="Mobile Image"
             width={500}
             height={100}
+            className="w-full max-w-[500px]"
           />
         </div>
       </div>
 
-      <div className="flex flex-col items-center bg-gray-100 py-16">
-        <h2 className="text-3xl font-semibold text-center mb-8">
-          Monday.com can be used as a work OS <br /> for almost any business.
+      <div className="flex flex-col items-center bg-gray-100 py-8 md:py-16 px-4 md:px-0">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8">
+          Monday.com can be used as a work OS <br className="hidden md:block" /> for almost any business.
         </h2>
-        <YouTubeVideo videoId="vQ2dfgeSJHU" />
-        <p className="text-center text-lg py-8">
-          Monday.com is a work operating system(Work OS). With their platform,{" "}
-          <br /> you can manage all types of workflow and processes in one
-          place.
+        <div className="w-full max-w-4xl px-4 md:px-0">
+          <YouTubeVideo videoId="vQ2dfgeSJHU" />
+        </div>
+        <p className="text-center text-base md:text-lg py-8 px-4 md:px-0">
+          Monday.com is a work operating system (Work OS).{" "}
+          <br className="hidden md:block" />
+          You can manage all types of workflow and processes in one place.
         </p>
-        <div className="flex">
-          <div className="mr-4">
-            <a
-              href="https://try.monday.com/wme"
-              target="_blank"
-              className="bg-[#5949d5] text-white py-4 px-4 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
-            >
-              <p className="font-bold pr-2 text-sm md:text-md">
-                Start Free Trial
-              </p>
-            </a>
-          </div>
-          <div className="ml-4">
-            <a
-              href="/contact-us"
-              className="bg-[#f4d752] text-black py-4 px-4 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
-            >
-              <p className="font-bold pr-2 text-sm md:text-md">
-                Request a demo
-              </p>
-            </a>
-          </div>
-        </div>{" "}
+        <div className="flex flex-col md:flex-row gap-4 w-full justify-center px-4 md:px-0">
+          <a
+            href="https://try.monday.com/wme"
+            target="_blank"
+            className="bg-[#5949d5] text-white py-3 md:py-4 px-4 md:px-6 rounded-xl flex items-center justify-center text-sm md:text-base"
+          >
+            <p className="font-bold">Start Free Trial</p>
+          </a>
+          <a
+            href="/contact-us"
+            className="bg-[#f4d752] text-black py-3 md:py-4 px-4 md:px-6 rounded-xl flex items-center justify-center text-sm md:text-base"
+          >
+            <p className="font-bold">Request a demo</p>
+          </a>
+        </div>
       </div>
     </div>
   );

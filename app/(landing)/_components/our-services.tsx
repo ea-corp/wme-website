@@ -22,7 +22,7 @@ const services = [
       "Setting up Monday apps or 3rd Party Integration",
       "Set dashboards for reporting",
       "Data Migration to Monday.com from other platforms",
-      "Custom Development using Zapier/Make.com or by leveraging Monday’s API",
+      "Custom Development using Zapier/Make.com or by leveraging Monday's API",
     ],
   },
   {
@@ -49,9 +49,9 @@ const services = [
 
 export default function OurServices() {
   return (
-    <div className="bg-gray-100 flex flex-col items-center py-16">
-      <h2 className="font-semibold text-3xl">Our Services</h2>
-      <p className="py-8 px-8 md:px-8 lg:px-8 text-justify">
+    <div className="bg-gray-100 flex flex-col items-center py-8 md:py-16">
+      <h2 className="font-semibold text-2xl md:text-3xl text-center px-4">Our Services</h2>
+      <p className="py-6 md:py-8 px-4 md:px-8 lg:px-8 text-sm md:text-base text-justify">
         Because Monday.com is very easy to use some of us tend to jump into it
         too quickly and later on face limitations that cannot be solved and need
         to start all over again. We believe that your time is precious and tech
@@ -62,22 +62,22 @@ export default function OurServices() {
         experience, you will be able to focus on your business while we take
         care of building the perfect Monday.com solution for you.
       </p>
-      <div className="max-w-7xl mx-auto px-5 py-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="w-full max-w-7xl px-4 md:px-5 py-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+              className="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
             >
               <div className="flex justify-center">
-                <service.icon size={64} className="text-[#f4d752]" />
+                <service.icon size={48} className="text-[#f4d752] md:w-16 md:h-16" />
               </div>
-              <h3 className="text-lg text-center font-semibold mt-5 mb-3">
+              <h3 className="text-lg md:text-xl text-center font-semibold mt-4 mb-3">
                 {service.title}
               </h3>
-              <ul className="text-sm md:text-justify">
+              <ul className="text-sm md:text-base space-y-2">
                 {service.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="mb-2 ml-2 list-disc">
+                  <li key={itemIndex} className="ml-4 list-disc">
                     {item}
                   </li>
                 ))}
@@ -88,7 +88,7 @@ export default function OurServices() {
         <div className="text-center mt-8 pt-8">
           <a
             href="/remote-services"
-            className="bg-[#f4d752] text-black font-semibold py-4 px-4 rounded-lg transition-colors duration-300"
+            className="bg-[#f4d752] text-black font-semibold py-3 px-6 md:py-4 md:px-8 rounded-lg transition-colors duration-300 inline-block text-sm md:text-base"
           >
             See our packages
           </a>

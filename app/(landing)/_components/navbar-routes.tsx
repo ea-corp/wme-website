@@ -6,49 +6,9 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
 
 export const NavbarRoutes = () => {
   const pathname = usePathname();
@@ -58,49 +18,47 @@ export const NavbarRoutes = () => {
     pathname.startsWith("/on-site-implementation-packages/usd");
 
   return (
-    <div className="flex flex-wrap justify-between items-center w-full  px-8 py-4">
-      <a href="/">
+    <div className="flex flex-wrap justify-between items-center w-full px-4 md:px-8 py-2 md:py-4">
+      <Link href="/" className="flex-shrink-0">
         <Logo />
-      </a>
+      </Link>
 
-      <div className="hidden md:flex justify-center flex-grow font-medium">
+      <div className="hidden md:flex justify-center flex-grow font-medium space-x-2 lg:space-x-4">
         <Link href="/">
           <p
-            className={`px-4 py-2 ${
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
               pathname === "/"
                 ? "text-[#5949d5] font-semibold"
-                : "text-gray-700"
+                : "text-gray-700 hover:text-[#5949d5]"
             }`}
           >
             Home
           </p>
         </Link>
-        <NavigationMenu delayDuration={100000000} >
+        <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-gray-700 text-md">
+              <NavigationMenuTrigger className="text-gray-700 text-sm lg:text-base hover:text-[#5949d5]">
                 Services
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-4 lg:grid-cols-[.75fr_1fr]">
-                  <div className="flex flex-col items-center justify-center w-full">
-                    <div className="flex w-full">
-                      <a
-                        href="/remote-services"
-                        className="flex-1 py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
-                      >
-                        Remote implementation
-                      </a>
-                    </div>
-                    <div className="flex w-full">
-                      <a
-                        href="/on-site-implementation-packages"
-                        className="flex-1 py-2 px-2 w-[180px] text-sm rounded-lg hover:bg-gray-100"
-                      >
-                        On-site consulting
-                      </a>
-                    </div>
-                  </div>
+                <ul className="grid gap-3 p-4 w-[200px]">
+                  <li>
+                    <Link
+                      href="/remote-services"
+                      className="block py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
+                    >
+                      Remote implementation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/on-site-implementation-packages"
+                      className="block py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
+                    >
+                      On-site consulting
+                    </Link>
+                  </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -108,52 +66,32 @@ export const NavbarRoutes = () => {
         </NavigationMenu>
         <Link href="/stories-worth-telling">
           <p
-            className={`px-4 py-2 ${
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
               pathname === "/stories-worth-telling"
                 ? "text-[#5949d5] font-semibold"
-                : "text-gray-700"
+                : "text-gray-700 hover:text-[#5949d5]"
             }`}
           >
             Stories worth telling
           </p>
         </Link>
-        <NavigationMenu delayDuration={100000000} >
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-gray-700 text-md">
-                About us
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid gap-3 p-4 lg:grid-cols-[.75fr_1fr]">
-                  <div className="flex flex-col items-center justify-center w-full">
-                    <div className="flex w-full">
-                      <a
-                        href="/our-team"
-                        className="flex-1 py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
-                      >
-                        Our Team
-                      </a>
-                    </div>
-                    <div className="flex w-full">
-                      <a
-                        href="/blog"
-                        className="flex-1 py-2 px-2 w-[180px] text-sm rounded-lg hover:bg-gray-100"
-                      >
-                        Our Blog
-                      </a>
-                    </div>
-                  </div>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+        <Link href="/blog">
+          <p
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
+              pathname === "/blog"
+                ? "text-[#5949d5] font-semibold"
+                : "text-gray-700 hover:text-[#5949d5]"
+            }`}
+          >
+            Blog
+          </p>
+        </Link>
         <Link href="/portfolio-wme">
           <p
-            className={`px-4 py-2 ${
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
               pathname === "/portfolio-wme"
                 ? "text-[#5949d5] font-semibold"
-                : "text-gray-700"
+                : "text-gray-700 hover:text-[#5949d5]"
             }`}
           >
             Portfolio
@@ -161,41 +99,39 @@ export const NavbarRoutes = () => {
         </Link>
         <Link href="/apps">
           <p
-            className={`px-4 py-2 ${
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
               pathname === "/apps"
                 ? "text-[#5949d5] font-semibold"
-                : "text-gray-700"
+                : "text-gray-700 hover:text-[#5949d5]"
             }`}
           >
             Apps
           </p>
         </Link>
       </div>
-      <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4 mr-6 md:mt-0">
+
+      <div className="flex items-center space-x-2 lg:space-x-4">
         <Link
           href="/contact-us"
-          className="hidden md:flex bg-[#f4d752] text-black py-2 sm:py-4 px-4 sm:px-6 rounded-xl justify-center items-center"
+          className="hidden md:flex bg-[#f4d752] text-black py-2 px-4 lg:px-6 rounded-xl items-center transition-colors duration-200 hover:bg-[#f4d752]/90"
         >
           <p className="font-bold text-sm">Contact us</p>
         </Link>
-      </div>
 
-      <div>
         <a
           href="https://try.monday.com/wme"
           target="_blank"
-          className="bg-[#5949d5] text-white py-2 px-4 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
+          className="bg-[#5949d5] text-white py-2 px-3 lg:px-4 rounded-xl flex items-center text-sm transition-colors duration-200 hover:bg-[#5949d5]/90"
         >
-          <p className="font-bold pr-2 text-sm md:text-md">Try</p>
-          {!isBlogPage && !isExcludedPath && ( // Affiche l'image du logo uniquement si ce n'est pas la page du blog ou les chemins exclus
+          <p className="font-bold pr-2 text-sm">Try</p>
+          {!isBlogPage && !isExcludedPath && (
             <img
               src="images/monday-com_only_logo.svg"
               alt="monday.com logo"
-              width={30}
-              className="pr-2"
+              className="w-6 h-6 lg:w-8 lg:h-8 pr-2"
             />
           )}
-          <p className="font-bold text-sm md:text-md">monday.com</p>
+          <p className="font-bold text-sm">monday.com</p>
         </a>
       </div>
     </div>
