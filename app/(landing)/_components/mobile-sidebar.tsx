@@ -34,7 +34,11 @@ const guestRoutes: Route[] = [
     href: "/stories-worth-telling",
   },
   {
-    label: "Blog",
+    label: "About us - Our Team",
+    href: "/our-team",
+  },
+  {
+    label: "About us - Our Blog",
     href: "/blog",
   },
   {
@@ -45,89 +49,76 @@ const guestRoutes: Route[] = [
     label: "Apps",
     href: "/apps",
   },
-  {
-    label: "Contact Us",
-    href: "/contact-us",
-  },
 ];
 
 interface SidebarItemProps {
   label: string;
   href: string;
-  onClick: () => void;
 }
 
-const SidebarItem = ({ label, href, onClick }: SidebarItemProps) => {
+const SidebarItem = ({ label, href }: SidebarItemProps) => {
   const pathname = usePathname();
+  const router = useRouter();
 
   const isActive =
     (pathname === "/" && href === "/") ||
     pathname === href ||
     pathname?.startsWith(`${href}/`);
 
+  const onClick = () => {
+    router.push(href);
+  };
+
   return (
     <button
       onClick={onClick}
       type="button"
       className={`
-        flex items-center w-full px-6 py-4 text-left transition-colors duration-200
-        ${isActive 
-          ? "text-[#5949d5] font-bold bg-gray-100" 
-          : "text-gray-700 hover:bg-gray-50"
-        }
+        flex items-center gap-x-2 w-full text-slate-500 font-bold text-sm font-[500] pl-6 transition-all hover:bg-slate-300/20
+        ${isActive && "text-[#5949d5] font-bold bg-sky-200/20 hover:bg-sky-200/20"}
       `}
     >
-      <span className="text-base">{label}</span>
+      <div
+        className={`
+        "ml-auto opacity-0 border-2 border-sky-400 h-full transition-all",
+        ${isActive && "opacity-100"}
+        `}
+      />{" "}
+      <div className="flex items-center gap-x-2 py-4">{label}</div>
     </button>
   );
 };
 
 export const MobileSidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
-
-  const handleNavigation = (href: string) => {
-    setIsOpen(false);
-    router.push(href);
-  };
-
   return (
-    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger className="md:hidden p-4 hover:opacity-75 transition">
-        <Menu className="h-6 w-6 text-gray-800" />
+    <Sheet>
+      <SheetTrigger className="md:hidden pr-4 hover:opacity-75 transition">
+        <Menu className="text-gray-800 font-bold" />
       </SheetTrigger>
-      <SheetContent side="right" className="p-0 w-[300px] bg-white">
-        <div className="flex flex-col h-full">
-          <div className="p-6 border-b">
-            <Link href="/" onClick={() => setIsOpen(false)}>
-              <Logo />
+      <SheetContent side="right" className="p-0 bg-white">
+        <div className="h-full border-r flex flex-col overflow-y-auto bg-gray-white shadow-sm">
+          <div className="p-6">
+           
+               <Link href="/"> <SheetClose>
+            <Logo />   </SheetClose>
             </Link>
+         
+           
           </div>
-          <div className="flex-1 overflow-y-auto">
-            {guestRoutes.map((route) => (
-              <SidebarItem
-                key={route.href}
-                label={route.label}
-                href={route.href}
-                onClick={() => handleNavigation(route.href)}
-              />
-            ))}
-          </div>
-          <div className="p-6 border-t">
-            <a
-              href="https://try.monday.com/wme"
-              target="_blank"
-              className="bg-[#5949d5] text-white py-3 px-4 rounded-xl flex items-center justify-center text-sm transition-colors duration-200 hover:bg-[#5949d5]/90"
-              onClick={() => setIsOpen(false)}
-            >
-              <span className="font-bold pr-2">Try</span>
-              <img
-                src="images/monday-com_only_logo.svg"
-                alt="monday.com logo"
-                className="w-6 h-6 pr-2"
-              />
-              <span className="font-bold">monday.com</span>
-            </a>
+
+          <div className="flex flex-col w-full">
+            {guestRoutes.map(
+              (
+                route,
+                index, // Ajout de la prop `key` ici
+              ) => (
+                <SheetClose key={index}>
+                  {" "}
+                  {/* Utilisation de `index` comme clé */}
+                  <SidebarItem label={route.label} href={route.href} />
+                </SheetClose>
+              ),
+            )}
           </div>
         </div>
       </SheetContent>

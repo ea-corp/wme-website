@@ -75,17 +75,37 @@ export const NavbarRoutes = () => {
             Stories worth telling
           </p>
         </Link>
-        <Link href="/blog">
-          <p
-            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
-              pathname === "/blog"
-                ? "text-[#5949d5] font-semibold"
-                : "text-gray-700 hover:text-[#5949d5]"
-            }`}
-          >
-            Blog
-          </p>
-        </Link>
+        <NavigationMenu delayDuration={100000000} >
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-gray-700 text-md">
+                About us
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-4 lg:grid-cols-[.75fr_1fr]">
+                  <div className="flex flex-col items-center justify-center w-full">
+                    <div className="flex w-full">
+                      <a
+                        href="/our-team"
+                        className="flex-1 py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
+                      >
+                        Our Team
+                      </a>
+                    </div>
+                    <div className="flex w-full">
+                      <a
+                        href="/blog"
+                        className="flex-1 py-2 px-2 w-[180px] text-sm rounded-lg hover:bg-gray-100"
+                      >
+                        Our Blog
+                      </a>
+                    </div>
+                  </div>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
         <Link href="/portfolio-wme">
           <p
             className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
