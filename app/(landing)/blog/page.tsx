@@ -41,7 +41,7 @@ export default async function Page() {
                 post.properties.Title.title &&
                 post.properties.Title.title[0] &&
                 post.properties.Title.title[0].text &&
-                post.properties.Title.title[0].text.content !== "Bridging Business and Technology: A Pivotal Week in Bangkok"
+                post.properties.Title.title[0].text.content !== "Bridging Business and Technology: A Pivotal Week in Bangkok" || post.properties.Title.title[0].text.content != "Transforming Real Estate Management in Phuket: Workflow Made Easy’s On-Site Consultation with Empire Estates"
               );
             })
             .slice(0, 20)
