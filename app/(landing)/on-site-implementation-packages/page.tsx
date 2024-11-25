@@ -25,7 +25,12 @@ async function getPosts() {
       ) ||
         post.properties.Title.title[0].text.content.includes(
           "A Week of Transformative Collaboration in Oranmore",
-        ))
+        )
+        || 
+        post.properties.Title.title[0].text.content.includes(
+          "Transforming Real Estate Management in Phuket: Workflow Made Easy’s On-Site Consultation with Empire Estates"
+        )
+      )
     );
   });
   return filteredPosts;

@@ -38,7 +38,6 @@ export default async function Page() {
     // Liste des titres à exclure
     const excludedTitles = [
       "Bridging Business and Technology: A Pivotal Week in Bangkok",
-      "Transforming Real Estate Management in Phuket: Workflow Made Easy’s On-Site Consultation with Empire Estates"
     ];
 
     const title =
