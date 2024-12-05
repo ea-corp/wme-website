@@ -2,7 +2,7 @@ import React from "react";
 
 const FulfillmentPolicy = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 py-24">
+    <div className="max-w-4xl mx-auto p-6 py-12">
       <h1 className="text-2xl font-bold mb-4 text-center">Fulfillment Policy</h1>
       <p className="mb-6">
         Workflow Made Easy is committed to delivering high-quality consultancy

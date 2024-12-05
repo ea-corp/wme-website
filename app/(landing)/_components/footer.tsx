@@ -84,8 +84,11 @@ export default function Footer() {
                 Apps
               </a>
             </li>
-            
-            
+            <li>
+              <a href="/fullfillment-policy" className="hover:text-[#f4d752]">
+                Fullfillment Policy
+              </a>
+            </li>
             <li>
               <a href="/contact-us" className="hover:text-[#f4d752]">
                 Contact Us
