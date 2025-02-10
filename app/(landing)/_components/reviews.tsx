@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 type ReviewCardProps = {
   projectName: string;
@@ -14,17 +15,58 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({
   reviewText,
   sourceLogo,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const textRef = useRef<HTMLQuoteElement>(null);
+  const [isTruncated, setIsTruncated] = useState(false);
+
   const ratingStars = Array.from({ length: 5 }, (_, index) => (
     <span key={index}>{index < rating ? "★" : "☆"}</span>
   ));
 
+  useEffect(() => {
+    if (textRef.current) {
+      const textHeight = textRef.current.scrollHeight;
+      const maxHeight = 150; // Définissez la hauteur maximale avant la troncature
+      if (textHeight > maxHeight) {
+        setIsTruncated(true);
+      } else {
+        setIsTruncated(false);
+      }
+    }
+  }, [reviewText]); // Ajoutez reviewText comme dépendance pour réévaluer si le texte change
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div className="bg-gray-100 p-4 rounded-lg shadow space-y-2 overflow-x-hidden">
-      <div className="text-sm font-semibold">{projectName} </div>
+      <div className="text-sm font-semibold">{projectName}</div>
       <div className="text-xs text-green-500">
-        {ratingStars} <span className="text-gray-800">5.O</span>
+        {ratingStars} <span className="text-gray-800">5.0</span>
       </div>
-      <blockquote className="text-sm italic">“{reviewText}”</blockquote>
+      <blockquote
+        className={`text-sm italic ${isExpanded ? "" : "max-h-[150px] overflow-hidden"}`}
+        ref={textRef}
+      >
+        “{reviewText}”
+      </blockquote>
+      {isTruncated && !isExpanded && (
+        <button
+          className="text-blue-500 text-xs mt-2"
+          onClick={toggleExpand}
+        >
+          Show more
+        </button>
+      )}
+      {isTruncated && isExpanded && (
+        <button
+          className="text-blue-500 text-xs mt-2"
+          onClick={toggleExpand}
+        >
+          Show less
+        </button>
+      )}
       <div className="flex justify-end">
         <Image
           src={sourceLogo}

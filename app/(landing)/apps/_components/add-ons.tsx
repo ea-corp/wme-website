@@ -89,7 +89,7 @@ export default function CustomizedAccordions() {
                 This app lets you define a text column that will be
                 automatically filled with an incremented number using a
                 customized format. You can also configure the number of digits
-                and starting number.​
+                and starting number.
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
@@ -274,17 +274,17 @@ export default function CustomizedAccordions() {
               className="h-16"
             >
               <Image
-                src="/images/apps/opsign.webp"
-                alt="OP.Sign logo"
-                width={35}
-                height={35}
+                src="/images/apps/getsign.png"
+                alt="GetSign logo"
+                width={50}
+                height={50}
               />
-              <Typography>OP.Sign</Typography>
+              <Typography>GetSign</Typography>
               {expanded.includes("panel6") ? <ChevronUp /> : <ChevronDown />}
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Op Sign is a digital signature tool that enables the secure and
+                GetSign is a digital signature tool that enables the secure and
                 efficient signing of documents online. Integrating Op Sign with
                 Monday.com allows users to seamlessly send documents from
                 Monday.com boards for e-signature, track the signing process,
@@ -295,7 +295,7 @@ export default function CustomizedAccordions() {
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
-                  href="https://www.op.today/"
+                  href="https://getsign.io/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >
@@ -491,7 +491,7 @@ export default function CustomizedAccordions() {
                 Make.com integrates with Monday.com to automate tasks and
                 workflows, enabling seamless data synchronization and real-time
                 updates between Monday.com and various apps and services. 1,000
-                free Operations per month.​
+                free Operations per month.
               </Typography>
               <div className="w-full flex items-center justify-center">
                 <a
@@ -534,6 +534,41 @@ export default function CustomizedAccordions() {
               <div className="w-full flex items-center justify-center">
                 <a
                   href="https://get.todoist.io/1ydhizchxmab"
+                  className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
+                  target="_blank"
+                >
+                  Visit website
+                </a>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Accordion
+            expanded={isExpanded("panel14")}
+            onChange={handleChange("panel14")}
+          >
+            <AccordionSummary
+              aria-controls="panel6d-content"
+              id="panel6d-header"
+              className="h-16"
+            >
+              <Image
+                src="/images/apps/vlookup.png"
+                alt="Vlookup logo"
+                width={35}
+                height={35}
+              />
+              <Typography>VLOOKUP Auto-link</Typography>
+              {expanded.includes("panel14") ? <ChevronUp /> : <ChevronDown />}
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                VLOOKUP Auto-Link is an advanced alternative to monday.com's connected boards. It allows you to automatically link multiple boards and match items while maintaining monday's native reporting, automation, and permissions. With its one-to-many and many-to-one Auto-link builder, VLOOKUP ensures data alignment across boards and reduces human error. Simply install the app, integrate it, and start mapping columns to auto-link.
+              </Typography>
+              <div className="w-full flex items-center justify-center">
+                <a
+                  href="https://jetpackapps.co/monday-com-vlookup-auto-links-connect-boards-mirror/"
                   className="bg-yellow-400 px-8 py-2 rounded-lg my-2"
                   target="_blank"
                 >

@@ -58,8 +58,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         ))
       )}
     </CarouselContent>
-    <CarouselPrevious className="ml-16 md:ml-28">Previous</CarouselPrevious>
-    <CarouselNext className="mr-28 md:mr-20">Next</CarouselNext>
+    <CarouselPrevious className="ml-16 md:ml-28 bg-yellow-400">Previous</CarouselPrevious>
+    <CarouselNext className="mr-28 md:mr-20 bg-yellow-400">Next</CarouselNext>
   </Carousel>
 </DialogContent>
       </Dialog>

@@ -75,6 +75,43 @@ export default function ServicePage() {
   ];
 
   const reviews = [
+    // MONDAY.COM
+    {
+      projectName: "Consulting & Strategy, Integrations, Data Services, Training & Enablement, Platform Configuration, Workflow Optimization",
+      rating: 5,
+      reviewText:
+        "Workflow Made Easy Unlocked Our Workflow's Full Potential I wanted to take a moment to express my profound gratitude to Eddy, Kessi, and Chan from Workflow Made Easy for their outstanding support in transforming our real estate management system here in Phuket. Facing an urgent need for a robust and efficient solution, we reached out to them for assistance. To our amazement, they flew to our office on extremely short notice, ready to tackle our challenges head-on. Throughout the entire week, they provided hands-on guidance as we had been using Monday.com but not to its full potential. Their expertise was invaluable—they helped us create customized workflows that perfectly fit our needs. They patiently walked us through advanced features, ensuring we fully understood how to leverage the platform to optimize our operations. The on-site implementation was more than just enhancing our system; it was an educational experience that empowered our team. Their dedication and personalized approach not only met but exceeded our expectations. I highly recommend Workflow Made Easy to any organization looking to maximize their workflow management. Their commitment to client success and ability to deliver under tight deadlines is truly exceptional. — Silvain",
+      sourceLogo: "/images/monday-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy",
+      rating: 5,
+      reviewText:
+        "I can't say enough great things about Eddy and the team at Workflow Made Easy. They took the time to truly understand our tutoring center’s needs and thoughtfully outlined the requirements for our project. Their diligence and expertise in creating a customized solution were outstanding. The project was no small task — it involved integrating Monday.com with multiple platforms like Make.com, Excel sheets, and more. They rebuilt our entire operational system from the ground up, including features for monitoring payments, tracking hours purchased, scheduling, and so much more. This wasn't my first project with them, and it certainly won't be my last. Their professionalism, technical expertise, and ability to streamline complex processes have been invaluable to our business. If you're looking for a team that delivers exceptional results, Workflow Made Easy is the way to go.",
+      sourceLogo: "/images/monday-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy...",
+      rating: 5,
+      reviewText:
+        "Everything was clear and easy to work with. All the workflow and CRM issues I was having have been addressed after only a few meetings. The communication from the team was likewise really good. I highly recommend Eddy and his team to anyone and everyone.",
+      sourceLogo: "/images/monday-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy",
+      rating: 5,
+      reviewText:
+        "Travailler avec Eddy a été un véritable atout pour notre équipe. Grâce à sa maîtrise de l'outil Monday, il a révolutionné notre gestion de projet en adaptant la plateforme à nos besoins. Son expertise a permis d'optimiser notre organisation et d'améliorer notre productivité. Eddy sait être à l'écoute et est toujours prêt à partager des conseils pour tirer le meilleur parti de cet outil. Je le recommande sans hésiter pour toute équipe souhaitant structurer efficacement ses projets.",
+      sourceLogo: "/images/monday-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy",
+      rating: 5,
+      reviewText:
+        "We really liked working with Eddy on our project. He was very efficiant, understood our needs and resumed his work with videos which helped us a lot. Our business is in french and he spoke very well, he was able to communicate perfectly with our team. Eddy was very easy to reach either by video call or email, even with the timezone differences. We recommend Eddy, we are very happy with the work he did for our business.",
+      sourceLogo: "/images/monday-logo.png",
+    },
+    // UPWORK
     {
       projectName: "Project: monday.com Work Flow optimization",
       rating: 5,
@@ -239,8 +276,8 @@ export default function ServicePage() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious aria-label="Previous review" />
-          <CarouselNext aria-label="Next review" />
+          <CarouselPrevious aria-label="Previous review" className="-left-20" />
+          <CarouselNext aria-label="Next review" className="-right-20" />
         </Carousel>
       </div>
 
