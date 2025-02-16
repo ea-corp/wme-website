@@ -143,8 +143,7 @@ export default async function ServicePage() {
       projectName: "Project: monday.com setup",
       rating: 5,
       reviewText:
-        "I hired Eddy to help me out with setting up Monday.com. He was super helpful, and a really great hire. I highly recommend him. Eddy is exceptionally well informed about Monday.com, I was impressed by how up-to-date his knowledge is. He was even able to tell me what features are coming soon in updates. He was easy to work with, patient, and a very good communicator. He answered all my questions and showed me some things I didn't even know I needed to know. I'm very glad that I hired him, I feel that our brief time together saved me hours of trying to figure things out on my own. I do look forward to working with him again, as my Monday.com needs grow.",
-      sourceLogo: "/images/upwork-logo.png",
+      "I hired Eddy to set up Monday.com. He was super helpful, a great hire, and I highly recommend him. Eddy is very knowledgeable about Monday.com and up-to-date on features. He was easy to work with, patient, and a great communicator. He answered all my questions and showed me things I didn’t know I needed. I’m glad I hired him, as it saved me hours. I look forward to working with him again.",      sourceLogo: "/images/upwork-logo.png",
     },
     {
       projectName: "Project: monday.com expert needed for growing agency",
