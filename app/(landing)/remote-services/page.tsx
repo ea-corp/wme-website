@@ -1,9 +1,10 @@
+"use client";
+import Image from "next/image";
+import React, { useState, useRef, useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Check, Package, ScreenShare } from "lucide-react";
 import Faq from "./_components/faq";
-import { Metadata } from "next";
 import Link from "next/link";
-
 import {
   Carousel,
   CarouselContent,
@@ -11,13 +12,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { ReviewCard } from "../_components/reviews";
-
-export const metadata: Metadata = {
-  title: "Services - Workflow Made Easy",
-  description:
-    "Reach out to us today and schedule your complimentary discovery call. We'll delve into your business needs, pain points, and objectives, exploring how we can maximize your use of monday.com!",
-};
 
 export default function ServicePage() {
   const packages = [
@@ -83,37 +77,38 @@ export default function ServicePage() {
     {
       projectName: "Consulting & Strategy, Integrations, Data Services, Training & Enablement, Platform Configuration, Workflow Optimization",
       rating: 5,
-      reviewText:
-        "Workflow Made Easy Unlocked Our Workflow's Full Potential I wanted to take a moment to express my profound gratitude to Eddy, Kessi, and Chan from Workflow Made Easy for their outstanding support in transforming our real estate management system here in Phuket. Facing an urgent need for a robust and efficient solution, we reached out to them for assistance. To our amazement, they flew to our office on extremely short notice, ready to tackle our challenges head-on. Throughout the entire week, they provided hands-on guidance as we had been using Monday.com but not to its full potential. Their expertise was invaluable—they helped us create customized workflows that perfectly fit our needs. They patiently walked us through advanced features, ensuring we fully understood how to leverage the platform to optimize our operations. The on-site implementation was more than just enhancing our system; it was an educational experience that empowered our team. Their dedication and personalized approach not only met but exceeded our expectations. I highly recommend Workflow Made Easy to any organization looking to maximize their workflow management. Their commitment to client success and ability to deliver under tight deadlines is truly exceptional. — Silvain",
-      sourceLogo: "/images/monday-logo.png",
+      reviewText: "Workflow Made Easy transformed our real estate management system in Phuket. Eddy, Kessi, and Chan provided outstanding support, flying in on short notice to help us maximize Monday.com. Their expertise in customized workflows and hands-on guidance was invaluable. I highly recommend Workflow Made Easy for their dedication, client success, and ability to deliver under tight deadlines.",
+      sourceLogo: "/images/monday-experts-logo.png",
     },
     {
       projectName: "Consulting & Strategy",
       rating: 5,
-      reviewText:
-        "I can't say enough great things about Eddy and the team at Workflow Made Easy. They took the time to truly understand our tutoring center’s needs and thoughtfully outlined the requirements for our project. Their diligence and expertise in creating a customized solution were outstanding. The project was no small task — it involved integrating Monday.com with multiple platforms like Make.com, Excel sheets, and more. They rebuilt our entire operational system from the ground up, including features for monitoring payments, tracking hours purchased, scheduling, and so much more. This wasn't my first project with them, and it certainly won't be my last. Their professionalism, technical expertise, and ability to streamline complex processes have been invaluable to our business. If you're looking for a team that delivers exceptional results, Workflow Made Easy is the way to go.",
-      sourceLogo: "/images/monday-logo.png",
+      reviewText: "Excellent accompaniment.",
+      sourceLogo: "/images/monday-experts-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy",
+      rating: 5,
+      reviewText: "Eddy and the team took the time to truly understand our tutoring center’s needs and delivered an outstanding customized solution. They integrated Monday.com with platforms like Make.com and Excel, rebuilding our operations from the ground up. Their professionalism, technical expertise, and ability to streamline processes have been invaluable. If you need a results-driven team, Workflow Made Easy is the way to go.",
+      sourceLogo: "/images/monday-experts-logo.png",
     },
     {
       projectName: "Consulting & Strategy...",
       rating: 5,
-      reviewText:
-        "Everything was clear and easy to work with. All the workflow and CRM issues I was having have been addressed after only a few meetings. The communication from the team was likewise really good. I highly recommend Eddy and his team to anyone and everyone.",
-      sourceLogo: "/images/monday-logo.png",
+      reviewText: "Everything was clear and easy to work with. The team quickly resolved my workflow and CRM issues with great communication. I highly recommend Eddy and his team.",
+      sourceLogo: "/images/monday-experts-logo.png",
     },
     {
       projectName: "Consulting & Strategy",
       rating: 5,
-      reviewText:
-        "Travailler avec Eddy a été un véritable atout pour notre équipe. Grâce à sa maîtrise de l'outil Monday, il a révolutionné notre gestion de projet en adaptant la plateforme à nos besoins. Son expertise a permis d'optimiser notre organisation et d'améliorer notre productivité. Eddy sait être à l'écoute et est toujours prêt à partager des conseils pour tirer le meilleur parti de cet outil. Je le recommande sans hésiter pour toute équipe souhaitant structurer efficacement ses projets.",
-      sourceLogo: "/images/monday-logo.png",
+      reviewText: "Travailler avec Eddy a été un véritable atout pour notre équipe. Grâce à son expertise sur Monday, il a optimisé notre gestion de projet et amélioré notre productivité. Toujours à l'écoute, il partage des conseils précieux. Je le recommande sans hésiter !",
+      sourceLogo: "/images/monday-experts-logo.png",
     },
     {
       projectName: "Consulting & Strategy",
       rating: 5,
-      reviewText:
-        "We really liked working with Eddy on our project. He was very efficiant, understood our needs and resumed his work with videos which helped us a lot. Our business is in french and he spoke very well, he was able to communicate perfectly with our team. Eddy was very easy to reach either by video call or email, even with the timezone differences. We recommend Eddy, we are very happy with the work he did for our business.",
-      sourceLogo: "/images/monday-logo.png",
+      reviewText: " Eddy was very efficient, understood our needs, and provided video summaries that helped us a lot. Despite timezone differences, he was easy to reach and communicated perfectly with our team in French. We highly recommend him and are very happy with his work.",
+      sourceLogo: "/images/monday-experts-logo.png",
     },
     // UPWORK
     {
@@ -266,11 +261,13 @@ export default function ServicePage() {
       <div className="flex items-center justify-center mt-16 mb-12">
         <Carousel className="w-10/12">
           <CarouselContent>
-            {reviews.map((review, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <ReviewCard {...review} />
-                </div>
+            {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, groupIndex) => (
+              <CarouselItem key={groupIndex} className="grid grid-cols-2 grid-rows-2 gap-4">
+                {reviews.slice(groupIndex * 4, groupIndex * 4 + 4).map((review, index) => (
+                  <div key={index} className="p-1 h-full">
+                    <ReviewCard {...review} />
+                  </div>
+                ))}
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -297,3 +294,85 @@ export default function ServicePage() {
     </div>
   );
 }
+
+type ReviewCardProps = {
+  projectName: string;
+  rating: number; // Assuming a scale of 0 to 5
+  reviewText: string;
+  sourceLogo: string; // URL to the image source
+};
+
+const ReviewCard: React.FC<ReviewCardProps> = ({
+  projectName,
+  rating,
+  reviewText,
+  sourceLogo,
+}) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const textRef = useRef<HTMLQuoteElement>(null);
+  const [isTruncated, setIsTruncated] = useState(false);
+
+  const ratingStars = Array.from({ length: 5 }, (_, index) => (
+    <span key={index} className={sourceLogo.includes("upwork") ? "text-green-500" : "text-yellow-400"}>
+      {index < rating ? "★" : "☆"}
+    </span>
+  ));
+
+  useEffect(() => {
+    if (textRef.current) {
+      const textHeight = textRef.current.scrollHeight;
+      const maxHeight = 150; // Définissez la hauteur maximale avant la troncature
+      if (textHeight > maxHeight) {
+        setIsTruncated(true);
+      } else {
+        setIsTruncated(false);
+      }
+    }
+  }, [reviewText]); // Ajoutez reviewText comme dépendance pour réévaluer si le texte change
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  return (
+    <div className="bg-gray-100 p-4 rounded-lg flex flex-col justify-between shadow space-y-2 overflow-x-hidden h-full">
+      <div className="space-y-2">
+        <div className="text-sm font-semibold">{projectName}</div>
+        <div className="text-xs text-green-500">
+          {ratingStars} <span className="text-gray-800">5.0</span>
+        </div>
+        <blockquote
+          className={`text-sm italic ${isExpanded ? "" : "max-h-[150px] overflow-hidden"}`}
+          ref={textRef}
+        >
+          “{reviewText}”
+        </blockquote>
+        {isTruncated && !isExpanded && (
+          <button
+            className="text-blue-500 text-xs mt-2"
+            onClick={toggleExpand}
+          >
+            Show more
+          </button>
+        )}
+        {isTruncated && isExpanded && (
+          <button
+            className="text-blue-500 text-xs mt-2"
+            onClick={toggleExpand}
+          >
+            Show less
+          </button>
+        )}
+      </div>
+
+      <div className="flex justify-end">
+        <Image
+          src={sourceLogo}
+          alt="Review source logo"
+          width={sourceLogo.includes("upwork") ? 100 : 180}
+          height={50}
+        />
+      </div>
+    </div>
+  );
+};

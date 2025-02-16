@@ -47,7 +47,7 @@ export default function PortfolioWME() {
                 value="marketing-agency"
                 className="whitespace-nowrap"
               >
-                Marketing Agency
+                Marketing
               </TabsTrigger>
               <TabsTrigger value="hr" className="whitespace-nowrap">
                 HR

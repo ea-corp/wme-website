@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div>
       <Dialog>
         <DialogTrigger asChild>
-          <Card className="w-[320px] md:w-[400px] p-4 cursor-pointer">
+          <Card className="w-[320px] md:w-[400px] h-full p-4 cursor-pointer">
             <img
               src={image}
               alt={title[0]}

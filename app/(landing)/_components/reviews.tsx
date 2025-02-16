@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import React, { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+
 
 type ReviewCardProps = {
   projectName: string;
@@ -20,7 +21,9 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({
   const [isTruncated, setIsTruncated] = useState(false);
 
   const ratingStars = Array.from({ length: 5 }, (_, index) => (
-    <span key={index}>{index < rating ? "★" : "☆"}</span>
+    <span key={index} className={sourceLogo.includes("upwork") ? "text-green-500" : "text-yellow-400"}>
+      {index < rating ? "★" : "☆"}
+    </span>
   ));
 
   useEffect(() => {
@@ -40,38 +43,41 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg shadow space-y-2 overflow-x-hidden">
-      <div className="text-sm font-semibold">{projectName}</div>
-      <div className="text-xs text-green-500">
-        {ratingStars} <span className="text-gray-800">5.0</span>
+    <div className="bg-gray-100 p-4 rounded-lg flex flex-col justify-between shadow space-y-2 overflow-x-hidden h-full">
+      <div className="space-y-2">
+        <div className="text-sm font-semibold">{projectName}</div>
+        <div className="text-xs text-green-500">
+          {ratingStars} <span className="text-gray-800">5.0</span>
+        </div>
+        <blockquote
+          className={`text-sm italic ${isExpanded ? "" : "max-h-[150px] overflow-hidden"}`}
+          ref={textRef}
+        >
+          “{reviewText}”
+        </blockquote>
+        {isTruncated && !isExpanded && (
+          <button
+            className="text-blue-500 text-xs mt-2"
+            onClick={toggleExpand}
+          >
+            Show more
+          </button>
+        )}
+        {isTruncated && isExpanded && (
+          <button
+            className="text-blue-500 text-xs mt-2"
+            onClick={toggleExpand}
+          >
+            Show less
+          </button>
+        )}
       </div>
-      <blockquote
-        className={`text-sm italic ${isExpanded ? "" : "max-h-[150px] overflow-hidden"}`}
-        ref={textRef}
-      >
-        “{reviewText}”
-      </blockquote>
-      {isTruncated && !isExpanded && (
-        <button
-          className="text-blue-500 text-xs mt-2"
-          onClick={toggleExpand}
-        >
-          Show more
-        </button>
-      )}
-      {isTruncated && isExpanded && (
-        <button
-          className="text-blue-500 text-xs mt-2"
-          onClick={toggleExpand}
-        >
-          Show less
-        </button>
-      )}
+
       <div className="flex justify-end">
         <Image
           src={sourceLogo}
           alt="Review source logo"
-          width={100}
+          width={sourceLogo.includes("upwork") ? 100 : 180}
           height={50}
         />
       </div>

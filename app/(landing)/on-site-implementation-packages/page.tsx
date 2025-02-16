@@ -2,6 +2,8 @@ import { Separator } from "@/components/ui/separator";
 import { getDatabase } from "@/lib/notion";
 import { Building, Check } from "lucide-react";
 import { Metadata } from "next";
+import { ReviewCard } from "../_components/reviews";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 export const metadata: Metadata = {
   title: "On-Site Consulting - Workflow Made Easy",
@@ -26,7 +28,7 @@ async function getPosts() {
         post.properties.Title.title[0].text.content.includes(
           "A Week of Transformative Collaboration in Oranmore",
         )
-        || 
+        ||
         post.properties.Title.title[0].text.content.includes(
           "Transforming Real Estate Management in Phuket: Workflow Made Easy’s On-Site Consultation with Empire Estates"
         )
@@ -83,6 +85,105 @@ export default async function ServicePage() {
         "Enablement of our $2,000 package containing apps & plugins that we have developed and that we will enable in your Monday account for a lifetime",
         "Creation of interactive user guides for the solution implemented.",
       ],
+    },
+  ];
+
+  const reviews = [
+    // MONDAY.COM
+    {
+      projectName: "Consulting & Strategy, Integrations, Data Services, Training & Enablement, Platform Configuration, Workflow Optimization",
+      rating: 5,
+      reviewText: "Workflow Made Easy transformed our real estate management system in Phuket. Eddy, Kessi, and Chan provided outstanding support, flying in on short notice to help us maximize Monday.com. Their expertise in customized workflows and hands-on guidance was invaluable. I highly recommend Workflow Made Easy for their dedication, client success, and ability to deliver under tight deadlines.",
+      sourceLogo: "/images/monday-experts-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy",
+      rating: 5,
+      reviewText: "Excellent accompaniment.",
+      sourceLogo: "/images/monday-experts-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy",
+      rating: 5,
+      reviewText: "Eddy and the team took the time to truly understand our tutoring center’s needs and delivered an outstanding customized solution. They integrated Monday.com with platforms like Make.com and Excel, rebuilding our operations from the ground up. Their professionalism, technical expertise, and ability to streamline processes have been invaluable. If you need a results-driven team, Workflow Made Easy is the way to go.",
+      sourceLogo: "/images/monday-experts-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy...",
+      rating: 5,
+      reviewText: "Everything was clear and easy to work with. The team quickly resolved my workflow and CRM issues with great communication. I highly recommend Eddy and his team.",
+      sourceLogo: "/images/monday-experts-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy",
+      rating: 5,
+      reviewText: "Travailler avec Eddy a été un véritable atout pour notre équipe. Grâce à son expertise sur Monday, il a optimisé notre gestion de projet et amélioré notre productivité. Toujours à l'écoute, il partage des conseils précieux. Je le recommande sans hésiter !",
+      sourceLogo: "/images/monday-experts-logo.png",
+    },
+    {
+      projectName: "Consulting & Strategy",
+      rating: 5,
+      reviewText: " Eddy was very efficient, understood our needs, and provided video summaries that helped us a lot. Despite timezone differences, he was easy to reach and communicated perfectly with our team in French. We highly recommend him and are very happy with his work.",
+      sourceLogo: "/images/monday-experts-logo.png",
+    },
+    // UPWORK
+    {
+      projectName: "Project: monday.com Work Flow optimization",
+      rating: 5,
+      reviewText:
+        "Eddy has been integral to the growth of our business! His insight, dedication, and support on Monday.com have made Eddy a key part of our team. I wouldn’t hesitate to recommend him for any process-related projects. A++",
+      sourceLogo: "/images/upwork-logo.png",
+    },
+    {
+      projectName: "Project: monday Scorecard",
+      rating: 5,
+      reviewText:
+        "Eddy is a Monday expert and an absolutely phenomenal partner to work with. I can't recommend him enough. He will execute any ideas/solutions you have beyond your best expectations.",
+      sourceLogo: "/images/upwork-logo.png",
+    },
+    {
+      projectName: "Project: monday.com setup",
+      rating: 5,
+      reviewText:
+        "Eddy is a real monday.com master. Knows what he's doing, responsive and delivers. What more could we have asked for...",
+      sourceLogo: "/images/upwork-logo.png",
+    },
+    {
+      projectName:
+        "Project: monday.com expert needed for fine tuning & training",
+      rating: 5,
+      reviewText:
+        "Eddy is great! He is extremely knowledgeable in the monday.com software. He always made the effort to fit me in last minute, and took the time to explain each process with me when I didn't understand something. He has helped me build complicated automations and gave me suggestions to improve my current boards. I will be hiring Eddy again in the future whenever I need further help to develop my monday boards. Thanks Eddy!",
+      sourceLogo: "/images/upwork-logo.png",
+    },
+    {
+      projectName: "Project: monday.com Training For Small Business",
+      rating: 5,
+      reviewText:
+        "Eddy did an amazing job at training our team on how to use Monday.com. He is extremely professional, knowledgeable and communicates really well. We will definitely be hiring him in the future for any further training. Thanks Eddy!",
+      sourceLogo: "/images/upwork-logo.png",
+    },
+    {
+      projectName:
+        "Project: Monday.com expert need to automate, optimize and integrate platform",
+      rating: 5,
+      reviewText:
+        "Eddy is a real monday.com master. Knows what he's doing, responsive and delivers. What more could we have asked for....",
+      sourceLogo: "/images/upwork-logo.png",
+    },
+    {
+      projectName: "Project: monday.com setup",
+      rating: 5,
+      reviewText:
+        "I hired Eddy to help me out with setting up Monday.com. He was super helpful, and a really great hire. I highly recommend him. Eddy is exceptionally well informed about Monday.com, I was impressed by how up-to-date his knowledge is. He was even able to tell me what features are coming soon in updates. He was easy to work with, patient, and a very good communicator. He answered all my questions and showed me some things I didn't even know I needed to know. I'm very glad that I hired him, I feel that our brief time together saved me hours of trying to figure things out on my own. I do look forward to working with him again, as my Monday.com needs grow.",
+      sourceLogo: "/images/upwork-logo.png",
+    },
+    {
+      projectName: "Project: monday.com expert needed for growing agency",
+      rating: 5,
+      reviewText:
+        "Excellent work and highly recommend Eddy! He was extremely knowledgeable about monday.com, very responsive with excellent communication. He understood our needs and quickly revamped our workflow. We will definitely continue an ongoing relationship with him. Thank you, Eddy - GREAT JOB!",
+      sourceLogo: "/images/upwork-logo.png",
     },
   ];
 
@@ -145,7 +246,7 @@ export default async function ServicePage() {
           </div>
         ))}
       </div>
-      
+
       <div className="mt-12 container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {posts.slice(0, 20).map((post: any, index: number) => (
           <a
@@ -198,8 +299,27 @@ export default async function ServicePage() {
             </div>
           </a>
         ))}
-                
+
       </div>
+
+      <div className="flex items-center justify-center mt-16 mb-12">
+        <Carousel className="w-10/12">
+          <CarouselContent>
+            {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, groupIndex) => (
+              <CarouselItem key={groupIndex} className="grid grid-cols-2 grid-rows-2 gap-4">
+                {reviews.slice(groupIndex * 4, groupIndex * 4 + 4).map((review, index) => (
+                  <div key={index} className="p-1 h-full">
+                    <ReviewCard {...review} />
+                  </div>
+                ))}
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious aria-label="Previous review" className="-left-20" />
+          <CarouselNext aria-label="Next review" className="-right-20" />
+        </Carousel>
+      </div>
+
       <div className=" pt-4 pb-8 md:py-12 flex items-center justify-center flex-col mt-16">
         <h3 className="text-xl md:text-2xl font-medium py-8 text-center mx-2">
           Pricing varies depending on the location and the duration  of
@@ -218,3 +338,5 @@ export default async function ServicePage() {
     </div>
   );
 }
+
+
