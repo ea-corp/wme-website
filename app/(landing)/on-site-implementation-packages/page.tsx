@@ -301,12 +301,11 @@ export default async function ServicePage() {
         ))}
 
       </div>
-
       <div className="flex items-center justify-center mt-16 mb-12">
         <Carousel className="w-10/12">
           <CarouselContent>
             {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, groupIndex) => (
-              <CarouselItem key={groupIndex} className="grid grid-cols-2 grid-rows-2 gap-4">
+              <CarouselItem key={groupIndex} className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2">
                 {reviews.slice(groupIndex * 4, groupIndex * 4 + 4).map((review, index) => (
                   <div key={index} className="p-1 h-full">
                     <ReviewCard {...review} />
