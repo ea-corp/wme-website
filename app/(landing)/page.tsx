@@ -7,14 +7,12 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-7xl px-4">
       <IncitationButton />
-      <div className="my-8">
+      <OurServices />
+      <div className="mb-8 mt-2">
         <OrganizationUsingMonday />
       </div>
       <div className="my-8">
         <MondayWorkOS />
-      </div>
-      <div>
-        <OurServices />
       </div>
     </div>
   );

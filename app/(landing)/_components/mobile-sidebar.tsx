@@ -74,7 +74,7 @@ const SidebarItem = ({ label, href }: SidebarItemProps) => {
       onClick={onClick}
       type="button"
       className={`
-        flex items-center gap-x-2 w-full text-slate-500 font-bold text-sm font-[500] pl-6 transition-all hover:bg-slate-300/20
+        flex items-center gap-x-2 w-full text-slate-500 font-bold text-sm pl-6 transition-all hover:bg-slate-300/20
         ${isActive && "text-[#5949d5] font-bold bg-sky-200/20 hover:bg-sky-200/20"}
       `}
     >

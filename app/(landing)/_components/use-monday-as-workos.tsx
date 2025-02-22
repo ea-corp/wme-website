@@ -59,7 +59,7 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
   title,
   description,
 }) => (
-  <div className="flex flex-col items-center justify-center p-4 text-center">
+  <div className="flex flex-col items-center justify-center p-4 text-center mb-12">
     <Image
       src={icon}
       alt={`${title} icon`}

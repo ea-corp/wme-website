@@ -84,7 +84,7 @@ export default function OrganizationUsingMonday() {
 
   return (
     <div>
-      <div className="py-4 px-4 md:px-0">
+      <div className="pb-4 px-4 md:px-0">
         <h2 className="text-center text-gray-800 text-2xl md:text-3xl font-semibold mb-8 md:mb-16">
           Join over 152,000 leading organizations that use{" "}
           <br className="hidden md:block" />{" "}
