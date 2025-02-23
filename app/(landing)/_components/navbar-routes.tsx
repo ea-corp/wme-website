@@ -63,6 +63,17 @@ export const NavbarRoutes = () => {
             Stories worth telling
           </p>
         </Link>
+        <Link href="/our-team">
+          <p
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${pathname === "/stories-worth-telling"
+              ? "text-[#5949d5] font-semibold"
+              : "text-gray-700 hover:text-[#5949d5]"
+              }`}
+          >
+            Our Team
+          </p>
+        </Link>
+        {/* 
         <NavigationMenu delayDuration={100000000} >
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -94,6 +105,8 @@ export const NavbarRoutes = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+            */}
+
         <Link href="/portfolio-wme">
           <p
             className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${pathname === "/portfolio-wme"
