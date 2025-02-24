@@ -65,7 +65,7 @@ export const NavbarRoutes = () => {
         </Link>
         <Link href="/our-team">
           <p
-            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${pathname === "/stories-worth-telling"
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${pathname === "/our-team"
               ? "text-[#5949d5] font-semibold"
               : "text-gray-700 hover:text-[#5949d5]"
               }`}

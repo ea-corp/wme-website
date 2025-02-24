@@ -11,8 +11,8 @@ export default function ServicePage() {
       </div>
       <div className="mx-auto max-w-7xl">
         <div className="py-12">
-          <p className="text-2xl font-semibold px-8 md:px-24">
-            WME Stories: Insights from Our Blog
+          <p className="text-3xl font-semibold px-8 md:px-24">
+            Our Recent Activities
           </p>
         </div>
         <div className="px-8 md:px-24">
@@ -22,9 +22,9 @@ export default function ServicePage() {
           <OrganizationUsingMonday />
         </div>
         <div className="flex items-center justify-center py-12">
-          <h2 className="text-2xl font-medium flex items-center px-4">
+          <h2 className="text-3xl font-medium flex items-center px-12">
             Below are some stories worth telling of client using Monday.com to
-            leverage their business
+            leverage their business and how WME can help you achieve the same results.
           </h2>
         </div>
         <div className="px-8 md:px-24 py-8">
