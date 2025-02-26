@@ -8,6 +8,7 @@ import MarketingAgencyPage from "./_components/marketing-agency";
 import HrPage from "./_components/hr";
 import TimeTrackingPage from "./_components/time-tracking";
 import { Metadata } from "next";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Portfolio - Workflow Made Easy",
@@ -105,6 +106,9 @@ export default function PortfolioWME() {
             </TabsContent>
           </div>
         </Tabs>
+        <Button>
+          Features
+        </Button>
       </div>
     </div>
   );
