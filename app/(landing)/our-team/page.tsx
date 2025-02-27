@@ -158,8 +158,8 @@ const WorldMap = () => {
   }, []);
 
   return (
-    <div className="py-8 md:py-2">
-      <h2 className="text-4xl font-bold py-20 bg-gray-100 text-gray-800 text-center">
+    <div className="">
+      <h2 className="text-4xl font-bold py-16 bg-gray-100 text-gray-800 text-center">
         Our Global Team
       </h2>
       

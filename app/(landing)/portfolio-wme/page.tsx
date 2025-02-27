@@ -8,6 +8,7 @@ import MarketingAgencyPage from "./_components/marketing-agency";
 import HrPage from "./_components/hr";
 import TimeTrackingPage from "./_components/time-tracking";
 import { Metadata } from "next";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Portfolio - Workflow Made Easy",
@@ -28,31 +29,52 @@ export default function PortfolioWME() {
         >
           <TabsList className="flex flex-wrap justify-center gap-4 md:flex-nowrap">
             <div className="bg-gray-100 md:bg-transparent text-center py-4 md:py-0">
-              <TabsTrigger value="logistic" className="whitespace-nowrap">
+              <TabsTrigger
+                value="logistic"
+                className="whitespace-nowrap flex-1 min-w-[120px]"
+              >
                 Logistic
               </TabsTrigger>
-              <TabsTrigger value="manufacturing" className="whitespace-nowrap">
+              <TabsTrigger
+                value="manufacturing"
+                className="whitespace-nowrap flex-1 min-w-[120px]"
+              >
                 Manufacturing
               </TabsTrigger>
-              <TabsTrigger value="restaurant" className="whitespace-nowrap">
+              <TabsTrigger
+                value="restaurant"
+                className="whitespace-nowrap flex-1 min-w-[120px]"
+              >
                 Restaurant
               </TabsTrigger>
-              <TabsTrigger value="real-estate" className="whitespace-nowrap">
+              <TabsTrigger
+                value="real-estate"
+                className="whitespace-nowrap flex-1 min-w-[120px]"
+              >
                 Real Estate
               </TabsTrigger>
-              <TabsTrigger value="construction" className="whitespace-nowrap">
+              <TabsTrigger
+                value="construction"
+                className="whitespace-nowrap flex-1 min-w-[120px]"
+              >
                 Construction
               </TabsTrigger>
               <TabsTrigger
                 value="marketing-agency"
-                className="whitespace-nowrap"
+                className="whitespace-nowrap flex-1 min-w-[120px]"
               >
                 Marketing
               </TabsTrigger>
-              <TabsTrigger value="hr" className="whitespace-nowrap">
-                HR
+              <TabsTrigger
+                value="hr"
+                className="whitespace-nowrap flex-1 min-w-[120px]"
+              >
+                Human Resources
               </TabsTrigger>
-              <TabsTrigger value="time-tracking" className="whitespace-nowrap">
+              <TabsTrigger
+                value="time-tracking"
+                className="whitespace-nowrap flex-1 min-w-[120px]"
+              >
                 Time tracking
               </TabsTrigger>
             </div>
@@ -84,6 +106,9 @@ export default function PortfolioWME() {
             </TabsContent>
           </div>
         </Tabs>
+        <Button>
+          Features
+        </Button>
       </div>
     </div>
   );

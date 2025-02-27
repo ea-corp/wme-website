@@ -46,7 +46,6 @@ export default async function Page() {
       post.properties.Title.title[0] &&
       post.properties.Title.title[0].text &&
       post.properties.Title.title[0].text.content;
-
     // Vérifier si le titre est dans la liste des titres à exclure
     return !excludedTitles.includes(title);
   })

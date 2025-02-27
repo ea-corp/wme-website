@@ -115,7 +115,8 @@ const mondayTools = [
   {
     id: "getsign",
     title: "GetSign",
-    description: "GetSign is a digital signature tool that enables the secure and efficient signing of documents online.",
+    description: 
+    " GetSign is a digital signature tool that enables the secure and efficient signing of documents online. Integrating GetSign with Monday.com allows users to seamlessly send documents from Monday.com boards for e-signature, track the signing process, and receive completed documents back into their Monday.com workflow. This integration streamlines the document signing process, enhancing efficiency and reducing the turnaround time for approvals and agreements within project management tasks.",
     imageSrc: "/images/apps/getsign.png",
     imageAlt: "GetSign logo",
     link: "https://getsign.io/",

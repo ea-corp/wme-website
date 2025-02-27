@@ -13,8 +13,8 @@ import {
 export const NavbarRoutes = () => {
   const pathname = usePathname();
   const isBlogPage = pathname.startsWith("/blog/");
-  const isExcludedPath = 
-    pathname.startsWith("/remote-services/usd") || 
+  const isExcludedPath =
+    pathname.startsWith("/remote-services/usd") ||
     pathname.startsWith("/on-site-implementation-packages/usd");
 
   return (
@@ -24,18 +24,7 @@ export const NavbarRoutes = () => {
       </Link>
 
       <div className="hidden md:flex justify-center flex-grow font-medium space-x-2 lg:space-x-4">
-        <Link href="/">
-          <p
-            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
-              pathname === "/"
-                ? "text-[#5949d5] font-semibold"
-                : "text-gray-700 hover:text-[#5949d5]"
-            }`}
-          >
-            Home
-          </p>
-        </Link>
-        <NavigationMenu>
+        <NavigationMenu delayDuration={100000000}>
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="text-gray-700 text-sm lg:text-base hover:text-[#5949d5]">
@@ -66,15 +55,25 @@ export const NavbarRoutes = () => {
         </NavigationMenu>
         <Link href="/stories-worth-telling">
           <p
-            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
-              pathname === "/stories-worth-telling"
-                ? "text-[#5949d5] font-semibold"
-                : "text-gray-700 hover:text-[#5949d5]"
-            }`}
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${pathname === "/stories-worth-telling"
+              ? "text-[#5949d5] font-semibold"
+              : "text-gray-700 hover:text-[#5949d5]"
+              }`}
           >
             Stories worth telling
           </p>
         </Link>
+        <Link href="/our-team">
+          <p
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${pathname === "/our-team"
+              ? "text-[#5949d5] font-semibold"
+              : "text-gray-700 hover:text-[#5949d5]"
+              }`}
+          >
+            Our Team
+          </p>
+        </Link>
+        {/* 
         <NavigationMenu delayDuration={100000000} >
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -106,24 +105,24 @@ export const NavbarRoutes = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+            */}
+
         <Link href="/portfolio-wme">
           <p
-            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
-              pathname === "/portfolio-wme"
-                ? "text-[#5949d5] font-semibold"
-                : "text-gray-700 hover:text-[#5949d5]"
-            }`}
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${pathname === "/portfolio-wme"
+              ? "text-[#5949d5] font-semibold"
+              : "text-gray-700 hover:text-[#5949d5]"
+              }`}
           >
             Portfolio
           </p>
         </Link>
         <Link href="/apps">
           <p
-            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${
-              pathname === "/apps"
-                ? "text-[#5949d5] font-semibold"
-                : "text-gray-700 hover:text-[#5949d5]"
-            }`}
+            className={`px-2 lg:px-4 py-2 text-sm lg:text-base transition-colors duration-200 ${pathname === "/apps"
+              ? "text-[#5949d5] font-semibold"
+              : "text-gray-700 hover:text-[#5949d5]"
+              }`}
           >
             Apps
           </p>

@@ -1,95 +1,102 @@
-"use client";
-import { YouTubeVideo } from "../_components/monday-os-video";
+import BlogPosts from "../_components/blog-posts"
+import OrganizationUsingMonday from "../_components/organization-using-monday"
+import ClientSuccessStory from "./components/client-success-story"
 
 export default function ServicePage() {
   return (
-    <div className="mx-auto max-w-7xl px-4">
+    <div className="px-4">
       <div className="bg-gray-100 text-center py-16">
-        <h2 className="text-4xl font-semibold">Stories worth telling</h2>
+        <p className="text-4xl font-semibold">Stories worth telling</p>
       </div>
-      <div className="flex items-center justify-center py-12">
-        <h2 className="text-2xl font-medium flex items-center px-4">
-          Below are some stories worth telling of client using Monday.com to
-          leverage their business
-        </h2>
-      </div>
-      <div className="px-8 md:px-24 py-8">
-        <div className="flex flex-col md:flex-row">
-          <div className="bg-blue-900 py-16 px-4 h-full">
-            <h3 className="font-semibold text-xl md:text-2xl text-white text-center">
-              <span className="text-center text-4xl">ZIPPO</span>
-              <br />
-              How <span className="text-blue-500">Zippo</span> Manufacturing
-              Company <br /> achieved{" "}
-              <span className="text-yellow-400">8x ROI</span> leveraging
-              monday.com <br />
-              Work OS for project management
-              <br />
-              <span className="text-sm font-light">
-                Chris Funk | Director of Product Innovation
-              </span>
-            </h3>
+      <div className="mx-auto max-w-7xl">
+        <div className="py-12">
+          <div className="relative">
+            <h2 className="text-3xl font-bold px-8 md:px-24 py-4 bg-[#283c99] text-primary-foreground inline-block">
+              Our Recent Activities
+            </h2>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-primary" />
           </div>
-          <YouTubeVideo videoId="WMtZ4gWf2uk" />
         </div>
-      </div>
-      <div className="px-8 md:px-24 py-8">
-        <div className="flex flex-col md:flex-row">
-          <YouTubeVideo videoId="8NKL_nqSHMo" />
-          <div className="bg-gray-200 py-16 px-4 md:px-16 h-full">
-            <h3 className="font-semibold text-xl md:text-2xl text-black text-center">
-              &ldquo;With monday.com, we&apos;re
-              <span className="text-blue-500">
-                30% <br />
-                more more efficient
-              </span>{" "}
-              at delivering <br /> hundreds of campaigns seen <br /> by millions
-              of customers.&rdquo;
-              <br />
-              <span className="text-sm font-light">
-                Tye Rapley-Hawkins | Head of Delivery at 02 Priority, Telefonica
-              </span>
-            </h3>
-          </div>
-        </div>{" "}
-      </div>
-      <div className="px-8 md:px-24 py-8">
-        <div className="flex flex-col md:flex-row">
-          <div className="bg-gray-200 py-12 px-4 md:px-20 h-full">
-            <h3 className="font-semibold text-xl md:text-2xl text-black text-center">
-              &ldquo;We were able to &nbsp;
-              <span className="text-blue-500">
-                customize <br /> the CRM on top of <br /> monday.com Work OS
-              </span>{" "}
-              to fit <br /> the needs of our day-to-day <br /> activites.&rdquo;
-              <br />
-              <span className="text-sm font-light">
-                Kyle Dorman | Operations Manager at Ray White
-              </span>
-            </h3>
-          </div>
-          <YouTubeVideo videoId="TX4kk4OlQfY" />
+        <div className="px-8 md:px-24">
+          <BlogPosts />
         </div>
-      </div>
-      <div className="px-8 md:px-24 py-8">
-        <div className="flex flex-col md:flex-row">
-          <YouTubeVideo videoId="j4Ttuceu388" />
+        <div className="py-12">
+          <div className="relative">
+            <h2 className="text-3xl font-bold px-8 md:px-24 py-4 bg-[#283c99] text-white inline-block">
+              Client Success Stories
+            </h2>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-black" />
+          </div>
+          <p className="text-2xl mt-12 px-8 md:px-24">
+            Below are some stories worth telling of clients using Monday.com to leverage their business and how WME can
+            help you achieve the same results.
+          </p>
+        </div>
 
-          <div className="bg-gray-200 py-12 px-4 md:px-20 h-full">
-            <h3 className="font-semibold text-xl md:text-2xl text-black text-center">
-              &ldquo;Now that we have <br /> monday.com Work OS as the <br />
-              <span className="text-red-500">
-                backbone of our organization
-              </span>{" "}
-              <br /> I feel I have an overview I can <br /> trust.&rdquo;
-              <br />
-              <span className="text-sm font-light">
-                Charlie MacGregor | Founder & CEO, The Student Hotel
-              </span>
-            </h3>
-          </div>
+        <div className="px-8 md:px-24 py-8 space-y-12">
+          {/* ZIPPO Success Story */}
+          <ClientSuccessStory
+            companyName="ZIPPO"
+            achievement="achieved"
+            achievementMetric="8x ROI"
+            description="By replacing spreadsheets with a dynamic Work OS, they saved three business days per month and cut six months off a major sales expansion."
+            contactPerson="Chris Funk"
+            contactTitle="Director of Product Innovation"
+            backgroundColor="bg-blue-900"
+            textColor="text-white"
+            accentColor="text-yellow-400"
+            videoId="WMtZ4gWf2uk"
+          />
+
+          {/* O2 Priority Success Story */}
+          <ClientSuccessStory
+            companyName="O2 Priority"
+            achievement="became"
+            achievementMetric="30% more efficient"
+            description="At delivering hundreds of campaigns to millions of customers using Monday.com and boosting productivity, O2 transformed their workflow."
+            contactPerson="Tye Rapley-Hawkins"
+            contactTitle="Head of Delivery at O2 Priority, Telefonica"
+            backgroundColor="bg-gray-200"
+            textColor="text-black"
+            accentColor="text-blue-600"
+            isReversed={true}
+            videoId="8NKL_nqSHMo"
+          />
+
+          {/* Ray White Success Story */}
+          <ClientSuccessStory
+            companyName="Ray White"
+            achievement="boosted efficiency by"
+            achievementMetric="70%"
+            description="With a custom CRM on Monday.com Work OS using over 1,250 automations to handle 2,000 clients seamlessly."
+            contactPerson="Kyle Dorman"
+            contactTitle="Operations Manager at Ray White"
+            backgroundColor="bg-gray-200"
+            textColor="text-black"
+            accentColor="text-blue-600"
+            videoId="TX4kk4OlQfY"
+          />
+
+          {/* The Student Hotel Success Story */}
+          <ClientSuccessStory
+            companyName="The Student Hotel"
+            achievement="enhanced core business processes and gained clarity on"
+            achievementMetric="60+ initiatives"
+            description="With tailored solutions from WME, your business can enjoy streamlined workflows and improved productivity."
+            contactPerson="Charlie MacGregor"
+            contactTitle="Founder & CEO, The Student Hotel"
+            backgroundColor="bg-gray-200"
+            textColor="text-black"
+            accentColor="text-blue-600"
+            isReversed={true}
+            videoId="j4Ttuceu388"
+          />
         </div>
+      </div>
+      <div className="my-12 pb-28 px-8 md:px-24">
+        <OrganizationUsingMonday />
       </div>
     </div>
-  );
+  )
 }
+

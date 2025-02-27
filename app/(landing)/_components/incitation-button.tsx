@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function IncitationButton() {
   return (
     <div>
-      <div className="flex py-20 md:py-36 flex-col md:flex-row">
+      <div className="flex py-20 md:py-24 flex-col md:flex-row">
         <div className="flex-1 flex justify-center items-center flex-col">
           <div>
             <h2 className="text-4xl md:text-6xl font-bold md:font-semibold text-[#2d2d2d] text-left px-4 md:px-0">

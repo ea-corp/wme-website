@@ -11,7 +11,6 @@ import bookmarkPlugin from "@notion-render/bookmark-plugin";
 import { Post } from "../../_components/post";
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  console.log("Slug: ", params);
   const post = await getPageBySlug(params.slug);
 
   if (!post) notFound();

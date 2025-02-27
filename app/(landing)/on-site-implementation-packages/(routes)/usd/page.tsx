@@ -329,7 +329,7 @@ export default async function ServicePage() {
         </h3>
         <div className="flex w-full ml-4 mt-4 justify-center">
           <a
-            href="contact-us"
+            href="/contact-us"
             target="_blank"
             className="bg-[#f4d752] text-black py-4 px-6 rounded-xl flex"
           >
