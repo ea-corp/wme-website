@@ -59,7 +59,6 @@ export default function ClientSuccessStory({
                                 Contact us today <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>
                         </Link>
-                       
                     </CardFooter>
                 </Card>
             </div>
