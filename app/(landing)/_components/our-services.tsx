@@ -102,7 +102,7 @@ export default function OurServices() {
           transition={{ duration: 0.5 }}
           className="text-center mb-8 md:mb-12"
         >
-          <h2 className="text-2xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 mt-8">Our Services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Maximize the value of Monday.com with our expert services. We bring years of experience to help you build
             the perfect solution for your organization.
