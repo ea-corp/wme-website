@@ -59,13 +59,11 @@ export default function ClientSuccessStory({
                                 Contact us today <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>
                         </Link>
-                        <p className="text-sm opacity-80 italic">
-                            {contactPerson} | {contactTitle}
-                        </p>
+                       
                     </CardFooter>
                 </Card>
             </div>
-            <div className="flex-1 flex justify-center">
+            <div className="flex-1 flex justify-center items-center bg-black">
                 <div className="aspect-video w-full max-w-full">
                     <iframe
                         src={`https://www.youtube.com/embed/${videoId}`}

@@ -67,7 +67,7 @@ const packages = [
   },
   {
     title: "On-site Consulting",
-    description: "Personalized, face-to-face consultation at your location",
+    description: "We travel worldwide to implement Monday.com at your premises.",
     image: "/images/onsite-consulting.png",
     link: "/on-site-implementation-packages",
   },
@@ -174,7 +174,7 @@ export default function OurServices() {
                     <h4 className="text-white text-2xl font-bold mb-2">{pkg.title}</h4>
                     <p className="text-white text-sm mb-4">{pkg.description}</p>
                     <Button asChild className="bg-[#f4d752] text-black hover:bg-[#f4d752]/90">
-                      <a href={pkg.link}>Choose the package</a>
+                      <a href={pkg.link}>Learn more</a>
                     </Button>
                   </div>
                 </div>
