@@ -1,9 +1,16 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import FilteredProjects from "./_components/filtered-projects";
+"use client"
+
+import React, { useState, useEffect } from "react"
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { ChevronDown, Filter } from 'lucide-react'
+import FilteredProjects from "./_components/filtered-projects"
 
 const filterData = {
   industry: [
@@ -17,13 +24,10 @@ const filterData = {
   ],
   feature: [
     { id: "Time tracking", label: "Time tracking" },
-    { id: "AI", label: "AI" },
     { id: "CRM", label: "CRM" },
     { id: "Dashboard", label: "Dashboard" },
-    { id: "Email Activities", label: "Email Activities" },
     { id: "Make.com", label: "Make.com" },
     { id: "Map", label: "Map" },
-    { id: "API", label: "API" },
     { id: "Operations/Checklist", label: "Operations/Checklist" },
     { id: "Integrations", label: "Integrations" },
     { id: "Automations", label: "Automations" },
@@ -31,67 +35,122 @@ const filterData = {
     { id: "Orders tracking", label: "Orders tracking" },
     { id: "Directory", label: "Directory" },
     { id: "Cost Analysis", label: "Cost Analysis" },
-    { id: "Project Management", label: "Project Management" }
+    { id: "Project Management", label: "Project Management" },
   ],
-};
+}
 
 const PortfolioWME = () => {
-  const [filterType, setFilterType] = useState<keyof typeof filterData>("industry");
-  const [selectedFilter, setSelectedFilter] = useState("Logistic");
+  const [filterType, setFilterType] = useState<keyof typeof filterData>("industry")
+  const [selectedFilter, setSelectedFilter] = useState(filterData.industry[0].id)
+  const [showMobileFilters, setShowMobileFilters] = useState(false)
 
+  // Update selected filter when filter type changes
   useEffect(() => {
-    console.log("Filter type changed:", filterType);
-    setSelectedFilter((prevFilter) => {
-      if (filterData[filterType][0].id !== prevFilter) {
-        return filterData[filterType][0].id;
-      }
-      return prevFilter;
-    });
-  }, [filterType]);
-
-  useEffect(() => {
-    console.log("Selected filter changed:", selectedFilter);
-  }, [selectedFilter]);
+    setSelectedFilter(filterData[filterType][0].id)
+  }, [filterType])
 
   return (
-    <div>
-      <div className="bg-gray-100 text-center py-16">
+    <div className="w-full">
+      {/* Hero section */}
+      <div className="bg-muted py-16 text-center">
         <h2 className="text-4xl font-semibold">Portfolio</h2>
       </div>
-      <div>
-        <Tabs value={selectedFilter} onValueChange={setSelectedFilter} className="flex flex-col items-center justify-center py-8">
-          <div className="flex items-center justify-center mb-4 gap-4">
+
+      {/* Filter section */}
+      <div className="container mx-auto px-4 py-8">
+        {/* Filter type selector */}
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
             <span className="text-sm font-medium">Filter by</span>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="capitalize">
                   {filterType}
+                  <ChevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuRadioGroup value={filterType} onValueChange={(value) => setFilterType(value as keyof typeof filterData)}>
+              <DropdownMenuContent align="start">
+                <DropdownMenuRadioGroup
+                  value={filterType}
+                  onValueChange={(value) => setFilterType(value as keyof typeof filterData)}
+                >
                   <DropdownMenuRadioItem value="industry">Industry</DropdownMenuRadioItem>
                   <DropdownMenuRadioItem value="feature">Feature</DropdownMenuRadioItem>
                 </DropdownMenuRadioGroup>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <TabsList className="flex flex-wrap justify-center gap-4 md:flex-nowrap">
-            <div className="bg-gray-100 md:bg-transparent text-center py-4 md:py-0">
-              {filterData[filterType].map((filter) => (
-                <TabsTrigger key={filter.id} value={filter.id} className="whitespace-nowrap flex-1 min-w-[120px]">
-                  {filter.label}
-                </TabsTrigger>
-              ))}
-            </div>
-          </TabsList>
-          <div className="mt-32 md:mt-16 mb-16">
-            <FilteredProjects selectedFilter={selectedFilter} />
+
+          {/* Mobile filter button */}
+          <Button
+            variant="outline"
+            size="sm"
+            className="md:hidden"
+            onClick={() => setShowMobileFilters(!showMobileFilters)}
+          >
+            <Filter className="mr-2 h-4 w-4" />
+            Filters
+          </Button>
+        </div>
+
+        {/* Mobile filter dropdown */}
+        <div
+          className={`mb-6 overflow-hidden transition-all duration-300 md:hidden ${showMobileFilters ? "max-h-96" : "max-h-0"
+            }`}
+        >
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="w-full justify-between">
+                {filterData[filterType].find((f) => f.id === selectedFilter)?.label || "Select filter"}
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-[var(--radix-dropdown-menu-trigger-width)]">
+              <DropdownMenuRadioGroup value={selectedFilter} onValueChange={setSelectedFilter}>
+                {filterData[filterType].map((filter) => (
+                  <DropdownMenuRadioItem key={filter.id} value={filter.id}>
+                    {filter.label}
+                  </DropdownMenuRadioItem>
+                ))}
+              </DropdownMenuRadioGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+
+        {/* Desktop filter pills */}
+        <div className="mb-8 hidden md:block">
+          <div className="flex flex-wrap gap-2">
+            {filterData[filterType].map((filter) => (
+              <Button
+                key={filter.id}
+                variant={selectedFilter === filter.id ? "default" : "outline"}
+                size="sm"
+                className="rounded-full px-4 py-1 text-sm transition-all"
+                onClick={() => setSelectedFilter(filter.id)}
+              >
+                {filter.label}
+              </Button>
+            ))}
           </div>
-        </Tabs>
+        </div>
+
+        {/* Selected filter indicator for mobile */}
+        <div className="mb-6 md:hidden">
+          <p className="text-sm text-muted-foreground">
+            Filtered by:{" "}
+            <span className="font-medium text-foreground">
+              {filterData[filterType].find((f) => f.id === selectedFilter)?.label}
+            </span>
+          </p>
+        </div>
+
+        {/* Projects display */}
+        <div className="mt-8">
+          <FilteredProjects selectedFilter={selectedFilter} />
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PortfolioWME;
+export default PortfolioWME

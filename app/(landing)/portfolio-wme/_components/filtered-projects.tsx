@@ -2,12 +2,17 @@
 import React from "react";
 import ProjectCard from "./project-card";
 import { projectsData } from "./projectsData";
+import ConstructionPage from "./hr"; // Assurez-vous que le chemin est correct
 
 interface FilteredProjectsProps {
     selectedFilter: string;
 }
 
 const FilteredProjects: React.FC<FilteredProjectsProps> = ({ selectedFilter }) => {
+    if (selectedFilter === "Human Resources") {
+        return <ConstructionPage />;
+    }
+
     const filteredProjects = projectsData.filter((project) =>
         project.tags.includes(selectedFilter)
     );
