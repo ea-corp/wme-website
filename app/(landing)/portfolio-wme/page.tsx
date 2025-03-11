@@ -9,7 +9,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { ChevronDown, Filter } from "lucide-react"
+import { ChevronDown, Filter } from 'lucide-react'
 import FilteredProjects from "./_components/filtered-projects"
 
 const filterData = {
@@ -39,6 +39,13 @@ const filterData = {
   ],
 }
 
+// Fonction utilitaire pour aplatir tous les tags disponibles
+const getAllTags = () => {
+  const industryTags = filterData.industry.map(item => item.id);
+  const featureTags = filterData.feature.map(item => item.id);
+  return [...industryTags, ...featureTags];
+}
+
 const PortfolioWME = () => {
   const [filterType, setFilterType] = useState<keyof typeof filterData>("industry")
   const [selectedFilter, setSelectedFilter] = useState(filterData.industry[0].id)
@@ -51,24 +58,32 @@ const PortfolioWME = () => {
 
   // Handle tag click from project card
   const handleTagClick = (tag: string) => {
+    // Vérifier si le tag existe dans nos données
+    const allTags = getAllTags();
+    if (!allTags.includes(tag)) {
+      console.log("Tag not found:", tag);
+      return;
+    }
+
     // Vérifier d'abord dans industry
-    const industryMatch = filterData.industry.find((item) => item.id === tag)
+    const industryMatch = filterData.industry.find(item => item.id === tag);
     if (industryMatch) {
-      setFilterType("industry")
-      setSelectedFilter(tag)
-      return
+      setFilterType("industry");
+      setSelectedFilter(tag);
+      return;
     }
 
     // Ensuite vérifier dans feature
-    const featureMatch = filterData.feature.find((item) => item.id === tag)
+    const featureMatch = filterData.feature.find(item => item.id === tag);
     if (featureMatch) {
-      setFilterType("feature")
-      setSelectedFilter(tag)
-      return
+      setFilterType("feature");
+      // Important: définir le selectedFilter après avoir changé le filterType
+      // pour éviter le problème de double-clic
+      setTimeout(() => {
+        setSelectedFilter(tag);
+      }, 0);
+      return;
     }
-
-    // Si le tag n'est trouvé dans aucun des deux, on ne fait rien
-    console.log("Tag not found in any filter category:", tag)
   }
 
   return (
@@ -176,4 +191,3 @@ const PortfolioWME = () => {
 }
 
 export default PortfolioWME
-

@@ -1,13 +1,14 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Badge } from "@/components/ui/badge"
-import { Maximize2, X } from "lucide-react"
+import { Maximize2, X } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import { useMediaQuery } from "@/hooks/use-media-query"
 
 interface ProjectCardProps {
   title: string[]
@@ -28,6 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null)
   const [isDialogOpen, setIsDialogOpen] = useState(false)
+  const isMobile = useMediaQuery("(max-width: 768px)")
 
   // Modifier la fonction handleTagClick pour fermer le dialog quand on clique sur un tag
   const handleTagClick = (e: React.MouseEvent, tag: string) => {
@@ -76,28 +78,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </Card>
         </DialogTrigger>
 
-        <DialogContent className="sm:max-w-md md:max-w-2xl lg:max-w-4xl p-0">
+        <DialogContent className="sm:max-w-md md:max-w-2xl lg:max-w-7xl p-0">
           <div className="p-6">
             <Carousel className="w-full">
               <CarouselContent>
                 {imagesCarousel.flat().map((img, index) => {
                   // Déterminer à quel projet cette image appartient
-                  let projIndex = 0
-                  let imgCount = 0
+                  let projIndex = 0;
+                  let imgCount = 0;
                   for (let i = 0; i < imagesCarousel.length; i++) {
                     if (index < imgCount + imagesCarousel[i].length) {
-                      projIndex = i
-                      break
+                      projIndex = i;
+                      break;
                     }
-                    imgCount += imagesCarousel[i].length
+                    imgCount += imagesCarousel[i].length;
                   }
-
-                  const imgIndexInProj = index - imgCount + imagesCarousel[projIndex].length
 
                   return (
                     <CarouselItem key={`image-${index}`} className="flex flex-col gap-4">
                       <h3 className="font-semibold text-2xl">{title[projIndex] || title[0]}</h3>
-                      <div className="relative group">
+                      <div
+                        className="relative group cursor-pointer"
+                        onClick={() => openFullscreen(img)}
+                      >
                         <img
                           src={img || "/placeholder.svg"}
                           className="object-contain w-full rounded-md h-[200px] sm:h-[300px] md:h-[400px]"
@@ -129,13 +132,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         ))}
                       </div>
                     </CarouselItem>
-                  )
+                  );
                 })}
               </CarouselContent>
-              <div className="flex justify-center gap-2 mt-4">
-                <CarouselPrevious className="static transform-none mx-0" />
-                <CarouselNext className="static transform-none mx-0" />
-              </div>
+              {!isMobile && (
+                <div className="flex justify-center gap-2 mt-4">
+                  <CarouselPrevious className="static transform-none mx-0" />
+                  <CarouselNext className="static transform-none mx-0" />
+                </div>
+              )}
             </Carousel>
           </div>
         </DialogContent>
@@ -167,4 +172,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }
 
 export default ProjectCard
-
