@@ -1,31 +1,30 @@
-"use client";
-import React from "react";
-import ProjectCard from "./project-card";
-import { projectsData } from "./projectsData";
-import ConstructionPage from "./hr"; // Assurez-vous que le chemin est correct
+"use client"
+
+import type React from "react"
+import ProjectCard from "./project-card"
+import { projectsData } from "./projectsData"
+import ConstructionPage from "./hr"
 
 interface FilteredProjectsProps {
-    selectedFilter: string;
+    selectedFilter: string
+    onTagClick?: (tag: string) => void
 }
 
-const FilteredProjects: React.FC<FilteredProjectsProps> = ({ selectedFilter }) => {
+const FilteredProjects: React.FC<FilteredProjectsProps> = ({ selectedFilter, onTagClick }) => {
     if (selectedFilter === "Human Resources") {
-        return <ConstructionPage />;
+        return <ConstructionPage />
     }
 
-    const filteredProjects = projectsData.filter((project) =>
-        project.tags.includes(selectedFilter)
-    );
-
-    console.log("Filtered projects:", filteredProjects);
+    const filteredProjects = projectsData.filter((project) => project.tags.includes(selectedFilter))
 
     return (
-        <div className="flex flex-wrap justify-center gap-8 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project) => (
-                <ProjectCard key={project.id} {...project} />
+                <ProjectCard key={project.id} {...project} onTagClick={onTagClick} />
             ))}
         </div>
-    );
-};
+    )
+}
 
-export default FilteredProjects;
+export default FilteredProjects
+

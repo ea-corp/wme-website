@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -9,7 +9,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { ChevronDown, Filter } from 'lucide-react'
+import { ChevronDown, Filter } from "lucide-react"
 import FilteredProjects from "./_components/filtered-projects"
 
 const filterData = {
@@ -48,6 +48,28 @@ const PortfolioWME = () => {
   useEffect(() => {
     setSelectedFilter(filterData[filterType][0].id)
   }, [filterType])
+
+  // Handle tag click from project card
+  const handleTagClick = (tag: string) => {
+    // Vérifier d'abord dans industry
+    const industryMatch = filterData.industry.find((item) => item.id === tag)
+    if (industryMatch) {
+      setFilterType("industry")
+      setSelectedFilter(tag)
+      return
+    }
+
+    // Ensuite vérifier dans feature
+    const featureMatch = filterData.feature.find((item) => item.id === tag)
+    if (featureMatch) {
+      setFilterType("feature")
+      setSelectedFilter(tag)
+      return
+    }
+
+    // Si le tag n'est trouvé dans aucun des deux, on ne fait rien
+    console.log("Tag not found in any filter category:", tag)
+  }
 
   return (
     <div className="w-full">
@@ -146,7 +168,7 @@ const PortfolioWME = () => {
 
         {/* Projects display */}
         <div className="mt-8">
-          <FilteredProjects selectedFilter={selectedFilter} />
+          <FilteredProjects selectedFilter={selectedFilter} onTagClick={handleTagClick} />
         </div>
       </div>
     </div>
@@ -154,3 +176,4 @@ const PortfolioWME = () => {
 }
 
 export default PortfolioWME
+
