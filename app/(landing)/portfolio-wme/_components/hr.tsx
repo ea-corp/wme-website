@@ -69,7 +69,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     );
 };
 
-export default function ConstructionPage() {
+export default function HumanResourcesPage() {
     const projects = [
         {
             section: "Employee's Management",
