@@ -277,10 +277,9 @@ export default function Portfolio() {
   // Update the return JSX to include the new design and fullscreen functionality
   return (
     <div className="container mx-auto py-12 px-4 bg-gradient-to-b from-background to-background/80">
-      <h1 className="text-5xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-        My Portfolio
+      <h1 className="text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+        Portfolio
       </h1>
-      <p className="text-muted-foreground mb-12 text-lg">Discover my latest projects and case studies</p>
 
       {/* Filters section with improved design */}
       <div className="mb-12 bg-card/50 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-border/50">
