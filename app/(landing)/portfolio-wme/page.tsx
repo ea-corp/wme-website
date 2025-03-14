@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -43,6 +43,23 @@ export default function Portfolio() {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [activeFilter, setActiveFilter] = useState<string>("Logistic"); // Default filter set to "Logistic"
   const [filterCategory, setFilterCategory] = useState<"Industry" | "Feature">("Industry");
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (!selectedProject) return;
+
+      if (event.key === "ArrowRight") {
+        nextProject();
+      } else if (event.key === "ArrowLeft") {
+        prevProject();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedProject]);
 
   // Filter projects based on active filter
   const filteredProjects: any = activeFilter
@@ -110,7 +127,7 @@ export default function Portfolio() {
             <Badge
               key={tag}
               variant={activeFilter === tag ? "default" : "outline"}
-              className="cursor-pointer"
+              className="cursor-pointer py-2 px-4"
               onClick={() => setFilter(tag)}
             >
               {tag}

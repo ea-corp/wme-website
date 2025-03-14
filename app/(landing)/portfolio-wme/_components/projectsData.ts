@@ -167,33 +167,6 @@ export const projectsData = [
     image: "/images/portfolio/real-estate/image-5.png",
     tags: ["Real Estate", "Automations"],
   },
-  // Construction
-  {
-    id: 23,
-    title: 
-      "Dashboard 1- Cost Analysis, ",
-    
-    description: "",
-    image: "/images/portfolio/construction/image-1.png",
-    
-    tags: ["Construction", "Dashboard", "Cost Analysis"],
-  },
-  {
-    id: 24,
-    title: 
-      "Dashboard 2- Projected Vs Actual Costs by project",
-    description: "",
-    image: "/images/portfolio/construction/image-2.png",
-    tags: ["Construction", "Dashboard", "Cost Analysis"],
-  },
-  {
-    id: 25,
-    title: 
-      "Dashboard 3 - Projected Vs Actual Costs",  
-    description: "",
-    image: "/images/portfolio/construction/image-3.png",
-    tags: ["Construction", "Dashboard", "Cost Analysis"],
-  },
   // Marketing
   {
     id: 26,

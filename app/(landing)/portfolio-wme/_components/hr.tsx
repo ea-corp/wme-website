@@ -650,20 +650,6 @@ export default function HumanResourcesPage() {
         },
     ];
 
-    const determineLabel = (titles: string[]) => {
-        const firstTitle = titles[0]; // Récupérer le premier titre
-        if (firstTitle.includes("Employee")) {
-            return "Employee's Management";
-        } else if (firstTitle.includes("Survey")) {
-            return "Employee's Surveys";
-        } else if (firstTitle.includes("ok")) {
-            return "ok";
-        } else if (firstTitle.includes("test")) {
-            return "test";
-        } else {
-            return "Other";
-        }
-    };
 
     const groupProjectsBySection = (projects: any[]) => {
         const projectsBySection: { [key: string]: any[] } = {};
