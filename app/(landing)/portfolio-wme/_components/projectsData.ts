@@ -289,7 +289,7 @@ export const projectsData = [
     description:"The Monday CRM Quotes & Invoices feature allows users to easily create quotes and invoices by connecting their client list and product catalog to the invoice templates. This streamlines the billing process, saving time and ensuring accuracy. It simplifies client management with seamless integration of client and product data.",
     image: "/images/portfolio/retail/image-1.png",
 
-    tags: ["Retail", "CRM", "Docgeneration"],
+    tags: ["Retail", "Invoicing", "CRM", "Docgeneration"],
   },
   {
     id: 42,
@@ -297,7 +297,7 @@ export const projectsData = [
     description:"The Monday CRM Quotes & Invoices feature allows users to easily create quotes and invoices by connecting their client list and product catalog to the invoice templates. This streamlines the billing process, saving time and ensuring accuracy. It simplifies client management with seamless integration of client and product data.",
     image: "/images/portfolio/retail/image-2.png",
 
-    tags: ["Retail", "CRM", "Docgeneration"],
+    tags: ["Retail", "Invoicing", "CRM", "Docgeneration"],
   },
   {
     id: 43,
