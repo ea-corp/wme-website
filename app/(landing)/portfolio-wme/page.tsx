@@ -8,7 +8,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight, X, Maximize, ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
 import { projectsData } from "./_components/projectsData";
-import HumanResourcesPage from "./_components/hr";
 
 type Project = {
   id: number;
@@ -16,6 +15,7 @@ type Project = {
   description: string;
   image: string;
   tags: string[];
+  section?: string;
 };
 
 // Define filter categories
@@ -26,7 +26,7 @@ const filterCategories = {
     "CRM",
     "Dashboard",
     "Make.com",
-    "Map",
+    "Maps",
     "Operations/Checklist",
     "Integrations",
     "Automations",
@@ -37,7 +37,17 @@ const filterCategories = {
     "Project Management",
     "Invoicing",
     "Docgeneration",
-    "Activity Tracking"
+    "Activity Tracking", 
+    "Onboarding",
+    "Item Card",
+    "Survey",
+    "Forms",
+    "KPI",
+    "Resource Management",
+    "Process Mapping",
+    "Dependency",
+    "Task Management",
+    "Project Overview"
   ],
 };
 
@@ -247,9 +257,9 @@ export default function Portfolio() {
     : projectsData;
 
   // Group projects by section if the active filter is an industry
-  const groupedProjects = activeFilter === "Manufacturing" || activeFilter === "Real Estate"
+  const groupedProjects = activeFilter === "Manufacturing" || activeFilter === "Real Estate" || activeFilter === "Human Resources"
     ? filteredProjects.reduce((acc: any, project: any) => {
-        const section = project.section || "";
+        const section = project.section || "Other";
         if (!acc[section]) {
           acc[section] = [];
         }
@@ -332,155 +342,147 @@ export default function Portfolio() {
         </div>
       </div>
 
-      {/* Render HumanResourcesPage if activeFilter is "Human Resources" */}
-      {activeFilter === "Human Resources" ? (
-        <HumanResourcesPage />
-      ) : (
-        <>
-          {/* Projects grid with improved design - removed zoom button */}
-          {Object.keys(groupedProjects).map((section) => (
-            <div key={section} className="mb-8">
-              <h2 className="text-3xl text-blue-700 text-center py-4 font-semibold mb-4">{section}</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {groupedProjects[section].map((project: any) => (
-                  <div
-                    key={project.id}
-                    className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border border-border/50"
-                    onClick={() => setSelectedProject(project)}
-                    onMouseEnter={() => setHoveredProject(project.id)}
-                    onMouseLeave={() => setHoveredProject(null)}
-                  >
-                    <div className="relative h-64 overflow-hidden">
-                      <Image
-                        src={project.image || "/placeholder.svg"}
-                        alt={project.title}
-                        fill
-                        className={`object-cover transition-all duration-500 ${hoveredProject === project.id ? "scale-110" : "scale-100"
+      {/* Projects grid with improved design - removed zoom button */}
+      {Object.keys(groupedProjects).map((section) => (
+        <div key={section} className="mb-8">
+          <h2 className="text-3xl text-blue-700 text-center py-4 font-semibold mb-4">{section}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {groupedProjects[section].map((project: any) => (
+              <div
+                key={project.id}
+                className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border border-border/50"
+                onClick={() => setSelectedProject(project)}
+                onMouseEnter={() => setHoveredProject(project.id)}
+                onMouseLeave={() => setHoveredProject(null)}
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    fill
+                    className={`object-cover transition-all duration-500 ${hoveredProject === project.id ? "scale-110" : "scale-100"
+                      }`}
+                    onClick={() => setIsFullscreen(true)}
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 line-clamp-2">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag: any) => (
+                      <Badge
+                        key={`${project.id}-${tag}`}
+                        variant="secondary"
+                        className={`cursor-pointer transition-all duration-300 ${activeFilter === tag
+                          ? "bg-primary/20 text-primary hover:bg-primary/30"
+                          : "hover:bg-primary/10"
                           }`}
-                        onClick={() => setIsFullscreen(true)}
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
-                        {project.title}
-                      </h3>
-                      <p className="text-muted-foreground mb-4 line-clamp-2">{project.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.tags.map((tag: any) => (
-                          <Badge
-                            key={`${project.id}-${tag}`}
-                            variant="secondary"
-                            className={`cursor-pointer transition-all duration-300 ${activeFilter === tag
-                              ? "bg-primary/20 text-primary hover:bg-primary/30"
-                              : "hover:bg-primary/10"
-                              }`}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              setFilter(tag);
-                            }}
-                          >
-                            {tag}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-
-          {/* Project detail dialog with improved design and discreet fullscreen button */}
-          <Dialog
-            open={selectedProject !== null && !isFullscreen}
-            onOpenChange={(open) => {
-              if (!open) {
-                setSelectedProject(null);
-              }
-            }}
-          >
-            <DialogContent className="max-w-4xl bg-background/95 backdrop-blur-md">
-              {selectedProject && (
-                <>
-                  <DialogHeader>
-                    <DialogTitle className="text-2xl">{selectedProject.title}</DialogTitle>
-                    <DialogDescription className="text-muted-foreground">
-                      {selectedProject.tags.join(" • ")}
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="relative">
-                    <div className="relative h-[400px] w-full mb-6 rounded-xl overflow-hidden">
-                      <Image
-                        src={selectedProject.image || "/placeholder.svg"}
-                        alt={selectedProject.title}
-                        fill
-                        className="object-cover"
-                        onClick={() => setIsFullscreen(true)}
-                      />
-                      {/* Discreet fullscreen button in the corner */}
-                      <Button
-                        variant="outline"
-                        size="icon"
-                        className="absolute bottom-3 right-3 z-10 bg-background/40 hover:bg-background/60 backdrop-blur-sm rounded-full opacity-70 hover:opacity-100 transition-opacity"
-                        onClick={() => setIsFullscreen(true)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setFilter(tag);
+                        }}
                       >
-                        <Maximize className="h-4 w-4" />
-                      </Button>
-                    </div>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">{selectedProject.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {selectedProject.tags.map((tag) => (
-                        <Badge
-                          key={`dialog-${tag}`}
-                          variant="secondary"
-                          className={`cursor-pointer transition-all duration-300 ${activeFilter === tag
-                            ? "bg-primary/20 text-primary hover:bg-primary/30"
-                            : "hover:bg-primary/10"
-                            }`}
-                          onClick={() => setFilter(tag)}
-                        >
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                    <div className="flex justify-between">
-                      <Button variant="outline" onClick={prevProject} className="group">
-                        <ChevronLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />{" "}
-                        Previous
-                      </Button>
-                      <Button variant="outline" onClick={nextProject} className="group">
-                        Next <ChevronRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </div>
+                        {tag}
+                      </Badge>
+                    ))}
                   </div>
-                </>
-              )}
-            </DialogContent>
-          </Dialog>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
 
-          {/* Improved fullscreen image viewer */}
-          {selectedProject && isFullscreen && (
-            <FullscreenImage
-              src={selectedProject.image}
-              alt={selectedProject.title}
-              onClose={() => setIsFullscreen(false)}
-            />
+      {/* Project detail dialog with improved design and discreet fullscreen button */}
+      <Dialog
+        open={selectedProject !== null && !isFullscreen}
+        onOpenChange={(open) => {
+          if (!open) {
+            setSelectedProject(null);
+          }
+        }}
+      >
+        <DialogContent className="max-w-4xl bg-background/95 backdrop-blur-md">
+          {selectedProject && (
+            <>
+              <DialogHeader>
+                <DialogTitle className="text-2xl">{selectedProject.title}</DialogTitle>
+                <DialogDescription className="text-muted-foreground">
+                  {selectedProject.tags.join(" • ")}
+                </DialogDescription>
+              </DialogHeader>
+              <div className="relative">
+                <div className="relative h-[400px] w-full mb-6 rounded-xl overflow-hidden">
+                  <Image
+                    src={selectedProject.image || "/placeholder.svg"}
+                    alt={selectedProject.title}
+                    fill
+                    className="object-cover"
+                    onClick={() => setIsFullscreen(true)}
+                  />
+                  {/* Discreet fullscreen button in the corner */}
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="absolute bottom-3 right-3 z-10 bg-background/40 hover:bg-background/60 backdrop-blur-sm rounded-full opacity-70 hover:opacity-100 transition-opacity"
+                    onClick={() => setIsFullscreen(true)}
+                  >
+                    <Maximize className="h-4 w-4" />
+                  </Button>
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">{selectedProject.description}</p>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {selectedProject.tags.map((tag) => (
+                    <Badge
+                      key={`dialog-${tag}`}
+                      variant="secondary"
+                      className={`cursor-pointer transition-all duration-300 ${activeFilter === tag
+                        ? "bg-primary/20 text-primary hover:bg-primary/30"
+                        : "hover:bg-primary/10"
+                        }`}
+                      onClick={() => setFilter(tag)}
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+                <div className="flex justify-between">
+                  <Button variant="outline" onClick={prevProject} className="group">
+                    <ChevronLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />{" "}
+                    Previous
+                  </Button>
+                  <Button variant="outline" onClick={nextProject} className="group">
+                    Next <ChevronRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </div>
+              </div>
+            </>
           )}
+        </DialogContent>
+      </Dialog>
 
-          {/* Show message if no projects match filters */}
-          {filteredProjects.length === 0 && (
-            <div className="text-center py-16 bg-card/50 backdrop-blur-sm rounded-xl shadow-sm border border-border/50">
-              <h3 className="text-2xl font-medium mb-3">No projects match your filter</h3>
-              <p className="text-muted-foreground mb-6">Try adjusting your filter criteria</p>
-              <Button onClick={clearFilters} className="px-6">
-                Clear filter
-              </Button>
-            </div>
-          )}
-        </>
+      {/* Improved fullscreen image viewer */}
+      {selectedProject && isFullscreen && (
+        <FullscreenImage
+          src={selectedProject.image}
+          alt={selectedProject.title}
+          onClose={() => setIsFullscreen(false)}
+        />
+      )}
+
+      {/* Show message if no projects match filters */}
+      {filteredProjects.length === 0 && (
+        <div className="text-center py-16 bg-card/50 backdrop-blur-sm rounded-xl shadow-sm border border-border/50">
+          <h3 className="text-2xl font-medium mb-3">No projects match your filter</h3>
+          <p className="text-muted-foreground mb-6">Try adjusting your filter criteria</p>
+          <Button onClick={clearFilters} className="px-6">
+            Clear filter
+          </Button>
+        </div>
       )}
     </div>
   );
 }
-
