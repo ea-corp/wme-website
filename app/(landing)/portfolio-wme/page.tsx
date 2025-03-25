@@ -20,7 +20,7 @@ type Project = {
 
 // Define filter categories
 const filterCategories = {
-  Industry: ["Logistic", "Manufacturing", "Restaurant", "Real Estate", "Construction", "Marketing", "Human Resources"],
+  Industry: ["Logistic", "Manufacturing", "Restaurant", "Real Estate", "Construction", "Marketing", "Human Resources", "Retail", "Accounting"],
   Feature: [
     "Time tracking",
     "CRM",
@@ -35,6 +35,9 @@ const filterCategories = {
     "Directory",
     "Cost Analysis",
     "Project Management",
+    "Invoicing",
+    "Docgeneration",
+    "Activity Tracking"
   ],
 };
 
