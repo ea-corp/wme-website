@@ -240,6 +240,8 @@ export const projectsData = [
     image: "/images/portfolio/manufacturing/image-6.png",
 
     tags: ["Manufacturing"],
+    section: "CRM",
+
   },
   {
     id: 36,
@@ -249,6 +251,8 @@ export const projectsData = [
     image: "/images/portfolio/manufacturing/image-7.png",
 
     tags: ["Manufacturing"],
+    section: "CRM",
+
   },
   {
     id: 37,
@@ -256,6 +260,8 @@ export const projectsData = [
     description:
       "The Project Summary board provides the sales team with an overview of ongoing projects for better management and visibility.",
     image: "/images/portfolio/manufacturing/image-8.png",
+
+    section: "CRM",
 
     tags: ["Manufacturing"],
   },
@@ -266,6 +272,8 @@ export const projectsData = [
     image: "/images/portfolio/manufacturing/image-9.png",
 
     tags: ["Manufacturing", "Project Management"],
+    section: "CRM",
+
   },
   {
     id: 39,
@@ -274,13 +282,15 @@ export const projectsData = [
     image: "/images/portfolio/manufacturing/image-10.png",
 
     tags: ["Manufacturing", "Invoicing", "Docgeneration"],
+    section: "Quote Generation",
+
   },
   {
     id: 40,
     title: "Quote Document",
     description:"The generated document in Docugen using the prefill fields from the Opportunities board.",
     image: "/images/portfolio/manufacturing/image-11.png",
-
+    section: "Quote Generation",
     tags: ["Manufacturing", "Invoicing", "Docgeneration"],
   },
   {
@@ -296,7 +306,6 @@ export const projectsData = [
     title: "Invoice Generation Retail 2/3",
     description:"The Monday CRM Quotes & Invoices feature allows users to easily create quotes and invoices by connecting their client list and product catalog to the invoice templates. This streamlines the billing process, saving time and ensuring accuracy. It simplifies client management with seamless integration of client and product data.",
     image: "/images/portfolio/retail/image-2.png",
-
     tags: ["Retail", "Invoicing", "CRM", "Docgeneration"],
   },
   {
@@ -304,6 +313,7 @@ export const projectsData = [
     title: "Invoice Generation Retail 3/3",
     description:"The Monday CRM Quotes & Invoices feature allows users to easily create quotes and invoices by connecting their client list and product catalog to the invoice templates. This streamlines the billing process, saving time and ensuring accuracy. It simplifies client management with seamless integration of client and product data.",
     image: "/images/portfolio/retail/image-3.png",
+    section: "Quote",
 
     tags: ["Retail", "Invoicing", "CRM", "Docgeneration"],
   },
@@ -320,7 +330,6 @@ export const projectsData = [
     title: "Organization Activity Summary",
     description:"The Organisation Snapshot Dashboard provides an overview of activities such as emails, events, meetings, and calls, filtered by organisation. It also tracks awards given to organisations, displaying categories like wins, shortlisted entries, highly commended, and those that didn't win.",
     image: "/images/portfolio/activities-summary.png",
-
     tags: ["Activity Tracking"],
   },
   {
@@ -328,6 +337,7 @@ export const projectsData = [
     title: "Activity Board",
     description:"The Activities board provides a centralized view of all activities, tracking both emails, meetings and call summaries for different organizations in one place.It allows users to stay updated on communication and task progress efficiently.",
     image: "/images/portfolio/real-estate/image-6.png",
+    section: "Activity Tracking",
 
     tags: ["Real Estate", "Activity Tracking"],
   },
@@ -336,6 +346,7 @@ export const projectsData = [
     title: "Activity Summary Chart",
     description:"Activity summary chart provides a visual representation of the activities for the organisation. This enhances workflow visibility and helps manage engagements seamlessly.",
     image: "/images/portfolio/real-estate/image-7.png",
+    section: "Activity Tracking",
 
     tags: ["Real Estate", "Activity Tracking"],
   },
@@ -344,6 +355,7 @@ export const projectsData = [
     title: "Emails & Activities",
     description:"Emails and Activities logs all activities associated with the email column on the board. For example, you can send emails through this page to the contacts, add meeting notes and call summery as well as create custom activities such as sales performance analysis, and contract negotiations so you can add all the necessary information associated to this contact.",
     image: "/images/portfolio/real-estate/image-8.png",
+    section: "Activity Tracking",
 
     tags: ["Real Estate", "Activity Tracking"],
   },
@@ -351,7 +363,8 @@ export const projectsData = [
     id: 49,
     title: "Activity Tracker",
     description : "The Activity Tracker tracks emails and other activities, displaying them under the name of the person who added them. It provides an overview of various activities added in the Emails and Activities such as emails, notes, call summery as well as the custom activities such as sales performance analysis, and contract negotiations. Any new activity logged will instantly reflect in the chart.",
-    image: "/images/portfolio/real-estate/image-8.png",
+    image: "/images/portfolio/real-estate/image-16.png",
+    section: "Activity Tracking",
 
     tags: ["Real Estate", "Activity Tracking"],
   },
@@ -361,6 +374,8 @@ export const projectsData = [
     description : "Emails & Activities Timeline tracks all activities for the past 45 days, displaying email interactions and activities such as meetings, notes, and custom activities that is added in the Emails & Activities item card. Daily activity is color-coded with pink representing incoming emails and blue for all other activities. This visual system helps users easily identify and manage communication flow and task progress.",
     image: "/images/portfolio/real-estate/image-9.png",
     tags: ["Real Estate", "Activity Tracking"],
+    section: "Activity Tracking",
+
   },
   {
     id: 51,
@@ -368,6 +383,7 @@ export const projectsData = [
     description : "This custom CRM is built for a construction and real estate company which streamlines lead tracking, including their sources, viewing follow-ups, and more.",
     image: "/images/portfolio/real-estate/image-10.png",
     tags: ["Real Estate", "CRM"],
+    section: "CRM",
   },
   {
     id: 52,
@@ -375,41 +391,53 @@ export const projectsData = [
     description : "The viewings board is part of the CRM that enables the sales team to schedule unit viewings with leads and efficiently manage their schedule.",
     image: "/images/portfolio/real-estate/image-11.png",
     tags: ["Real Estate", "CRM"],
+    section: "CRM",
+
   },
   {
     id: 53,
     title: "Opportunity Tracking & Contract generation Board",
     description: "The Opportunity board allows you to track all opportunities within your business, set contract terms, generate contracts, and send them electronically for signature.",
     image: "/images/portfolio/real-estate/image-12.png",
-    tags: ["Real Estate", "CRM"]
+    tags: ["Real Estate", "CRM"],
+    section: "CRM",
+
   },
   {
     id: 54,
     title: "Units Occupancy & Lease Tracking Board",
     description: "The Units board is designed to track the occupancy of units across different sites. It effectively monitors occupancy, as well as current and past tenant information. A key feature of this board is the automatic lease renewal reminders for the sales team, ensuring timely follow-up with tenants to either end or renew their contracts.",
     image: "/images/portfolio/real-estate/image-13.png",
-    tags: ["Real Estate", "CRM"]
+    tags: ["Real Estate", "CRM"],
+    section: "CRM",
+
   },
   {
     id: 55,
     title: "Lead Analysis Dashboard (1)",
     description: "This dashboard provides a clear overview of sales performance, total leads, conversion rates, and contracts.",
     image: "/images/portfolio/real-estate/image-14.png",
-    tags: ["Real Estate", "Dashboard"]
+    tags: ["Real Estate", "Dashboard"],
+    section: "CRM",
+
   },
   {
     id: 56,
     title: "Lead Analysis Dashboard (2)",
     description: "This dashboard tracks inquiry types, viewing bookings, contract signings, and more, providing valuable insights to support better decision-making.",
     image: "/images/portfolio/real-estate/image-15.png",
-    tags: ["Real Estate", "Dashboard"]
+    tags: ["Real Estate", "Dashboard"],
+    section: "CRM",
+
   },
   {
     id: 57,
     title: "I AM Meter Integration for Automated Energy Tracking",
     description: "Successfully integrated the I AM Meter platform with Monday.com, enabling both daily and monthly synchronization of electricity usage for all units. This ensures more accurate reporting and automates electricity bill generation and delivery to tenants.",
     image: "/images/portfolio/construction/image-4.png",
-    tags: ["Construction", "Integrations"]
+    tags: ["Real Estate", "Integrations"],
+    section: "CRM",
+
   },
   {
     id: 58,

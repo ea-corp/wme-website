@@ -246,6 +246,18 @@ export default function Portfolio() {
     ? projectsData.filter((project) => project.tags.includes(activeFilter))
     : projectsData;
 
+  // Group projects by section if the active filter is an industry
+  const groupedProjects = activeFilter === "Manufacturing" || activeFilter === "Real Estate"
+    ? filteredProjects.reduce((acc: any, project: any) => {
+        const section = project.section || "";
+        if (!acc[section]) {
+          acc[section] = [];
+        }
+        acc[section].push(project);
+        return acc;
+      }, {})
+    : { "": filteredProjects };
+
   // Set active filter and update filter category if necessary
   const setFilter = (tag: string) => {
     setActiveFilter(tag);
@@ -326,53 +338,58 @@ export default function Portfolio() {
       ) : (
         <>
           {/* Projects grid with improved design - removed zoom button */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project: any) => (
-              <div
-                key={project.id}
-                className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border border-border/50"
-                onClick={() => setSelectedProject(project)}
-                onMouseEnter={() => setHoveredProject(project.id)}
-                onMouseLeave={() => setHoveredProject(null)}
-              >
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    fill
-                    className={`object-cover transition-all duration-500 ${hoveredProject === project.id ? "scale-110" : "scale-100"
-                      }`}
-                    onClick={() => setIsFullscreen(true)}
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 line-clamp-2">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag: any) => (
-                      <Badge
-                        key={`${project.id}-${tag}`}
-                        variant="secondary"
-                        className={`cursor-pointer transition-all duration-300 ${activeFilter === tag
-                          ? "bg-primary/20 text-primary hover:bg-primary/30"
-                          : "hover:bg-primary/10"
+          {Object.keys(groupedProjects).map((section) => (
+            <div key={section} className="mb-8">
+              <h2 className="text-3xl text-blue-700 text-center py-4 font-semibold mb-4">{section}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {groupedProjects[section].map((project: any) => (
+                  <div
+                    key={project.id}
+                    className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border border-border/50"
+                    onClick={() => setSelectedProject(project)}
+                    onMouseEnter={() => setHoveredProject(project.id)}
+                    onMouseLeave={() => setHoveredProject(null)}
+                  >
+                    <div className="relative h-64 overflow-hidden">
+                      <Image
+                        src={project.image || "/placeholder.svg"}
+                        alt={project.title}
+                        fill
+                        className={`object-cover transition-all duration-500 ${hoveredProject === project.id ? "scale-110" : "scale-100"
                           }`}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setFilter(tag);
-                        }}
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
+                        onClick={() => setIsFullscreen(true)}
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                        {project.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-4 line-clamp-2">{project.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag: any) => (
+                          <Badge
+                            key={`${project.id}-${tag}`}
+                            variant="secondary"
+                            className={`cursor-pointer transition-all duration-300 ${activeFilter === tag
+                              ? "bg-primary/20 text-primary hover:bg-primary/30"
+                              : "hover:bg-primary/10"
+                              }`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setFilter(tag);
+                            }}
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
 
           {/* Project detail dialog with improved design and discreet fullscreen button */}
           <Dialog
@@ -466,3 +483,4 @@ export default function Portfolio() {
     </div>
   );
 }
+
