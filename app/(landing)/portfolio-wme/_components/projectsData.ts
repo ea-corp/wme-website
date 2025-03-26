@@ -479,7 +479,7 @@ export const projectsData = [
     title: "Employee's Directory Overview",
     description: "A detailed screenshot of an employee directory interface, displaying sections for office staff, operation staff, and former employees. The interface includes columns for employee details such as onboarding status, position, contract type, department, supervisor, contract dates, and email addresses.",
     image: "/images/portfolio/hr/image-14.png",
-    tags: ["Human Resources", "Directory", "Onboarding"],
+    tags: ["Human Resources", "Directory", "On/Offboarding"],
     section: "Employee's Management",
   },
   {
@@ -583,7 +583,7 @@ export const projectsData = [
     title: "Employee Onboarding Status Dashboard",
     description: "A detailed view of an employee onboarding dashboard, illustrating various employees' onboarding stages, start dates, progress bars, positions, departments, and status of essential documents such as offer letters, contracts, and company policies. This interface helps track the onboarding progress effectively.",
     image: "/images/portfolio/hr/image-24.png",
-    tags: ["Human Resources", "Onboarding", "Dashboard"],
+    tags: ["Human Resources", "On/Offboarding", "Dashboard"],
     section: "Onboarding/Offboarding",
   },
   {
@@ -680,7 +680,7 @@ export const projectsData = [
     title: "Employee Directory",
     description: "Easily tracking employee on/offboarding stages and their information.",
     image: "/images/portfolio/hr/image-26.png",
-    tags: ["Human Resources", "Onboarding", "Dashboard"],
+    tags: ["Human Resources", "On/Offboarding", "Dashboard"],
     section: "Onboarding/Offboarding",
   },
   {
