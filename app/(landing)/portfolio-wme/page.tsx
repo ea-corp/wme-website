@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
@@ -242,7 +241,7 @@ const FullscreenImage = ({ src, alt, onClose }: { src: string; alt: string; onCl
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [isFullscreen, setIsFullscreen] = useState(false)
-  const [activeFilter, setActiveFilter] = useState<string>("Logistic")
+  const [activeFilter, setActiveFilter] = useState<string>("Accounting")
   const [filterCategory, setFilterCategory] = useState<"Industry" | "Feature">("Industry")
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
   const [dialogOpen, setDialogOpen] = useState(false)
@@ -463,26 +462,44 @@ export default function Portfolio() {
       {/* Filters section with improved design - centered filter badges */}
       <div className="mb-12 bg-card/50 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-border/50">
         <div className="flex flex-wrap items-center gap-4 mb-6">
-          <span className="font-medium text-lg">Filter by:</span>
-          <Select value={filterCategory} onValueChange={(value) => setFilterCategory(value as "Industry" | "Feature")}>
-            <SelectTrigger className="w-[180px] bg-background/80 backdrop-blur-sm">
-              <SelectValue placeholder="Select category" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="Industry">Industry</SelectItem>
-              <SelectItem value="Feature">Feature</SelectItem>
-            </SelectContent>
-          </Select>
-
-          {activeFilter && (
-            <Button variant="outline" size="sm" onClick={clearFilters} className="ml-auto">
-              <X className="h-4 w-4 mr-2" /> Clear filter
-            </Button>
-          )}
+          <span className="font-medium text-lg">Filter by</span>
+          <div className="hidden md:flex">
+            <Select value={filterCategory} onValueChange={(value) => setFilterCategory(value as "Industry" | "Feature")}>
+              <SelectTrigger className="w-[180px] bg-background/80 backdrop-blur-sm">
+                <SelectValue placeholder="Select category" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Industry">Industry</SelectItem>
+                <SelectItem value="Feature">Feature</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="md:hidden space-x-4 flex">
+            <label className="flex items-center space-x-2">
+              <input
+                type="radio"
+                value="Industry"
+                checked={filterCategory === "Industry"}
+                onChange={() => setFilterCategory("Industry")}
+                className="form-radio"
+              />
+              <span>Industry</span>
+            </label>
+            <label className="flex items-center space-x-2">
+              <input
+                type="radio"
+                value="Feature"
+                checked={filterCategory === "Feature"}
+                onChange={() => setFilterCategory("Feature")}
+                className="form-radio"
+              />
+              <span>Feature</span>
+            </label>
+          </div>
         </div>
 
         {/* Centered filter badges */}
-        <div className="flex flex-wrap justify-center gap-3 mb-2">
+        <div className="hidden md:flex flex-wrap justify-center gap-3 mb-2">
           {filterCategories[filterCategory].map((tag) => (
             <Badge
               key={tag}
@@ -494,6 +511,21 @@ export default function Portfolio() {
               {tag}
             </Badge>
           ))}
+        </div>
+
+        <div className="md:hidden mb-2">
+          <Select value={activeFilter} onValueChange={(value) => setFilter(value)}>
+            <SelectTrigger className="w-full bg-background/80 backdrop-blur-sm">
+              <SelectValue placeholder="Select tag" />
+            </SelectTrigger>
+            <SelectContent>
+              {filterCategories[filterCategory].map((tag) => (
+                <SelectItem key={tag} value={tag}>
+                  {tag}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
       </div>
 
@@ -542,8 +574,8 @@ export default function Portfolio() {
                         key={`${project.id}-${tag}`}
                         variant="secondary"
                         className={`cursor-pointer transition-all duration-300 ${activeFilter === tag
-                            ? "bg-primary/20 text-primary hover:bg-primary/30"
-                            : "hover:bg-primary/10"
+                          ? "bg-primary/20 text-primary hover:bg-primary/30"
+                          : "hover:bg-primary/10"
                           }`}
                         onClick={(e) => {
                           e.stopPropagation()
@@ -678,4 +710,3 @@ export default function Portfolio() {
     </div>
   )
 }
-
