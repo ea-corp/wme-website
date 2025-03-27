@@ -8,7 +8,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-800 text-white p-6">
+    <footer className="bg-gray-800 text-white px-2 py-6">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap justify-around items-center">
         <div className="mb-4 md:mb-0 ml-8 md:ml-0">
           <Image
@@ -52,53 +52,58 @@ export default function Footer() {
             />
           </div>
         </div>
-        <div>
-          <ul className="space-y-2 text-center sm:text-left mt-8 md:mt-0">
+        <div className="flex flex-col items-center space-y-2 mt-8 md:mt-0 text-sm md:hidden">
+          <div className="flex space-x-2">
+            <a href="/" className="hover:text-[#f4d752]">Home</a>
+            <span>|</span>
+            <a href="/remote-services" className="hover:text-[#f4d752]">Packages</a>
+            <span>|</span>
+            <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories worth telling</a>
+          </div>
+          <div className="flex space-x-2">
+            <a href="/blog" className="hover:text-[#f4d752]">Blog</a>
+            <span>|</span>
+            <a href="/portfolio-wme" className="hover:text-[#f4d752]">Portfolio</a>
+            <span>|</span>
+            <a href="/apps" className="hover:text-[#f4d752]">Apps</a>
+          </div>
+          <div className="flex space-x-2">
+            <a href="/fullfillment-policy" className="hover:text-[#f4d752]">Fullfillment Policy</a>
+            <span>|</span>
+            <a href="/contact-us" className="hover:text-[#f4d752]">Contact Us</a>
+          </div>
+        </div>
+        <div className="hidden md:flex space-y-2 mt-8 md:mt-0 text-sm">
+          <ul className="space-y-2 text-center sm:text-left">
             <li>
-              <a href="/" className="hover:text-[#f4d752]">
-                Home
-              </a>
+              <a href="/" className="hover:text-[#f4d752]">Home</a>
             </li>
             <li>
-              <a href="/remote-services" className="hover:text-[#f4d752]">
-                Packages
-              </a>
+              <a href="/remote-services" className="hover:text-[#f4d752]">Packages</a>
             </li>
             <li>
-              <a href="/stories-worth-telling" className="hover:text-[#f4d752]">
-                Stories worth telling
-              </a>
+              <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories worth telling</a>
             </li>
             <li>
-              <a href="/blog" className="hover:text-[#f4d752]">
-                Blog
-              </a>
+              <a href="/blog" className="hover:text-[#f4d752]">Blog</a>
             </li>
             <li>
-              <a href="/portfolio-wme" className="hover:text-[#f4d752]">
-                Portfolio
-              </a>
+              <a href="/portfolio-wme" className="hover:text-[#f4d752]">Portfolio</a>
             </li>
             <li>
-              <a href="/apps" className="hover:text-[#f4d752]">
-                Apps
-              </a>
+              <a href="/apps" className="hover:text-[#f4d752]">Apps</a>
             </li>
             <li>
-              <a href="/fullfillment-policy" className="hover:text-[#f4d752]">
-                Fullfillment Policy
-              </a>
+              <a href="/fullfillment-policy" className="hover:text-[#f4d752]">Fullfillment Policy</a>
             </li>
             <li>
-              <a href="/contact-us" className="hover:text-[#f4d752]">
-                Contact Us
-              </a>
+              <a href="/contact-us" className="hover:text-[#f4d752]">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
       <div>
-        <p className="text-center py-4">
+        <p className="text-center py-4 px-4 text-sm">
           © 2022 Workflow Made Easy. All Rights Reserved.
         </p>
       </div>
