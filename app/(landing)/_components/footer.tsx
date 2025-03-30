@@ -61,8 +61,6 @@ export default function Footer() {
             <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories worth telling</a>
           </div>
           <div className="flex space-x-2">
-            <a href="/blog" className="hover:text-[#f4d752]">Blog</a>
-            <span>|</span>
             <a href="/portfolio-wme" className="hover:text-[#f4d752]">Portfolio</a>
             <span>|</span>
             <a href="/apps" className="hover:text-[#f4d752]">Apps</a>
