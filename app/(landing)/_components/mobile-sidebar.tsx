@@ -34,12 +34,8 @@ const guestRoutes: Route[] = [
     href: "/stories-worth-telling",
   },
   {
-    label: "About us - Our Team",
+    label: "Our Team",
     href: "/our-team",
-  },
-  {
-    label: "About us - Our Blog",
-    href: "/blog",
   },
   {
     label: "Portfolio",
