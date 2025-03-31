@@ -35,7 +35,7 @@ export default function ClientSuccessStory({
         <div
             className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} shadow-lg rounded-lg overflow-hidden`}
         >
-            <div className={`${backgroundColor} py-8 px-6 md:px-8 lg:px-10 flex-1 flex flex-col justify-center`}>
+            <div className={`${backgroundColor} py-8 px-0 md:px-8 lg:px-10 flex-1 flex flex-col justify-center`}>
                 <Card className={`border-0 shadow-none ${backgroundColor} ${textColor}`}>
                     <div className="flex justify-center">
                         <Badge className="text-sm px-3 py-1 bg-primary/20 text-primary-foreground">Success Story</Badge>
@@ -73,7 +73,6 @@ export default function ClientSuccessStory({
                     ></iframe>
                 </div>
             </div>
-            x
         </div>
     )
 }

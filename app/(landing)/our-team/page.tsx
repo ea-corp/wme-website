@@ -31,10 +31,10 @@ const employeeLocations = [
     id: 3, 
     name: "Chan Myae Khine", 
     position: "Junior Implementation Specialist", 
-    country: "Thailand", 
+    country: "Myanmar", 
     img: "/images/team/chan.png", 
-    lat: 10.8688, 
-    lon: 70.2093, 
+    lat: 12.8688, 
+    lon: 68.2093, 
     offsetDirection: "left",
     offsetDistance: 35,
   },
@@ -158,7 +158,7 @@ const WorldMap = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className="pb-28">
       <h2 className="text-4xl font-bold py-16 bg-gray-100 text-gray-800 text-center">
         Our Global Team
       </h2>

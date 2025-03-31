@@ -29,7 +29,7 @@ export default async function BlogPosts() {
 
   return (
     <div className="min-h-screen pb-8">
-      <main className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <main className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {posts
           .filter((post: any) => {
             const excludedTitles = [

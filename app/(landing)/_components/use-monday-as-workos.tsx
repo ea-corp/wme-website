@@ -79,7 +79,7 @@ const MondayWorkOS: React.FC = () => {
 
   return (
     <div className="container mx-auto my-8 p-4">
-      <h1 className="text-2xl md:text-3xl font-semibold text-center my-4 px-4 md:px-32 mb-8 md:mb-16">
+      <h1 className="text-2xl md:text-3xl font-semibold text-center my-4 md:px-32 mb-8 md:mb-16">
         The flexible Work OS offers in-depth and effective solutions for every
         department and use case across your organization while maintaining
         seamless communication between all of them.

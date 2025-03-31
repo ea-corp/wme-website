@@ -1,5 +1,4 @@
 "use client"
-
 import type React from "react"
 import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
@@ -282,7 +281,7 @@ export default function Portfolio() {
   const groupedProjects =
     activeFilter === "Manufacturing" || activeFilter === "Real Estate" || activeFilter === "Human Resources"
       ? filteredProjects.reduce((acc: any, project: any) => {
-        const section = project.section || ""
+        const section = project.section || "Others"
         if (!acc[section]) {
           acc[section] = []
         }
@@ -290,6 +289,13 @@ export default function Portfolio() {
         return acc
       }, {})
       : { "": filteredProjects }
+
+  // Ensure "Others" section is always last
+  const sortedSections = Object.keys(groupedProjects).sort((a, b) => {
+    if (a === "Others") return 1
+    if (b === "Others") return -1
+    return 0
+  })
 
   // Set active filter and update filter category if necessary
   const setFilter = (tag: string) => {
@@ -530,7 +536,7 @@ export default function Portfolio() {
       </div>
 
       {/* Projects grid with improved design - removed zoom button */}
-      {Object.keys(groupedProjects).map((section) => (
+      {sortedSections.map((section) => (
         <div key={section} className="mb-8">
           <h2 className="text-3xl text-blue-700 text-center py-4 font-semibold mb-4">{section}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
