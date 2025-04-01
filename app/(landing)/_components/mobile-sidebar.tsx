@@ -94,12 +94,12 @@ export const MobileSidebar = () => {
       <SheetContent side="right" className="p-0 bg-white">
         <div className="h-full border-r flex flex-col overflow-y-auto bg-gray-white shadow-sm">
           <div className="p-6">
-           
-               <Link href="/"> <SheetClose>
-            <Logo />   </SheetClose>
+
+            <Link href="/"> <SheetClose>
+              <Logo />   </SheetClose>
             </Link>
-         
-           
+
+
           </div>
 
           <div className="flex flex-col w-full">
