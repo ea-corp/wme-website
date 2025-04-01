@@ -26,8 +26,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Card className="w-[320px] md:w-[400px] h-full p-4 cursor-pointer flex flex-col">
-      <div>
-        <img src={image || "/placeholder.svg"} alt={title[0]} className="w-full h-48 object-cover" />
+      <div className="relative">
+        <img
+          src={image || "/placeholder.svg"}
+          alt={title[0]}
+          className="w-full h-48 object-cover"
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+        />
+        <img src="/watermark.png" alt="Watermark" className="absolute bottom-2 right-2 w-16 opacity-50" />
         <h3 className="font-semibold text-lg mt-2">{title[0]}</h3>
         <p className="text-sm md:text-medium">{description[0]}</p>
       </div>
@@ -81,7 +88,10 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
                   src={img || "/placeholder.svg"}
                   className="object-contain h-full max-h-[60vh] w-auto mx-auto cursor-zoom-in"
                   alt={`${title[projIndex]} image ${imgIndex}`}
+                  onContextMenu={(e) => e.preventDefault()}
+                  onDragStart={(e) => e.preventDefault()}
                 />
+                <img src="/images/WME_logo.png" alt="Watermark" className="absolute bottom-2 right-2 w-16 opacity-50" />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="bg-background/70 text-foreground px-3 py-1 rounded-full text-sm backdrop-blur-sm">
                     Click to zoom
@@ -124,4 +134,3 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
 }
 
 export default ProjectCard
-

@@ -201,6 +201,8 @@ const FullscreenImage = ({ src, alt, onClose }: { src: string; alt: string; onCl
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
+        onContextMenu={(e) => e.preventDefault()} // Prevent right-click
+        onDragStart={(e) => e.preventDefault()} // Prevent drag-and-drop
       >
         <div
           className="absolute transition-transform duration-100"
@@ -223,6 +225,8 @@ const FullscreenImage = ({ src, alt, onClose }: { src: string; alt: string; onCl
               className="object-contain max-h-[90vh]"
               unoptimized
               draggable="false"
+              onContextMenu={(e) => e.preventDefault()} // Prevent right-click
+              onDragStart={(e) => e.preventDefault()} // Prevent drag-and-drop
             />
           </div>
         </div>
@@ -559,6 +563,8 @@ export default function Portfolio() {
                     fill
                     className={`object-cover transition-all duration-500 ${hoveredProject === project.id ? "scale-110" : "scale-100"
                       }`}
+                    onContextMenu={(e) => e.preventDefault()} // Prevent right-click
+                    onDragStart={(e) => e.preventDefault()} // Prevent drag-and-drop
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
                     <div className="bg-background/40 backdrop-blur-sm px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
@@ -634,6 +640,8 @@ export default function Portfolio() {
                   onMouseUp={handleMouseUp}
                   onMouseLeave={handleMouseUp}
                   style={{ cursor: isDragging ? "grabbing" : zoomLevel > 1 ? "grab" : "default" }}
+                  onContextMenu={(e) => e.preventDefault()} // Prevent right-click
+                  onDragStart={(e) => e.preventDefault()} // Prevent drag-and-drop
                 >
                   <div
                     ref={dialogImageRef}
@@ -650,6 +658,8 @@ export default function Portfolio() {
                       height={600}
                       className="object-contain max-h-[400px]"
                       onClick={() => setIsFullscreen(true)}
+                      onContextMenu={(e) => e.preventDefault()} // Prevent right-click
+                      onDragStart={(e) => e.preventDefault()} // Prevent drag-and-drop
                     />
                   </div>
                   {/* Fullscreen button */}
