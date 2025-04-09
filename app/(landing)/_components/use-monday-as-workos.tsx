@@ -8,46 +8,6 @@ type Solution = {
   description: string;
 };
 
-const solutions: Solution[] = [
-  {
-    icon: "/images/workos/salescrm.png",
-    title: "Sales & CRM",
-    description: "Centralize your entire sales pipeline in one workplace",
-  },
-  {
-    icon: "/images/workos/marketing.png",
-    title: "Marketing",
-    description: "Collaborate, organize and measure your campaigns",
-  },
-  {
-    icon: "/images/workos/softwaredevelopment.png",
-    title: "Software development",
-    description: "Sprint through every development process, your way",
-  },
-  {
-    icon: "/images/workos/creative.png",
-    title: "Creative",
-    description: "Streamline requests and manage your entire creative process",
-  },
-  {
-    icon: "/images/workos/projectmanagement.png",
-    title: "Project management",
-    description:
-      "Easily plan, track and manage every project from start to finish",
-  },
-  {
-    icon: "/images/workos/it.png",
-    title: "IT",
-    description: "Run your IT operations with control and efficiency",
-  },
-  {
-    icon: "/images/workos/hr.png",
-    title: "Human Resources",
-    description:
-      "Build efficient processes for recruitment, onboarding, and more",
-  },
-];
-
 type SolutionCardProps = {
   icon: string;
   title: string;
@@ -75,11 +35,12 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
 type MondayWorkOSProps = {
   dictionary: {
     title: string;
+    solutions: Solution[];
   };
 };
 
 const MondayWorkOS: React.FC<MondayWorkOSProps> = ({ dictionary }) => {
-  // Diviser le tableau en deux parties
+  const { solutions } = dictionary;
   const topSolutions = solutions.slice(0, 4);
   const bottomSolutions = solutions.slice(4, 7);
 

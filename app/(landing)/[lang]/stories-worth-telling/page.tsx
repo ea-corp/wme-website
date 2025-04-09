@@ -94,7 +94,10 @@ export default function ServicePage() {
         </div>
       </div>
       <div className="my-12 pb-28 px-8 md:px-24">
-        <OrganizationUsingMonday />
+        <OrganizationUsingMonday dictionary={{
+          title: "",
+          title2: ""
+        }} />
       </div>
     </div>
   )

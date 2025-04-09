@@ -1,6 +1,143 @@
 {
+  "incitationbutton": {
+    "title": "Get the most out of monday.com for your business",
+    "subtitle": "Overwhelmed trying to figure out monday.com?",
+    "description": "When you get started with Monday.com, figuring out how to structure your company workflow can be overwhelming. Monday.com is such a versatile tool, how do you know where to start and what features to use? You probably have a basic understanding of Monday.com and now you’re ready to learn more; you want to make Monday.com the main hub for your work and have everything in one place but don’t have time to figure it out on your own.",
+    "cta": {
+      "text": "Try monday.com",
+      "url": "https://try.monday.com/wme"
+    },
+    "image": "/images/landing-image.png"
+  },
+  "ourservices": {
+    "title": "Our Services",
+    "description": "Maximize the value of Monday.com with our expert services. We bring years of experience to help you build the perfect solution for your organization.",
+    "choosepackage": "Choose Your Package",
+    "choosepackagedesc": "Select the service package that best fits your needs and preferences.",
+    "services": [
+      {
+        "icon": "UserCog",
+        "title": "Consulting",
+        "description": "Review and optimize your infrastructure",
+        "items": [
+          "Review current infrastructure",
+          "Mapping existing processes",
+          "Identify the bottlenecks & propose solutions",
+          "Discuss how Monday can be implemented according to your requirements",
+          "List all apps that will be required and how they would interact with each others."
+        ]
+      },
+      {
+        "icon": "Settings",
+        "title": "Implementation",
+        "description": "Set up and customize your Monday.com workspace",
+        "items": [
+          "Setting up account and boards permission",
+          "Building & Customizing boards",
+          "Setting up automations",
+          "Setting up Monday apps or 3rd Party Integration",
+          "Set dashboards for reporting",
+          "Data Migration to Monday.com from other platforms",
+          "Custom Development using Zapier/Make.com or by leveraging Monday's API"
+        ]
+      },
+      {
+        "icon": "ScreenShare",
+        "title": "Training & User Adoption",
+        "description": "Ensure your team is effectively trained",
+        "items": [
+          "Ensuring that your team is effectively trained is a critical part of a successful implementation.",
+          "We provide different type of training On-Site or via Videoconferencing",
+          "Training for managers or dedicated Monday.com admin in the company",
+          "Group training with the concerned department",
+          "To keep the training interactive and for maximum efficiency we suggest that the group do not exceed 15 persons"
+        ]
+      },
+      {
+        "icon": "HandHelping",
+        "title": "Ongoing Support",
+        "description": "Continuous assistance and optimization",
+        "items": [
+          "Monthly review of the solution",
+          "Support your team with any questions they might have, this will help for a successful adoption of the solution that was built",
+          "Optimization suggestions based on new features available or any changes in your business operations."
+        ]
+      }
+    ],
+    "packages": [
+      {
+        "title": "Remote Services",
+        "description": "Get expert assistance from anywhere in the world",
+        "image": "/images/remote-work.webp",
+        "link": "/remote-services",
+        "learnmore": "Learn more"
+      },
+      {
+        "title": "On-site Consulting",
+        "description": "We travel worldwide to implement Monday.com at your premises.",
+        "image": "/images/onsite-consulting.png",
+        "link": "/on-site-implementation-packages",
+        "learnmore": "Learn more"
+      }
+    ]
+  },
+  "organizationusingmonday": {
+    "title": "Join over 152,000 leading organizations that use monday.com to run their work",
+    "title2": "to run their work"
+  },
+  "herovideo": {
+    "title": "Monday.com can be used as a work OS for almost any business.",
+    "description": "Monday.com is a work operating system (Work OS). You can manage all types of workflow and processes in one place.",
+    "videoId": "vQ2dfgeSJHU",
+    "cta": {
+      "startTrial": {
+        "text": "Start Free Trial",
+        "url": "https://try.monday.com/wme"
+      },
+      "requestDemo": {
+        "text": "Request a demo",
+        "url": "/contact-us"
+      }
+    }
+  },
   "mondayworkos": {
-    "title": "The flexible Work OS offers in-depth and effective solutions for every department and use case across your organization while maintaining seamless communication between all of them."
-  } 
-
+    "title": "The flexible Work OS offers in-depth and effective solutions for every department and use case across your organization while maintaining seamless communication between all of them.",
+    "solutions": [
+      {
+        "icon": "/images/workos/salescrm.png",
+        "title": "Sales & CRM",
+        "description": "Centralize your entire sales pipeline in one workplace"
+      },
+      {
+        "icon": "/images/workos/marketing.png",
+        "title": "Marketing",
+        "description": "Collaborate, organize and measure your campaigns"
+      },
+      {
+        "icon": "/images/workos/softwaredevelopment.png",
+        "title": "Software development",
+        "description": "Sprint through every development process, your way"
+      },
+      {
+        "icon": "/images/workos/creative.png",
+        "title": "Creative",
+        "description": "Streamline requests and manage your entire creative process"
+      },
+      {
+        "icon": "/images/workos/projectmanagement.png",
+        "title": "Project management",
+        "description": "Easily plan, track and manage every project from start to finish"
+      },
+      {
+        "icon": "/images/workos/it.png",
+        "title": "IT",
+        "description": "Run your IT operations with control and efficiency"
+      },
+      {
+        "icon": "/images/workos/hr.png",
+        "title": "Human Resources",
+        "description": "Build efficient processes for recruitment, onboarding, and more"
+      }
+    ]
+  }
 }
