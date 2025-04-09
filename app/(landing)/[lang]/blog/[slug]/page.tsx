@@ -2,13 +2,13 @@ import {
   getPageContent,
   getPageBySlug,
   notionClient,
-} from "../../../../lib/notion";
+} from "../../../../../lib/notion";
 import { NotionRenderer } from "@notion-render/client";
 import { notFound } from "next/navigation";
 
 import hljsPlugin from "@notion-render/hljs-plugin";
 import bookmarkPlugin from "@notion-render/bookmark-plugin";
-import { Post } from "../../_components/post";
+import { Post } from "../../../_components/post";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const post = await getPageBySlug(params.slug);

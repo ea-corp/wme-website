@@ -1,5 +1,5 @@
-import BlogPosts from "../_components/blog-posts"
-import OrganizationUsingMonday from "../_components/organization-using-monday"
+import BlogPosts from "../../_components/blog-posts"
+import OrganizationUsingMonday from "../../_components/organization-using-monday"
 import ClientSuccessStory from "./components/client-success-story"
 
 export default function ServicePage() {

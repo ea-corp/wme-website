@@ -72,7 +72,13 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
   </div>
 );
 
-const MondayWorkOS: React.FC = () => {
+type MondayWorkOSProps = {
+  dictionary: {
+    title: string;
+  };
+};
+
+const MondayWorkOS: React.FC<MondayWorkOSProps> = ({ dictionary }) => {
   // Diviser le tableau en deux parties
   const topSolutions = solutions.slice(0, 4);
   const bottomSolutions = solutions.slice(4, 7);
@@ -80,11 +86,9 @@ const MondayWorkOS: React.FC = () => {
   return (
     <div className="container mx-auto my-8 p-4">
       <h1 className="text-2xl md:text-3xl font-semibold text-center my-4 md:px-32 mb-8 md:mb-16">
-        The flexible Work OS offers in-depth and effective solutions for every
-        department and use case across your organization while maintaining
-        seamless communication between all of them.
+        {dictionary.title}
       </h1>
-      
+
       {/* Desktop Layout */}
       <div className="hidden md:block">
         {/* Grid de 4 en haut */}
@@ -93,7 +97,7 @@ const MondayWorkOS: React.FC = () => {
             <SolutionCard key={index} {...solution} />
           ))}
         </div>
-        
+
         {/* Grid de 3 en bas */}
         <div className="grid grid-cols-3 md:grid-cols-3 gap-4 justify-center mt-8 md:mx-32">
           {bottomSolutions.map((solution, index) => (

@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { getDatabase } from "@/lib/notion";
 import { Building, Check } from "lucide-react";
 import { Metadata } from "next";
-import { ReviewCard } from "../_components/reviews";
+import { ReviewCard } from "../../_components/reviews";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 export const metadata: Metadata = {
