@@ -94,6 +94,7 @@ const MondayWorkOS: React.FC = () => {
           ))}
         </div>
         
+        
         {/* Grid de 3 en bas */}
         <div className="grid grid-cols-3 md:grid-cols-3 gap-4 justify-center mt-8 md:mx-32">
           {bottomSolutions.map((solution, index) => (
