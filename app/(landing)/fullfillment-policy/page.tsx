@@ -5,18 +5,16 @@ const FulfillmentPolicy = () => {
     <div className="max-w-4xl mx-auto p-6 py-12">
       <h1 className="text-2xl font-bold mb-4 text-center">Fulfillment Policy</h1>
       <p className="mb-6">
-        Workflow Made Easy is committed to delivering high-quality consultancy
-        services to optimize business processes and achieve organizational
-        goals. This fulfillment policy outlines the terms and conditions for
-        our service delivery, payments, and client obligations.
+       We are committed to delivering high-quality consultancy services to optimize business processes and achieve organizational goals.
+       This fulfillment policy outlines the terms and conditions for
+       our service delivery, payments, and client obligations.
       </p>
 
       <section className="mb-6">
         <h2 className="text-lg font-bold mb-2">1. Service Delivery</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>
-            Services are rendered as outlined in the selected package or
-            agreement.
+            We deliver services as outlined in the selected package or agreement.
           </li>
           <li>
             Package validity, service hours, and included features are clearly
@@ -84,9 +82,7 @@ const FulfillmentPolicy = () => {
             consultations and timely feedback.
           </li>
           <li>
-            Clients must maintain active subscriptions for relevant platforms
-            (e.g., Monday.com, Make.com) and notify WME Solutions of any
-            required adjustments in support capacity.
+            Clients must maintain active subscriptions for relevant platforms (e.g., Monday.com, Make.com) and notify us of any required adjustments in support capacity.
           </li>
         </ul>
       </section>
@@ -117,9 +113,7 @@ const FulfillmentPolicy = () => {
       <section className="mb-6">
         <h2 className="text-lg font-bold mb-2">8. Limitations of Liability</h2>
         <p>
-          WME Solutions is not liable for indirect, incidental, or consequential
-          damages resulting from service provision, except as required by
-          applicable law.
+          We are not liable for indirect, incidental, or consequential damages resulting from service provision, except as required by applicable law.
         </p>
       </section>
     </div>
