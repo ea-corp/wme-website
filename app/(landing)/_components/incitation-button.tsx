@@ -61,7 +61,7 @@ export default function IncitationButton() {
           Monday.com and now you’re ready to learn more; you want to make
           Monday.com the main hub for your work and have everything in one place
           but don’t have time to figure it out on your own. <br /> <br />{" "}
-          Workflow Made easy have helped over 100 customers to streamline their
+          Workflow Made Easy have helped over 100 customers to streamline their
           business processes using &nbsp;
           <a
             href="https://try.monday.com/wme"
