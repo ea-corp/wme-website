@@ -1,12 +1,12 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import Link from "next/link"
 import { format, parseISO, differenceInMinutes } from "date-fns"
 import { CalendarCheck, Clock, Mail, MessageSquare, ArrowRight } from "lucide-react"
 
-export default function MeetingConfirmation() {
+function MeetingConfirmation() {
   const searchParams = useSearchParams()
   const [loading, setLoading] = useState(true)
   const [bookingData, setBookingData] = useState({
@@ -241,7 +241,7 @@ export default function MeetingConfirmation() {
                 <h3 className="font-semibold text-xl mb-2 group-hover:text-blue-600 transition-colors">
                   📂 Workflow Design Portfolio
                 </h3>
-                <p className="text-gray-600 mb-4 flex-grow">Explore screenshots of real Monday.com workflows we&apos;ve built to streamline operations, manage teams, and automate processes.</p>
+                <p className="text-gray-600 mb-4 flex-grow">Explore screenshots of real Monday.com workflows weapos;ve built to streamline operations, manage teams, and automate processes.</p>
                 <div className="flex justify-end">
                   <ArrowRight className="h-5 w-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -264,5 +264,13 @@ export default function MeetingConfirmation() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function WrappedMeetingConfirmation() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <MeetingConfirmation />
+    </Suspense>
   )
 }
