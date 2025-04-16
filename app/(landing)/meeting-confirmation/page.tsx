@@ -241,7 +241,7 @@ export default function MeetingConfirmation() {
                 <h3 className="font-semibold text-xl mb-2 group-hover:text-blue-600 transition-colors">
                   📂 Workflow Design Portfolio
                 </h3>
-                <p className="text-gray-600 mb-4 flex-grow">Explore screenshots of real Monday.com workflows we've built to streamline operations, manage teams, and automate processes.</p>
+                <p className="text-gray-600 mb-4 flex-grow">Explore screenshots of real Monday.com workflows we&apos;ve built to streamline operations, manage teams, and automate processes.</p>
                 <div className="flex justify-end">
                   <ArrowRight className="h-5 w-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
                 </div>
