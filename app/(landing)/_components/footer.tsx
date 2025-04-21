@@ -102,7 +102,7 @@ export default function Footer() {
       </div>
       <div>
         <p className="text-center py-4 px-4 text-sm">
-© 2025 WME CONSULTING & SOLUTIONS LLC, trading as Workflow Made Easy. All rights reserved.  
+© WME CONSULTING & SOLUTIONS LLC (U.S.) and WME SOLUTIONS CO., LTD (Thailand), operating as WME Solutions™. All rights reserved.
         </p>
       </div>
     </footer>
