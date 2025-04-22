@@ -28,8 +28,7 @@ export default function ServicePage() {
             <div className="absolute bottom-0 left-0 w-full h-1 bg-black" />
           </div>
           <p className="text-2xl mt-12 px-8 md:px-24">
-            Below are some stories worth telling of clients using Monday.com to leverage their business and how WME can
-            help you achieve the same results.
+            Below are some stories worth telling of clients using Monday.com to leverage their business and how WME Solutions can help you achieve the same results.
           </p>
         </div>
 
@@ -82,7 +81,7 @@ export default function ServicePage() {
             companyName="The Student Hotel"
             achievement="enhanced core business processes and gained clarity on"
             achievementMetric="60+ initiatives"
-            description="With tailored solutions from WME, your business can enjoy streamlined workflows and improved productivity."
+            description="With tailored solutions from WME Solutions, your business can enjoy streamlined workflows and improved productivity."
             contactPerson="Charlie MacGregor"
             contactTitle="Founder & CEO, The Student Hotel"
             backgroundColor="bg-gray-200"

@@ -75,7 +75,7 @@ export default function ServicePage() {
     {
       projectName: "Consulting & Strategy, Integrations, Data Services, Training & Enablement, Platform Configuration, Workflow Optimization",
       rating: 5,
-      reviewText: "Workflow Made Easy transformed our real estate management system in Phuket. Eddy, Kessi, and Chan provided outstanding support, flying in on short notice to help us maximize Monday.com. Their expertise in customized workflows and hands-on guidance was invaluable. I highly recommend Workflow Made Easy for their dedication, client success, and ability to deliver under tight deadlines.",
+      reviewText: "WME Solutions transformed our real estate management system in Phuket. Eddy, Kessi, and Chan provided outstanding support, flying in on short notice to help us maximize Monday.com. Their expertise in customized workflows and hands-on guidance was invaluable. I highly recommend WME Solutions for their dedication, client success, and ability to deliver under tight deadlines.",
       sourceLogo: "/images/monday-experts-logo.png",
     },
     {
@@ -87,7 +87,7 @@ export default function ServicePage() {
     {
       projectName: "Consulting & Strategy",
       rating: 5,
-      reviewText: "Eddy and the team took the time to truly understand our tutoring center’s needs and delivered an outstanding customized solution. They integrated Monday.com with platforms like Make.com and Excel, rebuilding our operations from the ground up. Their professionalism, technical expertise, and ability to streamline processes have been invaluable. If you need a results-driven team, Workflow Made Easy is the way to go.",
+      reviewText: "Eddy and the team took the time to truly understand our tutoring center’s needs and delivered an outstanding customized solution. They integrated Monday.com with platforms like Make.com and Excel, rebuilding our operations from the ground up. Their professionalism, technical expertise, and ability to streamline processes have been invaluable. If you need a results-driven team, WME Solutions is the way to go.",
       sourceLogo: "/images/monday-experts-logo.png",
     },
     {

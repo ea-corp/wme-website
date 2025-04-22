@@ -75,10 +75,10 @@ const mondayTools = [
   {
     id: "auto-increment-numbers",
     title: "Auto-Increments Numbers",
-    description: "This app lets you define a text column that will be automatically filled with an incremented number using a customized format. You can also configure the number of digits and starting number.",
+    description: "Discover the power of Monday.com apps, a suite of add-ons designed to effortlessly enhance the Monday.com platform. These apps expand the platform’s capabilities, offering new functionalities without the need for custom development. Each app is a ready-to-use, and available on Monday marketplace. Explore these apps to streamline your processes, increase productivity, and elevate your project management experience with the convenience of out-of-the-box solutions.",
     imageSrc: "/images/apps/auto-increment-numbers.png",
     imageAlt: "Auto-Increments Numbers",
-    link: "https://www.b-lab.app/auto-increment-numbers/",
+    link: "https://monday.com/marketplace/listing/10000104/auto-increment-numbers",
   },
   {
     id: "autofill-group-name",
@@ -86,7 +86,7 @@ const mondayTools = [
     description: "Autofill Group Name is an app for monday.com that automates the updating of dropdown columns with the group name based on various triggers like item movement, creation, status change, or name alteration.",
     imageSrc: "/images/apps/autofillgroupname.png",
     imageAlt: "Autofill Group Name icon",
-    link: "https://www.b-lab.app/autofill-group-name/",
+    link: "https://monday.com/marketplace/listing/10000092/autofill-group-name",
   },
   {
     id: "approval-feedback",
@@ -94,7 +94,7 @@ const mondayTools = [
     description: "The Approval & Feedback App is a versatile tool for monday.com users, designed to streamline the approval and feedback process through customized forms.",
     imageSrc: "/images/apps/approvalfeedback.png",
     imageAlt: "Approval and feedback icon",
-    link: "https://www.b-lab.app/approval-and-feedback/",
+    link: "https://monday.com/marketplace/listing/10000230/approval--feedback",
   },
   {
     id: "copy-paste-master",
@@ -102,7 +102,7 @@ const mondayTools = [
     description: "Copy Paste Master is an app for monday.com that enables users to automate the copying and combining of data from various columns, and pasting it into another column, streamlining data management and customization.",
     imageSrc: "/images/apps/copypastemaster.png",
     imageAlt: "Copy paste master icon",
-    link: "https://www.b-lab.app/copy-paste-master/",
+    link: "https://monday.com/marketplace/listing/10000151/copy-paste-master",
   },
   {
     id: "docugen",
@@ -110,16 +110,16 @@ const mondayTools = [
     description: "DocuGen is a document automation tool that generates custom documents using data from Monday.com boards.",
     imageSrc: "/images/apps/docugen.png",
     imageAlt: "Docugen logo",
-    link: "https://docugen.io/",
+    link: "https://monday.com/marketplace/listing/12/docugen",
   },
   {
     id: "getsign",
     title: "GetSign",
     description: 
-    " GetSign is a digital signature tool that enables the secure and efficient signing of documents online. Integrating GetSign with Monday.com allows users to seamlessly send documents from Monday.com boards for e-signature, track the signing process, and receive completed documents back into their Monday.com workflow. This integration streamlines the document signing process, enhancing efficiency and reducing the turnaround time for approvals and agreements within project management tasks.",
+    "GetSign is a digital signature tool that enables the secure and efficient signing of documents online. Integrating GetSign with Monday.com allows users to seamlessly send documents from Monday.com boards for e-signature, track the signing process, and receive completed documents back into their Monday.com workflow. This integration streamlines the document signing process, enhancing efficiency and reducing the turnaround time for approvals and agreements within project management tasks.",
     imageSrc: "/images/apps/getsign.png",
     imageAlt: "GetSign logo",
-    link: "https://getsign.io/",
+    link: "https://monday.com/marketplace/listing/10000190/getsign---esignatures-pdf-generator--form-builder",
   },
   {
     id: "subitem-pro-templates",
@@ -127,7 +127,7 @@ const mondayTools = [
     description: "Subitem Pro Templates is an app for monday.com that simplifies managing items and subitems by enabling users to create, reorder, and deploy customized subitem templates across their boards.",
     imageSrc: "/images/apps/subitemprotemplates.png",
     imageAlt: "Subitem Pro templates icon",
-    link: "https://www.b-lab.app/subitem-pro-templates/",
+    link: "https://monday.com/marketplace/listing/10000172/subitem-pro-templates",
   },
   {
     id: "timeline-to-date",
@@ -135,7 +135,7 @@ const mondayTools = [
     description: "Timeline to Date is an automation app for monday.com that synchronizes timeline data with start and end date columns.",
     imageSrc: "/images/apps/timelinetodate.png",
     imageAlt: "Timeline to date icon",
-    link: "https://www.b-lab.app/timeline-to-date/",
+    link: "https://monday.com/marketplace/listing/10000118/timeline-to-date",
   },
   {
     id: "tag-to-action",
@@ -143,7 +143,7 @@ const mondayTools = [
     description: "Tag to Action is a dynamic productivity tool for monday.com, enabling users to automate and efficiently manage their tasks and boards with custom actions.",
     imageSrc: "/images/apps/tagtoaction.png",
     imageAlt: "Tag to action icon",
-    link: "https://www.b-lab.app/tag-to-action/",
+    link: "https://monday.com/marketplace/listing/10000207/tag-to-action",
   },
   {
     id: "vlookup-auto-link",
@@ -151,7 +151,7 @@ const mondayTools = [
     description: "VLOOKUP Auto-Link is an advanced alternative to monday.com's connected boards. It allows you to automatically link multiple boards and match items while maintaining monday's native reporting, automation, and permissions.",
     imageSrc: "/images/apps/vlookup.png",
     imageAlt: "Vlookup logo",
-    link: "https://jetpackapps.co/monday-com-vlookup-auto-links-connect-boards-mirror/",
+    link: "https://monday.com/marketplace/listing/99/vlookup-auto-link-item-to-multiple-boards-",
   },
 ];
 

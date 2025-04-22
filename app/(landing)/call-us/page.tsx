@@ -32,7 +32,7 @@ const BookACallUS = () => {
         <div className="flex items-center justify-center h-[80vh] p-4">
             <div className="flex flex-col md:flex-row w-full max-w-4xl p-6 rounded-lg shadow-md border-2 border-gray-100 h-auto md:h-[50vh]">
                 <div className="w-full md:w-1/2 flex text-black flex-col p-4">
-                    <h2 className="font-bold text-2xl">WME (Workflow Made Easy)</h2>
+                    <h2 className="font-bold text-2xl">WME Solutions</h2>
                     <p className="text-gray-700 text-lg mt-2">After selecting the working session duration, please select an available time slot.</p>
                 </div>
                 <div className="w-full md:w-1/2 p-4">

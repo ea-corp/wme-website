@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import React, { useEffect } from "react";
 
 const metadata: Metadata = {
-  title: "Contact Us - Workflow Made Easy",
+  title: "Contact Us - WME Solutions",
   description:
     "Contact us today to learn more about our services, schedule a consultation, or request a quote. Our team is here to help you optimize your workflow, boost productivity, and achieve your business goals. Reach out to us and discover how we can make your workflow easy!",
 };

@@ -3,7 +3,7 @@ import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import { ChevronDown, ChevronUp } from "lucide-react"; 
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function Faq() {
   const [expanded, setExpanded] = React.useState<number | false>(false);
@@ -56,17 +56,14 @@ export default function Faq() {
         </AccordionSummary>
         <AccordionDetails>
           The hours can be used on the following: <br /> <br /> 1. Offline
-          implementation time by Workflow Made Easy <br />
-          2. Collaborative build sessions with Workflow Made Easy (Video calls
-          with screen sharing) <br /> 3.Importing Data from your current system
-          to monday.com when needed <br /> <br /> 1. Group training sessions on
-          monday.com features and the workflow that has been built <br /> 2.
-          Maintenance & Support after the workflow is built Once a package
-          purchased, you will received a unique link where you can track the
-          time balance remaining in your package. The details are live and you
-          can download at anytime a report. Workflow Made Easy will record time
-          when working on your project for events such as collaborative build
-          sessions, offline build by Workflow Made Easy, etc..
+          implementation time by WME Solutions <br />
+          2. Collaborative build sessions with WME Solutions (Video calls with screen sharing)
+          <br /> 
+          3.Importing Data from your current system
+          to monday.com when needed <br /> <br /> 
+          1. Group training sessions on
+          monday.com features and the workflow that has been built <br /> 
+          2. Maintenance & Support after the workflow is built Once a package purchased, you will received a unique link where you can track the time balance remaining in your package. The details are live and you can download at anytime a report. WME Solutions will record time when working on your project for events such as collaborative build sessions, offline build by WME Solutions, etc..
         </AccordionDetails>
       </Accordion>
 
@@ -88,7 +85,7 @@ export default function Faq() {
           time, it would be very time consuming to get all stakeholders on the
           same page we were when we paused the project. Even if we have notes
           and mapped your entire process this is not ideal. <br /> <br /> This
-          is part of the Workflow Made Easy success method for all the
+          is part of the WME Solutions success method for all the
           implementations we have made. We just need a bit of your time each
           week to review what we have build, participate in collaborative build
           sessions. Most of our client enjoy it very much as they fill empowered
@@ -172,10 +169,7 @@ export default function Faq() {
           {expanded === 7 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
-          Workflow Made Easy is a company based in Vietnam with consultants
-          spanning Europe and Asia. We cater to global clients and for real-time
-          collaboration, we’ve established dedicated time slots for our clients
-          in North America, Europe, Asia, and Oceania
+        WME Solutions is a company legally registered in the United States and Thailand, with an operational team based across Europe and Asia. We work with clients worldwide and offer dedicated time slots to support real-time collaboration across North America, Europe, Asia, and Oceania.
         </AccordionDetails>
       </Accordion>
 

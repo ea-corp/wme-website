@@ -6,7 +6,7 @@ import { ReviewCard } from "../_components/reviews";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 export const metadata: Metadata = {
-  title: "On-Site Consulting - Workflow Made Easy",
+  title: "On-Site Consulting - WME Solutions",
   description:
     "Discover our on-site consulting services tailored to optimize your business operations. Our expert consultants work closely with your team to analyze, strategize, and implement tailored solutions that drive efficiency and success.",
 };
@@ -30,7 +30,7 @@ async function getPosts() {
         )
         ||
         post.properties.Title.title[0].text.content.includes(
-          "Transforming Real Estate Management in Phuket: Workflow Made Easy’s On-Site Consultation with Empire Estates"
+          "Transforming Real Estate Management in Phuket: WME Solutions’ On-Site Consultation with Empire Estates"
         )
       )
     );
@@ -69,7 +69,7 @@ export default async function ServicePage() {
         "Discuss about possible integrations about some of your system in place",
         "Questions and Answers",
         "Define the best setup possible for your company using Monday.com and how to start implementing the ideal system would work and how Monday will be set in order to achieve the target",
-        "Building & sharing some real case scenarios that can be used to build your system on Monday.com. Please note that some company will have a dedicated person handling the setup of Monday.com but WME provide also full implementation services based on the diagnostic made.",
+        "Building & sharing some real case scenarios that can be used to build your system on Monday.com. Please note that some company will have a dedicated person handling the setup of Monday.com but WME Solutions provide also full implementation services based on the diagnostic made.",
       ],
     },
     {
@@ -79,7 +79,7 @@ export default async function ServicePage() {
         "Ideal for companies where the implementation of Monday.com is required in several divisions (e.g Sales, Operation, HR, Marketing, etc...)",
       features: [
         "Same as the discovery package",
-        "1 to 2 senior consultant of WME",
+        "1 to 2 senior consultant of WME Solutions",
         "Time will be shared between meeting with the stakeholders and creation/implementation of the solution on Monday.com as needed.",
         "Full remote support of our office based team if required",
         "Enablement of our $2,000 package containing apps & plugins that we have developed and that we will enable in your Monday account for a lifetime",
@@ -93,7 +93,7 @@ export default async function ServicePage() {
     {
       projectName: "Consulting & Strategy, Integrations, Data Services, Training & Enablement, Platform Configuration, Workflow Optimization",
       rating: 5,
-      reviewText: "Workflow Made Easy transformed our real estate management system in Phuket. Eddy, Kessi, and Chan provided outstanding support, flying in on short notice to help us maximize Monday.com. Their expertise in customized workflows and hands-on guidance was invaluable. I highly recommend Workflow Made Easy for their dedication, client success, and ability to deliver under tight deadlines.",
+      reviewText: "WME Solutions transformed our real estate management system in Phuket. Eddy, Kessi, and Chan provided outstanding support, flying in on short notice to help us maximize Monday.com. Their expertise in customized workflows and hands-on guidance was invaluable. I highly recommend WME Solutions for their dedication, client success, and ability to deliver under tight deadlines.",
       sourceLogo: "/images/monday-experts-logo.png",
     },
     {
@@ -105,7 +105,7 @@ export default async function ServicePage() {
     {
       projectName: "Consulting & Strategy",
       rating: 5,
-      reviewText: "Eddy and the team took the time to truly understand our tutoring center’s needs and delivered an outstanding customized solution. They integrated Monday.com with platforms like Make.com and Excel, rebuilding our operations from the ground up. Their professionalism, technical expertise, and ability to streamline processes have been invaluable. If you need a results-driven team, Workflow Made Easy is the way to go.",
+      reviewText: "Eddy and the team took the time to truly understand our tutoring center’s needs and delivered an outstanding customized solution. They integrated Monday.com with platforms like Make.com and Excel, rebuilding our operations from the ground up. Their professionalism, technical expertise, and ability to streamline processes have been invaluable. If you need a results-driven team, WME Solutions is the way to go.",
       sourceLogo: "/images/monday-experts-logo.png",
     },
     {

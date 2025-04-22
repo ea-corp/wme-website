@@ -10,8 +10,8 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "WME - Workflow Made Easy",
-  description: "Optimize your business workflows with Workflow Made Easy's expert services, specializing in implementing and enhancing Monday.com solutions tailored to your organization's needs.",
+  title: "WME - WME Solutions",
+  description: "Optimize your business workflows with WME Solutions's expert services, specializing in implementing and enhancing Monday.com solutions tailored to your organization's needs.",
 };
 
 export default function RootLayout({

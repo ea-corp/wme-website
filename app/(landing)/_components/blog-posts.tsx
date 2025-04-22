@@ -6,7 +6,7 @@ async function getPosts() {
 }
 
 export const metadata = {
-  title: "Blog - Workflow Made Easy",
+  title: "Blog - WME Solutions",
   description:
     "Dive into our blog where we share stories of our past events and experiences. Get an insider's look at our journey, milestones, and insights gained along the way. Stay connected and inspired as we take you behind the scenes of our company's growth and achievements.",
 };

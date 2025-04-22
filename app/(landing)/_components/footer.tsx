@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="mb-4 md:mb-0 ml-8 md:ml-0">
           <Image
             src="/images/monday-bronze-partner.png"
-            alt="Workflow Made Easy Logo"
+            alt="WME Solutions Logo"
             width={300}
             height={150}
           />

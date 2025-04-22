@@ -133,7 +133,7 @@ function MeetingConfirmation() {
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 py-10 md:py-16 px-4 sm:px-6 lg:px-8 text-white text-center">
         <h1 className="text-4xl font-bold mb-3">🎉 Thank You, {bookingData.fullName}!</h1>
         <p className="text-xl max-w-2xl mx-auto">
-          Your meeting with Workflow Made Easy has been successfully booked. An email confirmation has been sent to you.
+          Your meeting with WME Solutions has been successfully booked. An email confirmation has been sent to you.
         </p>
       </div>
 
@@ -266,7 +266,7 @@ function MeetingConfirmation() {
           </p>
           <p className="text-lg mt-6 font-medium">
             Looking forward to meeting you soon!
-            <br />— The WME Team
+            <br />— The WME Solutions Team
           </p>
         </div>
       </div>

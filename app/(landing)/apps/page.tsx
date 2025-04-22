@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import AddOns from "./_components/add-ons";
 
 export const metadata: Metadata = {
-  title: "Apps - Workflow Made Easy",
+  title: "Apps - WME Solutions",
   description:
     "Explore our collection of powerful monday.com add-ons designed to enhance your workflow. Discover how these innovative tools can streamline your processes, boost productivity, and unlock new possibilities for your team. Elevate your monday.com experience with our curated selection of apps tailored to meet your unique needs.",
 };

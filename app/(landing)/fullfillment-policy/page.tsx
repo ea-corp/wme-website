@@ -5,9 +5,7 @@ const FulfillmentPolicy = () => {
     <div className="max-w-4xl mx-auto p-6 py-12">
       <h1 className="text-2xl font-bold mb-4 text-center">Fulfillment Policy</h1>
       <p className="mb-6">
-       We are committed to delivering high-quality consultancy services to optimize business processes and achieve organizational goals.
-       This fulfillment policy outlines the terms and conditions for
-       our service delivery, payments, and client obligations.
+        WME Solutions is committed to delivering high-quality consultancy services to optimize business processes and achieve organizational goals. This fulfillment policy outlines the terms and conditions for our service delivery, payments, and client obligations.
       </p>
 
       <section className="mb-6">
@@ -78,8 +76,7 @@ const FulfillmentPolicy = () => {
         <h2 className="text-lg font-bold mb-2">5. Client Involvement</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>
-            Successful delivery requires active participation, including regular
-            consultations and timely feedback.
+            Successful delivery requires active participation, including regular consultations and timely feedback.
           </li>
           <li>
             Clients must maintain active subscriptions for relevant platforms (e.g., Monday.com, Make.com) and notify us of any required adjustments in support capacity.
@@ -113,8 +110,7 @@ const FulfillmentPolicy = () => {
       <section className="mb-6">
         <h2 className="text-lg font-bold mb-2">8. Limitations of Liability</h2>
         <p>
-          We are not liable for indirect, incidental, or consequential damages resulting from service provision, except as required by applicable law.
-        </p>
+          WME Solutions is not liable for indirect, incidental, or consequential damages resulting from service provision, except as required by applicable law.        </p>
       </section>
     </div>
   );

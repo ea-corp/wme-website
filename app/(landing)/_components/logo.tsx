@@ -5,7 +5,7 @@ export const Logo = () => {
     <Image
       height={80}
       width={120}
-      alt="Workflow Made Easy Logo"
+      alt="WME Solutions Logo"
       src="/images/WME_logo.png"
       className="w-auto h-auto"
     />
