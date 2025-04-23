@@ -246,7 +246,7 @@ function MeetingConfirmation() {
                   📂 Workflow Design Portfolio
                 </h3>
                 <p className="text-gray-600 mb-4 flex-grow">
-                  Explore screenshots of real Monday.com workflows weapos;ve built to streamline operations, manage
+                  Explore screenshots of real Monday.com workflows we&apos;ve built to streamline operations, manage
                   teams, and automate processes.
                 </p>
                 <div className="flex justify-end mt-2">

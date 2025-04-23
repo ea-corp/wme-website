@@ -29,7 +29,7 @@ const filterCategories = {
     "Manufacturing",
     "Marketing",
     "Real Estate",
-    "Restaurant",
+    "F&B",
     "Retail",
   ],
   Feature: [

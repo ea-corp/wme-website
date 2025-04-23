@@ -86,7 +86,7 @@ export default function OrganizationUsingMonday() {
     <div>
       <div className="pb-4 px-4 md:px-0">
         <h2 className="text-center text-gray-800 text-2xl md:text-3xl font-semibold mb-8 md:mb-16">
-          Join over 152,000 leading organizations that use{" "}
+          Join over 180,000 leading organizations in over 200 countries that use{" "}
           <br className="hidden md:block" />{" "}
           <a
             href="https://try.monday.com/wme"

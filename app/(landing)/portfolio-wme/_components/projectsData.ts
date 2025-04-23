@@ -107,7 +107,7 @@ export const projectsData = [
     description:
       "Tracking orders made by customers on different channels. Reporting was done daily, weekly and monthly. Reporting was made per location as this restaurant had several branches.",
     image: "/images/portfolio/restaurant/image-1.png",
-    tags: ["Restaurant", "Dashboard", "Orders tracking"],
+    tags: ["F&B", "Dashboard", "Orders tracking"],
   },
   {
     id: 15,
@@ -115,21 +115,21 @@ export const projectsData = [
     description:
       "We were able to tracking on the 2 bottom widgets the orders by geographical zones, and by type of customers",
     image: "/images/portfolio/restaurant/image-2.png",
-    tags: ["Restaurant", "Dashboard", "Orders tracking"],
+    tags: ["F&B", "Dashboard", "Orders tracking"],
   },
   {
     id: 16,
     title: "Dashboard 3",
     description: "",
     image: "/images/portfolio/restaurant/image-3.png",
-    tags: ["Restaurant", "Dashboard", "Orders tracking"],
+    tags: ["F&B", "Dashboard", "Orders tracking"],
   },
   {
     id: 17,
     title: "Dashboard Sample 1 - CRM Suppliers",
     description: "",
     image: "/images/portfolio/restaurant/image-4.png",
-    tags: ["Restaurant", "CRM", "Orders tracking", "Directory"],
+    tags: ["F&B", "CRM", "Orders tracking", "Directory"],
   },
   // Real Estate
   {

@@ -49,25 +49,16 @@ const FulfillmentPolicy = () => {
       <section className="mb-6">
         <h2 className="text-lg font-bold mb-2">3. Unused Hours</h2>
         <p>
-          Hours included in prepaid packages or initial payments are
-          non-refundable but may be repurposed for additional services (e.g.,
-          training or support) within the package validity period or specified
-          timeframe (e.g., three months for Pay As You Go).
+          Hours included in prepaid packages or initial payments are non-refundable.
         </p>
       </section>
 
       <section className="mb-6">
         <h2 className="text-lg font-bold mb-2">4. Cancellations and Refunds</h2>
         <ul className="list-disc pl-6 space-y-2">
-          <li>Packages are non-refundable once purchased.</li>
+          <li>Hour-based packages (e.g., 25/50/100 hours) are non-refundable after purchase.</li>
           <li>
-            Pay As You Go services can be canceled with one month’s notice.
-            Unused hours in the current billing cycle can be utilized until the
-            cycle ends but are not refundable.
-          </li>
-          <li>
-            Services can be paused or terminated without additional charges
-            beyond the current billing period.
+            Pay As You Go services may be cancelled with one month’s prior notice.
           </li>
         </ul>
       </section>

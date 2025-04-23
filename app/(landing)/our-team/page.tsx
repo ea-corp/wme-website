@@ -30,7 +30,7 @@ const employeeLocations = [
   { 
     id: 3, 
     name: "Chan Myae Khine", 
-    position: "Junior Implementation Specialist", 
+    position: "Implementation Specialist", 
     country: "Thailand", 
     img: "/images/team/chan.png", 
     lat: 10.8688, 

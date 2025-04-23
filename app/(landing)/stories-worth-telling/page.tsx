@@ -23,7 +23,7 @@ export default function ServicePage() {
         <div className="py-12">
           <div className="relative">
             <h2 className="text-3xl font-bold px-8 md:px-24 py-4 bg-[#283c99] text-white inline-block">
-              Client Success Stories
+              Success stories from top companies
             </h2>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-black" />
           </div>
