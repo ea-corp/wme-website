@@ -41,7 +41,7 @@ const services = [
     description: "Ensure your team is effectively trained",
     items: [
       "Ensuring that your team is effectively trained is a critical part of a successful implementation",
-      "We provide different type of training On-Site or via Videoconferencing",
+      "We provide different type of training On-Site or via videoconferencing",
       "Training for managers or dedicated Monday.com admin in the company",
       "Group training with the concerned department",
       "To keep the training interactive and for maximum efficiency we suggest that the group do not exceed 15 persons",

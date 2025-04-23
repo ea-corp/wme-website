@@ -133,7 +133,8 @@ function MeetingConfirmation() {
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 py-10 md:py-16 px-4 sm:px-6 lg:px-8 text-white text-center">
         <h1 className="text-4xl font-bold mb-3">🎉 Thank You, {bookingData.fullName}!</h1>
         <p className="text-xl max-w-2xl mx-auto">
-          Your meeting with WME Solutions has been successfully booked. An email confirmation has been sent to you.
+          Your meeting with WME Solutions has been successfully booked. An email confirmation has been sent to you. Please check your inbox
+            (and your spam folder, just in case).
         </p>
       </div>
 
@@ -177,81 +178,65 @@ function MeetingConfirmation() {
         </div>
 
         <div className="mb-6 md:mb-12">
-          <h2 className="text-2xl font-semibold mb-3 md:mb-6 border-b pb-3">✅ What Happens Next?</h2>
-          <p className="text-lg text-justify">
-            An email has been sent to you with all the meeting details, including the Zoom link. Please check your inbox
-            (and your spam folder, just in case).
-          </p>
-        </div>
-
-        <div className="mb-6 md:mb-12">
           <h2 className="text-2xl font-semibold mb-3 md:mb-6 border-b pb-3">💡 While You Wait</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             <Link
               href="https://wme.us.com/remote-services"
-              className="group p-4 md:p-6 bg-gray-50 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
+              className="group px-4 py-2 md:p-6 bg-gray-100 hover:bg-gray-200  active:bg-gray-300 rounded-xl transition-all duration-300"
             >
               <div className="flex flex-col h-full">
                 <h3 className="font-semibold text-xl mb-2 group-hover:text-blue-600 transition-colors">
                   👉 Browse our Remote Services
                 </h3>
-                <p className="text-gray-600 mb-4 flex-grow">
+                <p className="text-gray-600 mb-1 flex-grow">
                   See how we build Monday.com workflows for teams of all sizes.
                 </p>
-                <div className="flex justify-end mt-2">
-                  <ArrowRight className="h-5 w-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
-                </div>
+               
               </div>
             </Link>
 
             <Link
               href="https://wme.us.com/on-site-implementation-packages"
-              className="group p-4 md:p-6 bg-gray-50 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
+              className="group px-4 py-2 md:p-6 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
             >
               <div className="flex flex-col h-full">
                 <h3 className="font-semibold text-xl mb-2 group-hover:text-blue-600 transition-colors">
                   🛠️ Prefer on-site support?
                 </h3>
-                <p className="text-gray-600 mb-4 flex-grow">Explore our international implementation packages.</p>
-                <div className="flex justify-end mt-2">
-                  <ArrowRight className="h-5 w-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
-                </div>
+                <p className="text-gray-600 mb-1 flex-grow">Explore our international implementation packages.</p>
+             
               </div>
             </Link>
 
             <Link
               href="https://wme.us.com/stories-worth-telling"
-              className="group p-4 md:p-6 bg-gray-50 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
+              className="group px-4 py-2 md:p-6 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
             >
               <div className="flex flex-col h-full">
                 <h3 className="font-semibold text-xl mb-2 group-hover:text-blue-600 transition-colors">
                   📖 Success Stories
                 </h3>
-                <p className="text-gray-600 mb-4 flex-grow">
+                <p className="text-gray-600 mb-1 flex-grow">
                   Discover how businesses streamlined operations and boosted efficiency with tailored Monday.com
                   solutions
                 </p>
-                <div className="flex justify-end mt-2">
-                  <ArrowRight className="h-5 w-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
-                </div>
+                
               </div>
             </Link>
 
             <Link
               href="https://wme.us.com/portfolio-wme"
-              className="group p-4 md:p-6 bg-gray-50 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
+              className="group px-4 py-2 md:p-6 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
             >
               <div className="flex flex-col h-full">
                 <h3 className="font-semibold text-xl mb-2 group-hover:text-blue-600 transition-colors">
                   📂 Workflow Design Portfolio
                 </h3>
-                <p className="text-gray-600 mb-4 flex-grow">
+                <p className="text-gray-600 mb-1 flex-grow">
                   Explore screenshots of real Monday.com workflows we&apos;ve built to streamline operations, manage
                   teams, and automate processes.
                 </p>
-                <div className="flex justify-end mt-2">
-                  <ArrowRight className="h-5 w-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
-                </div>
+            
               </div>
             </Link>
           </div>

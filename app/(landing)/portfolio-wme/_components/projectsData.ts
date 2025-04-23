@@ -157,14 +157,14 @@ export const projectsData = [
   },
   {
     id: 21,
-    title: "Automations 1/2",
+    title: "Automations for Real Estate 1/2",
     description: "",
     image: "/images/portfolio/real-estate/image-4.png",
     tags: ["Real Estate", "Automations"],
   },
   {
     id: 22,
-    title: "Automations 2/2",
+    title: "Automations for Real Estate 2/2",
     description: "",
     image: "/images/portfolio/real-estate/image-5.png",
     tags: ["Real Estate", "Automations"],
@@ -180,7 +180,7 @@ export const projectsData = [
   },
   {
     id: 27,
-    title: "Marekting Agency",
+    title: "Marketing Agency",
     description: "Marketing Agency",
     image: "/images/portfolio/marketing-agency/image-2.png",
     tags: ["Marketing", "Project Management"],
@@ -201,7 +201,7 @@ export const projectsData = [
   },
   {
     id: 30,
-    title: "Automations",
+    title: "Marketing Automations",
     description: "",
     image: "/images/portfolio/marketing-agency/image-5.png",
     tags: ["Marketing", "Automations"],

@@ -17,7 +17,7 @@ export default function ServicePage() {
             <div className="absolute bottom-0 left-0 w-full h-1 bg-primary" />
           </div>
         </div>
-        <div className="px-8 md:px-24">
+        <div className="md:px-24">
           <BlogPosts />
         </div>
         <div className="py-12">
