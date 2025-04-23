@@ -37,7 +37,7 @@ export const NavbarRoutes = () => {
                       href="/remote-services"
                       className="block py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
                     >
-                      Remote implementation
+                      Remote Implementation
                     </Link>
                   </li>
                   <li>
@@ -45,7 +45,7 @@ export const NavbarRoutes = () => {
                       href="/on-site-implementation-packages"
                       className="block py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
                     >
-                      On-site consulting
+                      On-Site Consulting
                     </Link>
                   </li>
                 </ul>
@@ -60,7 +60,7 @@ export const NavbarRoutes = () => {
               : "text-gray-700 hover:text-[#5949d5]"
               }`}
           >
-            Stories worth telling
+            Stories Worth Telling
           </p>
         </Link>
         <Link href="/our-team">

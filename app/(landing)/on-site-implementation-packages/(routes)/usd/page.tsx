@@ -181,10 +181,10 @@ export default async function ServicePage() {
       features: [
         "Same as the discovery package",
         "1 to 2 senior consultant of WME Solutions",
-        "Time will be shared between meeting with the stakeholders and creation/implementation of the solution on Monday.com as needed.",
+        "Time will be shared between meeting with the stakeholders and creation/implementation of the solution on Monday.com as needed",
         "Full remote support of our office based team if required",
         "Enablement of our $2,000 package containing apps & plugins that we have developed and that we will enable in your Monday account for a lifetime",
-        "Creation of interactive user guides for the solution implemented.",
+        "Creation of interactive user guides for the solution implemented",
       ],
     },
   ];

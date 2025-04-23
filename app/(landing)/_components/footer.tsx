@@ -58,7 +58,7 @@ export default function Footer() {
             <span>|</span>
             <a href="/remote-services" className="hover:text-[#f4d752]">Packages</a>
             <span>|</span>
-            <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories worth telling</a>
+            <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories Worth Telling</a>
           </div>
           <div className="flex space-x-2">
             <a href="/portfolio-wme" className="hover:text-[#f4d752]">Portfolio</a>
@@ -80,7 +80,7 @@ export default function Footer() {
               <a href="/remote-services" className="hover:text-[#f4d752]">Packages</a>
             </li>
             <li>
-              <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories worth telling</a>
+              <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories Worth Telling</a>
             </li>
             <li>
               <a href="/blog" className="hover:text-[#f4d752]">Blog</a>

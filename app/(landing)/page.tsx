@@ -15,15 +15,15 @@ export default function Home() {
       <div>
         <div className="flex flex-col items-center bg-gray-100 py-8 md:py-16 px-4 md:px-0">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8">
-            Monday.com can be used as a work OS <br className="hidden md:block" /> for almost any business.
+            Monday.com can be used as a work OS <br className="hidden md:block" /> for almost any business
           </h2>
           <div className="w-full max-w-4xl px-4 md:px-0">
             <YouTubeVideo videoId="vQ2dfgeSJHU" />
           </div>
           <p className="text-center text-base md:text-lg py-8 px-4 md:px-0">
-            Monday.com is a work operating system (Work OS).{" "}
+            Monday.com is a work operating system (Work OS){" "}
             <br className="hidden md:block" />
-            You can manage all types of workflow and processes in one place.
+            You can manage all types of workflow and processes in one place
           </p>
           <div className="flex flex-col md:flex-row gap-4 w-full justify-center px-4 md:px-0">
             <a

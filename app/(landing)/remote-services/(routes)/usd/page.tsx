@@ -47,11 +47,11 @@ export default function ServicePage() {
       features: [
         "4 hours per month",
         "Review of the built solution",
-        "Small Fixes when required",
+        "Small fixes when required",
         "Q&A from your team",
         "Optimization suggestions based on new features available or any changes in your business.",
         "Assessment and full reporting on the usage of the built workflow",
-        "Free Cancellation at any time",
+        "Free cancellation at any time",
       ],
     },
     {
@@ -61,9 +61,9 @@ export default function ServicePage() {
       validity: "3 months",
       features: [
         "Session(s) of 60 mins with Monday Expert",
-        "Video calls & Screensharing",
+        "Video calls & screensharing",
         "Determine if Monday.com is the right tool",
-        "Quick Fixes",
+        "Quick fixes",
         "Assessment on your current set-up",
         "Q&A",
       ],
@@ -171,7 +171,7 @@ export default function ServicePage() {
   return (
     <div className="mx-auto max-w-7xl px-4">
       <div className="bg-gray-100 text-center py-16">
-        <h2 className="text-4xl font-semibold">Remote services</h2>
+        <h2 className="text-4xl font-semibold">Remote Services</h2>
       </div>
       <div className="flex items-center justify-center py-12">
         <h2 className="text-2xl font-medium flex items-center">

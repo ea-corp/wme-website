@@ -51,7 +51,7 @@ export default function IncitationButton() {
       </div>
       <div className="bg-gray-100 px-4 md:px-12">
         <h2 className="text-2xl py-8 text-gray-800 font-semibold text-center">
-          Overwhelmed trying to figure out monday.com ?
+          Overwhelmed trying to figure out monday.com?
         </h2>
         <p className="text-lg px-4 md:px-16 pb-8">
           When you get started with Monday.com, figuring out how to structure
@@ -61,11 +61,11 @@ export default function IncitationButton() {
           Monday.com and now you’re ready to learn more; you want to make
           Monday.com the main hub for your work and have everything in one place
           but don’t have time to figure it out on your own. <br /> <br />{" "}
-          WME Solutions have helped over 100 customers to streamline their business processes using &nbsp;
+          WME Solutions have helped over 100 customers to streamline their business processes using
           <a
             href="https://try.monday.com/wme"
             target="_blank"
-            className="text-blue-400 font-semibold"
+            className="text-blue-400 font-semibold ml-1"
           >
             monday.com
           </a>

@@ -49,7 +49,7 @@ export default function ClientSuccessStory({
                         </p>
                         <p className="text-base md:text-lg">{description}</p>
                         <p className="text-base">
-                            <span className="text-blue-400 font-medium">WME Solutions</span> WME Solutions can help your business achieve similar efficiency with customized Monday.com solutions.
+                            <span className="text-blue-400 font-medium">WME Solutions</span> can help your business achieve similar efficiency with customized Monday.com solutions.
                         </p>
                     </CardContent>
                     <CardFooter className="flex flex-col items-center space-y-4 pt-2">

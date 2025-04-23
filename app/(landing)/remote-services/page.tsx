@@ -20,14 +20,14 @@ export default function ServicePage() {
       info: "Startup Essential",
       description: "Most Popular",
       validity: "Validity : 6 weeks",
-      features: ["1 Advanced workflow", "25 hours package"],
+      features: ["1 advanced workflow", "25 hours package"],
     },
     {
       name: "Comprehensive",
       info: "Business Ready",
       description: "Recommended",
       validity: "Validity : 3 months",
-      features: ["1 to 2 Advanced Workflows", "50 hours package"],
+      features: ["1 to 2 advanced workflows", "50 hours package"],
     },
     {
       name: "Ultimate",
@@ -35,12 +35,12 @@ export default function ServicePage() {
       info: "Maximum Value",
       description: "Best value",
       validity: "Validity : 6 months",
-      features: ["3 to 4 Advanced workflows", "100 Hours Package"],
+      features: ["3 to 4 advanced workflows", "100 hours package"],
     },
     {
       name: "Custom Enterprise Solutions",
       custom:
-        "Bespoke Development: Tailor software or systems specifically to the complex requirements of a Medium to large organization, including integration with existing infrastructure.",
+        "Bespoke Development: Tailor software or systems specifically to the complex requirements of a medium to large organization, including integration with existing infrastructure.",
     },
   ];
 
@@ -51,11 +51,11 @@ export default function ServicePage() {
       features: [
         "4 hours per month",
         "Review of the built solution",
-        "Small Fixes when required",
+        "Small fixes when required",
         "Q&A from your team",
         "Optimization suggestions based on new features available or any changes in your business.",
         "Assessment and full reporting on the usage of the built workflow",
-        "Free Cancellation at any time",
+        "Free cancellation at any time",
       ],
     },
     {
@@ -63,9 +63,9 @@ export default function ServicePage() {
       validity: "3 months",
       features: [
         "Session(s) of 60 mins with Monday Expert",
-        "Video calls & Screensharing",
+        "Video calls & screensharing",
         "Determine if Monday.com is the right tool",
-        "Quick Fixes",
+        "Quick fixes",
         "Assessment on your current set-up",
         "Q&A",
       ],
@@ -173,7 +173,7 @@ export default function ServicePage() {
   return (
     <div className="mx-auto max-w-7xl px-4">
       <div className="bg-gray-100 text-center pt-16 pb-6  md:py-16 overflow-x-hidden">
-        <h2 className="text-4xl font-semibold">Remote services</h2>
+        <h2 className="text-4xl font-semibold">Remote Services</h2>
       </div>
       <div className="flex items-center justify-center py-12">
         <h2 className="text-2xl font-medium flex items-center">

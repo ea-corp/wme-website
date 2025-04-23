@@ -18,7 +18,7 @@ const services = [
       "Mapping existing processes",
       "Identify the bottlenecks & propose solutions",
       "Discuss how Monday can be implemented according to your requirements",
-      "List all apps that will be required and how they would interact with each others.",
+      "List all apps that will be required and how they would interact with each others",
     ],
   },
   {
@@ -27,12 +27,12 @@ const services = [
     description: "Set up and customize your Monday.com workspace",
     items: [
       "Setting up account and boards permission",
-      "Building & Customizing boards",
+      "Building & customizing boards",
       "Setting up automations",
       "Setting up Monday apps or 3rd Party Integration",
       "Set dashboards for reporting",
-      "Data Migration to Monday.com from other platforms",
-      "Custom Development using Zapier/Make.com or by leveraging Monday's API",
+      "Data migration to Monday.com from other platforms",
+      "Custom development using Zapier/Make.com or by leveraging Monday's API",
     ],
   },
   {
@@ -40,7 +40,7 @@ const services = [
     title: "Training & User Adoption",
     description: "Ensure your team is effectively trained",
     items: [
-      "Ensuring that your team is effectively trained is a critical part of a successful implementation.",
+      "Ensuring that your team is effectively trained is a critical part of a successful implementation",
       "We provide different type of training On-Site or via Videoconferencing",
       "Training for managers or dedicated Monday.com admin in the company",
       "Group training with the concerned department",
@@ -54,7 +54,7 @@ const services = [
     items: [
       "Monthly review of the solution",
       "Support your team with any questions they might have, this will help for a successful adoption of the solution that was built",
-      "Optimization suggestions based on new features available or any changes in your business operations.",
+      "Optimization suggestions based on new features available or any changes in your business operations",
     ],
   },
 ]
@@ -68,7 +68,7 @@ const packages = [
   },
   {
     title: "On-site Consulting",
-    description: "We travel worldwide to implement Monday.com at your premises.",
+    description: "We travel worldwide to implement Monday.com at your premises",
     image: "/images/onsite-consulting.png",
     link: "/on-site-implementation-packages",
   },
@@ -211,7 +211,7 @@ export default function OurServices() {
         >
           <h3 className="text-xl md:text-3xl font-bold mb-2">Choose Your Package</h3>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Select the service package that best fits your needs and preferences.
+            Select the service package that best fits your needs and preferences
           </p>
         </motion.div>
 

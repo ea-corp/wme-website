@@ -80,10 +80,10 @@ export default async function ServicePage() {
       features: [
         "Same as the discovery package",
         "1 to 2 senior consultant of WME Solutions",
-        "Time will be shared between meeting with the stakeholders and creation/implementation of the solution on Monday.com as needed.",
+        "Time will be shared between meeting with the stakeholders and creation/implementation of the solution on Monday.com as needed",
         "Full remote support of our office based team if required",
         "Enablement of our $2,000 package containing apps & plugins that we have developed and that we will enable in your Monday account for a lifetime",
-        "Creation of interactive user guides for the solution implemented.",
+        "Creation of interactive user guides for the solution implemented",
       ],
     },
   ];
@@ -322,7 +322,7 @@ export default async function ServicePage() {
         <h3 className="text-xl md:text-2xl font-medium py-8 text-center mx-2">
           Pricing varies depending on the location and the duration  of
           each on-site implementation.<br /> Get in touch with us for more
-          details and to receive a proposal.
+          details and to receive a proposal
         </h3>
         <div className="flex w-full ml-4 mt-0 md:mt-4 justify-center">
           <a

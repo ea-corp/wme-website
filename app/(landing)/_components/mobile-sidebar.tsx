@@ -30,7 +30,7 @@ const guestRoutes: Route[] = [
     href: "/on-site-implementation-packages",
   },
   {
-    label: "Stories worth telling",
+    label: "Stories Worth Telling",
     href: "/stories-worth-telling",
   },
   {

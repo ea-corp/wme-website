@@ -6,7 +6,7 @@ export default function ServicePage() {
   return (
     <div className="px-4">
       <div className="bg-gray-100 text-center py-16">
-        <p className="text-4xl font-semibold">Stories worth telling</p>
+        <p className="text-4xl font-semibold">Stories Worth Telling</p>
       </div>
       <div className="mx-auto max-w-7xl">
         <div className="py-12">
@@ -23,12 +23,12 @@ export default function ServicePage() {
         <div className="py-12">
           <div className="relative">
             <h2 className="text-3xl font-bold px-8 md:px-24 py-4 bg-[#283c99] text-white inline-block">
-              Success stories from top companies
+              Success Stories From Top Companies
             </h2>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-black" />
           </div>
           <p className="text-2xl mt-12 px-8 md:px-24">
-            Below are some stories worth telling of clients using Monday.com to leverage their business and how WME Solutions can help you achieve the same results.
+            Below are some stories worth telling of clients using Monday.com to leverage their business and how WME Solutions can help you achieve the same results
           </p>
         </div>
 

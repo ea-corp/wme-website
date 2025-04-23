@@ -19,7 +19,7 @@ export default function Faq() {
     <div className="px-8 md:px-60 pb-16">
       <h2>FAQ</h2>
       <h3 className="text-3xl mb-16 font-semibold">
-        Frequently asked questions
+        Frequently Asked Questions
       </h3>
 
       <Accordion expanded={expanded === 1} onChange={handleChange(1)}>
@@ -32,15 +32,22 @@ export default function Faq() {
           {expanded === 1 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
-          1-Schedule a Free Discovery call We’ll discuss your business needs,
-          pain points, goals and see how we can support you and your team to get
-          the most out of monday.com! <br />
-          2-Purchase a package Based on our initial discussion in the discovery
-          call you can chose the the package that fits you best. <br />
-          3- Email confirmation You will then receive a confirmation email with
-          the details of the next steps and a unique scheduling link that you
-          can use at any time to schedule some time with us.
+          <ol style={{ paddingLeft: '1.5rem', listStyleType: 'decimal' }}>
+            <li style={{ marginBottom: '1rem' }}>
+              Schedule a Free Discovery Call<br />
+              We’ll discuss your business needs, pain points, goals, and see how we can support you and your team to get the most out of monday.com!
+            </li>
+            <li style={{ marginBottom: '1rem' }}>
+              Purchase a Package<br />
+              Based on our initial discussion in the discovery call, you can choose the package that fits you best.
+            </li>
+            <li>
+              Email Confirmation<br />
+              You will then receive a confirmation email with the details of the next steps and a unique scheduling link that you can use at any time to schedule some time with us.
+            </li>
+          </ol>
         </AccordionDetails>
+
       </Accordion>
 
       {/* Répétez ce modèle pour chaque accordéon */}
@@ -55,16 +62,34 @@ export default function Faq() {
           {expanded === 2 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
-          The hours can be used on the following: <br /> <br /> 1. Offline
-          implementation time by WME Solutions <br />
-          2. Collaborative build sessions with WME Solutions (Video calls with screen sharing)
-          <br /> 
-          3.Importing Data from your current system
-          to monday.com when needed <br /> <br /> 
-          1. Group training sessions on
-          monday.com features and the workflow that has been built <br /> 
-          2. Maintenance & Support after the workflow is built Once a package purchased, you will received a unique link where you can track the time balance remaining in your package. The details are live and you can download at anytime a report. WME Solutions will record time when working on your project for events such as collaborative build sessions, offline build by WME Solutions, etc..
+          <div>
+            <p>The hours can be used on the following:</p>
+            <br />
+            <ol style={{ paddingLeft: '1.5rem', listStyleType: 'decimal' }}>
+              <li style={{ marginBottom: '0.75rem' }}>
+                Offline implementation time by WME Solutions.
+              </li>
+              <li style={{ marginBottom: '0.75rem' }}>
+                Collaborative build sessions with WME Solutions (video calls with screen sharing).
+              </li>
+              <li style={{ marginBottom: '0.75rem' }}>
+                Importing data from your current system to monday.com when needed.
+              </li>
+            </ol>
+
+            <br />
+
+            <ol style={{ paddingLeft: '1.5rem', listStyleType: 'decimal' }}>
+              <li style={{ marginBottom: '0.75rem' }}>
+                Group training sessions on monday.com features and the workflow that has been built.
+              </li>
+              <li style={{ marginBottom: '0.75rem' }}>
+                Maintenance & support after the workflow is built. Once a package is purchased, you will receive a unique link where you can track the time balance remaining in your package. The details are live, and you can download a report at any time. WME Solutions will record time when working on your project for events such as collaborative build sessions, offline work by WME Solutions, etc.
+              </li>
+            </ol>
+          </div>
         </AccordionDetails>
+
       </Accordion>
 
       <Accordion expanded={expanded === 3} onChange={handleChange(3)}>
@@ -93,7 +118,7 @@ export default function Faq() {
           benefit you in the long run, increase adoption rate. <br /> <br />{" "}
           Exception to the Rule: <br /> <br /> With the Comprehensive and
           Ultimate package, you are allowed to pause the validity once and up to
-          1 month- This can come useful for events occurring such as a company
+          1 month. This can come useful for events occurring such as a company
           audit to prepare, key stakeholder on holidays, or any unexpected
           events that could justify pausing the work we have started.
         </AccordionDetails>
@@ -118,7 +143,7 @@ export default function Faq() {
           requirements. Some simple workflow will take less than 20 hours’ time
           while some very advanced ones can take over 100 hours. <br />
           <br />
-          Book a free Discovery Call so that we can give you a more accurate
+          Book a free Discovery Call so that we can give you a more accurate.
           estimate
         </AccordionDetails>
       </Accordion>
@@ -153,7 +178,7 @@ export default function Faq() {
           {expanded === 6 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
-          Get in touch with us now, schedule your free discovery call. We’ll
+          Get in touch with us now, schedule your free Discovery Call. We’ll
           discuss your business needs, pain points, and goals and see how we can
           support you to get the most out of monday.com!
         </AccordionDetails>
@@ -169,7 +194,7 @@ export default function Faq() {
           {expanded === 7 ? <ChevronUp /> : <ChevronDown />}
         </AccordionSummary>
         <AccordionDetails>
-        WME Solutions is a company legally registered in the United States and Thailand, with an operational team based across Europe and Asia. We work with clients worldwide and offer dedicated time slots to support real-time collaboration across North America, Europe, Asia, and Oceania.
+          WME Solutions is a company legally registered in the United States and Thailand, with an operational team based across Europe and Asia. We work with clients worldwide and offer dedicated time slots to support real-time collaboration across North America, Europe, Asia, and Oceania.
         </AccordionDetails>
       </Accordion>
 
@@ -188,7 +213,7 @@ export default function Faq() {
           emerge during our collaborative building session and you might want to
           make some changes on what was agreed initially. <br /> <br /> This is
           why we prefer the hourly model as it gives more flexibility to our
-          clients and you can see in full transparency where out time is spent
+          clients and you can see in full transparency where our time is spent
           building your solution.
         </AccordionDetails>
       </Accordion>
