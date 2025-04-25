@@ -1,0 +1,167 @@
+{
+  "incitationbutton": {
+    "title": "Tirez le meilleur parti de monday.com pour votre entreprise",
+    "subtitle": "Dépassé en essayant de comprendre monday.com ?",
+    "description": "Lorsque vous commencez à utiliser Monday.com, déterminer comment structurer le flux de travail de votre entreprise peut être intimidant. Monday.com est un outil tellement polyvalent qu’il est difficile de savoir par où commencer et quelles fonctionnalités utiliser. Vous avez probablement une compréhension de base de Monday.com et vous êtes maintenant prêt à aller plus loin ; vous souhaitez en faire le centre névralgique de votre travail et tout centraliser au même endroit, mais vous n’avez pas le temps de tout découvrir par vous-même.",
+    "cta": {
+      "text": "Essayez monday.com",
+      "url": "https://try.monday.com/wme"
+    },
+    "image": "/images/landing-image.png"
+  },
+  "ourservices": {
+    "title": "Nos Services",
+    "description": "Maximisez la valeur de Monday.com grâce à nos services d’experts. Nous mettons à profit des années d’expérience pour vous aider à créer la solution idéale pour votre organisation.",
+    "choosepackage": "Sélectionnez le forfait adapté",
+    "choosepackagedesc": "Choisissez le forfait qui correspond à vos besoins.",
+    "services": [
+      {
+        "icon": "UserCog",
+        "title": "Conseil",
+        "description": "Examinez et optimisez votre infrastructure",
+        "items": [
+          "Examiner l'infrastructure actuelle",
+          "Cartographier les processus existants ",
+          "Identifier les points de blocage et proposer des solutions",
+          "Discuter de la mise en œuvre de Monday selon vos besoins",
+          "Lister toutes les applications requises et expliquer comment elles interagiront entre elles."
+        ]
+      },
+      {
+        "icon": "Settings",
+        "title": "Mise en oeuvre",
+        "description": "Configurez et personnalisez votre espace de travail Monday.com",
+        "items": [
+          "Configuration des autorisations de compte et de tableaux",
+          "Création et personnalisation des tableaux",
+          "Mise en place des automatisations",
+          "Configuration des applications Monday ou de l'intégration de services tiers",
+          "Création de tableaux de bord pour les rapports",
+          "Migration de données vers Monday.com depuis d'autres plateformes",
+          "Développement sur mesure avec Zapier/Make.com ou en exploitant l'API de Monday"
+        ]
+      },
+      {
+        "icon": "ScreenShare",
+        "title": "Formation et adoption par les utilisateurs",
+        "description": "Assurez-vous que votre équipe est formée efficacement",
+        "items": [
+          "S’assurer que votre équipe est correctement formée est un élément essentiel pour une mise en œuvre réussie.",
+          "Nous proposons différents types de formation sur site ou par visioconférence",
+          "Formation pour les managers ou les administrateurs dédiés de Monday.com au sein de l’entreprise",
+          "Formation en groupe avec le service concerné",
+          "Pour que la formation reste interactive et optimale, nous recommandons que le groupe ne dépasse pas 15 personnes"
+        ]
+      },
+      {
+        "icon": "HandHelping",
+        "title": "Support Continu",
+        "description": "Assistance continue et optimisation",
+        "items": [
+          "Revue mensuelle de la solution",
+          "Soutenez votre équipe en répondant à toutes ses questions, cela favorisera une adoption réussie de la solution mise en place",
+          "Suggestions d’optimisation basées sur les nouvelles fonctionnalités disponibles ou sur tout changement dans vos opérations commerciales."
+        ]
+      }
+    ],
+    "packages": [
+      {
+        "title": "Services à distance",
+        "description": "Obtenez l'aide d'experts où que vous soyez dans le monde",
+        "image": "/images/remote-work.webp",
+        "link": "/remote-services",
+        "learnmore": "En savoir plus"
+      },
+      {
+        "title": "Consultation sur site",
+        "description": "Nous nous déplaçons dans le monde entier pour mettre en œuvre Monday.com dans vos locaux.",
+        "image": "/images/onsite-consulting.png",
+        "link": "/on-site-implementation-packages",
+        "learnmore": "En savoir plus"
+      }
+    ]
+  },
+  "organizationusingmonday": {
+    "title": "Rejoignez plus de 152 000 organisations de premier plan qui utilisent monday.com pour gérer leur travail.",
+    "title2": "pour gérer leur travail"
+  },
+  "herovideo": {
+    "title": "Monday.com peut être utilisé comme système d’exploitation de travail pour presque toutes les entreprises.",
+    "description": "Monday.com est un système d'exploitation du travail (Work OS). Vous pouvez gérer tous types de flux de travail et de processus en un seul endroit.",
+    "videoId": "vQ2dfgeSJHU",
+    "cta": {
+      "startTrial": {
+        "text": "Commencer l'essai gratuit",
+        "url": "https://try.monday.com/wme"
+      },
+      "requestDemo": {
+        "text": "Demander une démo",
+        "url": "/contact-us"
+      }
+    }
+  },
+  "mondayworkos": {
+    "title": "Le système de travail flexible offre des solutions approfondies et efficaces pour chaque service et cas d'utilisation au sein de votre organisation, tout en assurant une communication fluide entre tous.",
+    "solutions": [
+      {
+        "icon": "/images/workos/salescrm.png",
+        "title": "Ventes et CRM",
+        "description": "Gérez l’ensemble de votre cycle de vente au même endroit"
+      },
+      {
+        "icon": "/images/workos/marketing.png",
+        "title": "Marketing",
+        "description": "Pilotez vos campagnes marketing de A à Z"
+      },
+      {
+        "icon": "/images/workos/softwaredevelopment.png",
+        "title": "Développement d'applications",
+        "description": "Avancez rapidement dans vos développements à votre rythme"
+      },
+      {
+        "icon": "/images/workos/creative.png",
+        "title": "Creatif / Design",
+        "description": "Optimisez la gestion de vos projets créatifs"
+      },
+      {
+        "icon": "/images/workos/projectmanagement.png",
+        "title": "Gestion de Projet",
+        "description": "Planifiez, suivez et gérez facilement chaque projet du début à la fin"
+      },
+      {
+        "icon": "/images/workos/it.png",
+        "title": "Services IT",
+        "description": "Pilotez vos services informatiques avec précision"
+      },
+      {
+        "icon": "/images/workos/hr.png",
+        "title": "Ressources Humaines",
+        "description": "Créez des processus efficaces pour le recrutement, l'intégration et bien plus encore"
+      }
+    ]
+  },
+  "storiesWorthTelling": {
+    "title": "Des histoires qui méritent d'être racontées",
+    "recentActivities": "Nos activités récentes",
+    "successStories": "Histoires de succès d’entreprises reconnues",
+    "description": "Voici quelques histoires à raconter de clients utilisant Monday.com pour optimiser leur entreprise et comment WME Solutions peut vous aider à obtenir les mêmes résultats",
+    "zippoAchievement": "a réalisé un retour sur investissement",
+    "zippoAchievementMetric": "8 fois supérieur",
+    "zippoDescription": "En remplaçant les feuilles de calcul par un Work OS dynamique, ils ont économisé trois jours ouvrables par mois et réduit de six mois la durée d'une importante expansion commerciale.",
+    "o2PriorityAchievement": "est devenu",
+    "o2PriorityAchievementMetric": "30% plus efficace",
+    "o2PriorityDescription": "En déployant des centaines de campagnes auprès de millions de clients grâce à Monday.com et en augmentant leur productivité, O2 a transformé son flux de travail.",
+    "rayWhiteAchievement": "a amélioré son efficacité de",
+    "rayWhiteAchievementMetric": "70%",
+    "rayWhiteDescription": "Avec un CRM personnalisé sur Monday.com Work OS utilisant plus de 1 250 automatisations pour gérer 2 000 clients en toute fluidité.",
+    "studentHotelAchievement": "a amélioré ses processus métier fondamentaux et a obtenu une vision claire de plus de",
+    "studentHotelAchievementMetric": "60 initiatives",
+    "studentHotelDescription": "Grâce aux solutions personnalisées de WME Solutions, votre entreprise peut bénéficier de flux de travail rationalisés et d’une productivité accrue."
+  },
+  "clientSuccessStory": {
+    "successStory": "Histoire de réussite",
+    "contactUs": "Contactez-nous dès aujourd'hui",
+    "wmeSolutions": "WME Solutions",
+    "similarEfficiency": "peut aider votre entreprise à atteindre une efficacité similaire avec des solutions Monday.com personnalisées."
+  }
+}

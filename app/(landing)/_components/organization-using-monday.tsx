@@ -1,28 +1,28 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { YouTubeVideo } from "./monday-os-video";
 
 interface Logo {
   src: string;
   alt: string;
 }
 
+interface OrganizationUsingMondayProps {
+  dictionary: {
+    title: string;
+    title2: string;
+  };
+}
+
 const logosLine1: Logo[] = [
   { src: "/images/logos/uber-logo.svg", alt: "Uber Logo" },
   { src: "/images/logos/adobe-logo.png", alt: "Adobe Logo" },
   { src: "/images/logos/shell-logo.png", alt: "Shell Logo" },
-  {
-    src: "/images/logos/schneider-electric-logo.png",
-    alt: "Schneider Electric Logo",
-  },
+  { src: "/images/logos/schneider-electric-logo.png", alt: "Schneider Electric Logo" },
   { src: "/images/logos/universal-logo.png", alt: "Universal Logo" },
   { src: "/images/logos/costco-logo.png", alt: "Costco Logo" },
   { src: "/images/logos/ebay-logo.png", alt: "Ebay Logo" },
-  {
-    src: "/images/logos/general-electric-logo.png",
-    alt: "General Electric Logo",
-  },
+  { src: "/images/logos/general-electric-logo.png", alt: "General Electric Logo" },
   { src: "/images/logos/apple-logo.png", alt: "Apple Logo" },
   { src: "/images/logos/unilever-logo.png", alt: "Unilever Logo" },
   { src: "/images/logos/abbott-logo.png", alt: "Abbott Logo" },
@@ -49,7 +49,7 @@ const logosLine2: Logo[] = [
   { src: "/images/logos/bbc-logo.png", alt: "BBC Logo" },
 ];
 
-export default function OrganizationUsingMonday() {
+export default function OrganizationUsingMonday({ dictionary }: OrganizationUsingMondayProps) {
   const carouselRef1 = useRef<HTMLDivElement>(null);
   const carouselRef2 = useRef<HTMLDivElement>(null);
 
@@ -86,8 +86,8 @@ export default function OrganizationUsingMonday() {
     <div>
       <div className="pb-4 px-4 md:px-0">
         <h2 className="text-center text-gray-800 text-2xl md:text-3xl font-semibold mb-8 md:mb-16">
-          Join over 180,000 leading organizations in over 200 countries that use{" "}
-          <br className="hidden md:block" />{" "}
+          {dictionary.title}
+          <br className="hidden md:block" />
           <a
             href="https://try.monday.com/wme"
             className="text-blue-500"
@@ -95,7 +95,7 @@ export default function OrganizationUsingMonday() {
           >
             monday.com
           </a>{" "}
-          to run their work
+         {dictionary.title2}
         </h2>
 
         <div className="hidden md:block">
@@ -135,8 +135,6 @@ export default function OrganizationUsingMonday() {
           />
         </div>
       </div>
-
-
     </div>
   );
 }

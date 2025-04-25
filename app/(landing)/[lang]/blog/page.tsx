@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getDatabase } from "../../../lib/notion";
+import { getDatabase } from "../../../../lib/notion";
 
 async function getPosts() {
   const database = await getDatabase();

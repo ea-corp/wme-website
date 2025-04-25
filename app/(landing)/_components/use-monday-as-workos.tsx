@@ -1,118 +1,140 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 
-// Define the type for each solution
-type Solution = {
-  icon: string;
-  title: string;
-  description: string;
-};
+interface Logo {
+  src: string;
+  alt: string;
+}
 
-const solutions: Solution[] = [
-  {
-    icon: "/images/workos/salescrm.png",
-    title: "Sales & CRM",
-    description: "Centralize your entire sales pipeline in one workplace",
-  },
-  {
-    icon: "/images/workos/marketing.png",
-    title: "Marketing",
-    description: "Collaborate, organize and measure your campaigns",
-  },
-  {
-    icon: "/images/workos/softwaredevelopment.png",
-    title: "Software development",
-    description: "Sprint through every development process, your way",
-  },
-  {
-    icon: "/images/workos/creative.png",
-    title: "Creative",
-    description: "Streamline requests and manage your entire creative process",
-  },
-  {
-    icon: "/images/workos/projectmanagement.png",
-    title: "Project management",
-    description:
-      "Easily plan, track and manage every project from start to finish",
-  },
-  {
-    icon: "/images/workos/it.png",
-    title: "IT",
-    description: "Run your IT operations with control and efficiency",
-  },
-  {
-    icon: "/images/workos/hr.png",
-    title: "Human Resources",
-    description:
-      "Build efficient processes for recruitment, onboarding, and more",
-  },
+interface OrganizationUsingMondayProps {
+  dictionary: {
+    title: string;
+    title2: string;
+  };
+}
+
+const logosLine1: Logo[] = [
+  { src: "/images/logos/uber-logo.svg", alt: "Uber Logo" },
+  { src: "/images/logos/adobe-logo.png", alt: "Adobe Logo" },
+  { src: "/images/logos/shell-logo.png", alt: "Shell Logo" },
+  { src: "/images/logos/schneider-electric-logo.png", alt: "Schneider Electric Logo" },
+  { src: "/images/logos/universal-logo.png", alt: "Universal Logo" },
+  { src: "/images/logos/costco-logo.png", alt: "Costco Logo" },
+  { src: "/images/logos/ebay-logo.png", alt: "Ebay Logo" },
+  { src: "/images/logos/general-electric-logo.png", alt: "General Electric Logo" },
+  { src: "/images/logos/apple-logo.png", alt: "Apple Logo" },
+  { src: "/images/logos/unilever-logo.png", alt: "Unilever Logo" },
+  { src: "/images/logos/abbott-logo.png", alt: "Abbott Logo" },
+  { src: "/images/logos/frontier-logo.png", alt: "Frontier Logo" },
+  { src: "/images/logos/zippo-logo.png", alt: "Zippo Logo" },
+  { src: "/images/logos/ironsource-logo.png", alt: "Iron Source Logo" },
+  { src: "/images/logos/aero-mexico-logo.png", alt: "Aero Mexico Logo" },
 ];
 
-type SolutionCardProps = {
-  icon: string;
-  title: string;
-  description: string;
-};
+const logosLine2: Logo[] = [
+  { src: "/images/logos/wix-logo.png", alt: "Wix Logo" },
+  { src: "/images/logos/fox-news-logo.png", alt: "Fox News Logo" },
+  { src: "/images/logos/utbrain-logo.png", alt: "Utbrain Logo" },
+  { src: "/images/logos/delta-logo.png", alt: "Delta Logo" },
+  { src: "/images/logos/ibm-logo.png", alt: "IBM Logo" },
+  { src: "/images/logos/wework-logo.png", alt: "Wework Logo" },
+  { src: "/images/logos/marriott-logo.png", alt: "Marriott Logo" },
+  { src: "/images/logos/corning-logo.png", alt: "Corning Logo" },
+  { src: "/images/logos/tesla-logo.png", alt: "Tesla Logo" },
+  { src: "/images/logos/paypal-logo.jpeg", alt: "Paypal Logo" },
+  { src: "/images/logos/walmart-logo.png", alt: "Walmart Logo" },
+  { src: "/images/logos/visa-logo.png", alt: "Visa Logo" },
+  { src: "/images/logos/cross-river-logo.jpeg", alt: "Cross River Logo" },
+  { src: "/images/logos/bbc-logo.png", alt: "BBC Logo" },
+];
 
-const SolutionCard: React.FC<SolutionCardProps> = ({
-  icon,
-  title,
-  description,
-}) => (
-  <div className="flex flex-col items-center justify-center p-4 text-center mb-12">
-    <Image
-      src={icon}
-      alt={`${title} icon`}
-      width={60}
-      height={60}
-      className="rounded-lg"
-    />
-    <h3 className="mt-2 text-lg font-bold">{title}</h3>
-    <p className="hidden md:block">{description}</p>
-  </div>
-);
+export default function OrganizationUsingMonday({ dictionary }: OrganizationUsingMondayProps) {
+  const carouselRef1 = useRef<HTMLDivElement>(null);
+  const carouselRef2 = useRef<HTMLDivElement>(null);
 
-const MondayWorkOS: React.FC = () => {
-  // Diviser le tableau en deux parties
-  const topSolutions = solutions.slice(0, 4);
-  const bottomSolutions = solutions.slice(4, 7);
+  const duplicatedLogosLine1: Logo[] = [...logosLine1, ...logosLine1, ...logosLine1];
+  const duplicatedLogosLine2: Logo[] = [...logosLine2, ...logosLine2, ...logosLine2];
+
+  const animateScroll = (carouselRef: React.RefObject<HTMLDivElement>) => {
+    let scrollAmount = 0;
+
+    const step = () => {
+      const carousel = carouselRef.current;
+      if (!carousel) return;
+
+      if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+        scrollAmount = 0;
+        carousel.scrollTo({ left: 0, behavior: "auto" });
+      } else {
+        carousel.scrollTo({ left: scrollAmount, behavior: "auto" });
+        scrollAmount += 1;
+      }
+
+      requestAnimationFrame(step);
+    };
+
+    step();
+  };
+
+  useEffect(() => {
+    animateScroll(carouselRef1);
+    animateScroll(carouselRef2);
+  }, []);
 
   return (
-    <div className="container mx-auto my-8 p-4">
-      <h1 className="text-2xl md:text-3xl font-semibold text-center my-4 px-4 md:px-32 mb-8 md:mb-16">
-        The flexible Work OS offers in-depth and effective solutions for every
-        department and use case across your organization while maintaining
-        seamless communication between all of them
-      </h1>
-      
-      {/* Desktop Layout */}
-      <div className="hidden md:block">
-        {/* Grid de 4 en haut */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
-          {topSolutions.map((solution, index) => (
-            <SolutionCard key={index} {...solution} />
-          ))}
-        </div>
-        
-        
-        {/* Grid de 3 en bas */}
-        <div className="grid grid-cols-3 md:grid-cols-3 gap-4 justify-center mt-8 md:mx-32">
-          {bottomSolutions.map((solution, index) => (
-            <SolutionCard key={index} {...solution} />
-          ))}
-        </div>
-      </div>
+    <div>
+      <div className="pb-4 px-4 md:px-0">
+        <h2 className="text-center text-gray-800 text-2xl md:text-3xl font-semibold mb-8 md:mb-16">
+          {dictionary.title}
+          <br className="hidden md:block" />
+          <a
+            href="https://try.monday.com/wme"
+            className="text-blue-500"
+            target="_blank"
+          >
+            monday.com
+          </a>{" "}
+         {dictionary.title2}
+        </h2>
 
-      {/* Mobile Layout */}
-      <div className="block md:hidden">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
-          {solutions.map((solution, index) => (
-            <SolutionCard key={index} {...solution} />
+        <div className="hidden md:block">
+          {[duplicatedLogosLine1, duplicatedLogosLine2].map((logos, index) => (
+            <div
+              key={index}
+              ref={index === 0 ? carouselRef1 : carouselRef2}
+              className="overflow-hidden whitespace-nowrap my-2"
+            >
+              <div className="flex">
+                {logos.map((logo, idx) => (
+                  <div
+                    key={idx}
+                    className="inline-flex justify-center items-center px-4"
+                    style={{ minWidth: "200px" }}
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={200}
+                      height={100}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
+        </div>
+
+        <div className="md:hidden flex items-center justify-center">
+          <Image
+            src="/images/logos/all-logos.png"
+            alt="Mobile Image"
+            width={500}
+            height={100}
+            className="w-full max-w-[500px]"
+          />
         </div>
       </div>
     </div>
   );
-};
-
-export default MondayWorkOS;
+}

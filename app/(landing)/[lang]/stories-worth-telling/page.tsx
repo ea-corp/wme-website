@@ -1,18 +1,26 @@
-import BlogPosts from "../_components/blog-posts"
-import OrganizationUsingMonday from "../_components/organization-using-monday"
-import ClientSuccessStory from "./components/client-success-story"
+import { getDictionary } from "@/lib/dictionaries";
+import BlogPosts from "../../_components/blog-posts";
+import OrganizationUsingMonday from "../../_components/organization-using-monday";
+import ClientSuccessStory from "./components/client-success-story";
 
-export default function ServicePage() {
+interface PageProps {
+  params: { lang: string };
+}
+
+export default async function ServicePage({ params }: PageProps) {
+  const lang = params.lang;
+  const dict = await getDictionary(lang);
+
   return (
     <div className="px-4">
       <div className="bg-gray-100 text-center py-16">
-        <p className="text-4xl font-semibold">Stories Worth Telling</p>
+        <p className="text-4xl font-semibold">{dict.storiesWorthTelling.title}</p>
       </div>
       <div className="mx-auto max-w-7xl">
         <div className="py-12">
           <div className="relative">
             <h2 className="text-3xl font-bold px-8 md:px-24 py-4 bg-[#283c99] text-primary-foreground inline-block">
-              Our Recent Activities
+              {dict.storiesWorthTelling.recentActivities}
             </h2>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-primary" />
           </div>
@@ -23,12 +31,12 @@ export default function ServicePage() {
         <div className="py-12">
           <div className="relative">
             <h2 className="text-3xl font-bold px-8 md:px-24 py-4 bg-[#283c99] text-white inline-block">
-              Success Stories From Top Companies
+              {dict.storiesWorthTelling.successStories}
             </h2>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-black" />
           </div>
           <p className="text-2xl mt-12 px-8 md:px-24">
-            Below are some stories worth telling of clients using Monday.com to leverage their business and how WME Solutions can help you achieve the same results
+            {dict.storiesWorthTelling.description}
           </p>
         </div>
 
@@ -36,23 +44,25 @@ export default function ServicePage() {
           {/* ZIPPO Success Story */}
           <ClientSuccessStory
             companyName="ZIPPO"
-            achievement="achieved"
-            achievementMetric="8x ROI"
-            description="By replacing spreadsheets with a dynamic Work OS, they saved three business days per month and cut six months off a major sales expansion."
+            achievement={dict.storiesWorthTelling.zippoAchievement}
+            achievementMetric={dict.storiesWorthTelling.zippoAchievementMetric}
+            description={dict.storiesWorthTelling.zippoDescription}
             contactPerson="Chris Funk"
             contactTitle="Director of Product Innovation"
             backgroundColor="bg-blue-900"
             textColor="text-white"
             accentColor="text-yellow-400"
             videoId="WMtZ4gWf2uk"
+            dictionary={dict.clientSuccessStory}
           />
+
 
           {/* O2 Priority Success Story */}
           <ClientSuccessStory
             companyName="O2 Priority"
-            achievement="became"
-            achievementMetric="30% more efficient"
-            description="At delivering hundreds of campaigns to millions of customers using Monday.com and boosting productivity, O2 transformed their workflow."
+            achievement={dict.storiesWorthTelling.o2PriorityAchievement}
+            achievementMetric={dict.storiesWorthTelling.o2PriorityAchievementMetric}
+            description={dict.storiesWorthTelling.o2PriorityDescription}
             contactPerson="Tye Rapley-Hawkins"
             contactTitle="Head of Delivery at O2 Priority, Telefonica"
             backgroundColor="bg-gray-200"
@@ -60,28 +70,30 @@ export default function ServicePage() {
             accentColor="text-blue-600"
             isReversed={true}
             videoId="8NKL_nqSHMo"
+            dictionary={dict.clientSuccessStory}
           />
 
           {/* Ray White Success Story */}
           <ClientSuccessStory
             companyName="Ray White"
-            achievement="boosted efficiency by"
-            achievementMetric="70%"
-            description="With a custom CRM on Monday.com Work OS using over 1,250 automations to handle 2,000 clients seamlessly."
+            achievement={dict.storiesWorthTelling.rayWhiteAchievement}
+            achievementMetric={dict.storiesWorthTelling.rayWhiteAchievementMetric}
+            description={dict.storiesWorthTelling.rayWhiteDescription}
             contactPerson="Kyle Dorman"
             contactTitle="Operations Manager at Ray White"
             backgroundColor="bg-gray-200"
             textColor="text-black"
             accentColor="text-blue-600"
             videoId="TX4kk4OlQfY"
+            dictionary={dict.clientSuccessStory}
           />
 
           {/* The Student Hotel Success Story */}
           <ClientSuccessStory
             companyName="The Student Hotel"
-            achievement="enhanced core business processes and gained clarity on"
-            achievementMetric="60+ initiatives"
-            description="With tailored solutions from WME Solutions, your business can enjoy streamlined workflows and improved productivity."
+            achievement={dict.storiesWorthTelling.studentHotelAchievement}
+            achievementMetric={dict.storiesWorthTelling.studentHotelAchievementMetric}
+            description={dict.storiesWorthTelling.studentHotelDescription}
             contactPerson="Charlie MacGregor"
             contactTitle="Founder & CEO, The Student Hotel"
             backgroundColor="bg-gray-200"
@@ -89,13 +101,13 @@ export default function ServicePage() {
             accentColor="text-blue-600"
             isReversed={true}
             videoId="j4Ttuceu388"
+            dictionary={dict.clientSuccessStory}
           />
         </div>
       </div>
       <div className="my-12 pb-28 px-8 md:px-24">
-        <OrganizationUsingMonday />
+        <OrganizationUsingMonday dictionary={dict.organizationusingmonday} />
       </div>
     </div>
-  )
+  );
 }
-
