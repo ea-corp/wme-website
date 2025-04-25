@@ -163,5 +163,76 @@
     "contactUs": "Contact us today",
     "wmeSolutions": "WME Solutions",
     "similarEfficiency": "can help your business achieve similar efficiency with customized Monday.com solutions."
+  },
+  "ourTeam": {
+    "title": "Our Global Team",
+    "employeeLocations": [
+      {
+        "id": 4,
+        "name": "Eddy Azoulay",
+        "position": "Founder & CEO",
+        "country": "Thailand",
+        "img": "/images/team/eddy.png",
+        "lat": -2.8688,
+        "lon": 72.2093,
+        "offsetDirection": "left",
+        "offsetDistance": 15
+      },
+      {
+        "id": 1,
+        "name": "Kessi Adhjari",
+        "position": "Senior Implementation Specialist",
+        "country": "Albania",
+        "img": "/images/team/kessi.png",
+        "lat": 42.5074,
+        "lon": 11.0,
+        "offsetDirection": "right",
+        "offsetDistance": 15
+      },
+      {
+        "id": 3,
+        "name": "Chan Myae Khine",
+        "position": "Implementation Specialist",
+        "country": "Myanmar",
+        "img": "/images/team/chan.png",
+        "lat": 12.8688,
+        "lon": 68.2093,
+        "offsetDirection": "left",
+        "offsetDistance": 35
+      },
+      {
+        "id": 5,
+        "name": "Bao Nguyen",
+        "position": "Solutions Engineer",
+        "country": "Germany",
+        "img": "/images/team/bao.png",
+        "lat": 53.5074,
+        "lon": 2.1278,
+        "offsetDirection": "left",
+        "offsetDistance": 18
+      },
+      {
+        "id": 2,
+        "name": "Hung Nguyen",
+        "position": "Monday.com Platform Developer",
+        "country": "Vietnam",
+        "img": "/images/team/hung.png",
+        "lat": 2.8688,
+        "lon": 78.2093,
+        "offsetDirection": "right",
+        "offsetDistance": 20
+      },
+      {
+        "id": 6,
+        "name": "Sanda Guna",
+        "position": "Senior Software Architect",
+        "country": "Chile",
+        "img": "/images/team/sanda.png",
+        "lat": -45.7128,
+        "lon": -54.006,
+        "offsetDirection": "left",
+        "offsetDistance": 22
+      }
+    ]
   }
 }
