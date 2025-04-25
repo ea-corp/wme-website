@@ -143,8 +143,8 @@ export default function Faq() {
           requirements. Some simple workflow will take less than 20 hours’ time
           while some very advanced ones can take over 100 hours. <br />
           <br />
-          Book a free Discovery Call so that we can give you a more accurate.
-          estimate
+          Book a free Discovery Call so that we can give you a more accurate
+          estimate.
         </AccordionDetails>
       </Accordion>
 
