@@ -1,6 +1,7 @@
 import "server-only";
 
 interface Dictionary {
+  contactUs: any;
   navbar: any;
   portfolio: any;
   ourTeam: any;

@@ -1097,5 +1097,10 @@
       "imageAlt": "Todoist logo",
       "link": "https://get.todoist.io/1ydhizchxmab"
     }
-  ]
+  ],
+  "contactUs": {
+    "title": "Contactez-nous",
+    "desc1": "Prêt à tirer le meilleur parti de monday.com pour votre entreprise ?",
+    "desc2": "N’attendez plus et contactez-nous dès maintenant pour discuter de vos besoins"
+  }
 }
