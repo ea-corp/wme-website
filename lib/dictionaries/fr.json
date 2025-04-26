@@ -349,5 +349,730 @@
       "imageAlt": "Todoist logo",
       "link": "https://get.todoist.io/1ydhizchxmab"
     }
-  ]
+  ],
+  "portfolio": {
+    "title": "Portfolio",
+    "selectCategory": "Filter par",
+    "industry": "Secteur",
+    "feature": "Fonctionnalité",
+    "filterCategories": {
+      "Industry": [
+        "Comptabilité",
+        "Construction",
+        "Ressources Humaines",
+        "Logistique",
+        "Production",
+        "Marketing",
+        "Immobilier",
+        "F&B",
+        "Commerce"
+      ],
+      "Feature": [
+        "Suivi Activité",
+        "Automatisations",
+        "Analyse des coûts",
+        "CRM",
+        "Dashboard",
+        "Dépendance",
+        "Répertoire",
+        "GénérationDoc",
+        "Formulaires",
+        "Intégrations",
+        "Inventaire",
+        "Facturation",
+        "Fiche Produit",
+        "KPI",
+        "Make.com",
+        "Cartes",
+        "On/Offboarding",
+        "Opérations/Liste de contrôle",
+        "Suivi des commandes",
+        "CartographieProcessus",
+        "Gestion de projet",
+        "Vue d'ensemble du projet",
+        "Gestion des ressources",
+        "Sondage",
+        "Gestion des tâches",
+        "Suivi du temps"
+      ]
+    },
+    "projects": [
+      {
+        "id": 1,
+        "titre": "Analyse des coûts",
+        "description": "",
+        "image": "/images/portfolio/construction/image-1.png",
+        "tags": ["Construction", "Dashboard", "Analyse des coûts"]
+      },
+      {
+        "id": 2,
+        "titre": "Coûts prévus vs réels par projet",
+        "description": "",
+        "image": "/images/portfolio/construction/image-2.png",
+        "tags": ["Construction", "Dashboard", "Analyse des coûts"]
+      },
+      {
+        "id": 3,
+        "titre": "Coûts prévus vs réels",
+        "description": "",
+        "image": "/images/portfolio/construction/image-3.png",
+        "tags": ["Construction", "Dashboard", "Analyse des coûts"]
+      },
+      {
+        "id": 4,
+        "titre": "Vue cartographique de tous les envois",
+        "description": "Vue des exportations, importations et expéditions nationales sur une carte du monde, où les données peuvent être consultées et mises à jour directement depuis la carte ou sur le tableau Monday.com.",
+        "image": "/images/portfolio/logistic/image-1.png",
+        "tags": ["Logistique", "Cartes"]
+      },
+      {
+        "id": 5,
+        "titre": "Échantillon de carte - Expéditions sortantes",
+        "description": "Utilisé par une entreprise de relocalisation internationale pour suivre les tâches à effectuer pour chaque envoi. Ce tableau était affiché sur un grand écran afin que l'équipe ait une vue d'ensemble de l'état de chaque mission.",
+        "image": "/images/portfolio/logistic/image-2.png",
+        "tags": ["Logistique", "Opérations/Liste de contrôle"]
+      },
+      {
+        "id": 6,
+        "titre": "Tableau de gestion des prospects",
+        "description": "Un tableau permettant de gérer tous les prospects par commercial. Ce tableau fait partie d’un flux de travail CRM avec des automatisations avancées en place.",
+        "image": "/images/portfolio/logistic/image-3.png",
+        "tags": ["Logistique", "CRM"]
+      },
+      {
+        "id": 7,
+        "titre": "Pipeline de ventes et gestion des coûts",
+        "description": "Les commerciaux peuvent générer un devis à partir de ce tableau en saisissant d’abord les différents coûts associés à chaque expédition.",
+        "image": "/images/portfolio/logistic/image-4.png",
+        "tags": ["Logistique", "CRM"]
+      },
+      {
+        "id": 8,
+        "titre": "Gestion des tarifs de fret",
+        "description": "Analyse des tarifs de fret provenant de divers fournisseurs, utilisée par les commerciaux avant de générer des devis pour les clients.",
+        "image": "/images/portfolio/logistic/image-5.png",
+        "tags": ["Logistique", "CRM"]
+      },
+      {
+        "id": 9,
+        "titre": "Codes QR à scanner",
+        "description": "La numérisation des codes QR à l'usine modifie automatiquement les statuts et les minuteries sur le tableau Monday.",
+        "image": "/images/portfolio/manufacturing/image-1.png",
+        "tags": ["Production", "Intégrations"]
+      },
+      {
+        "id": 10,
+        "titre": "Carte de fabrication d'échantillon 1/2",
+        "description": "Le statut des commandes pour chaque station change après que les employés ont scanné les commandes à l’usine.",
+        "image": "/images/portfolio/manufacturing/image-2.png",
+        "tags": ["Production", "Opérations/Liste de contrôle", "Suivi du temps"]
+      },
+      {
+        "id": 11,
+        "titre": "Carte de fabrication d'échantillon 2/2",
+        "description": "",
+        "image": "/images/portfolio/manufacturing/image-3.png",
+        "tags": ["Production", "Opérations/Liste de contrôle", "Suivi du temps"]
+      },
+      {
+        "id": 12,
+        "titre": "Exemples d'automatisations dans un tableau de fabrication",
+        "description": "",
+        "image": "/images/portfolio/manufacturing/image-4.png",
+        "tags": ["Production", "Automatisations"]
+      },
+      {
+        "id": 13,
+        "titre": "Exemple de tableau de gestion des stocks",
+        "description": "",
+        "image": "/images/portfolio/manufacturing/image-5.png",
+        "tags": ["Production", "Inventaire"]
+      },
+      {
+        "id": 14,
+        "titre": "Tableau de bord en direct - Livraisons quotidiennes 1/3",
+        "description": "Suivi des commandes effectuées par les clients sur différents canaux. Les rapports étaient établis quotidiennement, hebdomadairement et mensuellement. Les rapports étaient réalisés par établissement, car ce restaurant possédait plusieurs succursales.",
+        "image": "/images/portfolio/restaurant/image-1.png",
+        "tags": ["F&B", "Dashboard", "Suivi des commandes"]
+      },
+      {
+        "id": 15,
+        "titre": "Tableau de bord en direct - Livraisons quotidiennes 2/3",
+        "description": "Nous avons pu suivre, à l’aide des deux widgets inférieurs, les commandes par zones géographiques ainsi que par type de clients.",
+        "image": "/images/portfolio/restaurant/image-2.png",
+        "tags": ["F&B", "Dashboard", "Suivi des commandes"]
+      },
+      {
+        "id": 16,
+        "titre": "Tableau de bord en direct – Livraisons quotidiennes 3/3",
+        "description": "",
+        "image": "/images/portfolio/restaurant/image-3.png",
+        "tags": ["F&B", "Dashboard", "Suivi des commandes"]
+      },
+      {
+        "id": 17,
+        "titre": "Fournisseurs CRM",
+        "description": "",
+        "image": "/images/portfolio/restaurant/image-4.png",
+        "tags": ["F&B", "CRM", "Suivi des commandes", "Répertoire"]
+      },
+      {
+        "id": 18,
+        "titre": "Tableau d'exemple 1 - Liste de vérification des postes vacants",
+        "description": "Liste de contrôle entièrement automatisée basée sur la date de départ, permettant de suivre et de gérer des centaines de propriétés.",
+        "image": "/images/portfolio/real-estate/image-1.png",
+        "tags": ["Immobilier", "Opérations/Liste de contrôle"]
+      },
+      {
+        "id": 19,
+        "titre": "Tableau d'exemple 1 - Liste de vérification des postes vacants",
+        "description": "",
+        "image": "/images/portfolio/real-estate/image-2.png",
+        "tags": ["Immobilier", "Opérations/Liste de contrôle"]
+      },
+      {
+        "id": 20,
+        "titre": "Intégrations d’e-mails automatisés",
+        "description": "Lorsqu’un élément de la liste de contrôle est sur le point d’arriver à échéance ou est en retard, des e-mails sont envoyés automatiquement au PIC et aux responsables selon un ensemble de règles.",
+        "image": "/images/portfolio/real-estate/image-3.png",
+        "tags": ["Immobilier", "Automatisations"]
+      },
+      {
+        "id": 21,
+        "titre": "Automatisations pour l’immobilier 1/2",
+        "description": "",
+        "image": "/images/portfolio/real-estate/image-4.png",
+        "tags": ["Immobilier", "Automatisations"]
+      },
+      {
+        "id": 22,
+        "titre": "Automatisations pour l’immobilier 2/2",
+        "description": "",
+        "image": "/images/portfolio/real-estate/image-5.png",
+        "tags": ["Immobilier", "Automatisations"]
+      },
+      {
+        "id": 26,
+        "titre": "Aperçu du client",
+        "description": "Utilisé par une agence de marketing pour visualiser les activités liées à un compte spécifique. Les prospects sont connectés depuis le site web du client afin que tout puisse être géré directement dans Monday.com.",
+        "image": "/images/portfolio/marketing-agency/image-1.png",
+        "tags": ["Marketing", "Dashboard"]
+      },
+      {
+        "id": 27,
+        "titre": "Agence de marketing",
+        "description": "Agence de marketing",
+        "image": "/images/portfolio/marketing-agency/image-2.png",
+        "tags": ["Marketing", "Gestion de projet"]
+      },
+      {
+        "id": 28,
+        "titre": "Production vidéo 1/2",
+        "description": "",
+        "image": "/images/portfolio/marketing-agency/image-3.png",
+        "tags": ["Marketing", "Gestion de projet"]
+      },
+      {
+        "id": 29,
+        "titre": "Production vidéo 2/2",
+        "description": "",
+        "image": "/images/portfolio/marketing-agency/image-4.png",
+        "tags": ["Marketing", "Gestion de projet"]
+      },
+      {
+        "id": 30,
+        "titre": "Automatisations marketing",
+        "description": "",
+        "image": "/images/portfolio/marketing-agency/image-5.png",
+        "tags": ["Marketing", "Automatisations"]
+      },
+      {
+        "id": 31,
+        "titre": "Rapport de suivi du temps sur Toggl intégré à Monday",
+        "description": "",
+        "image": "/images/portfolio/time-tracking/image-1.png",
+        "tags": ["Marketing", "Suivi du temps"]
+      },
+      {
+        "id": 33,
+        "titre": "Synchronisation bidirectionnelle des tâches entre Monday et Toggl",
+        "description": "",
+        "image": "/images/portfolio/time-tracking/image-3.png",
+        "tags": ["Marketing", "Suivi du temps"]
+      },
+      {
+        "id": 34,
+        "titre": "Suivi du temps avec Make.com",
+        "description": "",
+        "image": "/images/portfolio/time-tracking/image-4.png",
+        "tags": ["Marketing", "Suivi du temps", "Make.com"]
+      },
+      {
+        "id": 35,
+        "titre": "Tableau des comptes",
+        "description": "Le tableau Comptes suit les organisations, leurs détails, et les relie aux opportunités. Il suit également les projets associés aux différentes organisations.",
+        "image": "/images/portfolio/manufacturing/image-6.png",
+        "tags": ["Production"],
+        "section": "CRM"
+      },
+      {
+        "id": 36,
+        "titre": "Tableau des opportunités",
+        "description": "Le tableau des Opportunités enregistre les nouvelles opportunités, en les associant à des comptes afin de faciliter le suivi. L’équipe commerciale peut créer de nouveaux projets dans l’espace de travail du commercial concerné lorsqu’une opportunité atteint le stade « Décollage ».",
+        "image": "/images/portfolio/manufacturing/image-7.png",
+        "tags": ["Production"],
+        "section": "CRM"
+      },
+      {
+        "id": 37,
+        "titre": "Tableau récapitulatif du projet",
+        "description": "Le tableau Récapitulatif du projet offre à l'équipe commerciale une vue d'ensemble des projets en cours pour une meilleure gestion et visibilité.",
+        "image": "/images/portfolio/manufacturing/image-8.png",
+        "tags": ["Production"],
+        "section": "CRM"
+      },
+      {
+        "id": 38,
+        "titre": "Tableau de projet",
+        "description": "Le tableau de projet fournit la liste détaillée des tâches que le commercial doit suivre pendant le processus de mise en œuvre du projet.",
+        "image": "/images/portfolio/manufacturing/image-9.png",
+        "tags": ["Production", "Gestion de projet"],
+        "section": "CRM"
+      },
+      {
+        "id": 39,
+        "titre": "Génération de devis",
+        "description": "Le tableau des opportunités avec une fiche d'article pour la génération de devis permet aux utilisateurs de créer des factures et des devis directement à partir des opportunités. Une fois qu'une opportunité atteint l'étape de proposition, les utilisateurs peuvent générer un document avec des informations préremplies telles que le numéro de projet, le compte client et les tarifs. Les utilisateurs peuvent ajouter des demandes spécifiques des clients pour différents articles dans la fiche d'article. Cela simplifie le processus de vente en garantissant une création de devis rapide et précise.",
+        "image": "/images/portfolio/manufacturing/image-10.png",
+        "tags": ["Production", "Facturation", "GénérationDoc"],
+        "section": "Génération de devis"
+      },
+      {
+        "id": 40,
+        "titre": "Document de devis",
+        "description": "Le document généré dans Docugen en utilisant les champs préremplis du tableau des Opportunités.",
+        "image": "/images/portfolio/manufacturing/image-11.png",
+        "tags": ["Production", "Facturation", "GénérationDoc"],
+        "section": "Génération de devis"
+      },
+      {
+        "id": 41,
+        "titre": "Génération de Factures Vente au Détail 1/3",
+        "description": "La fonctionnalité Devis & Factures de Monday CRM permet aux utilisateurs de créer facilement des devis et des factures en reliant leur liste de clients et leur catalogue de produits aux modèles de factures. Cela rationalise le processus de facturation, fait gagner du temps et garantit l'exactitude. Elle simplifie la gestion des clients grâce à une intégration fluide des données clients et produits.",
+        "image": "/images/portfolio/retail/image-1.png",
+        "tags": ["Commerce", "Facturation", "CRM", "GénérationDoc"],
+        "section": "Devis"
+      },
+      {
+        "id": 42,
+        "titre": "Génération de factures Vente au détail 2/3",
+        "description": "La fonctionnalité Devis et Factures de Monday CRM permet aux utilisateurs de créer facilement des devis et des factures en connectant leur liste de clients et leur catalogue de produits aux modèles de facturation. Cela rationalise le processus de facturation, fait gagner du temps et garantit une grande précision. Elle simplifie la gestion des clients grâce à une intégration fluide des données clients et produits.",
+        "image": "/images/portfolio/retail/image-2.png",
+        "tags": ["Commerce", "Facturation", "CRM", "GénérationDoc"],
+        "section": "Devis"
+      },
+      {
+        "id": 43,
+        "titre": "Génération de factures Vente au détail 3/3",
+        "description": "La fonctionnalité Devis et Factures de Monday CRM permet aux utilisateurs de créer facilement des devis et des factures en connectant leur liste de clients et leur catalogue de produits aux modèles de facturation. Cela rationalise le processus de facturation, fait gagner du temps et garantit une grande précision. Elle simplifie la gestion des clients grâce à une intégration fluide des données clients et produits.",
+        "image": "/images/portfolio/retail/image-3.png",
+        "tags": ["Commerce", "Facturation", "CRM", "GénérationDoc"],
+        "section": "Devis"
+      },
+      {
+        "id": 44,
+        "titre": "Document de Facturation",
+        "description": "Le document généré à l'aide de la fonctionnalité Monday Quotes & Invoice.",
+        "image": "/images/portfolio/retail/image-4.png",
+        "tags": ["Commerce", "Facturation", "CRM", "GénérationDoc"],
+        "section": "Devis"
+      },
+      {
+        "id": 45,
+        "titre": "Résumé des activités de l'organisation",
+        "description": "Le tableau de bord Aperçu de l’organisation fournit une vue d’ensemble des activités telles que les e-mails, les événements, les réunions et les appels, filtrées par organisation. Il suit également les récompenses attribuées aux organisations, en affichant des catégories telles que gagnants, finalistes, mentions spéciales et non retenus.",
+        "image": "/images/portfolio/activities-summary.png",
+        "tags": ["Suivi Activité"]
+      },
+      {
+        "id": 46,
+        "titre": "Tableau d'activités",
+        "description": "Le tableau des activités offre une vue centralisée de toutes les activités, en suivant les e-mails, les réunions et les résumés d'appels pour différentes organisations en un seul endroit. Il permet aux utilisateurs de rester informés de l'avancement des communications et des tâches de manière efficace.",
+        "image": "/images/portfolio/real-estate/image-6.png",
+        "tags": ["Immobilier", "Suivi Activité"],
+        "section": "Suivi Activité"
+      },
+      {
+        "id": 47,
+        "titre": "Tableau récapitulatif des activités",
+        "description": "Le graphique récapitulatif des activités offre une représentation visuelle des activités de l’organisation. Cela améliore la visibilité du flux de travail et permet de gérer les engagements de manière fluide.",
+        "image": "/images/portfolio/real-estate/image-7.png",
+        "tags": ["Immobilier", "Suivi Activité"],
+        "section": "Suivi Activité"
+      },
+      {
+        "id": 48,
+        "titre": "E-mails et activités",
+        "description": "E-mails et activités enregistrent toutes les actions associées à la colonne e-mail sur le tableau. Par exemple, vous pouvez envoyer des e-mails à vos contacts depuis cette page, ajouter des notes de réunion et des résumés d'appels, ainsi que créer des activités personnalisées telles que l'analyse des performances commerciales et les négociations de contrats, afin d'ajouter toutes les informations nécessaires liées à ce contact.",
+        "image": "/images/portfolio/real-estate/image-8.png",
+        "tags": ["Immobilier", "Suivi Activité"],
+        "section": "Suivi Activité"
+      },
+      {
+        "id": 49,
+        "titre": "Suivi d'activité",
+        "description": "Le Suivi d'Activité enregistre les e-mails et autres activités, les affichant sous le nom de la personne qui les a ajoutés. Il offre un aperçu des différentes activités ajoutées dans les E-mails et Activités, telles que les e-mails, les notes, les résumés d'appels, ainsi que les activités personnalisées comme l’analyse de la performance commerciale et les négociations de contrats. Toute nouvelle activité enregistrée se reflétera instantanément dans le graphique.",
+        "image": "/images/portfolio/real-estate/image-16.png",
+        "tags": ["Immobilier", "Suivi Activité"],
+        "section": "Suivi Activité"
+      },
+      {
+        "id": 50,
+        "titre": "Historique des e-mails et des activités",
+        "description": "Chronologie des e-mails et activités suit toutes les activités des 45 derniers jours, affichant les échanges d'e-mails et les activités telles que les réunions, les notes et les activités personnalisées ajoutées dans la carte d’élément « E-mails et activités ». L’activité quotidienne est codée par couleur : le rose représente les e-mails entrants et le bleu toutes les autres activités. Ce système visuel aide les utilisateurs à identifier facilement le flux de communication et à gérer l’avancement des tâches.",
+        "image": "/images/portfolio/real-estate/image-9.png",
+        "tags": ["Immobilier", "Suivi Activité"],
+        "section": "Suivi Activité"
+      },
+      {
+        "id": 51,
+        "titre": "Tableau de Suivi des Prospects",
+        "description": "Ce CRM personnalisé est conçu pour une entreprise de construction et d'immobilier, et permet de simplifier le suivi des prospects, y compris leurs sources, les relances de visites, et bien plus encore.",
+        "image": "/images/portfolio/real-estate/image-10.png",
+        "tags": ["Immobilier", "CRM"],
+        "section": "CRM"
+      },
+      {
+        "id": 52,
+        "titre": "Tableau de Visionnages pour une Planification Efficace",
+        "description": "Le tableau des visites fait partie du CRM qui permet à l'équipe commerciale de planifier les visites de logements avec les prospects et de gérer efficacement leur emploi du temps.",
+        "image": "/images/portfolio/real-estate/image-11.png",
+        "tags": ["Immobilier", "CRM"],
+        "section": "CRM"
+      },
+      {
+        "id": 53,
+        "titre": "Tableau de suivi des opportunités et de génération de contrats",
+        "description": "Le tableau des opportunités vous permet de suivre toutes les opportunités au sein de votre entreprise, de définir les conditions contractuelles, de générer des contrats et de les envoyer électroniquement pour signature.",
+        "image": "/images/portfolio/real-estate/image-12.png",
+        "tags": ["Immobilier", "CRM"],
+        "section": "CRM"
+      },
+      {
+        "id": 54,
+        "titre": "Tableau de Suivi de l’Occupation et des Baux des Unités",
+        "description": "Le tableau des unités est conçu pour suivre l’occupation des unités sur différents sites. Il permet de surveiller efficacement l’occupation, ainsi que les informations actuelles et passées des locataires. Une fonctionnalité clé de ce tableau est l’envoi automatique de rappels de renouvellement de bail à l’équipe commerciale, garantissant un suivi rapide auprès des locataires pour mettre fin ou renouveler leur contrat.",
+        "image": "/images/portfolio/real-estate/image-13.png",
+        "tags": ["Immobilier", "CRM"],
+        "section": "CRM"
+      },
+      {
+        "id": 55,
+        "titre": "Tableau de bord d’analyse des prospects 1/2",
+        "description": "Ce tableau de bord offre une vue d'ensemble claire des performances commerciales, du nombre total de prospects, des taux de conversion et des contrats.",
+        "image": "/images/portfolio/real-estate/image-14.png",
+        "tags": ["Immobilier", "Dashboard"],
+        "section": "CRM"
+      },
+      {
+        "id": 56,
+        "titre": "Tableau de bord d’analyse des prospects 2/2",
+        "description": "Ce tableau de bord suit les types de demandes, les réservations de visites, les signatures de contrats, et bien plus encore, offrant des informations précieuses pour favoriser une prise de décision éclairée.",
+        "image": "/images/portfolio/real-estate/image-15.png",
+        "tags": ["Immobilier", "Dashboard"],
+        "section": "CRM"
+      },
+      {
+        "id": 57,
+        "titre": "Intégration IAMMETER pour le suivi automatisé de l’énergie",
+        "description": "Intégration réussie de la plateforme IAMMETER avec Monday.com, permettant la synchronisation quotidienne et mensuelle de la consommation d’électricité pour toutes les unités. Cela garantit un reporting plus précis et automatise la génération ainsi que l’envoi des factures d’électricité aux locataires.",
+        "image": "/images/portfolio/construction/image-4.png",
+        "tags": ["Immobilier", "Intégrations"],
+        "section": "CRM"
+      },
+      {
+        "id": 58,
+        "titre": "Tableau Mensuel de Suivi Fiscal 1/2",
+        "description": "Ce tableau a été conçu pour suivre les impôts sur une base mensuelle. Les données sont automatiquement reportées, ce qui permet à l'équipe de travailler plus efficacement.",
+        "image": "/images/portfolio/accounting/image-1.png",
+        "tags": ["Comptabilité", "Intégrations"]
+      },
+      {
+        "id": 59,
+        "titre": "Tableau de Suivi Fiscal Mensuel 2/2",
+        "description": "Ce tableau a été conçu pour suivre les taxes sur une base mensuelle. Les données sont automatiquement reportées, ce qui permet à l’équipe de travailler plus efficacement.",
+        "image": "/images/portfolio/accounting/image-2.png",
+        "tags": ["Comptabilité", "Intégrations"]
+      },
+      {
+        "id": 60,
+        "titre": "Transfert fiscal centralisé pour plus de 800 conseils",
+        "description": "Déclenchement du processus de report fiscal pour plus de 800 tableaux à partir d’un tableau de niveau supérieur qui gère tous les clients.",
+        "image": "/images/portfolio/accounting/image-3.png",
+        "tags": ["Comptabilité", "Intégrations"]
+      },
+      {
+        "id": 61,
+        "titre": "Transfert automatique des taxes avec Make.com",
+        "description": "Ce scénario Make.com permet, en un seul clic, de reporter les soldes fiscaux précédents et de préparer les mois à venir. Cette solution simplifie les flux de travail, réduit les erreurs et améliore l'efficacité.",
+        "image": "/images/portfolio/accounting/image-4.png",
+        "tags": ["Comptabilité", "Make.com"]
+      },
+      {
+        "id": 62,
+        "titre": "Archivage automatisé des données avec Make.com",
+        "description": "Ce scénario Make.com archive les données, les rendant accessibles à l'équipe tout en les verrouillant pour modification.",
+        "image": "/images/portfolio/accounting/image-5.png",
+        "tags": ["Comptabilité", "Make.com"]
+      },
+      {
+        "id": 63,
+        "titre": "Aperçu de l'annuaire des employés",
+        "description": "Une capture d’écran détaillée d’une interface d’annuaire du personnel, présentant des sections pour le personnel de bureau, le personnel opérationnel et les anciens employés. L’interface comprend des colonnes affichant les informations des employés telles que le statut d’intégration, le poste, le type de contrat, le département, le superviseur, les dates de contrat et les adresses e-mail.",
+        "image": "/images/portfolio/hr/image-14.png",
+        "tags": ["Ressources Humaines", "Répertoire", "On/Offboarding"],
+        "section": "Gestion des employés"
+      },
+      {
+        "id": 64,
+        "titre": "Interface du Profil Employé",
+        "description": "Une vue d’ensemble complète de la page de profil d’un employé, comprenant des sections pour les informations personnelles, les détails de l’emploi et les congés payés (PTO). L’interface inclut des champs pour le nom, les coordonnées, le poste occupé, le salaire et le solde des congés.",
+        "image": "/images/portfolio/hr/image-15.png",
+        "tags": ["Ressources Humaines", "Fiche Produit", "Répertoire"],
+        "section": "Gestion des employés"
+      },
+      {
+        "id": 65,
+        "titre": "Carte de Répartition des Types d'Employés",
+        "description": "Une carte interactive affichant la répartition géographique des employés, avec des épingles colorées indiquant différents types d’employés. Cette visualisation permet de comprendre l’implantation régionale des diverses catégories d’employés à travers les États-Unis.",
+        "image": "/images/portfolio/hr/image-16.png",
+        "tags": ["Ressources Humaines", "Cartes"],
+        "section": "Gestion des employés"
+      },
+      {
+        "id": 66,
+        "titre": "Tableau de bord d'analyse détaillée des enquêtes auprès des employés",
+        "description": "Un tableau de bord complet présentant diverses mesures issues d'une enquête auprès des employés, notamment les tendances de satisfaction au travail, les taux de satisfaction en matière de communication, les niveaux de satisfaction concernant les avantages, ainsi que les évaluations des relations avec les responsables selon les départements. Cette visualisation permet d’identifier les domaines de satisfaction des employés et ceux nécessitant des améliorations.",
+        "image": "/images/portfolio/hr/image-17.png",
+        "tags": ["Ressources Humaines", "Sondage", "Dashboard"],
+        "section": "Sondage des employés"
+      },
+      {
+        "id": 67,
+        "titre": "Interface d’examen hebdomadaire de l’activité",
+        "description": "Une capture d'écran affichant une « Revue Hebdomadaire de l'Humeur » provenant d'une plateforme de feedback organisationnel. L'interface est divisée en catégories telles que « Nouvelles Revues (Anonymes) », « Revues de ce mois » et « Revues Précédentes », chacune listant des revues comportant des détails sur la productivité et le ressenti émotionnel, accompagnés d’évaluations par étoiles et de commentaires supplémentaires.",
+        "image": "/images/portfolio/hr/image-18.png",
+        "tags": ["Ressources Humaines", "Sondage"],
+        "section": "Sondage des employés"
+      },
+      {
+        "id": 68,
+        "titre": "Formulaire simple de point hebdomadaire",
+        "description": "Un formulaire numérique simple intitulé « Weekly Check In – You Are Our Priority (Simple Version) » conçu pour permettre aux employés d’évaluer leur productivité et leur état émotionnel de la semaine à l’aide d’un système d’étoiles, avec un espace pour des réponses ouvertes et des commentaires supplémentaires.",
+        "image": "/images/portfolio/hr/image-19.png",
+        "tags": ["Ressources Humaines", "Sondage", "Formulaires"],
+        "section": "Sondage des employés"
+      },
+      {
+        "id": 69,
+        "titre": "Formulaire complet de rétroaction des employés",
+        "description": "Un formulaire numérique détaillé intitulé « Sondages et Commentaires des Employés (Version Détaillée) » conçu pour recueillir des retours approfondis de la part des employés. Il comprend plusieurs sections portant sur les informations personnelles, la satisfaction au travail, l’efficacité de la communication, le soutien managérial, la dynamique d’équipe et les suggestions personnelles pour améliorer l’environnement de travail.",
+        "image": "/images/portfolio/hr/image-20.png",
+        "tags": ["Ressources Humaines", "Formulaires", "Sondage"],
+        "section": "Sondage des employés"
+      },
+      {
+        "id": 70,
+        "titre": "Analyse des tendances des congés des employés",
+        "description": "Un tableau de bord d'entreprise détaillé présente diverses métriques, notamment les principaux employés en congé, les types de congés pris et les demandes refusées par employé, visualisant efficacement les données des ressources humaines pour faciliter les décisions de gestion. Le tableau de bord utilise des graphiques à barres et un diagramme circulaire pour décomposer les statistiques de congé par individu et par catégorie.",
+        "image": "/images/portfolio/hr/image-8.png",
+        "tags": ["Ressources Humaines", "Dashboard"],
+        "section": "Gestion des congés"
+      },
+      {
+        "id": 71,
+        "titre": "Calendrier des congés organisé",
+        "description": "Un affichage détaillé du calendrier des demandes de congés des employés pour un mois, indiquant les absences individuelles et les jours fériés, garantissant une représentation visuelle claire de la disponibilité du personnel et des absences prévues. La mise en page offre une vue d'ensemble efficace pour la gestion et la coordination des équipes.",
+        "image": "/images/portfolio/hr/image-9.png",
+        "tags": ["Ressources Humaines"],
+        "section": "Gestion des congés"
+      },
+      {
+        "id": 72,
+        "titre": "Aperçu des jours fériés programmés",
+        "description": "Une liste détaillée des jours fériés à venir, présentée sous un format organisé, indiquant les dates précises et les jours de la semaine pour chaque fête, afin de faciliter la planification et l'organisation à l'avance.",
+        "image": "/images/portfolio/hr/image-10.png",
+        "tags": ["Ressources Humaines"],
+        "section": "Gestion des congés"
+      },
+      {
+        "id": 73,
+        "titre": "Tableau de bord de gestion des congés des employés",
+        "description": "Une interface complète affichant différentes sections liées à la gestion des congés des employés, y compris les demandes en attente d'approbation, les droits aux congés et un récapitulatif des congés restants par employé, facilitant ainsi le suivi efficace et la prise de décision pour les départements des ressources humaines.",
+        "image": "/images/portfolio/hr/image-11.png",
+        "tags": ["Ressources Humaines", "Dashboard"],
+        "section": "Gestion des congés"
+      },
+      {
+        "id": 74,
+        "titre": "Système de gestion des demandes de congé",
+        "description": "Une plateforme organisée de demande de congé présentant différentes sections : « Demandes de congé en attente de validation par la direction », « Approuvées » et « Refusées ». Ce système détaille chaque demande avec des informations telles que le demandeur, le type de congé, la période et le statut d’approbation, offrant une vue claire de la gestion des congés des employés.",
+        "image": "/images/portfolio/hr/image-22.png",
+        "tags": ["Ressources Humaines", "Dashboard"],
+        "section": "Gestion des congés"
+      },
+      {
+        "id": 75,
+        "titre": "Interface de soumission du formulaire de congé des employés",
+        "description": "Un formulaire de demande de congé intuitif conçu pour permettre aux employés de soumettre des demandes de congé annuel, professionnel ou maladie. Le formulaire comprend des champs pour l'identifiant de l'entreprise, le nom de l'employé, l'adresse e-mail, le type de congé, la période concernée, le nombre de jours de congé et des informations supplémentaires afin d'assurer une planification de congé complète.",
+        "image": "/images/portfolio/hr/image-23.png",
+        "tags": ["Ressources Humaines", "Formulaires"],
+        "section": "Gestion des congés"
+      },
+      {
+        "id": 76,
+        "titre": "Tableau de bord de l'état d'intégration des employés",
+        "description": "Une vue détaillée d’un tableau de bord d’intégration des employés, illustrant les différentes étapes d’intégration des employés, les dates de début, les barres de progression, les postes, les départements et le statut des documents essentiels tels que les lettres d’offre, les contrats et les politiques de l’entreprise. Cette interface permet de suivre efficacement l’avancement de l’intégration.",
+        "image": "/images/portfolio/hr/image-24.png",
+        "tags": ["Ressources Humaines", "On/Offboarding", "Dashboard"],
+        "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 77,
+        "titre": "Tableau de bord des indicateurs clés de performance RH",
+        "description": "Un tableau de bord RH complet pour le suivi et l’évaluation de divers indicateurs de performance en 2023. Cette interface affiche des KPI tels que le taux de rotation du personnel, la satisfaction des employés, les coûts de recrutement, le délai de recrutement des postes, et bien plus encore, chacun avec une mise à jour de statut indiquant s’ils sont dans les objectifs, nécessitent une attention particulière ou dépassent les cibles.",
+        "image": "/images/portfolio/hr/image-21.png",
+        "tags": ["Ressources Humaines", "KPI"],
+        "section": "Indicateurs de performance"
+      },
+      {
+        "id": 78,
+        "titre": "Aperçu du candidat",
+        "description": "Une interface numérique affiche le profil d’un candidat, mettant en avant sa candidature au poste de Social Media Manager, provenant de LinkedIn, avec des sections détaillées comprenant les coordonnées, le statut de la candidature, des informations tirées du CV et des notes d’entretien. La page présente également des résultats générés par l’IA évaluant ses points forts et son adéquation au poste.",
+        "image": "/images/portfolio/hr/image-7.png",
+        "tags": ["Ressources Humaines", "Fiche Produit"],
+        "section": "Recrutement"
+      },
+      {
+        "id": 79,
+        "titre": "Navigation des talents : un système de suivi des candidatures",
+        "description": "Une capture d’écran d’un tableau de suivi des candidatures, affichant les différentes étapes du processus de recrutement telles que les nouvelles candidatures, l’examen, les entretiens et les résultats d’embauche. Le tableau classe méticuleusement les candidats par intitulés de poste, sources et dates de candidature, améliorant ainsi le flux de travail de recrutement.",
+        "image": "/images/portfolio/hr/image-6.png",
+        "tags": ["Ressources Humaines"],
+        "section": "Recrutement"
+      },
+      {
+        "id": 80,
+        "titre": "Flux de travail de gestion des contrats",
+        "description": "Un tableau de bord interactif présentant le processus de gestion des contrats à travers différentes étapes, y compris les nouvelles demandes, les contrats envoyés et les accords signés. Ce tableau de bord fournit également des informations détaillées sur le poste de chaque employé, son département, les détails de son salaire et les dates de début de contrat.",
+        "image": "/images/portfolio/hr/image-12.png",
+        "tags": ["Ressources Humaines"],
+        "section": "Recrutement"
+      },
+      {
+        "id": 81,
+        "titre": "Vue détaillée du contrat de l'employé",
+        "description": "Une vue détaillée du profil d’un employé, présentant les informations contractuelles telles que la date de début, le salaire, les responsabilités professionnelles et les détails du superviseur, accompagnée d’options pour générer et gérer le statut du contrat.",
+        "image": "/images/portfolio/hr/image-13.png",
+        "tags": ["Ressources Humaines", "Fiche Produit", "Répertoire"],
+        "section": "Recrutement"
+      },
+      {
+        "id": 82,
+        "titre": "Gestion de l'allocation des ressources 1/3",
+        "description": "Analyse du temps consacré par chaque membre de l’équipe à des projets spécifiques et de l’effort collectif.",
+        "image": "/images/portfolio/hr/image-1.png",
+        "tags": ["Ressources Humaines", "Dashboard", "Gestion des ressources"],
+        "section": "Autres"
+      },
+      {
+        "id": 83,
+        "titre": "Gestion de l'allocation des ressources 2/3",
+        "description": "Le flux de travail mis en place a permis une analyse approfondie du travail soumis par l'équipe et une comparaison avec le temps initialement prévu.",
+        "image": "/images/portfolio/hr/image-2.png",
+        "tags": ["Ressources Humaines", "Gestion des ressources", "Dashboard"],
+        "section": "Autres"
+      },
+      {
+        "id": 84,
+        "titre": "Cartographie des processus pour une ONG à portée mondiale",
+        "description": "",
+        "image": "/images/portfolio/hr/image-3.png",
+        "tags": ["Ressources Humaines", "CartographieProcessus"],
+        "section": "Autres"
+      },
+      {
+        "id": 85,
+        "titre": "Tableau de bord 3 - Gestion de la charge de travail",
+        "description": "Utilisé pour gérer la charge de travail de chaque individu, afin de voir qui est disponible pour prendre un nouveau projet, qui est surchargé, etc...",
+        "image": "/images/portfolio/hr/image-4.png",
+        "tags": ["Ressources Humaines", "Dashboard", "Gestion des ressources"],
+        "section": "Autres"
+      },
+      {
+        "id": 86,
+        "titre": "Gestion de l’allocation des ressources 3/3",
+        "description": "Rapports détaillés sur le temps passé par un individu sur des projets spécifiques, comparés au temps théorique alloué. Ces rapports étaient utilisés lors des entretiens individuels entre la direction et les employés.",
+        "image": "/images/portfolio/hr/image-5.png",
+        "tags": ["Ressources Humaines", "Dashboard", "Gestion des ressources"],
+        "section": "Autres"
+      },
+      {
+        "id": 87,
+        "titre": "Formulaire d’intégration des employés",
+        "description": "Ce formulaire est utilisé pour soumettre les informations d’un nouvel employé, déclenchant ainsi le processus d’intégration automatique.",
+        "image": "/images/portfolio/hr/image-25.png",
+        "tags": ["Ressources Humaines", "Formulaires"],
+        "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 88,
+        "titre": "Annuaire des employés",
+        "description": "Suivi facile des étapes d’intégration et de départ des employés ainsi que de leurs informations.",
+        "image": "/images/portfolio/hr/image-26.png",
+        "tags": ["Ressources Humaines", "On/Offboarding", "Dashboard"],
+        "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 89,
+        "titre": "Liste de vérification pour l'intégration des employés",
+        "description": "Une liste de vérification d'intégration des employés générée automatiquement, avec toutes les dates d'échéance définies en fonction de la date de début, et le statut d'achèvement de chaque tâche suivi tout au long du processus d'intégration.",
+        "image": "/images/portfolio/hr/image-27.png",
+        "tags": ["Ressources Humaines", "Dépendance"],
+        "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 90,
+        "titre": "Listes de vérification d’intégration automatisées avec Make.com",
+        "description": "Mise en place d’un processus automatisé à l’aide de Make.com pour générer des listes de contrôle d’intégration pour les nouveaux employés, garantissant que les nouvelles recrues et leurs managers reçoivent automatiquement leurs tâches respectives dès le premier jour.",
+        "image": "/images/portfolio/hr/image-28.png",
+        "tags": ["Ressources Humaines", "Make.com"],
+        "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 91,
+        "titre": "Suivi de la liste de contrôle d'intégration",
+        "description": "Groupes et tâches de la liste d'intégration, dont l'état d'avancement sera regroupé dans un tableau récapitulatif pour l'ensemble des nouveaux employés.",
+        "image": "/images/portfolio/hr/image-29.png",
+        "tags": ["Ressources Humaines", "Gestion des tâches"],
+        "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 92,
+        "titre": "Tableau de bord centralisé pour le suivi de l'intégration 1/2",
+        "description": "Un tableau de bord centralisé de projet offrant une vue d'ensemble claire de la progression de l'intégration de chaque employé, en suivant l'achèvement de toutes les étapes de leur processus.",
+        "image": "/images/portfolio/hr/image-30.png",
+        "tags": ["Ressources Humaines", "Vue d’ensemble du projet"],
+        "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 93,
+        "titre": "Tableau de bord centralisé pour le suivi de l'intégration 2/2",
+        "description": "Cette section du tableau de bord affiche l'état d'avancement de chaque étape.",
+        "image": "/images/portfolio/hr/image-31.png",
+        "tags": ["Ressources Humaines", "Vue d’ensemble du projet"],
+        "section": "Onboarding/Offboarding"
+      }
+    ]
+  }
 }

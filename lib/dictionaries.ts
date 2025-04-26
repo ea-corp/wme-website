@@ -1,6 +1,7 @@
 import "server-only";
 
 interface Dictionary {
+  portfolio: any;
   ourTeam: any;
   clientSuccessStory: { successStory: string; contactUs: string; wmeSolutions: string; similarEfficiency: string; };
   storiesWorthTelling: any;
