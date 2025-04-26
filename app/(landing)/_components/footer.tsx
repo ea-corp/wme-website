@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Footer() {
+export default function Footer({ dict }: any) {
   // Tailles définies pour les images, modifiez selon vos besoins
   const imageSize = {
     width: 500,
@@ -54,55 +54,52 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center space-y-2 mt-8 md:mt-0 text-sm md:hidden">
           <div className="flex space-x-2">
-            <a href="/" className="hover:text-[#f4d752]">Home</a>
+            <a href="/" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.home}</a>
             <span>|</span>
-            <a href="/remote-services" className="hover:text-[#f4d752]">Packages</a>
+            <a href="/remote-services" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.packages}</a>
             <span>|</span>
-            <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories Worth Telling</a>
+            <a href="/stories-worth-telling" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.storiesWorthTelling}</a>
           </div>
           <div className="flex space-x-2">
-            <a href="/portfolio-wme" className="hover:text-[#f4d752]">Portfolio</a>
+            <a href="/portfolio-wme" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.portfolio}</a>
             <span>|</span>
             <a href="/apps" className="hover:text-[#f4d752]">Apps</a>
           </div>
           <div className="flex space-x-2">
-            <a href="/fullfillment-policy" className="hover:text-[#f4d752]">Fullfillment Policy</a>
+            <a href="/fullfillment-policy" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.fullfillmentPolicy}</a>
             <span>|</span>
-            <a href="/contact-us" className="hover:text-[#f4d752]">Contact Us</a>
+            <a href="/contact-us" className="hover:text-[#f4d752]"> {dict.footer.navigationLinks.contactUs}</a>
           </div>
         </div>
         <div className="hidden md:flex space-y-2 mt-8 md:mt-0 text-sm">
           <ul className="space-y-2 text-center sm:text-left">
             <li>
-              <a href="/" className="hover:text-[#f4d752]">Home</a>
+              <a href="/" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.home}</a>
             </li>
             <li>
-              <a href="/remote-services" className="hover:text-[#f4d752]">Packages</a>
+              <a href="/remote-services" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.packages}</a>
             </li>
             <li>
-              <a href="/stories-worth-telling" className="hover:text-[#f4d752]">Stories Worth Telling</a>
+              <a href="/stories-worth-telling" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.storiesWorthTelling}</a>
             </li>
             <li>
-              <a href="/blog" className="hover:text-[#f4d752]">Blog</a>
+              <a href="/portfolio-wme" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.portfolio}</a>
             </li>
             <li>
-              <a href="/portfolio-wme" className="hover:text-[#f4d752]">Portfolio</a>
+              <a href="/apps" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.apps}</a>
             </li>
             <li>
-              <a href="/apps" className="hover:text-[#f4d752]">Apps</a>
+              <a href="/fullfillment-policy" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.fullfillmentPolicy}</a>
             </li>
             <li>
-              <a href="/fullfillment-policy" className="hover:text-[#f4d752]">Fullfillment Policy</a>
-            </li>
-            <li>
-              <a href="/contact-us" className="hover:text-[#f4d752]">Contact Us</a>
+              <a href="/contact-us" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.contactUs}</a>
             </li>
           </ul>
         </div>
       </div>
       <div>
         <p className="text-center py-4 px-4 text-sm">
-© WME CONSULTING & SOLUTIONS LLC (U.S.) and WME SOLUTIONS CO., LTD (Thailand), operating as WME Solutions™. All rights reserved.
+          {dict.footer.copyright}
         </p>
       </div>
     </footer>

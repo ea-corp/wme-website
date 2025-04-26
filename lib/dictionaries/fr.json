@@ -1,4 +1,27 @@
 {
+  "navbar": {
+    "services": "Services",
+    "remoteImplementation": "Implémentation à distance",
+    "onSiteConsulting": "Conseil sur site",
+    "storiesWorthTelling": "Histoire à partager",
+    "ourTeam": "Notre équipe",
+    "portfolio": "Portfolio",
+    "apps": "Applications",
+    "contactUs": "Contactez-nous",
+    "try": "Essayez"
+  },
+  "footer": {
+    "navigationLinks": {
+      "home": "Accueil",
+      "packages": "Forfaits",
+      "storiesWorthTelling": "Histoires à partager",
+      "portfolio": "Portfolio",
+      "apps": "Applications",
+      "fullfillmentPolicy": "Politique de traitement",
+      "contactUs": "Contactez-nous"
+    },
+    "copyright": "© WME CONSULTING & SOLUTIONS LLC (États-Unis) et WME SOLUTIONS CO., LTD (Thaïlande), exerçant sous le nom de WME Solutions™. Tous droits réservés."
+  },
   "incitationbutton": {
     "title": "Tirez le meilleur parti de monday.com pour votre entreprise",
     "subtitle": "Dépassé en essayant de comprendre monday.com ?",
@@ -235,121 +258,6 @@
       }
     ]
   },
-  "appsPage": {
-    "title": "Notre sélection d'applications Monday.com pour une productivité optimale",
-    "description": "Découvrez la puissance des applications Monday.com, une suite d’extensions conçues pour améliorer la plateforme Monday.com en toute simplicité. Ces applications étendent les fonctionnalités de la plateforme, offrant de nouvelles possibilités sans nécessiter de développement personnalisé. Chaque application est prête à l’emploi et disponible sur le marketplace de Monday. Explorez ces applications pour rationaliser vos processus, accroître votre productivité et enrichir votre expérience en gestion de projet grâce à des solutions prêtes à l’emploi.",
-    "visitWebsite": "Voir le site",
-    "otherToolsTitle": "Autres outils pouvant s'intégrer à Monday.com"
-  },
-  "mondayTools": [
-    {
-      "id": "auto-increment-numbers",
-      "title": "Auto-Increments Numbers",
-      "description": "Découvrez la puissance des applications Monday.com, une série de modules complémentaires conçus pour améliorer sans effort la plateforme Monday.com. Ces applications étendent les capacités de la plateforme, offrant de nouvelles fonctionnalités sans nécessiter de développement personnalisé. Chaque application est prête à l’emploi et disponible sur la marketplace Monday. Explorez ces applications pour simplifier vos processus, augmenter votre productivité et enrichir votre expérience de gestion de projet grâce à des solutions prêtes à l’emploi.",
-      "imageSrc": "/images/apps/auto-increment-numbers.png",
-      "imageAlt": "Auto-Increments Numbers",
-      "link": "https://monday.com/marketplace/listing/10000104/auto-increment-numbers"
-    },
-    {
-      "id": "autofill-group-name",
-      "title": "Autofill Group Name",
-      "description": "Autofill Group Name est une application pour monday.com qui automatise la mise à jour des colonnes déroulantes avec le nom du groupe en fonction de divers déclencheurs tels que le déplacement d’un élément, sa création, un changement de statut ou une modification de nom.",
-      "imageSrc": "/images/apps/autofillgroupname.png",
-      "imageAlt": "Autofill Group Name icon",
-      "link": "https://monday.com/marketplace/listing/10000092/autofill-group-name"
-    },
-    {
-      "id": "approval-feedback",
-      "title": "Approval & Feedback",
-      "description": "L'application Approval & Feedback est un outil polyvalent pour les utilisateurs de monday.com, conçu pour simplifier le processus d'approbation et de retour grâce à des formulaires personnalisés.",
-      "imageSrc": "/images/apps/approvalfeedback.png",
-      "imageAlt": "Approval and feedback icon",
-      "link": "https://monday.com/marketplace/listing/10000230/approval--feedback"
-    },
-    {
-      "id": "copy-paste-master",
-      "title": "Copy Paste Master",
-      "description": "Copy Paste Master est une application pour monday.com qui permet aux utilisateurs d’automatiser la copie et la combinaison de données provenant de différentes colonnes, puis de les coller dans une autre colonne, simplifiant ainsi la gestion et la personnalisation des données.",
-      "imageSrc": "/images/apps/copypastemaster.png",
-      "imageAlt": "Copy paste master icon",
-      "link": "https://monday.com/marketplace/listing/10000151/copy-paste-master"
-    },
-    {
-      "id": "docugen",
-      "title": "Docugen",
-      "description": "DocuGen est un outil d'automatisation de documents qui génère des documents personnalisés à partir des données des tableaux Monday.com.",
-      "imageSrc": "/images/apps/docugen.png",
-      "imageAlt": "Docugen logo",
-      "link": "https://monday.com/marketplace/listing/12/docugen"
-    },
-    {
-      "id": "getsign",
-      "title": "GetSign",
-      "description": "GetSign est un outil de signature numérique qui permet de signer des documents en ligne de manière sécurisée et efficace. L'intégration de GetSign avec Monday.com permet aux utilisateurs d'envoyer facilement des documents depuis les tableaux Monday.com pour une signature électronique, de suivre le processus de signature et de recevoir les documents complétés directement dans leur flux de travail Monday.com. Cette intégration simplifie le processus de signature de documents, améliore l'efficacité et réduit les délais d'approbation et d'accords dans le cadre des tâches de gestion de projet.",
-      "imageSrc": "/images/apps/getsign.png",
-      "imageAlt": "GetSign logo",
-      "link": "https://monday.com/marketplace/listing/10000190/getsign---esignatures-pdf-generator--form-builder"
-    },
-    {
-      "id": "subitem-pro-templates",
-      "title": "Subitem Pro Templates",
-      "description": "Subitem Pro Templates est une application pour monday.com qui simplifie la gestion des éléments et sous-éléments en permettant aux utilisateurs de créer, réorganiser et déployer des modèles de sous-éléments personnalisés sur l’ensemble de leurs tableaux.",
-      "imageSrc": "/images/apps/subitemprotemplates.png",
-      "imageAlt": "Subitem Pro templates icon",
-      "link": "https://monday.com/marketplace/listing/10000172/subitem-pro-templates"
-    },
-    {
-      "id": "timeline-to-date",
-      "title": "Timeline to Date",
-      "description": "Timeline to Date est une application d'automatisation pour monday.com qui synchronise les données de la chronologie avec les colonnes de date de début et de date de fin.",
-      "imageSrc": "/images/apps/timelinetodate.png",
-      "imageAlt": "Timeline to date icon",
-      "link": "https://monday.com/marketplace/listing/10000118/timeline-to-date"
-    },
-    {
-      "id": "tag-to-action",
-      "title": "Tag to Action",
-      "description": "Tag to Action est un outil de productivité dynamique pour monday.com, permettant aux utilisateurs d'automatiser et de gérer efficacement leurs tâches et tableaux grâce à des actions personnalisées.",
-      "imageSrc": "/images/apps/tagtoaction.png",
-      "imageAlt": "Tag to action icon",
-      "link": "https://monday.com/marketplace/listing/10000207/tag-to-action"
-    },
-    {
-      "id": "vlookup-auto-link",
-      "title": "VLOOKUP Auto-link",
-      "description": "VLOOKUP Auto-Link est une alternative avancée aux tableaux connectés de monday.com. Elle vous permet de lier automatiquement plusieurs tableaux et de faire correspondre des éléments tout en conservant les fonctionnalités natives de rapports, d’automatisation et de permissions de monday.",
-      "imageSrc": "/images/apps/vlookup.png",
-      "imageAlt": "Vlookup logo",
-      "link": "https://monday.com/marketplace/listing/99/vlookup-auto-link-item-to-multiple-boards-"
-    }
-  ],
-  "otherTools": [
-    {
-      "id": "clicksend-sms",
-      "title": "ClickSend SMS",
-      "description": "ClickSend SMS est un service basé sur le cloud qui permet l'envoi et la réception de messages SMS dans le monde entier.",
-      "imageSrc": "",
-      "imageAlt": "ClickSend SMS icon",
-      "link": "https://dashboard.clicksend.com/signup/step1?u=148668",
-      "icon": "<MessagesSquare className=\"text-blue-600\" size={35} />"
-    },
-    {
-      "id": "make-com",
-      "title": "Make.com",
-      "description": "Make.com s’intègre à Monday.com pour automatiser les tâches et les flux de travail, permettant une synchronisation des données transparente et des mises à jour en temps réel entre Monday.com et diverses applications et services.",
-      "imageSrc": "/images/apps/make.png",
-      "imageAlt": "Make.com logo",
-      "link": "https://www.make.com/en/register?pc=newacc"
-    },
-    {
-      "id": "todoist",
-      "title": "Todoist",
-      "description": "Todoist est idéal pour une utilisation en déplacement, offrant une plateforme optimisée pour mobile permettant de gérer les tâches, définir des rappels et suivre les progrès.",
-      "imageSrc": "/images/apps/todoist.png",
-      "imageAlt": "Todoist logo",
-      "link": "https://get.todoist.io/1ydhizchxmab"
-    }
-  ],
   "portfolio": {
     "title": "Portfolio",
     "selectCategory": "Filter par",
@@ -1074,5 +982,120 @@
         "section": "Onboarding/Offboarding"
       }
     ]
-  }
+  },
+  "appsPage": {
+    "title": "Notre sélection d'applications Monday.com pour une productivité optimale",
+    "description": "Découvrez la puissance des applications Monday.com, une suite d’extensions conçues pour améliorer la plateforme Monday.com en toute simplicité. Ces applications étendent les fonctionnalités de la plateforme, offrant de nouvelles possibilités sans nécessiter de développement personnalisé. Chaque application est prête à l’emploi et disponible sur le marketplace de Monday. Explorez ces applications pour rationaliser vos processus, accroître votre productivité et enrichir votre expérience en gestion de projet grâce à des solutions prêtes à l’emploi.",
+    "visitWebsite": "Voir le site",
+    "otherToolsTitle": "Autres outils pouvant s'intégrer à Monday.com"
+  },
+  "mondayTools": [
+    {
+      "id": "auto-increment-numbers",
+      "title": "Auto-Increments Numbers",
+      "description": "Découvrez la puissance des applications Monday.com, une série de modules complémentaires conçus pour améliorer sans effort la plateforme Monday.com. Ces applications étendent les capacités de la plateforme, offrant de nouvelles fonctionnalités sans nécessiter de développement personnalisé. Chaque application est prête à l’emploi et disponible sur la marketplace Monday. Explorez ces applications pour simplifier vos processus, augmenter votre productivité et enrichir votre expérience de gestion de projet grâce à des solutions prêtes à l’emploi.",
+      "imageSrc": "/images/apps/auto-increment-numbers.png",
+      "imageAlt": "Auto-Increments Numbers",
+      "link": "https://monday.com/marketplace/listing/10000104/auto-increment-numbers"
+    },
+    {
+      "id": "autofill-group-name",
+      "title": "Autofill Group Name",
+      "description": "Autofill Group Name est une application pour monday.com qui automatise la mise à jour des colonnes déroulantes avec le nom du groupe en fonction de divers déclencheurs tels que le déplacement d’un élément, sa création, un changement de statut ou une modification de nom.",
+      "imageSrc": "/images/apps/autofillgroupname.png",
+      "imageAlt": "Autofill Group Name icon",
+      "link": "https://monday.com/marketplace/listing/10000092/autofill-group-name"
+    },
+    {
+      "id": "approval-feedback",
+      "title": "Approval & Feedback",
+      "description": "L'application Approval & Feedback est un outil polyvalent pour les utilisateurs de monday.com, conçu pour simplifier le processus d'approbation et de retour grâce à des formulaires personnalisés.",
+      "imageSrc": "/images/apps/approvalfeedback.png",
+      "imageAlt": "Approval and feedback icon",
+      "link": "https://monday.com/marketplace/listing/10000230/approval--feedback"
+    },
+    {
+      "id": "copy-paste-master",
+      "title": "Copy Paste Master",
+      "description": "Copy Paste Master est une application pour monday.com qui permet aux utilisateurs d’automatiser la copie et la combinaison de données provenant de différentes colonnes, puis de les coller dans une autre colonne, simplifiant ainsi la gestion et la personnalisation des données.",
+      "imageSrc": "/images/apps/copypastemaster.png",
+      "imageAlt": "Copy paste master icon",
+      "link": "https://monday.com/marketplace/listing/10000151/copy-paste-master"
+    },
+    {
+      "id": "docugen",
+      "title": "Docugen",
+      "description": "DocuGen est un outil d'automatisation de documents qui génère des documents personnalisés à partir des données des tableaux Monday.com.",
+      "imageSrc": "/images/apps/docugen.png",
+      "imageAlt": "Docugen logo",
+      "link": "https://monday.com/marketplace/listing/12/docugen"
+    },
+    {
+      "id": "getsign",
+      "title": "GetSign",
+      "description": "GetSign est un outil de signature numérique qui permet de signer des documents en ligne de manière sécurisée et efficace. L'intégration de GetSign avec Monday.com permet aux utilisateurs d'envoyer facilement des documents depuis les tableaux Monday.com pour une signature électronique, de suivre le processus de signature et de recevoir les documents complétés directement dans leur flux de travail Monday.com. Cette intégration simplifie le processus de signature de documents, améliore l'efficacité et réduit les délais d'approbation et d'accords dans le cadre des tâches de gestion de projet.",
+      "imageSrc": "/images/apps/getsign.png",
+      "imageAlt": "GetSign logo",
+      "link": "https://monday.com/marketplace/listing/10000190/getsign---esignatures-pdf-generator--form-builder"
+    },
+    {
+      "id": "subitem-pro-templates",
+      "title": "Subitem Pro Templates",
+      "description": "Subitem Pro Templates est une application pour monday.com qui simplifie la gestion des éléments et sous-éléments en permettant aux utilisateurs de créer, réorganiser et déployer des modèles de sous-éléments personnalisés sur l’ensemble de leurs tableaux.",
+      "imageSrc": "/images/apps/subitemprotemplates.png",
+      "imageAlt": "Subitem Pro templates icon",
+      "link": "https://monday.com/marketplace/listing/10000172/subitem-pro-templates"
+    },
+    {
+      "id": "timeline-to-date",
+      "title": "Timeline to Date",
+      "description": "Timeline to Date est une application d'automatisation pour monday.com qui synchronise les données de la chronologie avec les colonnes de date de début et de date de fin.",
+      "imageSrc": "/images/apps/timelinetodate.png",
+      "imageAlt": "Timeline to date icon",
+      "link": "https://monday.com/marketplace/listing/10000118/timeline-to-date"
+    },
+    {
+      "id": "tag-to-action",
+      "title": "Tag to Action",
+      "description": "Tag to Action est un outil de productivité dynamique pour monday.com, permettant aux utilisateurs d'automatiser et de gérer efficacement leurs tâches et tableaux grâce à des actions personnalisées.",
+      "imageSrc": "/images/apps/tagtoaction.png",
+      "imageAlt": "Tag to action icon",
+      "link": "https://monday.com/marketplace/listing/10000207/tag-to-action"
+    },
+    {
+      "id": "vlookup-auto-link",
+      "title": "VLOOKUP Auto-link",
+      "description": "VLOOKUP Auto-Link est une alternative avancée aux tableaux connectés de monday.com. Elle vous permet de lier automatiquement plusieurs tableaux et de faire correspondre des éléments tout en conservant les fonctionnalités natives de rapports, d’automatisation et de permissions de monday.",
+      "imageSrc": "/images/apps/vlookup.png",
+      "imageAlt": "Vlookup logo",
+      "link": "https://monday.com/marketplace/listing/99/vlookup-auto-link-item-to-multiple-boards-"
+    }
+  ],
+  "otherTools": [
+    {
+      "id": "clicksend-sms",
+      "title": "ClickSend SMS",
+      "description": "ClickSend SMS est un service basé sur le cloud qui permet l'envoi et la réception de messages SMS dans le monde entier.",
+      "imageSrc": "",
+      "imageAlt": "ClickSend SMS icon",
+      "link": "https://dashboard.clicksend.com/signup/step1?u=148668",
+      "icon": "<MessagesSquare className=\"text-blue-600\" size={35} />"
+    },
+    {
+      "id": "make-com",
+      "title": "Make.com",
+      "description": "Make.com s’intègre à Monday.com pour automatiser les tâches et les flux de travail, permettant une synchronisation des données transparente et des mises à jour en temps réel entre Monday.com et diverses applications et services.",
+      "imageSrc": "/images/apps/make.png",
+      "imageAlt": "Make.com logo",
+      "link": "https://www.make.com/en/register?pc=newacc"
+    },
+    {
+      "id": "todoist",
+      "title": "Todoist",
+      "description": "Todoist est idéal pour une utilisation en déplacement, offrant une plateforme optimisée pour mobile permettant de gérer les tâches, définir des rappels et suivre les progrès.",
+      "imageSrc": "/images/apps/todoist.png",
+      "imageAlt": "Todoist logo",
+      "link": "https://get.todoist.io/1ydhizchxmab"
+    }
+  ]
 }

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "./(landing)/_components/navbar";
-import Footer from "./(landing)/_components/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Head from "next/head";
@@ -21,17 +19,10 @@ export const metadata: Metadata = {
 };
 
 interface PageProps {
-  params: {
-    lang: string;
-  };
   children: React.ReactNode;
 }
 
-export default async function RootLayout({ children, params }: PageProps) {
-
-
-  const dict = await getDictionary(params.lang as string);
-
+export default async function RootLayout({ children }: PageProps) {
 
   return (
     <html lang="en">
@@ -39,14 +30,12 @@ export default async function RootLayout({ children, params }: PageProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <Navbar />
         <div className="mt-24"></div>
         <main className="flex-grow">
           {children}
           <Analytics />
           <SpeedInsights />
         </main>
-        <Footer />
       </body>
     </html>
   );

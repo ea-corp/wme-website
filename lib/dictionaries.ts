@@ -1,9 +1,15 @@
 import "server-only";
 
 interface Dictionary {
+  navbar: any;
   portfolio: any;
   ourTeam: any;
-  clientSuccessStory: { successStory: string; contactUs: string; wmeSolutions: string; similarEfficiency: string; };
+  clientSuccessStory: {
+    successStory: string;
+    contactUs: string;
+    wmeSolutions: string;
+    similarEfficiency: string;
+  };
   storiesWorthTelling: any;
   incitationbutton: {
     title: string;
