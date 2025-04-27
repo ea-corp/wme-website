@@ -163,6 +163,130 @@
       }
     ]
   },
+  "onsiteConsulting": {
+    "remoteServicesTitle": "Services",
+    "remoteImplementationTitle": "Conseil sur site",
+    "introText": "Nous nous déplaçons dans le monde entier pour mettre en place Monday.com dans vos locaux. Les implémentations sur site sont très efficaces, car elles nous permettent d’interagir facilement avec votre équipe et de comprendre votre environnement de travail ainsi que ses enjeux. Nous analyserons vos processus et mettrons en œuvre une solution Monday.com en étroite collaboration avec votre équipe. Vous pourrez tester la solution étape par étape, partager vos retours et, ensemble, nous construirons un flux de travail sur mesure. Ce type de conception collaborative s’est révélé être celui avec le meilleur taux d’adoption. L’implémentation sur site facilite généralement les réunions avec les différentes parties prenantes (Managers, CEO, équipes, etc.), créant ainsi une expérience de travail collaborative unique.",
+    "packages": [
+      {
+        "name": "Forfait Accès Rapide",
+        "price": "1 semaine sur place*",
+        "description": "Mettez-vous rapidement en route avec Monday.com. Idéal pour les petites et moyennes entreprises.",
+        "features": [
+          "Réunion avec les différentes parties prenantes (Managers, CEO, équipes, etc.)",
+          "Examen du système actuel et des outils en usage",
+          "Cartographie des processus en place et identification des points de blocage",
+          "Évaluation de votre configuration actuelle par rapport aux capacités et fonctionnalités de monday.com",
+          "Présentation complète de monday.com mettant en avant les différentes fonctionnalités, accompagnée d’une démonstration de cas d’usage réels applicables à votre entreprise",
+          "Discussion sur les intégrations possibles avec certains de vos systèmes existants",
+          "Questions et réponses",
+          "Définir la meilleure configuration possible pour votre entreprise en utilisant monday.com et examiner comment commencer à mettre en œuvre le système idéal, ainsi que la manière dont Monday sera configuré pour atteindre l’objectif fixé",
+          "Création et partage de scénarios réels pouvant servir de base pour construire votre système sur monday.com. Veuillez noter que certaines entreprises disposeront d’une personne dédiée à la mise en place de monday.com, mais WME Solutions propose également des services complets d’implémentation basés sur le diagnostic effectué."
+        ]
+      },
+      {
+        "name": "Forfait Entreprise",
+        "price": "2 à 3 semaines sur site*",
+        "description": "Idéal pour les entreprises nécessitant la mise en œuvre de Monday.com dans plusieurs divisions (par exemple : Ventes, Opérations, RH, Marketing, etc...).",
+        "features": [
+          "Identique au forfait découverte",
+          "1 à 2 consultants seniors de WME Solutions",
+          "Le temps sera réparti entre les réunions avec les parties prenantes et la création/mise en œuvre de la solution sur Monday.com selon les besoins",
+          "Support à distance complet par notre équipe basée en bureau si nécessaire",
+          "Activation de notre forfait à 2 000 $ comprenant des applications et plugins que nous avons développés et que nous activerons à vie sur votre compte Monday",
+          "Création de guides utilisateurs interactifs pour la solution mise en œuvre"
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "projectName": "Conseil et stratégie, Intégrations, Services de données, Formation et accompagnement, Configuration de la plateforme, Optimisation des workflows",
+        "rating": 5,
+        "reviewText": "WME Solutions a transformé notre système de gestion immobilière à Phuket. Eddy, Kessi et Chan ont fourni un soutien exceptionnel, se déplaçant à la dernière minute pour nous aider à optimiser Monday.com. Leur expertise en matière de workflows personnalisés et leurs conseils pratiques ont été inestimables. Je recommande vivement WME Solutions pour leur engagement, leur souci de la réussite client et leur capacité à livrer dans des délais serrés.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie",
+        "rating": 5,
+        "reviewText": "Excellent accompagnement.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie",
+        "rating": 5,
+        "reviewText": " Eddy et son équipe ont pris le temps de bien comprendre les besoins de notre centre de tutorat et ont fourni une solution personnalisée exceptionnelle. Ils ont intégré Monday.com avec des plateformes comme Make.com et Excel, en reconstruisant entièrement nos opérations. Leur professionnalisme, leur expertise technique et leur capacité à optimiser les processus ont été inestimables. Si vous recherchez une équipe axée sur les résultats, WME Solutions est le choix idéal. ",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie...",
+        "rating": 5,
+        "reviewText": "Tout était clair et facile à gérer. L'équipe a rapidement résolu mes problèmes de flux de travail et de CRM avec une excellente communication. Je recommande vivement Eddy et son équipe.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie",
+        "rating": 5,
+        "reviewText": "Travailler avec Eddy a été un véritable atout pour notre équipe. Grâce à son expertise sur Monday, il a optimisé notre gestion de projet et amélioré notre productivité. Toujours à l'écoute, il partage des conseils précieux. Je le recommande sans hésiter !",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie",
+        "rating": 5,
+        "reviewText": "Eddy a été très efficace, a bien compris nos besoins et a fourni des résumés vidéo qui nous ont beaucoup aidés. Malgré les différences de fuseau horaire, il était facilement joignable et a parfaitement communiqué avec notre équipe en français. Nous le recommandons vivement et sommes très satisfaits de son travail.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Projet : Optimisation du flux de travail sur monday.com",
+        "rating": 5,
+        "reviewText": "Eddy a été essentiel à la croissance de notre entreprise ! Son expertise, son engagement et son soutien sur Monday.com ont fait de lui un membre indispensable de notre équipe. Je ne pourrais que le recommander pour tout projet lié aux processus. A++ ",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : monday Scorecard",
+        "rating": 5,
+        "reviewText": "Eddy est un expert de Monday et un partenaire absolument exceptionnel avec qui travailler. Je ne peux que le recommander vivement. Il réalisera toutes vos idées et solutions au-delà de vos attentes les plus élevées.",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : configuration de monday.com",
+        "rating": 5,
+        "reviewText": "Eddy est un véritable expert de monday.com. Il sait ce qu’il fait, il est réactif et il tient ses promesses. Que pouvions-nous demander de plus...",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : expert monday.com recherché pour ajustement et formation",
+        "rating": 5,
+        "reviewText": "Eddy est génial ! Il connaît parfaitement le logiciel monday.com. Il a toujours fait l'effort de me caser à la dernière minute et a pris le temps de m'expliquer chaque processus lorsque je ne comprenais pas quelque chose. Il m’a aidé à créer des automatisations complexes et m’a donné des suggestions pour améliorer mes tableaux actuels. Je ferai à nouveau appel à Eddy à l’avenir dès que j’aurai besoin d’aide pour développer mes tableaux monday. Merci Eddy !",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : Formation à monday.com pour les petites entreprises",
+        "rating": 5,
+        "reviewText": "Eddy a fait un travail exceptionnel en formant notre équipe à l’utilisation de Monday.com. Il est extrêmement professionnel, compétent et communique très bien. Nous ferons certainement appel à lui à l’avenir pour toute autre formation. Merci Eddy !",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : Besoin d’un expert Monday.com pour automatiser, optimiser et intégrer la plateforme",
+        "rating": 5,
+        "reviewText": "Eddy est un véritable maître de monday.com. Il sait ce qu’il fait, il est réactif et il tient ses promesses. Que pouvions-nous demander de plus…",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : configuration de monday.com",
+        "rating": 5,
+        "reviewText": "J’ai engagé Eddy pour configurer Monday.com. Il a été extrêmement utile, un excellent choix, et je le recommande vivement. Eddy connaît très bien Monday.com et est à jour sur les fonctionnalités. Il a été facile à contacter, patient et un excellent communicant. Il a répondu à toutes mes questions et m’a montré des choses dont je ne soupçonnais même pas avoir besoin. Je suis ravi de l’avoir engagé, cela m’a fait gagner des heures. J’ai hâte de retravailler avec lui.",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : Expert monday.com recherché pour une agence en pleine croissance",
+        "rating": 5,
+        "reviewText": "Excellent travail, je recommande vivement Eddy ! Il possède une excellente connaissance de monday.com, a été très réactif et a communiqué de manière exemplaire. Il a bien compris nos besoins et a rapidement réorganisé notre flux de travail. Nous allons certainement continuer à collaborer avec lui. Merci, Eddy – EXCELLENT TRAVAIL !",
+        "sourceLogo": "/images/upwork-logo.png"
+      }
+    ],
+    "pricingText": "Les tarifs varient en fonction de la localisation et de la durée de chaque mise en œuvre sur site. Contactez-nous pour plus de détails et pour recevoir une proposition",
+    "bookFreeCallButton": "Contactez-nous"
+  },
   "storiesWorthTelling": {
     "title": "Des histoires qui méritent d'être racontées",
     "recentActivities": "Nos activités récentes",

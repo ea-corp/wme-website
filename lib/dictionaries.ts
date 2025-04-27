@@ -1,7 +1,8 @@
 import "server-only";
 
 interface Dictionary {
-  fullfillmentPolicy: { title: any; introduction: any; sections: any; };
+  onsiteConsulting: any;
+  fullfillmentPolicy: { title: any; introduction: any; sections: any };
   contactUs: any;
   navbar: any;
   portfolio: any;
