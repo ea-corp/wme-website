@@ -17,7 +17,7 @@ export default async function RootLayout({ children, params }: PageProps) {
         <div>
             <Navbar dict={dict} lang={lang} />
             {children}
-            <Footer dict={dict} />
+            <Footer dict={dict} lang={lang} />
         </div>
     );
 }

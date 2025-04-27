@@ -1102,5 +1102,69 @@
     "title": "Contact Us",
     "desc1": "Ready to get the most out of monday.com for your company?",
     "desc2": "Do not wait and get in touch with us now to discuss your needs"
+  },
+  "fullfillmentPolicy": {
+    "title": "Fulfillment Policy",
+    "introduction": "WME Solutions is committed to delivering high-quality consultancy services to optimize business processes and achieve organizational goals. This fulfillment policy outlines the terms and conditions for our service delivery, payments, and client obligations.",
+    "sections": [
+      {
+        "title": "1. Service Delivery",
+        "content": [
+          "We deliver services as outlined in the selected package or agreement.",
+          "Package validity, service hours, and included features are clearly specified in the agreement.",
+          "Services may include consultation, workflow development, support, training, or other specified tasks."
+        ]
+      },
+      {
+        "title": "2. Payment Policy",
+        "content": [
+          {
+            "subtitle": "Initial Payment",
+            "details": "Full payment for the selected package or initial deposit is required before services begin. Payments may include a commitment fee, which is non-refundable."
+          },
+          {
+            "subtitle": "Pay As You Go Billing",
+            "details": "For hourly services, charges will be billed weekly based on actual hours used, with a monthly retainer to secure on-demand support."
+          },
+          {
+            "subtitle": "Payment Methods",
+            "details": "Payments can be made via wire transfer or credit card. Credit card payments incur an additional 3% processing fee."
+          }
+        ]
+      },
+      {
+        "title": "3. Unused Hours",
+        "content": "Hours included in prepaid packages or initial payments are non-refundable."
+      },
+      {
+        "title": "4. Cancellations and Refunds",
+        "content": [
+          "Hour-based packages (e.g., 25/50/100 hours) are non-refundable after purchase.",
+          "Pay As You Go services may be cancelled with one month’s prior notice."
+        ]
+      },
+      {
+        "title": "5. Client Involvement",
+        "content": [
+          "Successful delivery requires active participation, including regular consultations and timely feedback.",
+          "Clients must maintain active subscriptions for relevant platforms (e.g., Monday.com, Make.com) and notify us of any required adjustments in support capacity."
+        ]
+      },
+      {
+        "title": "6. Transparency and Tracking",
+        "content": [
+          "All tasks are logged using a time-tracking system (e.g., Toggl), providing clients with real-time visibility of service utilization.",
+          "Clients will receive a live reporting link and can schedule consultations through Calendly."
+        ]
+      },
+      {
+        "title": "7. Confidentiality",
+        "content": "All client information and data shared during engagements are treated as confidential and will not be disclosed to third parties without explicit consent."
+      },
+      {
+        "title": "8. Limitations of Liability",
+        "content": "WME Solutions is not liable for indirect, incidental, or consequential damages resulting from service provision, except as required by applicable law."
+      }
+    ]
   }
 }

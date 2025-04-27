@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Footer({ dict }: any) {
+export default function Footer({ dict, lang }: any) {
   // Tailles définies pour les images, modifiez selon vos besoins
   const imageSize = {
     width: 500,
@@ -54,19 +54,19 @@ export default function Footer({ dict }: any) {
         </div>
         <div className="flex flex-col items-center space-y-2 mt-8 md:mt-0 text-sm md:hidden">
           <div className="flex space-x-2">
-            <a href="/" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.home}</a>
+            <a href={`/${lang}`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.home}</a>
             <span>|</span>
-            <a href="/remote-services" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.packages}</a>
+            <a href={`/${lang}/remote-services`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.packages}</a>
             <span>|</span>
             <a href="/stories-worth-telling" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.storiesWorthTelling}</a>
           </div>
           <div className="flex space-x-2">
-            <a href="/portfolio-wme" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.portfolio}</a>
+            <a href={`/${lang}/portfolio-wme`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.portfolio}</a>
             <span>|</span>
             <a href="/apps" className="hover:text-[#f4d752]">Apps</a>
           </div>
           <div className="flex space-x-2">
-            <a href="/fullfillment-policy" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.fullfillmentPolicy}</a>
+            <a href={`/${lang}/fullfillment-policy`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.fullfillmentPolicy}</a>
             <span>|</span>
             <a href="/contact-us" className="hover:text-[#f4d752]"> {dict.footer.navigationLinks.contactUs}</a>
           </div>
@@ -74,25 +74,25 @@ export default function Footer({ dict }: any) {
         <div className="hidden md:flex space-y-2 mt-8 md:mt-0 text-sm">
           <ul className="space-y-2 text-center sm:text-left">
             <li>
-              <a href="/" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.home}</a>
+              <a href={`/${lang}`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.home}</a>
             </li>
             <li>
-              <a href="/remote-services" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.packages}</a>
+              <a href={`/${lang}/remote-services`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.packages}</a>
             </li>
             <li>
-              <a href="/stories-worth-telling" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.storiesWorthTelling}</a>
+              <a href={`/${lang}/stories-worth-telling`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.storiesWorthTelling}</a>
             </li>
             <li>
-              <a href="/portfolio-wme" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.portfolio}</a>
+              <a href={`/${lang}/portfolio-wme`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.portfolio}</a>
             </li>
             <li>
-              <a href="/apps" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.apps}</a>
+              <a href={`/${lang}/apps`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.apps}</a>
             </li>
             <li>
-              <a href="/fullfillment-policy" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.fullfillmentPolicy}</a>
+              <a href={`/${lang}/fullfillment-policy`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.fullfillmentPolicy}</a>
             </li>
             <li>
-              <a href="/contact-us" className="hover:text-[#f4d752]">{dict.footer.navigationLinks.contactUs}</a>
+              <a href={`/${lang}/contact-us`} className="hover:text-[#f4d752]">{dict.footer.navigationLinks.contactUs}</a>
             </li>
           </ul>
         </div>

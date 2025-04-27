@@ -17,7 +17,7 @@
       "storiesWorthTelling": "Histoires à partager",
       "portfolio": "Portfolio",
       "apps": "Applications",
-      "fullfillmentPolicy": "Politique de traitement",
+      "fullfillmentPolicy": "Politique de prestation",
       "contactUs": "Contactez-nous"
     },
     "copyright": "© WME CONSULTING & SOLUTIONS LLC (États-Unis) et WME SOLUTIONS CO., LTD (Thaïlande), exerçant sous le nom de WME Solutions™. Tous droits réservés."
@@ -1099,8 +1099,72 @@
     }
   ],
   "contactUs": {
-    "title": "Contactez-nous",
+    "title": "Nous contacter",
     "desc1": "Prêt à tirer le meilleur parti de monday.com pour votre entreprise ?",
     "desc2": "N’attendez plus et contactez-nous dès maintenant pour discuter de vos besoins"
+  },
+  "fullfillmentPolicy": {
+    "title": "Politique de prestation",
+    "introduction": "WME Solutions s'engage à fournir des services de conseil de haute qualité afin d’optimiser les processus métier et d’atteindre les objectifs organisationnels. La présente politique d’exécution définit les conditions générales relatives à la prestation de nos services, aux paiements et aux obligations du client.",
+    "sections": [
+      {
+        "title": "1. Livraison de services",
+        "content": [
+          "Les services sont fournis conformément au forfait ou à l'accord sélectionné.",
+          "La validité du forfait, les heures de service et les fonctionnalités incluses sont clairement précisées dans l'accord.",
+          "Les services peuvent inclure la consultation, le développement de flux de travail, le support, la formation ou d'autres tâches spécifiées."
+        ]
+      },
+      {
+        "title": "2. Politique de paiement",
+        "content": [
+          {
+            "subtitle": "Paiement initial",
+            "details": " Le paiement complet du forfait sélectionné ou un acompte initial est requis avant le début des services. Les paiements peuvent inclure des frais d'engagement, non remboursables.  "
+          },
+          {
+            "subtitle": "Facturation à l'utilisation",
+            "details": "Pour les services facturés à l'heure, les frais seront facturés chaque semaine en fonction des heures réellement utilisées, avec un abonnement mensuel pour garantir un support à la demande.  "
+          },
+          {
+            "subtitle": "Méthodes de paiement",
+            "details": "Les paiements peuvent être effectués par virement bancaire ou carte de crédit. Les paiements par carte de crédit entraînent des frais de traitement supplémentaires de 3 %."
+          }
+        ]
+      },
+      {
+        "title": "3. Heures non utilisées",
+        "content": "Les heures incluses dans les forfaits prépayés ou les paiements initiaux ne sont pas remboursable."
+      },
+      {
+        "title": "4. Annulations et remboursements",
+        "content": [
+          "Les forfaits comprenant un nombre d’heures (par exemple 25/50/100 heures) ne sont pas remboursables une fois achetés.",
+          "Les services en Paiement à l’utilisation peuvent être annulés avec un préavis d’un mois."
+        ]
+      },
+      {
+        "title": "5. Implication du client",
+        "content": [
+          "La réussite de la prestation nécessite une participation active, comprenant des consultations régulières et des retours dans les délais.",
+          "Les clients doivent maintenir des abonnements actifs aux plateformes concernées (par exemple, Monday.com, Make.com) et informer WME Solutions de tout ajustement nécessaire en matière de capacité de support."
+        ]
+      },
+      {
+        "title": "6. Transparence et suivi",
+        "content": [
+          "Toutes les tâches sont enregistrées à l’aide d’un système de suivi du temps (par exemple, Toggl), offrant aux clients une visibilité en temps réel sur l’utilisation des services.",
+          "Les clients recevront un lien de rapport en direct et pourront planifier des consultations via Calendly."
+        ]
+      },
+      {
+        "title": "7. Confidentialité",
+        "content": "Toutes les informations et données client partagées au cours des prestations sont traitées de manière confidentielle et ne seront divulguées à des tiers qu’avec le consentement explicite."
+      },
+      {
+        "title": "8. Limitations de responsabilité",
+        "content": "WME Solutions n'est pas responsable des dommages indirects, accidentels ou consécutifs résultant de la prestation de services, sauf si la loi applicable l'exige."
+      }
+    ]
   }
 }
