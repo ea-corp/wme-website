@@ -37,8 +37,8 @@ async function getPosts() {
   return filteredPosts;
 }
 
-export default async function ServicePage() {
-
+export default async function ServicePage({ params }: any) {
+  const lang = params.lang
 
   let posts: any = await getPosts();
 
@@ -143,7 +143,7 @@ export default async function ServicePage() {
       projectName: "Project: monday.com setup",
       rating: 5,
       reviewText:
-      "I hired Eddy to set up Monday.com. He was super helpful, a great hire, and I highly recommend him. Eddy is very knowledgeable about Monday.com and up-to-date on features. He was easy to work with, patient, and a great communicator. He answered all my questions and showed me things I didn’t know I needed. I’m glad I hired him, as it saved me hours. I look forward to working with him again.",      sourceLogo: "/images/upwork-logo.png",
+        "I hired Eddy to set up Monday.com. He was super helpful, a great hire, and I highly recommend him. Eddy is very knowledgeable about Monday.com and up-to-date on features. He was easy to work with, patient, and a great communicator. He answered all my questions and showed me things I didn’t know I needed. I’m glad I hired him, as it saved me hours. I look forward to working with him again.", sourceLogo: "/images/upwork-logo.png",
     },
     {
       projectName: "Project: monday.com expert needed for growing agency",
@@ -188,6 +188,8 @@ export default async function ServicePage() {
       ],
     },
   ];
+
+
 
   return (
     <div className="mx-auto max-w-7xl px-4">
@@ -253,7 +255,7 @@ export default async function ServicePage() {
         {posts.slice(0, 20).map((post: any, index: number) => (
           <a
             key={index}
-            href={`/blog/${post.properties.Slug.rich_text[0].plain_text}`}
+            href={`/${lang}/blog/${post.properties.Slug.rich_text[0].plain_text}`}
             className="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300"
           >
             <div>

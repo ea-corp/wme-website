@@ -163,6 +163,207 @@
       }
     ]
   },
+
+  "remoteServices": {
+    "title": "Services à distance",
+    "subtitle": "Implémentation à distance",
+    "requestQuoteButton": "Demander un devis",
+    "otherPackagesTitle": "Autres forfaits",
+    "contactUsMessage": "Contactez-nous dès maintenant pour découvrir quel forfait vous convient le mieux.",
+    "bookFreeCallButton": "Planifier un appel gratuit",
+    "packages": [
+      {
+        "name": "Starter-Kit",
+        "info": "Indispensable pour start-up",
+        "description": "Le plus populaire",
+        "validity": "Validité: 6 semaines",
+        "features": ["1 Flux de travail avancé", "Forfait de 25 heures"]
+      },
+      {
+        "name": "Comprehensive",
+        "info": "Prêt pour les affaires",
+        "description": "Recommendé",
+        "validity": "Validité: 3 mois",
+        "features": ["1 à 2 flux de travail avancés", "Forfait de 50 heures"]
+      },
+      {
+        "name": "Ultimate",
+        "price": "$9,000",
+        "info": "Rendement optimal",
+        "description": "Best value",
+        "validity": "Validité: 6 mois",
+        "features": ["3 à 4 flux de travail avancés", "Forfait de 100 heures"]
+      },
+      {
+        "name": "Solutions personnalisées pour entreprises",
+        "custom": "Développement sur mesure : Concevoir des applications répondant aux besoins spécifiques d'une entreprise de taille moyenne à grande, en intégrant l'infrastructure actuelle."
+      }
+    ],
+    "otherPackages": [
+      {
+        "name": "Support continu",
+        "validity": "6 semaines",
+        "features": [
+          "4 heures par mois",
+          "Évaluation de la solution développée",
+          "Petites corrections si nécessaire",
+          "Questions/réponses de votre équipe",
+          "Suggestions d’optimisation basées sur les nouvelles fonctionnalités disponibles ou les évolutions de votre activité",
+          "Évaluation et rapport complet sur l’utilisation du flux de travail développé",
+          "Annulation gratuite à tout moment"
+        ]
+      },
+      {
+        "name": "Consultation ponctuelle",
+        "validity": "3 mois",
+        "features": [
+          "Session(s) de 60 minutes avec un expert Monday",
+          "Appels vidéo et partage d’écran",
+          "Déterminez si Monday.com est l’outil adapté",
+          "Corrections rapides",
+          "Évaluation de votre configuration actuelle",
+          "Questions / Réponses"
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "projectName": "Conseil et stratégie, Intégrations, Services de données, Formation et accompagnement, Configuration de la plateforme, Optimisation des workflows",
+        "rating": 5,
+        "reviewText": "WME Solutions a transformé notre système de gestion immobilière à Phuket. Eddy, Kessi et Chan ont fourni un soutien exceptionnel, se déplaçant à la dernière minute pour nous aider à optimiser Monday.com. Leur expertise en matière de workflows personnalisés et leurs conseils pratiques ont été inestimables. Je recommande vivement WME Solutions pour leur engagement, leur souci de la réussite client et leur capacité à livrer dans des délais serrés.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie",
+        "rating": 5,
+        "reviewText": "Excellent accompagnement.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie",
+        "rating": 5,
+        "reviewText": " Eddy et son équipe ont pris le temps de bien comprendre les besoins de notre centre de tutorat et ont fourni une solution personnalisée exceptionnelle. Ils ont intégré Monday.com avec des plateformes comme Make.com et Excel, en reconstruisant entièrement nos opérations. Leur professionnalisme, leur expertise technique et leur capacité à optimiser les processus ont été inestimables. Si vous recherchez une équipe axée sur les résultats, WME Solutions est le choix idéal. ",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie...",
+        "rating": 5,
+        "reviewText": "Tout était clair et facile à gérer. L'équipe a rapidement résolu mes problèmes de flux de travail et de CRM avec une excellente communication. Je recommande vivement Eddy et son équipe.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie",
+        "rating": 5,
+        "reviewText": "Travailler avec Eddy a été un véritable atout pour notre équipe. Grâce à son expertise sur Monday, il a optimisé notre gestion de projet et amélioré notre productivité. Toujours à l'écoute, il partage des conseils précieux. Je le recommande sans hésiter !",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Conseil et Stratégie",
+        "rating": 5,
+        "reviewText": "Eddy a été très efficace, a bien compris nos besoins et a fourni des résumés vidéo qui nous ont beaucoup aidés. Malgré les différences de fuseau horaire, il était facilement joignable et a parfaitement communiqué avec notre équipe en français. Nous le recommandons vivement et sommes très satisfaits de son travail.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Projet : Optimisation du flux de travail sur monday.com",
+        "rating": 5,
+        "reviewText": "Eddy a été essentiel à la croissance de notre entreprise ! Son expertise, son engagement et son soutien sur Monday.com ont fait de lui un membre indispensable de notre équipe. Je ne pourrais que le recommander pour tout projet lié aux processus. A++ ",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : monday Scorecard",
+        "rating": 5,
+        "reviewText": "Eddy est un expert de Monday et un partenaire absolument exceptionnel avec qui travailler. Je ne peux que le recommander vivement. Il réalisera toutes vos idées et solutions au-delà de vos attentes les plus élevées.",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : configuration de monday.com",
+        "rating": 5,
+        "reviewText": "Eddy est un véritable expert de monday.com. Il sait ce qu’il fait, il est réactif et il tient ses promesses. Que pouvions-nous demander de plus...",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : expert monday.com recherché pour ajustement et formation",
+        "rating": 5,
+        "reviewText": "Eddy est génial ! Il connaît parfaitement le logiciel monday.com. Il a toujours fait l'effort de me caser à la dernière minute et a pris le temps de m'expliquer chaque processus lorsque je ne comprenais pas quelque chose. Il m’a aidé à créer des automatisations complexes et m’a donné des suggestions pour améliorer mes tableaux actuels. Je ferai à nouveau appel à Eddy à l’avenir dès que j’aurai besoin d’aide pour développer mes tableaux monday. Merci Eddy !",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : Formation à monday.com pour les petites entreprises",
+        "rating": 5,
+        "reviewText": "Eddy a fait un travail exceptionnel en formant notre équipe à l’utilisation de Monday.com. Il est extrêmement professionnel, compétent et communique très bien. Nous ferons certainement appel à lui à l’avenir pour toute autre formation. Merci Eddy !",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : Besoin d’un expert Monday.com pour automatiser, optimiser et intégrer la plateforme",
+        "rating": 5,
+        "reviewText": "Eddy est un véritable maître de monday.com. Il sait ce qu’il fait, il est réactif et il tient ses promesses. Que pouvions-nous demander de plus…",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : configuration de monday.com",
+        "rating": 5,
+        "reviewText": "J’ai engagé Eddy pour configurer Monday.com. Il a été extrêmement utile, un excellent choix, et je le recommande vivement. Eddy connaît très bien Monday.com et est à jour sur les fonctionnalités. Il a été facile à contacter, patient et un excellent communicant. Il a répondu à toutes mes questions et m’a montré des choses dont je ne soupçonnais même pas avoir besoin. Je suis ravi de l’avoir engagé, cela m’a fait gagner des heures. J’ai hâte de retravailler avec lui.",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Projet : Expert monday.com recherché pour une agence en pleine croissance",
+        "rating": 5,
+        "reviewText": "Excellent travail, je recommande vivement Eddy ! Il possède une excellente connaissance de monday.com, a été très réactif et a communiqué de manière exemplaire. Il a bien compris nos besoins et a rapidement réorganisé notre flux de travail. Nous allons certainement continuer à collaborer avec lui. Merci, Eddy – EXCELLENT TRAVAIL !",
+        "sourceLogo": "/images/upwork-logo.png"
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Questions Fréquentes",
+    "sections": [
+      {
+        "title": "Je suis intéressé, comment commencer ?",
+        "content": [
+          "Planifiez un appel de découverte gratuit: Nous discuterons de vos besoins professionnels, de vos difficultés, de vos objectifs, et verrons comment nous pouvons vous accompagner, vous et votre équipe, pour tirer le meilleur parti de monday.com !",
+          "Achetez un forfait: À partir de notre première discussion lors de l’appel de découverte, vous pourrez choisir le forfait qui vous convient le mieux.",
+          "Confirmation par e-mail: Vous recevrez ensuite un e-mail de confirmation contenant les détails des prochaines étapes ainsi qu'un lien de planification unique que vous pourrez utiliser à tout moment pour fixer un rendez-vous avec nous."
+        ]
+      },
+      {
+        "title": "Comment les heures proposées dans votre forfait peuvent-elles être utilisées?",
+        "content": [
+          "Les heures peuvent être utilisées pour les éléments suivants :",
+          "Temps d’implémentation hors ligne par WME Solutions",
+          "Sessions de construction collaborative avec WME Solutions (appels vidéo avec partage d’écran)  ",
+          "Importation de données depuis votre système actuel vers monday.com si nécessaire",
+          "Sessions de formation en groupe sur les fonctionnalités de monday.com et le workflow mis en place",
+          "Maintenance et support après la mise en place du workflow. Une fois un forfait acheté, vous recevrez un lien unique vous permettant de suivre le solde d’heures restant dans votre forfait. Les informations sont mises à jour en temps réel et vous pouvez à tout moment télécharger un rapport. WME Solutions enregistrera le temps passé à travailler sur votre projet pour des événements tels que les sessions de construction collaborative, la construction hors ligne par WME Solutions, etc."
+        ]
+      },
+      {
+        "title": "Pourquoi y a-t-il une période de validité dans les forfaits que vous proposez?",
+        "content": "Le principal objectif d’avoir une période de validité est de faire avancer les choses. Tant que les éléments sont clairs dans nos esprits, il est important de maintenir la dynamique et de ne pas laisser le temps s’écouler sans agir. Pour le dire autrement, nous accordons tous de la valeur à notre temps, et si nous devions interrompre le travail sur un projet à plusieurs reprises ou pendant une longue période, il serait très chronophage de remettre tous les intervenants au même niveau de compréhension qu’au moment où nous avons mis le projet en pause. Même si nous disposons de notes et que l’ensemble du processus a été cartographié, cela reste loin d’être idéal. Cela fait partie de la méthode de réussite WME Solutions, appliquée à toutes les implémentations que nous avons réalisées. Nous avons simplement besoin d’un peu de votre temps chaque semaine pour revoir ce que nous avons construit et participer à des sessions de construction collaborative. La plupart de nos clients apprécient beaucoup ce processus car ils se sentent responsabilisés par la plateforme et la solution en cours de développement. Cette méthode vous apportera de nombreux bénéfices sur le long terme et favorisera une meilleure adoption. Exception à la règle : Avec les forfaits Comprehensive et Ultimate, vous êtes autorisé à suspendre la validité une seule fois, pour une durée maximale d’un mois. Cela peut s’avérer utile en cas d’événements tels qu’un audit d’entreprise à préparer, des vacances d’un intervenant clé, ou tout autre événement imprévu justifiant une pause dans le travail engagé."
+      },
+      {
+        "title": "Combien de temps vous faudra-t-il pour créer mon flux de travail sur monday.com ?",
+        "content": "Le délai dépendra de la complexité de votre flux de travail, ainsi que du nombre de tableaux, tableaux de bord et automatisations impliqués. En moyenne, nous consacrons entre 40 et 50 heures par client pour créer des flux de travail avancés, mais cela peut varier considérablement en fonction de vos besoins. Certains flux de travail simples prennent moins de 20 heures, tandis que les plus complexes peuvent dépasser 100 heures. Réservez un appel de découverte gratuit afin que nous puissions vous fournir une estimation plus précise."
+      },
+      {
+        "title": "Que se passe-t-il si je n'utilise pas toutes les heures de mon forfait ? Puis-je obtenir un remboursement?",
+        "content": "Les heures non utilisées dans votre forfait ne sont pas remboursables, mais peuvent être utilisées pour l’assistance et la maintenance, la révision des flux de travail ou des sessions de formation. Une fois votre flux de travail mis en place, voici l'étape passionnante : votre équipe peut commencer à l'utiliser. Cependant, une révision régulière de la manière dont le flux de travail est utilisé par votre équipe, réalisée par l’un de nos consultants experts, constitue une étape essentielle dans le processus d’adoption. Vous pouvez convertir vos heures non utilisées en Support Continu sur la base de 4 heures = 1 mois de forfait Revue & Support."
+      },
+      {
+        "title": "Comment savoir quel forfait choisir?",
+        "content": "Contactez-nous dès maintenant et planifiez votre appel découverte gratuit. Nous discuterons de vos besoins professionnels, de vos difficultés et de vos objectifs, et verrons comment nous pouvons vous aider à tirer le meilleur parti de monday.com !"
+      },
+      {
+        "title": "Où êtes-vous situé et quelle est votre disponibilité?",
+        "content": "WME Solutions est une entreprise légalement enregistrée aux États-Unis et en Thaïlande, avec une équipe opérationnelle répartie à travers l’Europe et l’Asie. Nous collaborons avec des clients dans le monde entier et proposons des créneaux horaires dédiés afin d'assurer une collaboration en temps réel avec l'Amérique du Nord, l’Europe, l’Asie et l’Océanie."
+      },
+      {
+        "title": "Avez-vous des projets à prix fixe?",
+        "content": " Actuellement non. Nous trouvons que le modèle à prix fixe est rigide lorsqu’il s’agit de créer une solution sur mesure sur monday.com. De nombreuses idées apparaissent souvent pendant nos sessions de co-conception, et vous pourriez vouloir apporter des modifications à ce qui avait été convenu au départ. C’est pourquoi nous privilégions le modèle à l’heure, car il offre plus de flexibilité à nos clients, et vous pouvez voir en toute transparence comment notre temps est utilisé pour construire votre solution."
+      }
+    ]
+  },
+
   "onsiteConsulting": {
     "remoteServicesTitle": "Services",
     "remoteImplementationTitle": "Conseil sur site",

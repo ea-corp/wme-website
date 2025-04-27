@@ -13,7 +13,7 @@ import {
 export const NavbarRoutes = ({ dict, lang }: any) => {
   const pathname = usePathname();
 
-  const isBlogPage = pathname.startsWith("/blog/");
+  const isBlogPage = pathname.startsWith(`/${lang}/blog`);
   const isExcludedPath =
     pathname.startsWith("/remote-services/usd") ||
     pathname.startsWith("/on-site-implementation-packages/usd");

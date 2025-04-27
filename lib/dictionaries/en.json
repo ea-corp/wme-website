@@ -164,6 +164,207 @@
     ]
   },
 
+
+  "remoteServices": {
+    "title": "Remote Services",
+    "subtitle": "Remote Implementation",
+    "requestQuoteButton": "Request a Quote",
+    "otherPackagesTitle": "Other Packages",
+    "contactUsMessage": "Contact us now to find out which package suits you best",
+    "bookFreeCallButton": "Book a Free Call",
+    "packages": [
+      {
+        "name": "Starter-Kit",
+        "info": "Startup Essential",
+        "description": "Most Popular",
+        "validity": "Validity: 6 weeks",
+        "features": ["1 advanced workflow", "25 hours package"]
+      },
+      {
+        "name": "Comprehensive",
+        "info": "Business Ready",
+        "description": "Recommended",
+        "validity": "Validity: 3 months",
+        "features": ["1 to 2 advanced workflows", "50 hours package"]
+      },
+      {
+        "name": "Ultimate",
+        "price": "$9,000",
+        "info": "Maximum Value",
+        "description": "Best value",
+        "validity": "Validity: 6 months",
+        "features": ["3 to 4 advanced workflows", "100 hours package"]
+      },
+      {
+        "name": "Custom Enterprise Solutions",
+        "custom": "Bespoke Development: Tailor software or systems specifically to the complex requirements of a medium to large organization, including integration with existing infrastructure."
+      }
+    ],
+    "otherPackages": [
+      {
+        "name": "Ongoing Support",
+        "validity": "6 weeks",
+        "features": [
+          "4 hours per month",
+          "Review of the built solution",
+          "Small fixes when required",
+          "Q&A from your team",
+          "Optimization suggestions based on new features available or any changes in your business.",
+          "Assessment and full reporting on the usage of the built workflow",
+          "Free cancellation at any time"
+        ]
+      },
+      {
+        "name": "Ad Hoc Consultation",
+        "validity": "3 months",
+        "features": [
+          "Session(s) of 60 mins with Monday Expert",
+          "Video calls & screensharing",
+          "Determine if Monday.com is the right tool",
+          "Quick fixes",
+          "Assessment on your current set-up",
+          "Q&A"
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "projectName": "Consulting & Strategy, Integrations, Data Services, Training & Enablement, Platform Configuration, Workflow Optimization",
+        "rating": 5,
+        "reviewText": "WME Solutions transformed our real estate management system in Phuket. Eddy, Kessi, and Chan provided outstanding support, flying in on short notice to help us maximize Monday.com. Their expertise in customized workflows and hands-on guidance was invaluable. I highly recommend WME Solutions for their dedication, client success, and ability to deliver under tight deadlines.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Consulting & Strategy",
+        "rating": 5,
+        "reviewText": "Excellent accompaniment.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Consulting & Strategy",
+        "rating": 5,
+        "reviewText": "Eddy and the team took the time to truly understand our tutoring center’s needs and delivered an outstanding customized solution. They integrated Monday.com with platforms like Make.com and Excel, rebuilding our operations from the ground up. Their professionalism, technical expertise, and ability to streamline processes have been invaluable. If you need a results-driven team, WME Solutions is the way to go.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Consulting & Strategy...",
+        "rating": 5,
+        "reviewText": "Everything was clear and easy to work with. The team quickly resolved my workflow and CRM issues with great communication. I highly recommend Eddy and his team.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Consulting & Strategy",
+        "rating": 5,
+        "reviewText": "Travailler avec Eddy a été un véritable atout pour notre équipe. Grâce à son expertise sur Monday, il a optimisé notre gestion de projet et amélioré notre productivité. Toujours à l'écoute, il partage des conseils précieux. Je le recommande sans hésiter !",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Consulting & Strategy",
+        "rating": 5,
+        "reviewText": "Eddy was very efficient, understood our needs, and provided video summaries that helped us a lot. Despite timezone differences, he was easy to reach and communicated perfectly with our team in French. We highly recommend him and are very happy with his work.",
+        "sourceLogo": "/images/monday-experts-logo.png"
+      },
+      {
+        "projectName": "Project: monday.com Work Flow optimization",
+        "rating": 5,
+        "reviewText": "Eddy has been integral to the growth of our business! His insight, dedication, and support on Monday.com have made Eddy a key part of our team. I wouldn’t hesitate to recommend him for any process-related projects. A++",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Project: monday Scorecard",
+        "rating": 5,
+        "reviewText": "Eddy is a Monday expert and an absolutely phenomenal partner to work with. I can't recommend him enough. He will execute any ideas/solutions you have beyond your best expectations.",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Project: monday.com setup",
+        "rating": 5,
+        "reviewText": "Eddy is a real monday.com master. Knows what he's doing, responsive and delivers. What more could we have asked for...",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Project: monday.com expert needed for fine tuning & training",
+        "rating": 5,
+        "reviewText": "Eddy is great! He is extremely knowledgeable in the monday.com software. He always made the effort to fit me in last minute, and took the time to explain each process with me when I didn't understand something. He has helped me build complicated automations and gave me suggestions to improve my current boards. I will be hiring Eddy again in the future whenever I need further help to develop my monday boards. Thanks Eddy!",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Project: monday.com Training For Small Business",
+        "rating": 5,
+        "reviewText": "Eddy did an amazing job at training our team on how to use Monday.com. He is extremely professional, knowledgeable and communicates really well. We will definitely be hiring him in the future for any further training. Thanks Eddy!",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Project: Monday.com expert need to automate, optimize and integrate platform",
+        "rating": 5,
+        "reviewText": "Eddy is a real monday.com master. Knows what he's doing, responsive and delivers. What more could we have asked for....",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Project: monday.com setup",
+        "rating": 5,
+        "reviewText": "I hired Eddy to set up Monday.com. He was super helpful, a great hire, and I highly recommend him. Eddy is very knowledgeable about Monday.com and up-to-date on features. He was easy to work with, patient, and a great communicator. He answered all my questions and showed me things I didn’t know I needed. I’m glad I hired him, as it saved me hours. I look forward to working with him again.",
+        "sourceLogo": "/images/upwork-logo.png"
+      },
+      {
+        "projectName": "Project: monday.com expert needed for growing agency",
+        "rating": 5,
+        "reviewText": "Excellent work and highly recommend Eddy! He was extremely knowledgeable about monday.com, very responsive with excellent communication. He understood our needs and quickly revamped our workflow. We will definitely continue an ongoing relationship with him. Thank you, Eddy - GREAT JOB!",
+        "sourceLogo": "/images/upwork-logo.png"
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions",
+    "sections": [
+      {
+        "title": "I'm interested, how do we get started?",
+        "content": [
+          "Schedule a Free Discovery Call. We’ll discuss your business needs, pain points, goals, and see how we can support you and your team to get the most out of monday.com!",
+          "Purchase a Package. Based on our initial discussion in the discovery call, you can choose the package that fits you best.",
+          "Email Confirmation. You will then receive a confirmation email with the details of the next steps and a unique scheduling link that you can use at any time to schedule some time with us."
+        ]
+      },
+      {
+        "title": "How can the hours proposed in your package be used?",
+        "content": [
+          "The hours can be used on the following:",
+          "Offline implementation time by WME Solutions.",
+          "Collaborative build sessions with WME Solutions (video calls with screen sharing).",
+          "Importing data from your current system to monday.com when needed.",
+          "Group training sessions on monday.com features and the workflow that has been built.",
+          "Maintenance & support after the workflow is built. Once a package is purchased, you will receive a unique link where you can track the time balance remaining in your package. The details are live, and you can download a report at any time. WME Solutions will record time when working on your project for events such as collaborative build sessions, offline work by WME Solutions, etc."
+        ]
+      },
+      {
+        "title": "Why is there a validity period in the packages you offer?",
+        "content": "The main purpose of having a validity period is to get things done. While things are fresh in our minds, it is important to keep things going and not let the clock run out without any action. Let’s put it this way, we all value our time and if we were to pause working on a project multiple times or for a long period of time, it would be very time-consuming to get all stakeholders on the same page we were when we paused the project. Even if we have notes and mapped your entire process, this is not ideal. This is part of the WME Solutions success method for all the implementations we have made. We just need a bit of your time each week to review what we have built, participate in collaborative build sessions. Most of our clients enjoy it very much as they feel empowered with the platform and solution that is being built. This method will benefit you in the long run, increase adoption rate. Exception to the Rule: With the Comprehensive and Ultimate package, you are allowed to pause the validity once and up to 1 month. This can come in useful for events occurring such as a company audit to prepare, key stakeholder on holidays, or any unexpected events that could justify pausing the work we have started."
+      },
+      {
+        "title": "How long will it take you to build my workflow on monday.com?",
+        "content": "The timeframe will depend on the complexity of your workflow, the number of boards, dashboards, and automations that are involved. On average, we spend 40 to 50 hours per client building advanced workflows, but this can vary significantly depending on your requirements. Some simple workflows will take less than 20 hours’ time while some very advanced ones can take over 100 hours. Book a free Discovery Call so that we can give you a more accurate estimate."
+      },
+      {
+        "title": "What if I do not use all the hours in my package, can I get a refund?",
+        "content": "Unused hours in your package are non-refundable but can be used for support & maintenance, workflow review, or training sessions. Once your workflow is built, this is the exciting part, your team can start using it but having a regular review of how the workflow is used by your team by one of our expert consultants is an important part of the adoption part. You can convert your unused hours to Ongoing Support on the basis of 4 hours = 1 month of Review & Support package."
+      },
+      {
+        "title": "How do I know which package to choose?",
+        "content": "Get in touch with us now, schedule your free Discovery Call. We’ll discuss your business needs, pain points, and goals and see how we can support you to get the most out of monday.com!"
+      },
+      {
+        "title": "Where are you located and what is your availability?",
+        "content": "WME Solutions is a company legally registered in the United States and Thailand, with an operational team based across Europe and Asia. We work with clients worldwide and offer dedicated time slots to support real-time collaboration across North America, Europe, Asia, and Oceania."
+      },
+      {
+        "title": "Do you have fixed price projects?",
+        "content": "Currently not. We find the fixed price model to be rigid when building a custom-made solution on monday.com. Great ideas often emerge during our collaborative building sessions, and you might want to make some changes on what was agreed initially. This is why we prefer the hourly model as it gives more flexibility to our clients, and you can see in full transparency where our time is spent building your solution."
+      }
+    ]
+  },
+
   "onsiteConsulting": {
     "remoteServicesTitle": "Services",
     "remoteImplementationTitle": "On-Site Consulting",

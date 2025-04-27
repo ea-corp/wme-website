@@ -117,7 +117,7 @@ export default async function ServicePage({ params }: any) {
         {posts.slice(0, 20).map((post: any, index: number) => (
           <a
             key={index}
-            href={`/blog/${post.properties.Slug.rich_text[0].plain_text}`}
+            href={`/${lang}/blog/${post.properties.Slug.rich_text[0].plain_text}`}
             className="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300"
           >
             <div>

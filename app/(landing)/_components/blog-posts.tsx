@@ -11,7 +11,7 @@ export const metadata = {
     "Dive into our blog where we share stories of our past events and experiences. Get an insider's look at our journey, milestones, and insights gained along the way. Stay connected and inspired as we take you behind the scenes of our company's growth and achievements.",
 };
 
-export default async function BlogPosts() {
+export default async function BlogPosts({}) {
   let posts: any = await getPosts();
 
   posts.sort((a: any, b: any) => {
