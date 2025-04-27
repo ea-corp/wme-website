@@ -32,7 +32,7 @@ export const NavbarRoutes = ({ dict, lang }: any) => {
                 {dict.navbar.services}
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-4 w-[200px]">
+                <ul className="grid gap-3 p-4 w-[240px]">
                   <li>
                     <Link
                       href={`/${lang}/remote-services`}
@@ -146,13 +146,14 @@ export const NavbarRoutes = ({ dict, lang }: any) => {
           target="_blank"
           className="bg-[#5949d5] text-white py-2 px-3 lg:px-4 rounded-xl flex items-center text-sm transition-colors duration-200 hover:bg-[#5949d5]/90"
         >
-          <p className="font-bold pr-2 text-sm">                      {dict.navbar.try}
+          <p className="font-bold text-sm">
+            {dict.navbar.try}
           </p>
           {!isBlogPage && !isExcludedPath && (
             <img
-              src="images/monday-com_only_logo.svg"
+              src="/images/monday-com_only_logo.svg"
               alt="monday.com logo"
-              className="w-6 h-6 lg:w-8 lg:h-8 pr-2"
+              className="w-2 h-2 lg:w-8 mx-1 md:mx-0"
             />
           )}
           <p className="font-bold text-sm">monday.com</p>

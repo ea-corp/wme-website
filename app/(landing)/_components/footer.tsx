@@ -18,7 +18,7 @@ export default function Footer({ dict, lang }: any) {
             height={150}
           />
         </div>
-        <div className="flex justify-center items-center flex-wrap space-x-4">
+        <div className="flex justify-center items-center flex-wrap space-x-1">
           <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative">
             <Image
               src="/images/product-certified-badge.png"
@@ -43,7 +43,7 @@ export default function Footer({ dict, lang }: any) {
               height={imageSize.height}
             />
           </div>
-          <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative mt-4 md:mt-0">
+          <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative md:mt-0">
             <Image
               src="/images/certified-partner-badge.png"
               alt="Monday.com Certified partner badge"
