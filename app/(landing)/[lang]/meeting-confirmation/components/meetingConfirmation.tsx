@@ -241,7 +241,7 @@ function MeetingConfirmation({ dict }: any) {
 
                 <div className="text-center py-6 md:py-10 border-t border-gray-200">
                     <p className="text-lg">
-                        {dict.meetingConfirmation.contactMessage}
+                        {dict.meetingConfirmation.contactMessage} &nbsp;
                         <a href="mailto:enquiry@wme-solutions.com" className="text-blue-600 hover:underline font-medium">
                             enquiry@wme-solutions.com
                         </a>

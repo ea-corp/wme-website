@@ -1,6 +1,7 @@
 import "server-only";
 
 interface Dictionary {
+  onsiteConsultingUSD: { remoteServicesTitle: any; remoteImplementationTitle: any; introText: any; packages: any; reviews: any; pricingText: any; bookFreeCallButton: any; };
   blog: any;
   onsiteConsulting: any;
   remoteServices: any;

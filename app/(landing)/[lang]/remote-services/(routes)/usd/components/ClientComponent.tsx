@@ -1,6 +1,9 @@
 "use client";
+import Image from "next/image";
+import React, { useState, useRef, useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Check, Package, ScreenShare } from "lucide-react";
+import Link from "next/link";
 import {
     Carousel,
     CarouselContent,
@@ -8,178 +11,34 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 import ClientFaqComponent from "../../../_components/faq";
 
-export default function ClientComponent({ dict }: any) {
-    const packages = [
-        {
-            name: "Starter-Kit",
-            price: "$2,750",
-            description: "Most Popular",
-            validity: "6 weeks",
-            features: ["1 Advanced workflow", "25 hours package"],
-        },
-        {
-            name: "Comprehensive",
-            price: "$5,000",
-            description: "Recommended",
-            validity: "3 months",
-            features: ["1 to 2 Advanced Workflows", "50 hours package"],
-        },
-        {
-            name: "Ultimate",
-            price: "$9,000",
-            description: "Best value",
-            validity: "6 months",
-            features: ["3 to 4 Advanced workflows", "100 Hours Package"],
-        },
-    ];
-
-    const otherPackages = [
-        {
-            name: "Ongoing Support",
-            price: "$390",
-            time: "month",
-            validity: "6 weeks",
-            features: [
-                "4 hours per month",
-                "Review of the built solution",
-                "Small fixes when required",
-                "Q&A from your team",
-                "Optimization suggestions based on new features available or any changes in your business.",
-                "Assessment and full reporting on the usage of the built workflow",
-                "Free cancellation at any time",
-            ],
-        },
-        {
-            name: "Ad Hoc Consultation",
-            price: "$150",
-            time: "hour",
-            validity: "3 months",
-            features: [
-                "Session(s) of 60 mins with Monday Expert",
-                "Video calls & screensharing",
-                "Determine if Monday.com is the right tool",
-                "Quick fixes",
-                "Assessment on your current set-up",
-                "Q&A",
-            ],
-        },
-    ];
-
-    const reviews = [
-        // MONDAY.COM
-        {
-            projectName: "Consulting & Strategy, Integrations, Data Services, Training & Enablement, Platform Configuration, Workflow Optimization",
-            rating: 5,
-            reviewText: "WME Solutions transformed our real estate management system in Phuket. Eddy, Kessi, and Chan provided outstanding support, flying in on short notice to help us maximize Monday.com. Their expertise in customized workflows and hands-on guidance was invaluable. I highly recommend WME Solutions for their dedication, client success, and ability to deliver under tight deadlines.",
-            sourceLogo: "/images/monday-experts-logo.png",
-        },
-        {
-            projectName: "Consulting & Strategy",
-            rating: 5,
-            reviewText: "Excellent accompaniment.",
-            sourceLogo: "/images/monday-experts-logo.png",
-        },
-        {
-            projectName: "Consulting & Strategy",
-            rating: 5,
-            reviewText: "Eddy and the team took the time to truly understand our tutoring center’s needs and delivered an outstanding customized solution. They integrated Monday.com with platforms like Make.com and Excel, rebuilding our operations from the ground up. Their professionalism, technical expertise, and ability to streamline processes have been invaluable. If you need a results-driven team, WME Solutions is the way to go.",
-            sourceLogo: "/images/monday-experts-logo.png",
-        },
-        {
-            projectName: "Consulting & Strategy...",
-            rating: 5,
-            reviewText: "Everything was clear and easy to work with. The team quickly resolved my workflow and CRM issues with great communication. I highly recommend Eddy and his team.",
-            sourceLogo: "/images/monday-experts-logo.png",
-        },
-        {
-            projectName: "Consulting & Strategy",
-            rating: 5,
-            reviewText: "Travailler avec Eddy a été un véritable atout pour notre équipe. Grâce à son expertise sur Monday, il a optimisé notre gestion de projet et amélioré notre productivité. Toujours à l'écoute, il partage des conseils précieux. Je le recommande sans hésiter !",
-            sourceLogo: "/images/monday-experts-logo.png",
-        },
-        {
-            projectName: "Consulting & Strategy",
-            rating: 5,
-            reviewText: " Eddy was very efficient, understood our needs, and provided video summaries that helped us a lot. Despite timezone differences, he was easy to reach and communicated perfectly with our team in French. We highly recommend him and are very happy with his work.",
-            sourceLogo: "/images/monday-experts-logo.png",
-        },
-        // UPWORK
-        {
-            projectName: "Project: monday.com Work Flow optimization",
-            rating: 5,
-            reviewText:
-                "Eddy has been integral to the growth of our business! His insight, dedication, and support on Monday.com have made Eddy a key part of our team. I wouldn’t hesitate to recommend him for any process-related projects. A++",
-            sourceLogo: "/images/upwork-logo.png",
-        },
-        {
-            projectName: "Project: monday Scorecard",
-            rating: 5,
-            reviewText:
-                "Eddy is a Monday expert and an absolutely phenomenal partner to work with. I can't recommend him enough. He will execute any ideas/solutions you have beyond your best expectations.",
-            sourceLogo: "/images/upwork-logo.png",
-        },
-        {
-            projectName: "Project: monday.com setup",
-            rating: 5,
-            reviewText:
-                "Eddy is a real monday.com master. Knows what he's doing, responsive and delivers. What more could we have asked for...",
-            sourceLogo: "/images/upwork-logo.png",
-        },
-        {
-            projectName:
-                "Project: monday.com expert needed for fine tuning & training",
-            rating: 5,
-            reviewText:
-                "Eddy is great! He is extremely knowledgeable in the monday.com software. He always made the effort to fit me in last minute, and took the time to explain each process with me when I didn't understand something. He has helped me build complicated automations and gave me suggestions to improve my current boards. I will be hiring Eddy again in the future whenever I need further help to develop my monday boards. Thanks Eddy!",
-            sourceLogo: "/images/upwork-logo.png",
-        },
-        {
-            projectName: "Project: monday.com Training For Small Business",
-            rating: 5,
-            reviewText:
-                "Eddy did an amazing job at training our team on how to use Monday.com. He is extremely professional, knowledgeable and communicates really well. We will definitely be hiring him in the future for any further training. Thanks Eddy!",
-            sourceLogo: "/images/upwork-logo.png",
-        },
-        {
-            projectName:
-                "Project: Monday.com expert need to automate, optimize and integrate platform",
-            rating: 5,
-            reviewText:
-                "Eddy is a real monday.com master. Knows what he's doing, responsive and delivers. What more could we have asked for....",
-            sourceLogo: "/images/upwork-logo.png",
-        },
-        {
-            projectName: "Project: monday.com setup",
-            rating: 5,
-            reviewText:
-                "I hired Eddy to set up Monday.com. He was super helpful, a great hire, and I highly recommend him. Eddy is very knowledgeable about Monday.com and up-to-date on features. He was easy to work with, patient, and a great communicator. He answered all my questions and showed me things I didn’t know I needed. I’m glad I hired him, as it saved me hours. I look forward to working with him again.", sourceLogo: "/images/upwork-logo.png",
-        },
-        {
-            projectName: "Project: monday.com expert needed for growing agency",
-            rating: 5,
-            reviewText:
-                "Excellent work and highly recommend Eddy! He was extremely knowledgeable about monday.com, very responsive with excellent communication. He understood our needs and quickly revamped our workflow. We will definitely continue an ongoing relationship with him. Thank you, Eddy - GREAT JOB!",
-            sourceLogo: "/images/upwork-logo.png",
-        },
-    ];
+const ClientComponent = ({ dict }: { dict: any }) => {
+    const {
+        title,
+        subtitle,
+        requestQuoteButton,
+        otherPackagesTitle,
+        contactUsMessage,
+        bookFreeCallButton,
+        packages,
+        otherPackages,
+        reviews,
+    } = dict.remoteServicesUSD;
 
     return (
         <div className="mx-auto max-w-7xl px-4">
-            <div className="bg-gray-100 text-center py-16">
-                <h2 className="text-4xl font-semibold">Remote Services</h2>
+            <div className="bg-gray-100 text-center pt-16 pb-6 md:py-16 overflow-x-hidden">
+                <h2 className="text-4xl font-semibold">{title}</h2>
             </div>
             <div className="flex items-center justify-center py-12">
                 <h2 className="text-2xl font-medium flex items-center">
                     <ScreenShare size={35} className="text-yellow-400" />
-                    &nbsp; Remote Implementation
+                    &nbsp; {subtitle}
                 </h2>
             </div>
             <div className="flex justify-center flex-wrap">
-                {packages.map((pkg) => (
+                {packages.map((pkg: any) => (
                     <div
                         key={pkg.name}
                         className="w-full max-w-md bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
@@ -197,16 +56,22 @@ export default function ClientComponent({ dict }: any) {
                                 </p>
                             </div>
                         </div>
+                        <div>
+                            <p className="py-2 text-sm">{pkg.info}</p>
+                        </div>
                         <Separator className="my-2" />
-
                         <div className="mt-2 mb-4"></div>
                         <ul className="mb-4">
-                            {pkg.features.map((feature, index) => (
-                                <li key={index} className="flex items-center py-2">
-                                    <Check className="flex-shrink-0 h-6 w-6 text-yellow-400 mr-4" />
-                                    <p className="text-medium text-gray-700 flex-1">{feature}</p>
-                                </li>
-                            ))}
+                            {pkg.features &&
+                                pkg.features.map((feature: string, index: number) => (
+                                    <li key={index} className="flex items-center py-2">
+                                        <Check className="flex-shrink-0 h-6 w-6 text-yellow-400 mr-4" />
+                                        <p className="text-medium text-gray-700 flex-1">
+                                            {feature}
+                                        </p>
+                                    </li>
+                                ))}
+                            <p>{pkg.custom}</p>
                         </ul>
                         <a
                             href="https://forms.monday.com/forms/096ad93b812843c5fb105813a01755d6?r=use1"
@@ -218,20 +83,30 @@ export default function ClientComponent({ dict }: any) {
                     </div>
                 ))}
             </div>
-            <div className="flex items-center justify-center py-12">
+
+            <div className="text-center my-16">
+                <Link
+                    href="contact-us"
+                    className="bg-[#f4d752] text-2xl py-4 px-4 rounded-lg font-medium"
+                >
+                    {requestQuoteButton}
+                </Link>
+            </div>
+
+            <div className="flex items-center justify-center py-4 md:py-12">
                 <h2 className="text-2xl font-medium flex items-center">
                     <Package size={35} className="text-[#f4d752]" />
-                    &nbsp; Other Packages
+                    &nbsp; {otherPackagesTitle}
                 </h2>
             </div>
             <div className="flex justify-center flex-wrap">
-                {otherPackages.map((pkg) => (
+                {otherPackages.map((pkg: any) => (
                     <div
                         key={pkg.name}
                         className="w-full max-w-md bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
                     >
                         <div className="flex justify-between">
-                            <h3 className="text-lg leading-6 font-medium text-gray-900">
+                            <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">
                                 {pkg.name}
                             </h3>
                             <div className="text-right">
@@ -240,9 +115,8 @@ export default function ClientComponent({ dict }: any) {
                             </div>
                         </div>
                         <Separator className="my-2" />
-
                         <ul className="mb-4">
-                            {pkg.features.map((feature, index) => (
+                            {pkg.features.map((feature: string, index: number) => (
                                 <li key={index} className="flex items-center py-2">
                                     <Check className="flex-shrink-0 h-6 w-6 text-yellow-400 mr-4" />
                                     <p className="text-medium text-gray-700 flex-1">{feature}</p>
@@ -265,7 +139,7 @@ export default function ClientComponent({ dict }: any) {
                     <CarouselContent>
                         {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, groupIndex) => (
                             <CarouselItem key={groupIndex} className="grid grid-cols-2 grid-rows-2 gap-4">
-                                {reviews.slice(groupIndex * 4, groupIndex * 4 + 4).map((review, index) => (
+                                {reviews.slice(groupIndex * 4, groupIndex * 4 + 4).map((review: any, index: number) => (
                                     <div key={index} className="p-1 h-full">
                                         <ReviewCard {...review} />
                                     </div>
@@ -279,23 +153,23 @@ export default function ClientComponent({ dict }: any) {
             </div>
 
             <ClientFaqComponent dict={dict} />
-            <div className="py-16 flex items-center justify-center flex-col">
-                <h3 className="text-2xl font-medium py-4">
-                    Contact us now to find out which package suits you best
+            <div className="py-8 md:py-16 flex items-center justify-center flex-col">
+                <h3 className="text-2xl font-medium text-center pb-4">
+                    {contactUsMessage}
                 </h3>
                 <div className="flex w-full ml-4 mt-4 justify-center">
                     <a
-                        href="/contact-us"
+                        href="contact-us"
                         target="_blank"
                         className="bg-[#f4d752] text-black py-4 px-6 rounded-xl flex"
                     >
-                        <p className="font-bold text-sm">Book a Free Call</p>
+                        <p className="font-bold text-sm">{bookFreeCallButton}</p>
                     </a>
                 </div>
             </div>
         </div>
     );
-}
+};
 
 type ReviewCardProps = {
     projectName: string;
@@ -323,14 +197,14 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
     useEffect(() => {
         if (textRef.current) {
             const textHeight = textRef.current.scrollHeight;
-            const maxHeight = 150; // Définissez la hauteur maximale avant la troncature
+            const maxHeight = 150; // Define the maximum height before truncation
             if (textHeight > maxHeight) {
                 setIsTruncated(true);
             } else {
                 setIsTruncated(false);
             }
         }
-    }, [reviewText]); // Ajoutez reviewText comme dépendance pour réévaluer si le texte change
+    }, [reviewText]); // Add reviewText as a dependency to re-evaluate if the text changes
 
     const toggleExpand = () => {
         setIsExpanded(!isExpanded);
@@ -378,3 +252,5 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
         </div>
     );
 };
+
+export default ClientComponent;

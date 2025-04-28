@@ -25,8 +25,8 @@ export default async function ServicePage({ params }: PageProps) {
             <div className="absolute bottom-0 left-0 w-full h-1 bg-primary" />
           </div>
         </div>
-        <div className="md:px-24">
-          <BlogPosts />
+        <div className="md:px-0">
+          <BlogPosts dict={dict} lang={lang} />
         </div>
         <div className="py-12">
           <div className="relative">

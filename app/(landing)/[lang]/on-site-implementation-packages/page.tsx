@@ -1,56 +1,29 @@
 import { Separator } from "@/components/ui/separator";
-import { getDatabase } from "@/lib/notion";
 import { Building, Check } from "lucide-react";
 import { Metadata } from "next";
 import { ReviewCard } from "../../_components/reviews";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { getDictionary } from "@/lib/dictionaries";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "On-Site Consulting - WME Solutions",
   description: "Discover our on-site consulting services tailored to optimize your business operations. Our expert consultants work closely with your team to analyze, strategize, and implement tailored solutions that drive efficiency and success.",
 };
 
-async function getPosts() {
-  const database = await getDatabase();
-  const filteredPosts = database.filter((post: any) => {
-    return (
-      post.properties &&
-      post.properties.Title &&
-      post.properties.Title.title &&
-      post.properties.Title.title[0] &&
-      post.properties.Title.title[0].text &&
-      post.properties.Title.title[0].text.content &&
-      (post.properties.Title.title[0].text.content.includes(
-        "A Week of Innovation and Collaboration: On-Site Consulting in the Heart of London"
-      ) ||
-        post.properties.Title.title[0].text.content.includes(
-          "A Week of Transformative Collaboration in Oranmore"
-        ) ||
-        post.properties.Title.title[0].text.content.includes(
-          "Transforming Real Estate Management in Phuket: WME Solutions’ On-Site Consultation with Empire Estates"
-        ))
-    );
-  });
-  return filteredPosts;
-}
-
 export default async function ServicePage({ params }: any) {
   const lang = params.lang;
   const dict = await getDictionary(lang);
 
-  let posts: any = await getPosts();
+  const posts = [
+    dict.blog.aWeekOfInnovationAndCollaboration,
+    dict.blog.aWeekOfTransformativeCollaborationInOranmore,
+    dict.blog.transformingRealEstateManagementInPhuket,
+  ];
 
-  posts.sort((a: any, b: any) => {
-    const dateStringA = a.properties.Date.rich_text[0].text.content;
-    const dateStringB = b.properties.Date.rich_text[0].text.content;
-
-    const [monthA, yearA] = dateStringA.split(" ");
-    const [monthB, yearB] = dateStringB.split(" ");
-
-    const dateA = new Date(`${monthA} 1, ${yearA}`);
-    const dateB = new Date(`${monthB} 1, ${yearB}`);
-
+  posts.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
     return dateB.getTime() - dateA.getTime();
   });
 
@@ -114,56 +87,23 @@ export default async function ServicePage({ params }: any) {
       </div>
 
       <div className="mt-12 container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-        {posts.slice(0, 20).map((post: any, index: number) => (
-          <a
-            key={index}
-            href={`/${lang}/blog/${post.properties.Slug.rich_text[0].plain_text}`}
-            className="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300"
-          >
-            <div>
-              {post.properties &&
-                post.properties.BannerImage &&
-                post.properties.BannerImage.url && (
-                  <img
-                    src={post.properties.BannerImage.url}
-                    alt={post.properties.Title.title[0].text.content}
-                    className="w-full h-[350px] object-cover"
-                  />
-                )}
+        {posts.slice(0, 20).map((post, index) => (
+          <Link key={index} href={`/${lang}/blog/${post.slug}`} passHref>
+            <div className="block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+              <div>
+                <img
+                  src={post.bannerImage}
+                  alt={post.title}
+                  className="w-full h-[350px] object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-4">{post.title}</h3>
+                <p className="text-lg font-medium">{post.location}</p>
+                <p className="text-lg font-medium">{post.date}</p>
+              </div>
             </div>
-            <div className="p-6">
-              {post.properties &&
-                post.properties.Title &&
-                post.properties.Title.title &&
-                post.properties.Title.title[0] &&
-                post.properties.Title.title[0].text &&
-                post.properties.Title.title[0].text.content && (
-                  <h3 className="text-xl font-semibold mb-4">
-                    {post.properties.Title.title[0].text.content}
-                  </h3>
-                )}
-              {post.properties &&
-                post.properties.Location &&
-                post.properties.Location.rich_text &&
-                post.properties.Location.rich_text[0] &&
-                post.properties.Location.rich_text[0].text &&
-                post.properties.Location.rich_text[0].text.content && (
-                  <p className="text-lg font-medium">
-                    {post.properties.Location.rich_text[0].text.content}
-                  </p>
-                )}
-              {post.properties &&
-                post.properties.Date &&
-                post.properties.Date.rich_text &&
-                post.properties.Date.rich_text[0] &&
-                post.properties.Date.rich_text[0].text &&
-                post.properties.Date.rich_text[0].text.content && (
-                  <p className="text-lg font-medium">
-                    {post.properties.Date.rich_text[0].text.content}
-                  </p>
-                )}
-            </div>
-          </a>
+          </Link>
         ))}
       </div>
 
