@@ -18,7 +18,7 @@ export function Post(props: PostProps) {
         </p>
       </div>
       <div
-        className="text-xl mt-4 max-w-5xl leading-10 "
+        className="text-xl mt-4 max-w-5xl leading-10"
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>
     </article>
