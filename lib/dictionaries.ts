@@ -1,6 +1,7 @@
 import "server-only";
 
 interface Dictionary {
+  blog: any;
   onsiteConsulting: any;
   remoteServices: any;
   fullfillmentPolicy: { title: any; introduction: any; sections: any };
