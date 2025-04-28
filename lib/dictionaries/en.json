@@ -1493,5 +1493,27 @@
         "content": "WME Solutions is not liable for indirect, incidental, or consequential damages resulting from service provision, except as required by applicable law."
       }
     ]
-  }
+  },
+    "meetingConfirmation": {
+      "loadingMessage": "Loading your confirmation...",
+      "thankYouMessage": "🎉 Thank You",
+      "confirmationMessage": "Your meeting with WME Solutions has been successfully booked. An email confirmation has been sent to you. Please check your inbox (and your spam folder, just in case).",
+      "appointmentDetails": "📅 Appointment Details",
+      "meetingType": "Meeting Type:",
+      "dateAndTime": "Date & Time:",
+      "duration": "Duration:",
+      "email": "Email:",
+      "whileYouWait": "💡 While You Wait",
+      "browseRemoteServices": "👉 Browse our Remote Services",
+      "remoteServicesDescription": "See how we build Monday.com workflows for teams of all sizes.",
+      "onSiteSupport": "🛠️ Prefer on-site support?",
+      "onSiteSupportDescription": "Explore our international implementation packages.",
+      "successStories": "📖 Success Stories",
+      "successStoriesDescription": "Discover how businesses streamlined operations and boosted efficiency with tailored Monday.com solutions",
+      "workflowDesignPortfolio": "📂 Workflow Design Portfolio",
+      "workflowDesignPortfolioDescription": "Explore screenshots of real Monday.com workflows we've built to streamline operations, manage teams, and automate processes.",
+      "contactMessage": "If you have any questions before our meeting, feel free to reach out at support@wme.us.com",
+      "lookingForwardMessage": "Looking forward to meeting you soon!",
+      "signOff": "— The WME Solutions Team"
+    }
 }

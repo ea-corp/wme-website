@@ -1491,5 +1491,27 @@
         "content": "WME Solutions n'est pas responsable des dommages indirects, accidentels ou consécutifs résultant de la prestation de services, sauf si la loi applicable l'exige."
       }
     ]
+  },
+  "meetingConfirmation": {
+    "loadingMessage": "Chargement de votre confirmation...",
+    "thankYouMessage": "🎉 Merci",
+    "confirmationMessage": "Votre réunion avec WME Solutions a été réservée avec succès. Une confirmation par e-mail vous a été envoyée. Veuillez vérifier votre boîte de réception (et votre dossier de spam, au cas où).",
+    "appointmentDetails": "📅 Détails du Rendez-vous",
+    "meetingType": "Type de Réunion :",
+    "dateAndTime": "Date et Heure :",
+    "duration": "Durée :",
+    "email": "Email :",
+    "whileYouWait": "💡 En Attendant",
+    "browseRemoteServices": "👉 Parcourez nos Services à Distance",
+    "remoteServicesDescription": "Découvrez comment nous construisons des workflows Monday.com pour des équipes de toutes tailles.",
+    "onSiteSupport": "🛠️ Préférez un support sur site ?",
+    "onSiteSupportDescription": "Explorez nos packages d'implémentation internationaux.",
+    "successStories": "📖 Histoires de Succès",
+    "successStoriesDescription": "Découvrez comment les entreprises ont rationalisé leurs opérations et amélioré leur efficacité avec des solutions Monday.com sur mesure.",
+    "workflowDesignPortfolio": "📂 Portfolio de Conception de Workflows",
+    "workflowDesignPortfolioDescription": "Explorez des captures d'écran de workflows Monday.com réels que nous avons construits pour rationaliser les opérations, gérer les équipes et automatiser les processus.",
+    "contactMessage": "Si vous avez des questions avant notre réunion, n'hésitez pas à nous contacter à l'adresse support@wme.us.com.",
+    "lookingForwardMessage": "Nous avons hâte de vous rencontrer bientôt !",
+    "signOff": "— L'équipe WME Solutions"
   }
 }
