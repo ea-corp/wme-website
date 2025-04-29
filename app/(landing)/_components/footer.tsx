@@ -19,15 +19,15 @@ export default function Footer({ dict, lang }: any) {
           />
         </div>
         <div className="flex justify-center items-center flex-wrap space-x-1">
-          <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative">
+          <div className="w-[60px] h-[60px] sm:w-[130px] sm:h-[130px] relative md:mt-0 mr-2">
             <Image
-              src="/images/product-certified-badge.png"
-              alt="Monday.com Product certified badge"
+              src="/images/certified-partner-badge.png"
+              alt="Monday.com Certified partner badge"
               width={imageSize.width}
               height={imageSize.height}
             />
           </div>
-          <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative">
+          <div className="w-[60px] h-[60px] sm:w-[140px] sm:h-[140px] relative">
             <Image
               src="/images/master-badge.png"
               alt="Monday.com master certified badge"
@@ -35,7 +35,7 @@ export default function Footer({ dict, lang }: any) {
               height={imageSize.height}
             />
           </div>
-          <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative">
+          <div className="w-[60px] h-[60px] sm:w-[140px] sm:h-[140px] relative">
             <Image
               src="/images/advanced-workflow-badge.png"
               alt="Monday.com Advanced workflow certified badge"
@@ -43,12 +43,21 @@ export default function Footer({ dict, lang }: any) {
               height={imageSize.height}
             />
           </div>
-          <div className="w-[80px] h-[80px] sm:w-[140px] sm:h-[140px] relative md:mt-0">
+          <div className="w-[60px] h-[60px] sm:w-[140px] sm:h-[140px] relative">
             <Image
-              src="/images/certified-partner-badge.png"
-              alt="Monday.com Certified partner badge"
+              src="/images/product-certified-badge.png"
+              alt="Monday.com Product certified badge"
               width={imageSize.width}
               height={imageSize.height}
+            />
+          </div>
+          <div className="w-[60px] h-[60px] sm:w-[140px] sm:h-[140px] relative md:mt-0 overflow-hidden">
+            <Image
+              src="/images/mondat_AI_blocks_badge.png"
+              alt="Monday.com Certified AI Blocks badge"
+              width={imageSize.width}
+              height={imageSize.height}
+              className="transform scale-125" // Appliquer un zoom de 110%
             />
           </div>
         </div>
