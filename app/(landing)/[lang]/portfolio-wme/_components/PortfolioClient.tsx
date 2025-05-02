@@ -344,7 +344,7 @@ export default function Portfolio({ dict }: { dict: any }) {
                                         <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
                                             {project.title}
                                         </h3>
-                                        <p className="text-muted-foreground mb-4 line-clamp-2">{project.description}</p>
+                                        <p className="text-muted-foreground mb-4 line-clamp-4">{project.description}</p>
                                     </div>
                                     {/* Tags positioned at the bottom */}
                                     <div className="flex flex-wrap gap-2 mt-auto">
