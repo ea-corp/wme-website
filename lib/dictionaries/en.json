@@ -352,6 +352,13 @@
       {
         "name": "Custom Enterprise Solutions",
         "custom": "Bespoke Development: Tailor software or systems specifically to the complex requirements of a medium to large organization, including integration with existing infrastructure."
+      },
+      {
+        "name": "PAYG (Pay As You Go)",
+        "price": "$1,000",
+        "info": "No expiry. Always on standby.",
+        "validity": "for 10 hours upfront",
+        "features": ["$1,000 for 10 hours upfront", "No time limit on hours", "$90/hour after 10 hours", "$325/month retainer keeps our team on standby"]
       }
     ],
     "otherPackages": [
@@ -519,6 +526,34 @@
       {
         "title": "Do you have fixed price projects?",
         "content": "Currently not. We find the fixed price model to be rigid when building a custom-made solution on monday.com. Great ideas often emerge during our collaborative building sessions, and you might want to make some changes on what was agreed initially. This is why we prefer the hourly model as it gives more flexibility to our clients, and you can see in full transparency where our time is spent building your solution."
+      },
+      {
+        "title": "What makes the PAYG package different from your other packages?",
+        "content" : "Unlike our other remote packages, PAYG has no expiry on the initial 10 hours. It also includes a monthly retainer to keep our team available for you at any time, even on short notice."
+      },
+      {
+        "title": "Why is there a monthly fee on the PAYG ?",
+        "content": "The monthly retainer ensures availability. Our team remains on standby and ready to assist you without delay — a key benefit for clients with unpredictable needs."
+      },
+      {
+        "title": "Can I cancel the PAYG package at any time?",
+        "content": "Yes, you can cancel anytime with 1 month’s notice. The retainer and used hours are non-refundable, but unused hours from your last billing cycle remain usable."
+      },
+      {
+        "title": "Can I cancel the PAYG package at any time?",
+        "content": "Yes, you can cancel anytime with 1 month’s notice. The retainer and used hours are non-refundable, but unused hours from your last billing cycle remain usable."
+      },
+      {
+        "title": "Is the PAYG model suitable for ongoing projects?",
+        "content": "Yes — it’s ideal for clients who want maximum flexibility, frequent access to expert support, and no pressure to use hours within a set timeframe."
+      },
+      {
+        "title": "Do I get live access to time tracking?",
+        "content": "Yes, you'll get a Toggl live tracking link to monitor time spent in real-time."
+      },
+      {
+        "title": "Do I still need a Monday.com and Make.com subscription?",
+        "content": "Yes. As with all our services, you’ll need an active Monday.com account, and likely a Make.com plan for advanced automations."
       }
     ]
   },

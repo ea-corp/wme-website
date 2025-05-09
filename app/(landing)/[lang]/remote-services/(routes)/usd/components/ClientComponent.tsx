@@ -52,7 +52,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                                 <p className="text-sm text-gray-400">{pkg.startAt}</p>
                                 <p className="text-xl font-semibold">{pkg.price}</p>
                                 <p className="text-sm text-gray-400">
-                                   {pkg.validity}
+                                    {pkg.validity}
                                 </p>
                             </div>
                         </div>
@@ -116,9 +116,17 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                                 </li>
                             ))}
                         </ul>
-                       
+
                     </div>
                 ))}
+            </div>
+            <div className="text-center my-16">
+                <Link
+                    href="contact-us"
+                    className="bg-[#f4d752] text-2xl py-4 px-6 rounded-lg font-semibold"
+                >
+                    {requestQuoteButton}
+                </Link>
             </div>
 
             <div className="flex items-center justify-center mt-16 mb-12">

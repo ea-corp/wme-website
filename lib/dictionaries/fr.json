@@ -355,6 +355,16 @@
       {
         "name": "Solutions personnalisées pour entreprises",
         "custom": "Développement sur mesure : Concevoir des applications répondant aux besoins spécifiques d'une entreprise de taille moyenne à grande, en intégrant l'infrastructure actuelle."
+      },
+      {
+        "name": "PAYG (Pay As You Go)",
+        "info": "Most flexible - no expiry on hours",
+        "features": [
+          "Includes 10 hours to get started",
+          "Weekly billing after that, based on usage",
+          "Unused hours never expire",
+          "Monthly retainer keeps our team on standby"
+        ]
       }
     ],
     "otherPackages": [
@@ -522,6 +532,30 @@
       {
         "title": "Avez-vous des projets à prix fixe?",
         "content": " Actuellement non. Nous trouvons que le modèle à prix fixe est rigide lorsqu’il s’agit de créer une solution sur mesure sur monday.com. De nombreuses idées apparaissent souvent pendant nos sessions de co-conception, et vous pourriez vouloir apporter des modifications à ce qui avait été convenu au départ. C’est pourquoi nous privilégions le modèle à l’heure, car il offre plus de flexibilité à nos clients, et vous pouvez voir en toute transparence comment notre temps est utilisé pour construire votre solution."
+      },
+      {
+        "title": "Qu’est-ce qui différencie le forfait PAYG de vos autres forfaits ?",
+        "content": "Contrairement à nos autres forfaits à distance, le forfait PAYG n’a pas de date d’expiration pour les 10 premières heures. Il comprend également une provision mensuelle afin de garantir la disponibilité de notre équipe à tout moment, même à court préavis."
+      },
+      {
+        "title": "Pourquoi y a-t-il des frais mensuels sur le PAYG ?",
+        "content": "Le forfait mensuel garantit notre disponibilité. Notre équipe reste en veille et prête à intervenir sans délai — un avantage clé pour les clients aux besoins imprévisibles."
+      },
+      {
+        "title": "Puis-je annuler le forfait PAYG à tout moment ?",
+        "content": "Oui, vous pouvez annuler à tout moment avec un préavis d’un mois. Le forfait mensuel et les heures utilisées ne sont pas remboursables, mais les heures non utilisées de votre dernier cycle de facturation restent disponibles."
+      },
+      {
+        "title": "Ce modèle convient-il aux projets à long terme ?",
+        "content": "Oui — il est idéal pour les clients qui recherchent une flexibilité maximale, un accès régulier à des experts, et aucune contrainte liée à la durée de validité des heures."
+      },
+      {
+        "title": "Ai-je un accès en direct au suivi du temps ?",
+        "content": "Oui, nous proposons un suivi du temps transparent avec des relevés détaillés mis à jour en temps réel."
+      },
+      {
+        "title": "Ai-je encore besoin d’un abonnement à Monday.com et Make.com ?",
+        "content": "Oui. Comme pour tous nos services, vous aurez besoin d’un compte Monday.com actif, ainsi que probablement d’un abonnement Make.com pour les automatisations avancées."
       }
     ]
   },
