@@ -317,13 +317,15 @@
   "remoteServicesUSD": {
     "title": "Services à distance",
     "subtitle": "Implémentation à distance",
-    "requestQuoteButton": "Demander un devis",
+    "requestQuoteButton": "Contactez-nous dès maintenant",
     "otherPackagesTitle": "Autres forfaits",
     "contactUsMessage": "Contactez-nous dès maintenant pour découvrir quel forfait vous convient le mieux.",
     "bookFreeCallButton": "Planifier un appel gratuit",
     "packages": [
       {
         "name": "Starter-Kit",
+        "startAt": "À partir de",
+
         "price": "2 750 $",
         "info": "Indispensable pour start-up",
         "description": "Le plus populaire",
@@ -332,6 +334,8 @@
       },
       {
         "name": "Comprehensive",
+        "startAt": "À partir de",
+
         "price": "5 000 $",
         "info": "Prêt pour les affaires",
         "description": "Recommandé",
@@ -340,6 +344,8 @@
       },
       {
         "name": "Ultimate",
+        "startAt": "À partir de",
+
         "price": "9 000 $",
         "info": "Rendement optimal",
         "description": "Meilleur rapport qualité/prix",

@@ -49,10 +49,10 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                                 <p className="text-sm text-gray-500">{pkg.description}</p>
                             </h3>
                             <div className="text-right">
-                                <p className="text-sm text-gray-400">Starts at</p>
+                                <p className="text-sm text-gray-400">{pkg.startAt}</p>
                                 <p className="text-xl font-semibold">{pkg.price}</p>
                                 <p className="text-sm text-gray-400">
-                                    Validity: {pkg.validity}
+                                   {pkg.validity}
                                 </p>
                             </div>
                         </div>
@@ -73,13 +73,6 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                                 ))}
                             <p>{pkg.custom}</p>
                         </ul>
-                        <a
-                            href="https://forms.monday.com/forms/096ad93b812843c5fb105813a01755d6?r=use1"
-                            target="_blank"
-                            className="mt-4 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-[#f4d752] hover:bg-[#f4d752] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
-                        >
-                            Buy Package
-                        </a>
                     </div>
                 ))}
             </div>
@@ -87,7 +80,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
             <div className="text-center my-16">
                 <Link
                     href="contact-us"
-                    className="bg-[#f4d752] text-2xl py-4 px-4 rounded-lg font-medium"
+                    className="bg-[#f4d752] text-2xl py-4 px-6 rounded-lg font-semibold"
                 >
                     {requestQuoteButton}
                 </Link>
@@ -123,13 +116,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                                 </li>
                             ))}
                         </ul>
-                        <a
-                            href="https://forms.monday.com/forms/096ad93b812843c5fb105813a01755d6?r=use1"
-                            target="_blank"
-                            className="mt-4 w-full inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-yellow-400 hover:bg-[#f4d752] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
-                        >
-                            Buy Package
-                        </a>
+                       
                     </div>
                 ))}
             </div>

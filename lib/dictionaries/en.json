@@ -317,13 +317,14 @@
   "remoteServicesUSD": {
     "title": "Remote Services",
     "subtitle": "Remote Implementation",
-    "requestQuoteButton": "Request a Quote",
+    "requestQuoteButton": "Enquire Now",
     "otherPackagesTitle": "Other Packages",
     "contactUsMessage": "Contact us now to find out which package suits you best",
     "bookFreeCallButton": "Book a Free Call",
     "packages": [
       {
         "name": "Starter-Kit",
+        "startAt": "Starts at",
         "price": "$2,750",
         "info": "Startup Essential",
         "description": "Most Popular",
@@ -332,6 +333,7 @@
       },
       {
         "name": "Comprehensive",
+        "startAt": "Starts at",
         "price": "$5,000",
         "info": "Business Ready",
         "description": "Recommended",
@@ -340,6 +342,7 @@
       },
       {
         "name": "Ultimate",
+        "startAt": "Starts at",
         "price": "$9,000",
         "info": "Maximum Value",
         "description": "Best value",
