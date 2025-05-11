@@ -316,7 +316,7 @@
 
   "remoteServicesUSD": {
     "title": "Remote Services",
-    "subtitle": "Choose the Right Remote Workflow Package for Your Business",
+    "subtitle": "Choose the Right Remote Workflow Package for Your Business.",
     "subtitle2": "Whether you're just starting or scaling complex operations, we offer flexible packages tailored to your needs.",
     "implementation_bundles_title": "Implementation Bundles (Hourly Packages)",
     "implementation_bundles_description": "Structured packages with a set number of hours and typical workflow outcomes.",
@@ -361,7 +361,7 @@
     ],
     "payg_packages": [
       {
-        "name": "PAYG (Pay As You Go)",
+        "name": "Pay As You Go",
         "info": "Most flexible",
         "features": [
           "$1,000 for 10 hours upfront",
@@ -378,12 +378,13 @@
         "time": "/month",
         "validity": "6 weeks",
         "features": [
-          "4 hours per month",
+          "4 hours per month included",
           "Review of the built solution",
           "Small fixes when required",
           "Q&A from your team",
           "Optimization suggestions based on new features available or any changes in your business.",
           "Assessment and full reporting on the usage of the built workflow",
+          "Extra hour billed at $125",
           "Free cancellation at any time"
         ]
       },

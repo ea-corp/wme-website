@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
-import { Check, Package, ScreenShare } from "lucide-react";
+import { Check, Package, ScreenShare, Zap } from "lucide-react";
 import Link from "next/link";
 import {
     Carousel,
@@ -43,12 +43,15 @@ const ClientComponent = ({ dict }: { dict: any }) => {
             <div className="flex items-center justify-center py-12">
                 <h2 className="text-xl flex items-center justify-center">
                     {subtitle}
-                    <br /><br />
+                    <br />
                     {subtitle2}
                 </h2>
             </div>
-            <div className="flex flex-col p-8 bg-gray-200  space-y-4 py-8 mb-12">
-                <p className="font-semibold">{implementation_bundles_title}</p>
+            <div className="flex flex-col items-center justify-center py-4 md:py-12">
+                <h2 className="text-2xl font-medium flex items-center mb-2">
+                    <ScreenShare size={35} className="text-[#f4d752]" />
+                    &nbsp; {implementation_bundles_title}
+                </h2>
                 <p>{implementation_bundles_description}</p>
             </div>
             <div className="flex justify-center flex-wrap">
@@ -91,9 +94,12 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 ))}
             </div>
 
-            <div className="flex flex-col p-8 bg-gray-200  space-y-4 py-8 my-12">
-                <p className="font-semibold">{paygTitle}</p>
-                <p className="">{paygDescription}</p>
+            <div className="flex flex-col items-center justify-center py-4 md:py-12">
+                <h2 className="text-2xl font-medium flex items-center mb-2">
+                    <Zap size={35} className="text-[#f4d752]" />
+                    &nbsp; {paygTitle}
+                </h2>
+                <p>{paygDescription}</p>
             </div>
             <div className="flex justify-center flex-wrap">
                 {payg_packages.map((pkg: any) => (
@@ -147,14 +153,17 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 </Link>
             </div>
 
-            <div className="flex flex-col p-8 bg-gray-200  space-y-4 py-8 mb-12">
-                <p className="font-semibold">{otherPackagesTitle}</p>
+            <div className="flex items-center justify-center py-4 md:py-12">
+                <h2 className="text-2xl font-medium flex items-center">
+                    <Package size={35} className="text-[#f4d752]" />
+                    &nbsp; {otherPackagesTitle}
+                </h2>
             </div>
             <div className="flex justify-center flex-wrap">
                 {otherPackages.map((pkg: any) => (
                     <div
                         key={pkg.name}
-                        className="w-full max-w-md bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
+                        className="w-full max-w-xs bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
                     >
                         <div className="flex justify-between">
                             <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">
