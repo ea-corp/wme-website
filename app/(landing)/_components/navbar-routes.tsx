@@ -120,11 +120,11 @@ export const NavbarRoutes = ({ dict, lang }: any) => {
               <SelectItem value="en">
                 <div className="flex items-center gap-2">
                   <Image
-                    src="/images/english_flag.svg"
+                    src="/images/english_flag.png"
                     alt="English"
                     width={20}
                     height={15}
-                    className="rounded-sm"
+                    className="rounded-lg"
                   />
                   EN
                 </div>
@@ -133,7 +133,7 @@ export const NavbarRoutes = ({ dict, lang }: any) => {
               <SelectItem value="fr" >
                 <div className="flex items-center gap-2">
                   <Image
-                    src="/images/french_flag.svg"
+                    src="/images/french_flag.png"
                     alt="Français"
                     width={20}
                     height={15}
