@@ -316,7 +316,16 @@
 
   "remoteServicesUSD": {
     "title": "Services à distance",
-    "subtitle": "Implémentation à distance",
+    "subtitle": "Choose the Right Remote Workflow Package for Your Business",
+    "subtitle2": "Whether you're just starting or scaling complex operations, we offer flexible packages tailored to your needs.",
+    "implementation_bundles_title": "Implementation Bundles (Hourly Packages)",
+    "implementation_bundles_description": "Structured packages with a set number of hours and typical workflow outcomes.",
+    "paygTitle": "Pay As You Go - Full Flexibility, No Expiry",
+    "paygDescription": "For businesses that want expert help without committing to a timeline.",
+    "payg_cta_title": "Ready to start with a bundle or go flexible?",
+    "payg_cta_description": "Let's find the best fit for your business",
+    "other_cta_title": "Not sure which package suits your needs?",
+    "other_cta_description": "Contact us and we'll help you decide.",
     "requestQuoteButton": "Contactez-nous dès maintenant",
     "otherPackagesTitle": "Autres forfaits",
     "contactUsMessage": "Contactez-nous dès maintenant pour découvrir quel forfait vous convient le mieux.",
@@ -351,11 +360,9 @@
         "description": "Meilleur rapport qualité/prix",
         "validity": "Validité: 6 mois",
         "features": ["3 à 4 flux de travail avancés", "Forfait de 100 heures"]
-      },
-      {
-        "name": "Solutions personnalisées pour entreprises",
-        "custom": "Développement sur mesure : Concevoir des applications répondant aux besoins spécifiques d'une entreprise de taille moyenne à grande, en intégrant l'infrastructure actuelle."
-      },
+      }
+    ],
+    "payg_packages": [
       {
         "name": "PAYG (Pay As You Go)",
         "info": "Most flexible - no expiry on hours",
@@ -395,6 +402,16 @@
           "Corrections rapides",
           "Évaluation de votre configuration actuelle",
           "Questions / Réponses"
+        ]
+      },
+      {
+        "name": "Custom Enterprise Solutions",
+        "features": [
+          "Tailored workflows for medium to large teams",
+          "Integration with existing tools and systems",
+          "Scalable architecture designed for growth",
+          "Bespoke solutions based on your specific needs",
+          "Contact us for more information"
         ]
       }
     ],

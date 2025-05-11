@@ -15,9 +15,18 @@ import ClientFaqComponent from "../../../_components/faq";
 
 const ClientComponent = ({ dict }: { dict: any }) => {
     const {
-        title,
         subtitle,
+        subtitle2,
+        paygTitle,
+        paygDescription,
+        payg_cta_title,
+        payg_cta_description,
+        other_cta_title,
+        other_cta_description,
+        implementation_bundles_title,
+        implementation_bundles_description,
         requestQuoteButton,
+        payg_packages,
         otherPackagesTitle,
         contactUsMessage,
         bookFreeCallButton,
@@ -27,21 +36,26 @@ const ClientComponent = ({ dict }: { dict: any }) => {
     } = dict.remoteServicesUSD;
 
     return (
-        <div className="mx-auto max-w-7xl px-4">
-            <div className="bg-gray-100 text-center pt-16 pb-6 md:py-16 overflow-x-hidden">
-                <h2 className="text-4xl font-semibold">{title}</h2>
+        <div className="mx-auto max-w-6xl px-4">
+            <div>
+
             </div>
             <div className="flex items-center justify-center py-12">
-                <h2 className="text-2xl font-medium flex items-center">
-                    <ScreenShare size={35} className="text-yellow-400" />
-                    &nbsp; {subtitle}
+                <h2 className="text-xl flex items-center justify-center">
+                    {subtitle}
+                    <br /><br />
+                    {subtitle2}
                 </h2>
+            </div>
+            <div className="flex flex-col p-8 bg-gray-200  space-y-4 py-8 mb-12">
+                <p className="font-semibold">{implementation_bundles_title}</p>
+                <p>{implementation_bundles_description}</p>
             </div>
             <div className="flex justify-center flex-wrap">
                 {packages.map((pkg: any) => (
                     <div
                         key={pkg.name}
-                        className="w-full max-w-md bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
+                        className="w-full max-w-xs bg-white rounded-lg border border-gray-200 shadow-md p-6 mx-2"
                     >
                         <div className="flex justify-between">
                             <h3 className="text-lg leading-6 font-medium text-gray-900">
@@ -77,20 +91,64 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 ))}
             </div>
 
-            <div className="text-center my-16">
+            <div className="flex flex-col p-8 bg-gray-200  space-y-4 py-8 my-12">
+                <p className="font-semibold">{paygTitle}</p>
+                <p className="">{paygDescription}</p>
+            </div>
+            <div className="flex justify-center flex-wrap">
+                {payg_packages.map((pkg: any) => (
+                    <div
+                        key={pkg.name}
+                        className="w-full max-w-2xl bg-white rounded-lg border border-gray-200 shadow-md p-6 mx-4"
+                    >
+                        <div className="flex justify-between">
+                            <h3 className="text-lg leading-6 font-medium text-gray-900">
+                                {pkg.name}
+                                <p className="text-sm text-gray-500">{pkg.description}</p>
+                            </h3>
+                            <div className="text-right">
+                                <p className="text-sm text-gray-400">{pkg.startAt}</p>
+                                <p className="text-xl font-semibold">{pkg.price}</p>
+                                <p className="text-sm text-gray-400">
+                                    {pkg.validity}
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <p className="py-2 text-sm">{pkg.info}</p>
+                        </div>
+                        <Separator className="my-2" />
+                        <div className="mt-2 mb-4"></div>
+                        <ul className="mb-4">
+                            {pkg.features &&
+                                pkg.features.map((feature: string, index: number) => (
+                                    <li key={index} className="flex items-center py-2">
+                                        <Check className="flex-shrink-0 h-6 w-6 text-yellow-400 mr-4" />
+                                        <p className="text-medium text-gray-700 flex-1">
+                                            {feature}
+                                        </p>
+                                    </li>
+                                ))}
+                            <p>{pkg.custom}</p>
+                        </ul>
+                    </div>
+                ))}
+            </div>
+            <div className="text-center mb-16 mt-8 flex flex-col items-center space-y-4">
+                <div className="text-lg">
+                    <p className="font-semibold">{payg_cta_title}</p>
+                    <p>{payg_cta_description}</p>
+                </div>
                 <Link
                     href="contact-us"
-                    className="bg-[#f4d752] text-2xl py-4 px-6 rounded-lg font-semibold"
+                    className="bg-[#f4d752] text-xl py-4 px-6 mt-4 rounded-lg font-semibold"
                 >
                     {requestQuoteButton}
                 </Link>
             </div>
 
-            <div className="flex items-center justify-center py-4 md:py-12">
-                <h2 className="text-2xl font-medium flex items-center">
-                    <Package size={35} className="text-[#f4d752]" />
-                    &nbsp; {otherPackagesTitle}
-                </h2>
+            <div className="flex flex-col p-8 bg-gray-200  space-y-4 py-8 mb-12">
+                <p className="font-semibold">{otherPackagesTitle}</p>
             </div>
             <div className="flex justify-center flex-wrap">
                 {otherPackages.map((pkg: any) => (
@@ -104,7 +162,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                             </h3>
                             <div className="text-right">
                                 <p className="text-xl font-semibold">{pkg.price}</p>
-                                <p className="text-sm text-gray-400">/{pkg.time}</p>
+                                <p className="text-sm text-gray-400">{pkg.time}</p>
                             </div>
                         </div>
                         <Separator className="my-2" />
@@ -120,10 +178,14 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                     </div>
                 ))}
             </div>
-            <div className="text-center my-16">
+            <div className="text-center mb-16 mt-8 flex flex-col items-center space-y-4">
+                <div className="text-lg">
+                    <p className="font-semibold">{other_cta_title}</p>
+                    <p>{other_cta_description}</p>
+                </div>
                 <Link
                     href="contact-us"
-                    className="bg-[#f4d752] text-2xl py-4 px-6 rounded-lg font-semibold"
+                    className="bg-[#f4d752] text-xl py-4 px-6 mt-4 rounded-lg font-semibold"
                 >
                     {requestQuoteButton}
                 </Link>

@@ -316,7 +316,16 @@
 
   "remoteServicesUSD": {
     "title": "Remote Services",
-    "subtitle": "Remote Implementation",
+    "subtitle": "Choose the Right Remote Workflow Package for Your Business",
+    "subtitle2": "Whether you're just starting or scaling complex operations, we offer flexible packages tailored to your needs.",
+    "implementation_bundles_title": "Implementation Bundles (Hourly Packages)",
+    "implementation_bundles_description": "Structured packages with a set number of hours and typical workflow outcomes.",
+    "paygTitle": "Pay As You Go - Full Flexibility, No Expiry",
+    "paygDescription": "For businesses that want expert help without committing to a timeline.",
+    "payg_cta_title": "Ready to start with a bundle or go flexible?",
+    "payg_cta_description": "Let's find the best fit for your business",
+    "other_cta_title": "Not sure which package suits your needs?",
+    "other_cta_description": "Contact us and we'll help you decide.",
     "requestQuoteButton": "Enquire Now",
     "otherPackagesTitle": "Other Packages",
     "contactUsMessage": "Contact us now to find out which package suits you best",
@@ -348,24 +357,25 @@
         "description": "Best value",
         "validity": "6 months",
         "features": ["3 to 4 Advanced workflows", "100 Hours Package"]
-      },
-      {
-        "name": "Custom Enterprise Solutions",
-        "custom": "Bespoke Development: Tailor software or systems specifically to the complex requirements of a medium to large organization, including integration with existing infrastructure."
-      },
+      }
+    ],
+    "payg_packages": [
       {
         "name": "PAYG (Pay As You Go)",
-        "price": "$1,000",
-        "info": "No expiry. Always on standby.",
-        "validity": "for 10 hours upfront",
-        "features": ["$1,000 for 10 hours upfront", "No time limit on hours", "$90/hour after 10 hours", "$325/month retainer keeps our team on standby"]
+        "info": "Most flexible",
+        "features": [
+          "$1,000 for 10 hours upfront",
+          "$90/hour after the first 10 hours",
+          "$325/month retainer keeps our team on standby",
+          "No expiry - use hours whenever you need"
+        ]
       }
     ],
     "otherPackages": [
       {
         "name": "Ongoing Support",
         "price": "$390",
-        "time": "month",
+        "time": "/month",
         "validity": "6 weeks",
         "features": [
           "4 hours per month",
@@ -380,7 +390,7 @@
       {
         "name": "Ad Hoc Consultation",
         "price": "$150",
-        "time": "hour",
+        "time": "/hour",
         "validity": "3 months",
         "features": [
           "Session(s) of 60 mins with Monday Expert",
@@ -389,6 +399,16 @@
           "Quick fixes",
           "Assessment on your current set-up",
           "Q&A"
+        ]
+      },
+      {
+        "name": "Custom Enterprise Solutions",
+        "features": [
+          "Tailored workflows for medium to large teams",
+          "Integration with existing tools and systems",
+          "Scalable architecture designed for growth",
+          "Bespoke solutions based on your specific needs",
+          "Contact us for more information"
         ]
       }
     ],
@@ -529,15 +549,11 @@
       },
       {
         "title": "What makes the PAYG package different from your other packages?",
-        "content" : "Unlike our other remote packages, PAYG has no expiry on the initial 10 hours. It also includes a monthly retainer to keep our team available for you at any time, even on short notice."
+        "content": "Unlike our other remote packages, PAYG has no expiry on the initial 10 hours. It also includes a monthly retainer to keep our team available for you at any time, even on short notice."
       },
       {
         "title": "Why is there a monthly fee on the PAYG ?",
         "content": "The monthly retainer ensures availability. Our team remains on standby and ready to assist you without delay — a key benefit for clients with unpredictable needs."
-      },
-      {
-        "title": "Can I cancel the PAYG package at any time?",
-        "content": "Yes, you can cancel anytime with 1 month’s notice. The retainer and used hours are non-refundable, but unused hours from your last billing cycle remain usable."
       },
       {
         "title": "Can I cancel the PAYG package at any time?",
