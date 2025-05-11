@@ -78,7 +78,7 @@ const WorldMapClient = ({ dict }: any) => {
 
     return (
         <div className="">
-            <h2 className="text-4xl font-bold py-16 bg-gray-100 text-gray-800 text-center">
+            <h2 className="text-4xl font-bold py-16  text-gray-800 text-center">
                 {dict.ourTeam.title}
             </h2>
 

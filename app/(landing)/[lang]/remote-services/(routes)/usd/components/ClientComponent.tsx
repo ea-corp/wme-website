@@ -36,12 +36,9 @@ const ClientComponent = ({ dict }: { dict: any }) => {
     } = dict.remoteServicesUSD;
 
     return (
-        <div className="mx-auto max-w-6xl px-4">
-            <div>
-
-            </div>
-            <div className="flex items-center justify-center py-12">
-                <h2 className="text-xl flex items-center justify-center">
+        <div className="mx-auto max-w-7xl px-4">
+            <div className="flex text-gray-800 items-center justify-center py-12 font-semibold leading-tight tracking-tight">
+                <h2 className="text-3xl flex items-center justify-center">
                     {subtitle}
                     <br />
                     {subtitle2}
@@ -58,7 +55,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 {packages.map((pkg: any) => (
                     <div
                         key={pkg.name}
-                        className="w-full max-w-xs bg-white rounded-lg border border-gray-200 shadow-md p-6 mx-2"
+                        className="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
                     >
                         <div className="flex justify-between">
                             <h3 className="text-lg leading-6 font-medium text-gray-900">
@@ -94,6 +91,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 ))}
             </div>
 
+
             <div className="flex flex-col items-center justify-center py-4 md:py-12">
                 <h2 className="text-2xl font-medium flex items-center mb-2">
                     <Zap size={35} className="text-[#f4d752]" />
@@ -105,7 +103,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 {payg_packages.map((pkg: any) => (
                     <div
                         key={pkg.name}
-                        className="w-full max-w-2xl bg-white rounded-lg border border-gray-200 shadow-md p-6 mx-4"
+                        className="w-full max-w-xl bg-white rounded-lg border border-gray-200 shadow-md p-6 mx-4"
                     >
                         <div className="flex justify-between">
                             <h3 className="text-lg leading-6 font-medium text-gray-900">
@@ -140,7 +138,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                     </div>
                 ))}
             </div>
-            <div className="text-center mb-16 mt-8 flex flex-col items-center space-y-4">
+            <div className="text-center mb-2 mt-8 flex flex-col items-center space-y-4">
                 <div className="text-lg">
                     <p className="font-semibold">{payg_cta_title}</p>
                     <p>{payg_cta_description}</p>
@@ -163,7 +161,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 {otherPackages.map((pkg: any) => (
                     <div
                         key={pkg.name}
-                        className="w-full max-w-xs bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
+                        className="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
                     >
                         <div className="flex justify-between">
                             <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">
@@ -219,20 +217,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
             </div>
 
             <ClientFaqComponent dict={dict} />
-            <div className="py-8 md:py-16 flex items-center justify-center flex-col">
-                <h3 className="text-2xl font-medium text-center pb-4">
-                    {contactUsMessage}
-                </h3>
-                <div className="flex w-full ml-4 mt-4 justify-center">
-                    <a
-                        href="contact-us"
-                        target="_blank"
-                        className="bg-[#f4d752] text-black py-4 px-6 rounded-xl flex"
-                    >
-                        <p className="font-bold text-sm">{bookFreeCallButton}</p>
-                    </a>
-                </div>
-            </div>
+
         </div>
     );
 };
