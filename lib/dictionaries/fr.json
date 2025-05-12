@@ -166,8 +166,17 @@
 
   "remoteServices": {
     "title": "Services à distance",
-    "subtitle": "Implémentation à distance",
-    "requestQuoteButton": "Demander un devis",
+    "subtitle": "Choisissez le forfait de travail à distance adapté à votre entreprise.",
+    "subtitle2": "Que vous débutiez ou développiez des opérations complexes, nous proposons des forfaits flexibles adaptés à vos besoins.",
+    "implementation_bundles_title": "Packages d’implémentation (forfaits horaires)",
+    "implementation_bundles_description": "Des forfaits avec un nombre d’heures défini",
+    "paygTitle": "Paiement à l'utilisation – Flexibilité totale, sans expiration",
+    "paygDescription": "Pour les entreprises qui souhaitent une assistance d'experts sans engagement de durée.",
+    "payg_cta_title": "Prêt à commencer avec un forfait ou à opter pour plus de flexibilité?",
+    "payg_cta_description": "Trouvons ensemble la solution la mieux adaptée à votre entreprise.",
+    "other_cta_title": "Besoin d’aide pour choisir le forfait le plus adapté?",
+    "other_cta_description": "Contactez-nous et nous vous aiderons à faire le bon choix.",
+    "requestQuoteButton": "Contactez-nous dès maintenant",
     "otherPackagesTitle": "Autres forfaits",
     "contactUsMessage": "Contactez-nous dès maintenant pour découvrir quel forfait vous convient le mieux.",
     "bookFreeCallButton": "Planifier un appel gratuit",
@@ -193,10 +202,18 @@
         "description": "Best value",
         "validity": "Validité: 6 mois",
         "features": ["3 à 4 flux de travail avancés", "Forfait de 100 heures"]
-      },
+      }
+    ],
+    "payg_packages": [
       {
-        "name": "Solutions personnalisées pour entreprises",
-        "custom": "Développement sur mesure : Concevoir des applications répondant aux besoins spécifiques d'une entreprise de taille moyenne à grande, en intégrant l'infrastructure actuelle."
+        "name": "Pay As You Go",
+        "info": "Most flexible",
+        "features": [
+          "Includes 10 hours to get started",
+          "Weekly billing after that, based on usage",
+          "Unused hours never expire",
+          "Monthly retainer keeps our team on standby"
+        ]
       }
     ],
     "otherPackages": [
@@ -223,6 +240,16 @@
           "Corrections rapides",
           "Évaluation de votre configuration actuelle",
           "Questions / Réponses"
+        ]
+      },
+      {
+        "name": "Solutions personnalisées pour entreprises",
+        "features": [
+          "Flux de travail sur mesure pour les équipes de taille moyenne à grande",
+          "Intégration fluide avec vos outils et systèmes existants",
+          "Architecture évolutive pensée pour accompagner votre croissance",
+          "Solutions personnalisées conçues selon vos besoins spécifiques",
+          "Contactez-nous pour en savoir plus et construire ensemble votre solution sur mesure"
         ]
       }
     ],
@@ -316,16 +343,16 @@
 
   "remoteServicesUSD": {
     "title": "Services à distance",
-    "subtitle": "Choose the Right Remote Workflow Package for Your Business",
-    "subtitle2": "Whether you're just starting or scaling complex operations, we offer flexible packages tailored to your needs.",
-    "implementation_bundles_title": "Implementation Bundles (Hourly Packages)",
-    "implementation_bundles_description": "Structured packages with a set number of hours and typical workflow outcomes.",
-    "paygTitle": "Pay As You Go - Full Flexibility, No Expiry",
-    "paygDescription": "For businesses that want expert help without committing to a timeline.",
-    "payg_cta_title": "Ready to start with a bundle or go flexible?",
-    "payg_cta_description": "Let's find the best fit for your business",
-    "other_cta_title": "Not sure which package suits your needs?",
-    "other_cta_description": "Contact us and we'll help you decide.",
+    "subtitle": "Choisissez le forfait de travail à distance adapté à votre entreprise.",
+    "subtitle2": "Que vous débutiez ou développiez des opérations complexes, nous proposons des forfaits flexibles adaptés à vos besoins.",
+    "implementation_bundles_title": "Packages d’implémentation (forfaits horaires)",
+    "implementation_bundles_description": "Des forfaits avec un nombre d’heures défini",
+    "paygTitle": "Paiement à l'utilisation – Flexibilité totale, sans expiration",
+    "paygDescription": "Pour les entreprises qui souhaitent une assistance d'experts sans engagement de durée.",
+    "payg_cta_title": "Prêt à commencer avec un forfait ou à opter pour plus de flexibilité?",
+    "payg_cta_description": "Trouvons ensemble la solution la mieux adaptée à votre entreprise.",
+    "other_cta_title": "Besoin d’aide pour choisir le forfait le plus adapté?",
+    "other_cta_description": "Contactez-nous et nous vous aiderons à faire le bon choix.",
     "requestQuoteButton": "Contactez-nous dès maintenant",
     "otherPackagesTitle": "Autres forfaits",
     "contactUsMessage": "Contactez-nous dès maintenant pour découvrir quel forfait vous convient le mieux.",
@@ -364,13 +391,13 @@
     ],
     "payg_packages": [
       {
-        "name": "PAYG (Pay As You Go)",
-        "info": "Most flexible - no expiry on hours",
+        "name": "Payez à l'utilisation",
+        "info": "La formule la plus flexible",
         "features": [
-          "Includes 10 hours to get started",
-          "Weekly billing after that, based on usage",
-          "Unused hours never expire",
-          "Monthly retainer keeps our team on standby"
+          "1 000 $ pour 10 heures prépayées",
+          "90 $/heure après les 10 premières heures",
+          "Un forfait mensuel de 325 $ pour garder notre équipe disponible  ",
+          "Aucune date d’expiration – utilisez vos heures quand vous le souhaitez"
         ]
       }
     ],
@@ -405,13 +432,13 @@
         ]
       },
       {
-        "name": "Custom Enterprise Solutions",
+        "name": "Solutions personnalisées pour entreprises",
         "features": [
-          "Tailored workflows for medium to large teams",
-          "Integration with existing tools and systems",
-          "Scalable architecture designed for growth",
-          "Bespoke solutions based on your specific needs",
-          "Contact us for more information"
+          "Flux de travail sur mesure pour les équipes de taille moyenne à grande",
+          "Intégration fluide avec vos outils et systèmes existants",
+          "Architecture évolutive pensée pour accompagner votre croissance",
+          "Solutions personnalisées conçues selon vos besoins spécifiques",
+          "Contactez-nous pour en savoir plus et construire ensemble votre solution sur mesure"
         ]
       }
     ],

@@ -209,10 +209,10 @@
         "name": "Pay As You Go",
         "info": "Most flexible",
         "features": [
-          "$1,000 for 10 hours upfront",
-          "$90/hour after the first 10 hours",
-          "$325/month retainer keeps our team on standby",
-          "No expiry - use hours whenever you need"
+          "Includes 10 hours to get started",
+          "Weekly billing after that, based on usage",
+          "Unused hours never expire",
+          "Monthly retainer keeps our team on standby"
         ]
       }
     ],
