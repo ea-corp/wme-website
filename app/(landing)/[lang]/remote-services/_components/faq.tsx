@@ -17,7 +17,7 @@ const ClientFaqComponent = ({ dict }: { dict: any }) => {
   const { faq } = dict;
 
   return (
-    <div className="px-8 md:px-60 pb-16">
+    <div className="px-8 md:px-40 pb-16">
       <h2>{faq.title}</h2>
       <h3 className="text-3xl mb-16 font-semibold">
         {faq.subtitle}

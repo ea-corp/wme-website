@@ -1,6 +1,21 @@
+"use client";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Globe } from "lucide-react";
 
 export default function Footer({ dict, lang }: any) {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleLanguageChange = (value: string) => {
+    // Gérer le cas de la route racine et des autres routes
+    const newPath = pathname === `/${lang}`
+      ? `/${value}`
+      : pathname.replace(`/${lang}/`, `/${value}/`);
+    router.push(newPath);
+  };
+
   // Tailles définies pour les images, modifiez selon vos besoins
   const imageSize = {
     width: 500,
@@ -106,7 +121,42 @@ export default function Footer({ dict, lang }: any) {
           </ul>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col items-center space-y-4 mt-4 ">
+        <Select onValueChange={handleLanguageChange} defaultValue={lang}>
+          <SelectTrigger className="w-[85px] bg-transparent border-gray-500">
+            <div className="flex items-center">
+              <SelectValue placeholder="Language" />
+            </div>
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="en">
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/images/english_flag.png"
+                  alt="English"
+                  width={20}
+                  height={15}
+                  className="rounded-lg"
+                />
+                EN
+              </div>
+
+            </SelectItem>
+            <SelectItem value="fr" >
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/images/french_flag.png"
+                  alt="Français"
+                  width={20}
+                  height={15}
+                  className="rounded-sm"
+                />
+                FR
+              </div>
+
+            </SelectItem>
+          </SelectContent>
+        </Select>
         <p className="text-center py-4 px-4 text-sm">
           {dict.footer.copyright}
         </p>

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, Globe } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import {
   Sheet,
@@ -8,8 +8,10 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Logo } from "./logo";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Route {
   label: string;
@@ -85,7 +87,18 @@ const SidebarItem = ({ label, href }: SidebarItemProps) => {
   );
 };
 
-export const MobileSidebar = () => {
+export const MobileSidebar = ({ lang }: { lang: string }) => {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleLanguageChange = (value: string) => {
+    // Gérer le cas de la route racine et des autres routes
+    const newPath = pathname === `/${lang}`
+      ? `/${value}`
+      : pathname.replace(`/${lang}/`, `/${value}/`);
+    router.push(newPath);
+  };
+
   return (
     <Sheet>
       <SheetTrigger className="md:hidden pr-4 hover:opacity-75 transition">
@@ -94,27 +107,57 @@ export const MobileSidebar = () => {
       <SheetContent side="right" className="p-0 bg-white">
         <div className="h-full border-r flex flex-col overflow-y-auto bg-gray-white shadow-sm">
           <div className="p-6">
-           
-               <Link href="/"> <SheetClose>
-            <Logo />   </SheetClose>
+            <Link href="/">
+              <SheetClose>
+                <Logo />
+              </SheetClose>
             </Link>
-         
-           
+          </div>
+
+          <div className="px-6 mb-4">
+            <Select onValueChange={handleLanguageChange} defaultValue={lang}>
+              <SelectTrigger className="w-[100px]">
+                <div className="flex items-center">
+                  <SelectValue placeholder="Language" />
+                </div>
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="en">
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/images/english_flag.png"
+                      alt="English"
+                      width={20}
+                      height={15}
+                      className="rounded-lg"
+                    />
+                    EN
+                  </div>
+
+                </SelectItem>
+                <SelectItem value="fr" >
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/images/french_flag.png"
+                      alt="Français"
+                      width={20}
+                      height={15}
+                      className="rounded-sm"
+                    />
+                    FR
+                  </div>
+
+                </SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           <div className="flex flex-col w-full">
-            {guestRoutes.map(
-              (
-                route,
-                index, // Ajout de la prop `key` ici
-              ) => (
-                <SheetClose key={index}>
-                  {" "}
-                  {/* Utilisation de `index` comme clé */}
-                  <SidebarItem label={route.label} href={route.href} />
-                </SheetClose>
-              ),
-            )}
+            {guestRoutes.map((route, index) => (
+              <SheetClose key={index}>
+                <SidebarItem label={route.label} href={route.href} />
+              </SheetClose>
+            ))}
           </div>
         </div>
       </SheetContent>

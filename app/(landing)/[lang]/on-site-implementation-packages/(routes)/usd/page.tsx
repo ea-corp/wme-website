@@ -39,10 +39,8 @@ export default async function ServicePage({ params }: any) {
 
   return (
     <div className="mx-auto max-w-7xl px-4">
-      <div className="bg-gray-100 text-center py-16">
-        <h2 className="text-4xl font-semibold">{remoteServicesTitle}</h2>
-      </div>
-      <div className="flex items-center justify-center py-12">
+    
+      <div className="flex items-center justify-center py-12 mt-8">
         <h2 className="text-2xl font-medium flex items-center">
           <Building size={35} className="text-yellow-400" />
           &nbsp; {remoteImplementationTitle}
@@ -53,7 +51,7 @@ export default async function ServicePage({ params }: any) {
         {packages.map((pkg: any) => (
           <div
             key={pkg.name}
-            className="w-full max-w-md bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
+            className="w-full max-w-xl bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
           >
             <div className="flex justify-between flex-col items-center">
               <h3 className="text-lg leading-6 font-medium text-gray-900">

@@ -145,7 +145,7 @@ export default function OurServices({ dictionary }: OurServicesProps) {
                 <TabsContent key={service.title} value={service.title.toLowerCase()}>
                   <Card>
                     <CardHeader>
-                      <CardTitle className="flex items-center text-xl">
+                      <CardTitle className="flex items-center text-xl" id="choosepackage">
                         <IconComponent className="w-6 h-6 mr-2 text-primary shrink-0" />
                         {service.title}
                       </CardTitle>
@@ -184,7 +184,9 @@ export default function OurServices({ dictionary }: OurServicesProps) {
           transition={{ delay: 0.5, duration: 0.5 }}
           className="text-center mb-8 md:mb-12 mt-12"
         >
+
           <h3 className="text-xl md:text-3xl font-bold mb-2">{dictionary.choosepackage}</h3>
+
           <p className="text-gray-600 max-w-2xl mx-auto">
             {dictionary.choosepackagedesc}
           </p>

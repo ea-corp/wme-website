@@ -1,7 +1,15 @@
 import "server-only";
 
 interface Dictionary {
-  onsiteConsultingUSD: { remoteServicesTitle: any; remoteImplementationTitle: any; introText: any; packages: any; reviews: any; pricingText: any; bookFreeCallButton: any; };
+  onsiteConsultingUSD: {
+    remoteServicesTitle: any;
+    remoteImplementationTitle: any;
+    introText: any;
+    packages: any;
+    reviews: any;
+    pricingText: any;
+    bookFreeCallButton: any;
+  };
   blog: any;
   onsiteConsulting: any;
   remoteServices: any;
@@ -19,6 +27,7 @@ interface Dictionary {
   storiesWorthTelling: any;
   incitationbutton: {
     title: string;
+    title2: string;
     subtitle: string;
     description: string;
     cta: { text: string; url: string };

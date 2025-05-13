@@ -13,7 +13,7 @@ export default async function ServicePage({ params }: PageProps) {
 
   return (
     <div className="px-4">
-      <div className="bg-gray-100 text-center py-16">
+      <div className="text-center mt-16 mb-4">
         <p className="text-4xl font-semibold">{dict.storiesWorthTelling.title}</p>
       </div>
       <div className="mx-auto max-w-7xl">

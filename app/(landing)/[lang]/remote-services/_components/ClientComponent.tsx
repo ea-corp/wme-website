@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
-import { Check, Package, ScreenShare } from "lucide-react";
+import { Check, Package, ScreenShare, Zap } from "lucide-react";
 import Link from "next/link";
 import {
     Carousel,
@@ -18,7 +18,17 @@ const ClientComponent = ({ dict }: { dict: any }) => {
     const {
         title,
         subtitle,
+        subtitle2,
+        implementation_bundles_title,
+        implementation_bundles_description,
         requestQuoteButton,
+        other_cta_title,
+        paygTitle,
+        paygDescription,
+        payg_packages,
+        payg_cta_title,
+        payg_cta_description,
+        other_cta_description,
         otherPackagesTitle,
         contactUsMessage,
         bookFreeCallButton,
@@ -29,25 +39,35 @@ const ClientComponent = ({ dict }: { dict: any }) => {
 
     return (
         <div className="mx-auto max-w-7xl px-4">
-            <div className="bg-gray-100 text-center pt-16 pb-6 md:py-16 overflow-x-hidden">
-                <h2 className="text-4xl font-semibold">{title}</h2>
-            </div>
-            <div className="flex items-center justify-center py-12">
-                <h2 className="text-2xl font-medium flex items-center">
-                    <ScreenShare size={35} className="text-yellow-400" />
-                    &nbsp; {subtitle}
+            <div className="flex text-gray-800 items-center justify-center py-12 font-semibold leading-tight tracking-tight">
+                <h2 className="text-2xl flex items-center justify-center text-center">
+                    {subtitle}
+                    <br />
+                    {subtitle2}
                 </h2>
             </div>
+
+            <div className="flex flex-col items-center justify-center py-4 md:py-12">
+                <h2 className="text-2xl font-medium flex items-center mb-2">
+                    <ScreenShare size={35} className="text-[#f4d752]" />
+                    &nbsp; {implementation_bundles_title}
+                </h2>
+                <p>{implementation_bundles_description}</p>
+            </div>
+
             <div className="flex justify-center flex-wrap">
                 {packages.map((pkg: any) => (
                     <div
                         key={pkg.name}
-                        className="w-full max-w-md bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
+                        className="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
                     >
                         <div className="flex justify-between">
                             <h3 className="text-lg leading-6 font-medium text-gray-900">
                                 {pkg.name}
+                                <p className="text-sm text-gray-500">{pkg.description}</p>
+
                             </h3>
+
                             <div className="text-right">
                                 <p className="text-sm text-gray-400">{pkg.validity}</p>
                             </div>
@@ -73,14 +93,65 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 ))}
             </div>
 
-            <div className="text-center my-16">
+            <div className="flex flex-col items-center justify-center py-4 md:py-12">
+                <h2 className="text-2xl font-medium flex items-center mb-2">
+                    <Zap size={35} className="text-[#f4d752]" />
+                    &nbsp; {paygTitle}
+                </h2>
+                <p>{paygDescription}</p>
+            </div>
+            <div className="flex justify-center flex-wrap">
+                {payg_packages.map((pkg: any) => (
+                    <div
+                        key={pkg.name}
+                        className="w-full max-w-xl bg-white rounded-lg border border-gray-200 shadow-md p-6 mx-4"
+                    >
+                        <div className="flex justify-between">
+                            <h3 className="text-lg leading-6 font-medium text-gray-900">
+                                {pkg.name}
+                                <p className="text-sm text-gray-500">{pkg.description}</p>
+                            </h3>
+                            <div className="text-right">
+                                <p className="text-sm text-gray-400">{pkg.startAt}</p>
+                                <p className="text-xl font-semibold">{pkg.price}</p>
+                                <p className="text-sm text-gray-400">
+                                    {pkg.validity}
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <p className="py-2 text-sm">{pkg.info}</p>
+                        </div>
+                        <Separator className="my-2" />
+                        <div className="mt-2 mb-4"></div>
+                        <ul className="mb-4">
+                            {pkg.features &&
+                                pkg.features.map((feature: string, index: number) => (
+                                    <li key={index} className="flex items-center py-2">
+                                        <Check className="flex-shrink-0 h-6 w-6 text-yellow-400 mr-4" />
+                                        <p className="text-medium text-gray-700 flex-1">
+                                            {feature}
+                                        </p>
+                                    </li>
+                                ))}
+                            <p>{pkg.custom}</p>
+                        </ul>
+                    </div>
+                ))}
+            </div>
+            <div className="text-center mb-6 mt-8 flex flex-col items-center space-y-4">
+                <div className="text-lg">
+                    <p className="font-semibold">{payg_cta_title}</p>
+                    <p>{payg_cta_description}</p>
+                </div>
                 <Link
                     href="contact-us"
-                    className="bg-[#f4d752] text-2xl py-4 px-4 rounded-lg font-medium"
+                    className="bg-[#f4d752] text-xl py-4 px-6 mt-4 rounded-lg font-semibold"
                 >
                     {requestQuoteButton}
                 </Link>
             </div>
+
 
             <div className="flex items-center justify-center py-4 md:py-12">
                 <h2 className="text-2xl font-medium flex items-center">
@@ -92,7 +163,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                 {otherPackages.map((pkg: any) => (
                     <div
                         key={pkg.name}
-                        className="w-full max-w-md bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
+                        className="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md p-6 m-4"
                     >
                         <div className="flex justify-between">
                             <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">
@@ -110,6 +181,19 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                         </ul>
                     </div>
                 ))}
+            </div>
+
+            <div className="text-center mb-16 mt-8 flex flex-col items-center space-y-4">
+                <div className="text-lg">
+                    <p className="font-semibold">{other_cta_title}</p>
+                    <p>{other_cta_description}</p>
+                </div>
+                <Link
+                    href="contact-us"
+                    className="bg-[#f4d752] text-xl py-4 px-6 mt-4 rounded-lg font-semibold"
+                >
+                    {requestQuoteButton}
+                </Link>
             </div>
 
             <div className="flex items-center justify-center mt-16 mb-12">
@@ -131,20 +215,6 @@ const ClientComponent = ({ dict }: { dict: any }) => {
             </div>
 
             <Faq dict={dict} />
-            <div className="py-8 md:py-16 flex items-center justify-center flex-col">
-                <h3 className="text-2xl font-medium text-center pb-4">
-                    {contactUsMessage}
-                </h3>
-                <div className="flex w-full ml-4 mt-4 justify-center">
-                    <a
-                        href="contact-us"
-                        target="_blank"
-                        className="bg-[#f4d752] text-black py-4 px-6 rounded-xl flex"
-                    >
-                        <p className="font-bold text-sm">{bookFreeCallButton}</p>
-                    </a>
-                </div>
-            </div>
         </div>
     );
 };

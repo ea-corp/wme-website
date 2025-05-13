@@ -24,10 +24,11 @@
   },
   "incitationbutton": {
     "title": "Get the most out of monday.com for your business",
+    "title2": "WME Solutions helps businesses around the world build smarter workflows on Monday.com. From strategy to execution, we bring clarity and automation to your operations.",
     "subtitle": "Overwhelmed trying to figure out monday.com?",
-    "description": "When you get started with Monday.com, figuring out how to structure your company workflow can be overwhelming. Monday.com is such a versatile tool, how do you know where to start and what features to use? You probably have a basic understanding of Monday.com and now you’re ready to learn more; you want to make Monday.com the main hub for your work and have everything in one place but don’t have time to figure it out on your own.",
+    "description": "When you get started with Monday.com, figuring out how to structure your company workflow can be overwhelming. Monday.com is such a versatile tool, how do you know where to start and what features to use? WME Solutions have helped over 100 customers to streamline their business processes using monday.com.",
     "cta": {
-      "text": "Try monday.com",
+      "text": "View Services",
       "url": "https://try.monday.com/wme"
     },
     "image": "/images/landing-image.png"
@@ -166,8 +167,17 @@
 
   "remoteServices": {
     "title": "Remote Services",
-    "subtitle": "Remote Implementation",
-    "requestQuoteButton": "Request a Quote",
+    "subtitle": "Choose the Right Remote Workflow Package for Your Business.",
+    "subtitle2": "Whether you're starting or scaling operations, we offer flexible packages tailored to your needs.",
+    "implementation_bundles_title": "Implementation Bundles (Hourly Packages)",
+    "implementation_bundles_description": "Structured packages with a set number of hours and typical workflow outcomes.",
+    "paygTitle": "Pay As You Go - Full Flexibility, No Expiry",
+    "paygDescription": "For businesses that want expert help without committing to a timeline.",
+    "payg_cta_title": "Ready to start with a bundle or go flexible?",
+    "payg_cta_description": "Let's find the best fit for your business",
+    "other_cta_title": "Not sure which package suits your needs?",
+    "other_cta_description": "Contact us and we'll help you decide.",
+    "requestQuoteButton": "Enquire Now",
     "otherPackagesTitle": "Other Packages",
     "contactUsMessage": "Contact us now to find out which package suits you best",
     "bookFreeCallButton": "Book a Free Call",
@@ -193,10 +203,18 @@
         "description": "Best value",
         "validity": "Validity: 6 months",
         "features": ["3 to 4 advanced workflows", "100 hours package"]
-      },
+      }
+    ],
+    "payg_packages": [
       {
-        "name": "Custom Enterprise Solutions",
-        "custom": "Bespoke Development: Tailor software or systems specifically to the complex requirements of a medium to large organization, including integration with existing infrastructure."
+        "name": "Pay As You Go",
+        "description": "Most flexible",
+        "features": [
+          "Includes 10 hours to get started",
+          "Weekly billing after that, based on usage",
+          "Hours never expire — full flexibility, no bundles",
+          "Monthly retainer keeps our team on standby"
+        ]
       }
     ],
     "otherPackages": [
@@ -223,6 +241,16 @@
           "Quick fixes",
           "Assessment on your current set-up",
           "Q&A"
+        ]
+      },
+      {
+        "name": "Custom Enterprise Solutions",
+        "features": [
+          "Tailored workflows for medium to large teams",
+          "Integration with existing tools and systems",
+          "Scalable architecture designed for growth",
+          "Bespoke solutions based on your specific needs",
+          "Contact us for more information"
         ]
       }
     ],
@@ -316,14 +344,24 @@
 
   "remoteServicesUSD": {
     "title": "Remote Services",
-    "subtitle": "Remote Implementation",
-    "requestQuoteButton": "Request a Quote",
+    "subtitle": "Choose the Right Remote Workflow Package for Your Business.",
+    "subtitle2": "Whether you're starting or scaling operations, we offer flexible packages tailored to your needs.",
+    "implementation_bundles_title": "Implementation Bundles (Hourly Packages)",
+    "implementation_bundles_description": "Structured packages with a set number of hours and typical workflow outcomes.",
+    "paygTitle": "Pay As You Go - Full Flexibility, No Expiry",
+    "paygDescription": "For businesses that want expert help without committing to a timeline.",
+    "payg_cta_title": "Ready to start with a bundle or go flexible?",
+    "payg_cta_description": "Let's find the best fit for your business",
+    "other_cta_title": "Not sure which package suits your needs?",
+    "other_cta_description": "Contact us and we'll help you decide.",
+    "requestQuoteButton": "Enquire Now",
     "otherPackagesTitle": "Other Packages",
     "contactUsMessage": "Contact us now to find out which package suits you best",
     "bookFreeCallButton": "Book a Free Call",
     "packages": [
       {
         "name": "Starter-Kit",
+        "startAt": "Starts at",
         "price": "$2,750",
         "info": "Startup Essential",
         "description": "Most Popular",
@@ -332,6 +370,7 @@
       },
       {
         "name": "Comprehensive",
+        "startAt": "Starts at",
         "price": "$5,000",
         "info": "Business Ready",
         "description": "Recommended",
@@ -340,37 +379,47 @@
       },
       {
         "name": "Ultimate",
+        "startAt": "Starts at",
         "price": "$9,000",
         "info": "Maximum Value",
         "description": "Best value",
         "validity": "6 months",
         "features": ["3 to 4 Advanced workflows", "100 Hours Package"]
-      },
+      }
+    ],
+    "payg_packages": [
       {
-        "name": "Custom Enterprise Solutions",
-        "custom": "Bespoke Development: Tailor software or systems specifically to the complex requirements of a medium to large organization, including integration with existing infrastructure."
+        "name": "Pay As You Go",
+        "description": "Most flexible",
+        "features": [
+          "$1,000 for 10 hours upfront",
+          "$90/hour after the first 10 hours",
+          "$325/month retainer keeps our team on standby",
+          "No expiry - use hours whenever you need"
+        ]
       }
     ],
     "otherPackages": [
       {
         "name": "Ongoing Support",
         "price": "$390",
-        "time": "month",
+        "time": "/month",
         "validity": "6 weeks",
         "features": [
-          "4 hours per month",
+          "4 hours per month included",
           "Review of the built solution",
           "Small fixes when required",
           "Q&A from your team",
           "Optimization suggestions based on new features available or any changes in your business.",
           "Assessment and full reporting on the usage of the built workflow",
+          "Extra hour billed at $125",
           "Free cancellation at any time"
         ]
       },
       {
         "name": "Ad Hoc Consultation",
         "price": "$150",
-        "time": "hour",
+        "time": "/hour",
         "validity": "3 months",
         "features": [
           "Session(s) of 60 mins with Monday Expert",
@@ -379,6 +428,16 @@
           "Quick fixes",
           "Assessment on your current set-up",
           "Q&A"
+        ]
+      },
+      {
+        "name": "Custom Enterprise Solutions",
+        "features": [
+          "Tailored workflows for medium to large teams",
+          "Integration with existing tools and systems",
+          "Scalable architecture designed for growth",
+          "Bespoke solutions based on your specific needs",
+          "Contact us for more information"
         ]
       }
     ],
@@ -516,6 +575,30 @@
       {
         "title": "Do you have fixed price projects?",
         "content": "Currently not. We find the fixed price model to be rigid when building a custom-made solution on monday.com. Great ideas often emerge during our collaborative building sessions, and you might want to make some changes on what was agreed initially. This is why we prefer the hourly model as it gives more flexibility to our clients, and you can see in full transparency where our time is spent building your solution."
+      },
+      {
+        "title": "What makes the PAYG package different from your other packages?",
+        "content": "Unlike our other remote packages, PAYG has no expiry on the initial 10 hours. It also includes a monthly retainer to keep our team available for you at any time, even on short notice."
+      },
+      {
+        "title": "Why is there a monthly fee on the PAYG ?",
+        "content": "The monthly retainer ensures availability. Our team remains on standby and ready to assist you without delay — a key benefit for clients with unpredictable needs."
+      },
+      {
+        "title": "Can I cancel the PAYG package at any time?",
+        "content": "Yes, you can cancel anytime with 1 month’s notice. The retainer and used hours are non-refundable, but unused hours from your last billing cycle remain usable."
+      },
+      {
+        "title": "Is the PAYG model suitable for ongoing projects?",
+        "content": "Yes — it’s ideal for clients who want maximum flexibility, frequent access to expert support, and no pressure to use hours within a set timeframe."
+      },
+      {
+        "title": "Do I get live access to time tracking?",
+        "content": "Yes, you'll get a Toggl live tracking link to monitor time spent in real-time."
+      },
+      {
+        "title": "Do I still need a Monday.com and Make.com subscription?",
+        "content": "Yes. As with all our services, you’ll need an active Monday.com account, and likely a Make.com plan for advanced automations."
       }
     ]
   },
@@ -795,6 +878,7 @@
   },
   "ourTeam": {
     "title": "Our Global Team",
+    "description": "Meet the people behind WME Solutions, a consultancy specializing in Monday.com implementations, workflow automation, and digital process improvement. Our team brings deep expertise in optimizing operations for businesses across industries.",
     "employeeLocations": [
       {
         "id": 4,

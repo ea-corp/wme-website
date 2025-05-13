@@ -1,5 +1,5 @@
 "use client";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { Logo } from "./logo";
 import {
@@ -9,14 +9,25 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Globe } from "lucide-react";
+import Image from "next/image";
 
 export const NavbarRoutes = ({ dict, lang }: any) => {
   const pathname = usePathname();
-
+  const router = useRouter();
   const isBlogPage = pathname.startsWith(`/${lang}/blog`);
   const isExcludedPath =
     pathname.startsWith("/remote-services/usd") ||
     pathname.startsWith("/on-site-implementation-packages/usd");
+
+  const handleLanguageChange = (value: string) => {
+    // Gérer le cas de la route racine et des autres routes
+    const newPath = pathname === `/${lang}`
+      ? `/${value}`
+      : pathname.replace(`/${lang}/`, `/${value}/`);
+    router.push(newPath);
+  };
 
   return (
     <div className="flex flex-wrap justify-between items-center w-full px-4 md:px-8 py-2 md:py-4">
@@ -74,39 +85,6 @@ export const NavbarRoutes = ({ dict, lang }: any) => {
             {dict.navbar.ourTeam}
           </p>
         </Link>
-        {/* 
-        <NavigationMenu delayDuration={100000000} >
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-gray-700 text-md">
-                About us
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid gap-3 p-4 lg:grid-cols-[.75fr_1fr]">
-                  <div className="flex flex-col items-center justify-center w-full">
-                    <div className="flex w-full">
-                      <a
-                        href="/our-team"
-                        className="flex-1 py-2 px-2 text-sm rounded-lg hover:bg-gray-100"
-                      >
-                        Our Team
-                      </a>
-                    </div>
-                    <div className="flex w-full">
-                      <a
-                        href="/blog"
-                        className="flex-1 py-2 px-2 w-[180px] text-sm rounded-lg hover:bg-gray-100"
-                      >
-                        Our Blog
-                      </a>
-                    </div>
-                  </div>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-            */}
 
         <Link href={`/${lang}/portfolio-wme`}>
           <p
@@ -116,7 +94,6 @@ export const NavbarRoutes = ({ dict, lang }: any) => {
               }`}
           >
             {dict.navbar.portfolio}
-
           </p>
         </Link>
         <Link href={`/${lang}/apps`}>
@@ -127,17 +104,56 @@ export const NavbarRoutes = ({ dict, lang }: any) => {
               }`}
           >
             {dict.navbar.apps}
-
           </p>
         </Link>
       </div>
 
       <div className="flex items-center space-x-2 lg:space-x-4">
+        <div className="hidden md:block">
+          <Select onValueChange={handleLanguageChange} defaultValue={lang}>
+            <SelectTrigger className="w-[100px]">
+              <div className="flex items-center">
+                <SelectValue placeholder="Language" />
+              </div>
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="en">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="/images/english_flag.png"
+                    alt="English"
+                    width={20}
+                    height={15}
+                    className="rounded-lg"
+                  />
+                  EN
+                </div>
+
+              </SelectItem>
+              <SelectItem value="fr" >
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="/images/french_flag.png"
+                    alt="Français"
+                    width={20}
+                    height={15}
+                    className="rounded-sm"
+                  />
+                  FR
+                </div>
+
+              </SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+
+
         <Link
           href={`/${lang}/contact-us`}
           className="hidden md:flex bg-[#f4d752] text-black py-2 px-4 lg:px-6 rounded-xl items-center transition-colors duration-200 hover:bg-[#f4d752]/90"
         >
-          <p className="font-bold text-sm">                      {dict.navbar.contactUs}
+          <p className="font-bold text-sm">
+            {dict.navbar.contactUs}
           </p>
         </Link>
 

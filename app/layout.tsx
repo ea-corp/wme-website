@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Head from "next/head";
 import { getDictionary } from "@/lib/dictionaries";
 import { locales } from "@/lib/i18n-config";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,17 +27,19 @@ export default async function RootLayout({ children }: PageProps) {
 
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <div className="mt-20"></div>
-        <main className="flex-grow">
-          {children}
-          <Analytics />
-          <SpeedInsights />
-        </main>
-      </body>
+      <TooltipProvider>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <body className={`${inter.className} flex flex-col min-h-screen`}>
+          <div className="mt-20"></div>
+          <main className="flex-grow">
+            {children}
+            <Analytics />
+            <SpeedInsights />
+          </main>
+        </body>
+      </TooltipProvider>
     </html>
   );
 }

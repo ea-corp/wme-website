@@ -24,10 +24,11 @@
   },
   "incitationbutton": {
     "title": "Tirez le meilleur parti de monday.com pour votre entreprise",
+    "title2": "WME Solutions aide les entreprises du monde entier à concevoir des flux de travail plus intelligents sur Monday.com. De la stratégie à l’exécution, nous apportons clarté et automatisation à vos opérations.",
     "subtitle": "Dépassé en essayant de comprendre monday.com ?",
-    "description": "Lorsque vous commencez à utiliser Monday.com, déterminer comment structurer le flux de travail de votre entreprise peut être intimidant. Monday.com est un outil tellement polyvalent qu’il est difficile de savoir par où commencer et quelles fonctionnalités utiliser. Vous avez probablement une compréhension de base de Monday.com et vous êtes maintenant prêt à aller plus loin ; vous souhaitez en faire le centre névralgique de votre travail et tout centraliser au même endroit, mais vous n’avez pas le temps de tout découvrir par vous-même.",
+    "description": "Lorsque vous commencez à utiliser Monday.com, déterminer comment structurer le flux de travail de votre entreprise peut être intimidant. Monday.com est un outil tellement polyvalent qu’il est difficile de savoir par où commencer et quelles fonctionnalités utiliser ? WME Solutions a aidé plus de 100 clients à simplifier leurs processus métier grâce à monday.com.",
     "cta": {
-      "text": "Essayez monday.com",
+      "text": "Voir les offres",
       "url": "https://try.monday.com/wme"
     },
     "image": "/images/landing-image.png"
@@ -166,8 +167,17 @@
 
   "remoteServices": {
     "title": "Services à distance",
-    "subtitle": "Implémentation à distance",
-    "requestQuoteButton": "Demander un devis",
+    "subtitle": "Choisissez le forfait de travail à distance adapté à votre entreprise.",
+    "subtitle2": "Démarrage ou croissance, nos solutions flexibles répondent à vos besoins.",
+    "implementation_bundles_title": "Packages d’implémentation (forfaits horaires)",
+    "implementation_bundles_description": "Des forfaits avec un nombre d’heures défini",
+    "paygTitle": "Paiement à l'utilisation – Flexibilité totale, sans expiration",
+    "paygDescription": "Pour les entreprises qui souhaitent une assistance d'experts sans engagement de durée.",
+    "payg_cta_title": "Prêt à commencer avec un forfait ou à opter pour plus de flexibilité?",
+    "payg_cta_description": "Trouvons ensemble la solution la mieux adaptée à votre entreprise.",
+    "other_cta_title": "Besoin d’aide pour choisir le forfait le plus adapté?",
+    "other_cta_description": "Contactez-nous et nous vous aiderons à faire le bon choix.",
+    "requestQuoteButton": "Contactez-nous dès maintenant",
     "otherPackagesTitle": "Autres forfaits",
     "contactUsMessage": "Contactez-nous dès maintenant pour découvrir quel forfait vous convient le mieux.",
     "bookFreeCallButton": "Planifier un appel gratuit",
@@ -193,10 +203,18 @@
         "description": "Best value",
         "validity": "Validité: 6 mois",
         "features": ["3 à 4 flux de travail avancés", "Forfait de 100 heures"]
-      },
+      }
+    ],
+    "payg_packages": [
       {
-        "name": "Solutions personnalisées pour entreprises",
-        "custom": "Développement sur mesure : Concevoir des applications répondant aux besoins spécifiques d'une entreprise de taille moyenne à grande, en intégrant l'infrastructure actuelle."
+        "name": "Payez à l'utilisation",
+        "description": "La formule la plus flexible",
+        "features": [
+          "Comprend 10 heures pour bien démarrer",
+          "Facturation hebdomadaire basée sur l'utilisation",
+          "Utilisez vos heures quand vous voulez, sans limite de temps",
+          "Un forfait mensuel maintient notre équipe à votre disposition"
+        ]
       }
     ],
     "otherPackages": [
@@ -223,6 +241,16 @@
           "Corrections rapides",
           "Évaluation de votre configuration actuelle",
           "Questions / Réponses"
+        ]
+      },
+      {
+        "name": "Solutions sur mesure",
+        "features": [
+          "Workflows adaptés aux équipes moyennes et grandes",
+          "Intégration à vos outils et systèmes",
+          "Architecture évolutive pour accompagner votre croissance",
+          "Solutions conçues selon vos besoins",
+          "Contactez-nous pour en savoir plus"
         ]
       }
     ],
@@ -316,14 +344,25 @@
 
   "remoteServicesUSD": {
     "title": "Services à distance",
-    "subtitle": "Implémentation à distance",
-    "requestQuoteButton": "Demander un devis",
+    "subtitle": "Choisissez le forfait de travail à distance adapté à votre entreprise.",
+    "subtitle2": "Démarrage ou croissance, nos solutions flexibles répondent à vos besoins.",
+    "implementation_bundles_title": "Packages d’implémentation (forfaits horaires)",
+    "implementation_bundles_description": "Des forfaits avec un nombre d’heures défini",
+    "paygTitle": "Paiement à l'utilisation – Flexibilité totale, sans expiration",
+    "paygDescription": "Pour les entreprises qui souhaitent une assistance d'experts sans engagement de durée.",
+    "payg_cta_title": "Prêt à commencer avec un forfait ou à opter pour plus de flexibilité?",
+    "payg_cta_description": "Trouvons ensemble la solution la mieux adaptée à votre entreprise.",
+    "other_cta_title": "Besoin d’aide pour choisir le forfait le plus adapté?",
+    "other_cta_description": "Contactez-nous et nous vous aiderons à faire le bon choix.",
+    "requestQuoteButton": "Contactez-nous dès maintenant",
     "otherPackagesTitle": "Autres forfaits",
     "contactUsMessage": "Contactez-nous dès maintenant pour découvrir quel forfait vous convient le mieux.",
     "bookFreeCallButton": "Planifier un appel gratuit",
     "packages": [
       {
         "name": "Starter-Kit",
+        "startAt": "À partir de",
+
         "price": "2 750 $",
         "info": "Indispensable pour start-up",
         "description": "Le plus populaire",
@@ -332,6 +371,8 @@
       },
       {
         "name": "Comprehensive",
+        "startAt": "À partir de",
+
         "price": "5 000 $",
         "info": "Prêt pour les affaires",
         "description": "Recommandé",
@@ -340,15 +381,25 @@
       },
       {
         "name": "Ultimate",
+        "startAt": "À partir de",
+
         "price": "9 000 $",
         "info": "Rendement optimal",
         "description": "Meilleur rapport qualité/prix",
         "validity": "Validité: 6 mois",
         "features": ["3 à 4 flux de travail avancés", "Forfait de 100 heures"]
-      },
+      }
+    ],
+    "payg_packages": [
       {
-        "name": "Solutions personnalisées pour entreprises",
-        "custom": "Développement sur mesure : Concevoir des applications répondant aux besoins spécifiques d'une entreprise de taille moyenne à grande, en intégrant l'infrastructure actuelle."
+        "name": "Payez à l'utilisation",
+        "description": "La formule la plus flexible",
+        "features": [
+          "1 000 $ pour 10 heures prépayées",
+          "90 $/heure après les 10 premières heures",
+          "Un forfait mensuel de 325 $ pour garder notre équipe disponible  ",
+          "Aucune date d’expiration – utilisez vos heures quand vous le souhaitez"
+        ]
       }
     ],
     "otherPackages": [
@@ -358,7 +409,7 @@
         "time": "mois",
         "validity": "Validité: 6 semaines",
         "features": [
-          "4 heures par mois",
+          "4 heures par mois inclus",
           "Évaluation de la solution développée",
           "Petites corrections si nécessaire",
           "Questions/réponses de votre équipe",
@@ -379,6 +430,16 @@
           "Corrections rapides",
           "Évaluation de votre configuration actuelle",
           "Questions / Réponses"
+        ]
+      },
+      {
+        "name": "Solutions personnalisées pour entreprises",
+        "features": [
+          "Flux de travail sur mesure pour les équipes de taille moyenne à grande",
+          "Intégration fluide avec vos outils et systèmes existants",
+          "Architecture évolutive pensée pour accompagner votre croissance",
+          "Solutions personnalisées conçues selon vos besoins spécifiques",
+          "Contactez-nous pour en savoir plus et construire ensemble votre solution sur mesure"
         ]
       }
     ],
@@ -516,6 +577,30 @@
       {
         "title": "Avez-vous des projets à prix fixe?",
         "content": " Actuellement non. Nous trouvons que le modèle à prix fixe est rigide lorsqu’il s’agit de créer une solution sur mesure sur monday.com. De nombreuses idées apparaissent souvent pendant nos sessions de co-conception, et vous pourriez vouloir apporter des modifications à ce qui avait été convenu au départ. C’est pourquoi nous privilégions le modèle à l’heure, car il offre plus de flexibilité à nos clients, et vous pouvez voir en toute transparence comment notre temps est utilisé pour construire votre solution."
+      },
+      {
+        "title": "Qu’est-ce qui différencie le forfait PAYG de vos autres forfaits ?",
+        "content": "Contrairement à nos autres forfaits à distance, le forfait PAYG n’a pas de date d’expiration pour les 10 premières heures. Il comprend également une provision mensuelle afin de garantir la disponibilité de notre équipe à tout moment, même à court préavis."
+      },
+      {
+        "title": "Pourquoi y a-t-il des frais mensuels sur le PAYG ?",
+        "content": "Le forfait mensuel garantit notre disponibilité. Notre équipe reste en veille et prête à intervenir sans délai — un avantage clé pour les clients aux besoins imprévisibles."
+      },
+      {
+        "title": "Puis-je annuler le forfait PAYG à tout moment ?",
+        "content": "Oui, vous pouvez annuler à tout moment avec un préavis d’un mois. Le forfait mensuel et les heures utilisées ne sont pas remboursables, mais les heures non utilisées de votre dernier cycle de facturation restent disponibles."
+      },
+      {
+        "title": "Ce modèle convient-il aux projets à long terme ?",
+        "content": "Oui — il est idéal pour les clients qui recherchent une flexibilité maximale, un accès régulier à des experts, et aucune contrainte liée à la durée de validité des heures."
+      },
+      {
+        "title": "Ai-je un accès en direct au suivi du temps ?",
+        "content": "Oui, nous proposons un suivi du temps transparent avec des relevés détaillés mis à jour en temps réel."
+      },
+      {
+        "title": "Ai-je encore besoin d’un abonnement à Monday.com et Make.com ?",
+        "content": "Oui. Comme pour tous nos services, vous aurez besoin d’un compte Monday.com actif, ainsi que probablement d’un abonnement Make.com pour les automatisations avancées."
       }
     ]
   },
@@ -796,6 +881,7 @@
   },
   "ourTeam": {
     "title": "Notre équipe internationale",
+    "description" : "Découvrez les personnes derrière WME Solutions, un cabinet spécialisé dans les implémentations de Monday.com, l’automatisation des workflows et l’optimisation des processus digitaux.",
     "employeeLocations": [
       {
         "id": 4,

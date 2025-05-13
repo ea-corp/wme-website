@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge"
 import { ChevronLeft, ChevronRight, Maximize } from "lucide-react"
 import FullscreenImageViewer from "./FullScreen"
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 
 type Project = {
     id: number
@@ -344,7 +345,14 @@ export default function Portfolio({ dict }: { dict: any }) {
                                         <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
                                             {project.title}
                                         </h3>
-                                        <p className="text-muted-foreground mb-4 line-clamp-2">{project.description}</p>
+                                        <Tooltip>
+                                            <TooltipTrigger className="text-left">
+                                                <p className="text-muted-foreground mb-4 line-clamp-2">{project.description}</p>
+                                            </TooltipTrigger>
+                                            <TooltipContent className="w-72">
+                                                {project.description}
+                                            </TooltipContent>
+                                        </Tooltip>
                                     </div>
                                     {/* Tags positioned at the bottom */}
                                     <div className="flex flex-wrap gap-2 mt-auto">
