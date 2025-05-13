@@ -25,7 +25,7 @@
   "incitationbutton": {
     "title": "Get the most out of monday.com for your business",
     "subtitle": "Overwhelmed trying to figure out monday.com?",
-    "description": "When you get started with Monday.com, figuring out how to structure your company workflow can be overwhelming. Monday.com is such a versatile tool, how do you know where to start and what features to use? You probably have a basic understanding of Monday.com and now you’re ready to learn more; you want to make Monday.com the main hub for your work and have everything in one place but don’t have time to figure it out on your own.",
+    "description": "When you get started with Monday.com, figuring out how to structure your company workflow can be overwhelming. Monday.com is such a versatile tool, how do you know where to start and what features to use? WME Solutions have helped over 100 customers to streamline their business processes using monday.com.",
     "cta": {
       "text": "Try monday.com",
       "url": "https://try.monday.com/wme"
@@ -207,11 +207,11 @@
     "payg_packages": [
       {
         "name": "Pay As You Go",
-        "info": "Most flexible",
+        "description": "Most flexible",
         "features": [
           "Includes 10 hours to get started",
           "Weekly billing after that, based on usage",
-          "Unused hours never expire",
+          "Hours never expire — full flexibility, no bundles",
           "Monthly retainer keeps our team on standby"
         ]
       }
@@ -389,7 +389,7 @@
     "payg_packages": [
       {
         "name": "Pay As You Go",
-        "info": "Most flexible",
+        "description": "Most flexible",
         "features": [
           "$1,000 for 10 hours upfront",
           "$90/hour after the first 10 hours",

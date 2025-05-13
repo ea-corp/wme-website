@@ -25,7 +25,7 @@
   "incitationbutton": {
     "title": "Tirez le meilleur parti de monday.com pour votre entreprise",
     "subtitle": "Dépassé en essayant de comprendre monday.com ?",
-    "description": "Lorsque vous commencez à utiliser Monday.com, déterminer comment structurer le flux de travail de votre entreprise peut être intimidant. Monday.com est un outil tellement polyvalent qu’il est difficile de savoir par où commencer et quelles fonctionnalités utiliser. Vous avez probablement une compréhension de base de Monday.com et vous êtes maintenant prêt à aller plus loin ; vous souhaitez en faire le centre névralgique de votre travail et tout centraliser au même endroit, mais vous n’avez pas le temps de tout découvrir par vous-même.",
+    "description": "Lorsque vous commencez à utiliser Monday.com, déterminer comment structurer le flux de travail de votre entreprise peut être intimidant. Monday.com est un outil tellement polyvalent qu’il est difficile de savoir par où commencer et quelles fonctionnalités utiliser ? WME Solutions a aidé plus de 100 clients à simplifier leurs processus métier grâce à monday.com.",
     "cta": {
       "text": "Essayez monday.com",
       "url": "https://try.monday.com/wme"
@@ -206,13 +206,13 @@
     ],
     "payg_packages": [
       {
-        "name": "Pay As You Go",
-        "info": "Most flexible",
+        "name": "Payez à l'utilisation",
+        "description": "La formule la plus flexible",
         "features": [
-          "Includes 10 hours to get started",
-          "Weekly billing after that, based on usage",
-          "Unused hours never expire",
-          "Monthly retainer keeps our team on standby"
+          "Comprend 10 heures pour bien démarrer",
+          "Facturation hebdomadaire basée sur l'utilisation",
+          "Utilisez vos heures quand vous voulez, sans limite de temps",
+          "Un forfait mensuel maintient notre équipe à votre disposition"
         ]
       }
     ],
@@ -243,13 +243,13 @@
         ]
       },
       {
-        "name": "Solutions personnalisées pour entreprises",
+        "name": "Solutions sur mesure",
         "features": [
-          "Flux de travail sur mesure pour les équipes de taille moyenne à grande",
-          "Intégration fluide avec vos outils et systèmes existants",
-          "Architecture évolutive pensée pour accompagner votre croissance",
-          "Solutions personnalisées conçues selon vos besoins spécifiques",
-          "Contactez-nous pour en savoir plus et construire ensemble votre solution sur mesure"
+          "Workflows adaptés aux équipes moyennes et grandes",
+          "Intégration à vos outils et systèmes",
+          "Architecture évolutive pour accompagner votre croissance",
+          "Solutions conçues selon vos besoins",
+          "Contactez-nous pour en savoir plus"
         ]
       }
     ],
@@ -392,7 +392,7 @@
     "payg_packages": [
       {
         "name": "Payez à l'utilisation",
-        "info": "La formule la plus flexible",
+        "description": "La formule la plus flexible",
         "features": [
           "1 000 $ pour 10 heures prépayées",
           "90 $/heure après les 10 premières heures",

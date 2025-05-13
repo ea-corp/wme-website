@@ -64,7 +64,10 @@ const ClientComponent = ({ dict }: { dict: any }) => {
                         <div className="flex justify-between">
                             <h3 className="text-lg leading-6 font-medium text-gray-900">
                                 {pkg.name}
+                                <p className="text-sm text-gray-500">{pkg.description}</p>
+
                             </h3>
+
                             <div className="text-right">
                                 <p className="text-sm text-gray-400">{pkg.validity}</p>
                             </div>
