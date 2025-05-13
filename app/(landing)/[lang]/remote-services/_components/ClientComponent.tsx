@@ -40,7 +40,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
     return (
         <div className="mx-auto max-w-7xl px-4">
             <div className="flex text-gray-800 items-center justify-center py-12 font-semibold leading-tight tracking-tight">
-                <h2 className="text-3xl flex items-center justify-center">
+                <h2 className="text-2xl flex items-center justify-center text-center">
                     {subtitle}
                     <br />
                     {subtitle2}

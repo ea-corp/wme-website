@@ -78,9 +78,12 @@ const WorldMapClient = ({ dict }: any) => {
 
     return (
         <div className="">
-            <h2 className="text-4xl font-bold py-16  text-gray-800 text-center">
+            <h2 className="text-4xl font-bold pt-16 mb-4  text-gray-800 text-center">
                 {dict.ourTeam.title}
             </h2>
+            <p className="text-xl md:mx-72 mx-4 text-center pb-16">
+                {dict.ourTeam.description}
+            </p>
 
             <div className="relative w-full h-auto mb-10 flex justify-center mt-8">
                 <img src="/images/world-2.svg" className="w-3/4 h-auto" alt="World Map" />

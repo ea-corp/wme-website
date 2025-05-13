@@ -3,6 +3,7 @@ import Image from "next/image";
 interface IncitationButtonProps {
   dictionary: {
     title: string;
+    title2: string;
     subtitle: string;
     description: string;
     cta: {
@@ -22,19 +23,13 @@ export default function IncitationButton({ dictionary }: IncitationButtonProps) 
             <h2 className="text-4xl md:text-6xl font-bold md:font-semibold text-[#2d2d2d] text-left px-4 md:px-0">
               {dictionary.title}
             </h2>
+            <p className="mt-8 text-xl">{dictionary.title2}</p>
             <div className="hidden md:flex">
               <a
-                href={dictionary.cta.url}
-                target="_blank"
-                className="bg-[#5949d5] text-white py-2 px-4 mt-8 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
+                href="#choosepackage"
+                className="bg-[#f4d752] text-black py-2 px-4 mt-8 rounded-xl flex items-center text-sm md:py-4 md:px-6 md:text-md"
               >
                 <p className="font-bold pr-2 text-sm md:text-md">{dictionary.cta.text}</p>
-                <Image
-                  src="images/monday-com_only_logo.svg"
-                  alt="monday.com logo"
-                  width={35}
-                  height={35}
-                />
               </a>
             </div>
           </div>

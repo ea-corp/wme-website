@@ -24,10 +24,11 @@
   },
   "incitationbutton": {
     "title": "Tirez le meilleur parti de monday.com pour votre entreprise",
+    "title2": "WME Solutions aide les entreprises du monde entier à concevoir des flux de travail plus intelligents sur Monday.com. De la stratégie à l’exécution, nous apportons clarté et automatisation à vos opérations.",
     "subtitle": "Dépassé en essayant de comprendre monday.com ?",
     "description": "Lorsque vous commencez à utiliser Monday.com, déterminer comment structurer le flux de travail de votre entreprise peut être intimidant. Monday.com est un outil tellement polyvalent qu’il est difficile de savoir par où commencer et quelles fonctionnalités utiliser ? WME Solutions a aidé plus de 100 clients à simplifier leurs processus métier grâce à monday.com.",
     "cta": {
-      "text": "Essayez monday.com",
+      "text": "Voir les offres",
       "url": "https://try.monday.com/wme"
     },
     "image": "/images/landing-image.png"
@@ -167,7 +168,7 @@
   "remoteServices": {
     "title": "Services à distance",
     "subtitle": "Choisissez le forfait de travail à distance adapté à votre entreprise.",
-    "subtitle2": "Que vous débutiez ou développiez des opérations complexes, nous proposons des forfaits flexibles adaptés à vos besoins.",
+    "subtitle2": "Démarrage ou croissance, nos solutions flexibles répondent à vos besoins.",
     "implementation_bundles_title": "Packages d’implémentation (forfaits horaires)",
     "implementation_bundles_description": "Des forfaits avec un nombre d’heures défini",
     "paygTitle": "Paiement à l'utilisation – Flexibilité totale, sans expiration",
@@ -344,7 +345,7 @@
   "remoteServicesUSD": {
     "title": "Services à distance",
     "subtitle": "Choisissez le forfait de travail à distance adapté à votre entreprise.",
-    "subtitle2": "Que vous débutiez ou développiez des opérations complexes, nous proposons des forfaits flexibles adaptés à vos besoins.",
+    "subtitle2": "Démarrage ou croissance, nos solutions flexibles répondent à vos besoins.",
     "implementation_bundles_title": "Packages d’implémentation (forfaits horaires)",
     "implementation_bundles_description": "Des forfaits avec un nombre d’heures défini",
     "paygTitle": "Paiement à l'utilisation – Flexibilité totale, sans expiration",
@@ -880,6 +881,7 @@
   },
   "ourTeam": {
     "title": "Notre équipe internationale",
+    "description" : "Découvrez les personnes derrière WME Solutions, un cabinet spécialisé dans les implémentations de Monday.com, l’automatisation des workflows et l’optimisation des processus digitaux.",
     "employeeLocations": [
       {
         "id": 4,

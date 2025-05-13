@@ -24,10 +24,11 @@
   },
   "incitationbutton": {
     "title": "Get the most out of monday.com for your business",
+    "title2": "WME Solutions helps businesses around the world build smarter workflows on Monday.com. From strategy to execution, we bring clarity and automation to your operations.",
     "subtitle": "Overwhelmed trying to figure out monday.com?",
     "description": "When you get started with Monday.com, figuring out how to structure your company workflow can be overwhelming. Monday.com is such a versatile tool, how do you know where to start and what features to use? WME Solutions have helped over 100 customers to streamline their business processes using monday.com.",
     "cta": {
-      "text": "Try monday.com",
+      "text": "View Services",
       "url": "https://try.monday.com/wme"
     },
     "image": "/images/landing-image.png"
@@ -167,7 +168,7 @@
   "remoteServices": {
     "title": "Remote Services",
     "subtitle": "Choose the Right Remote Workflow Package for Your Business.",
-    "subtitle2": "Whether you're just starting or scaling complex operations, we offer flexible packages tailored to your needs.",
+    "subtitle2": "Whether you're starting or scaling operations, we offer flexible packages tailored to your needs.",
     "implementation_bundles_title": "Implementation Bundles (Hourly Packages)",
     "implementation_bundles_description": "Structured packages with a set number of hours and typical workflow outcomes.",
     "paygTitle": "Pay As You Go - Full Flexibility, No Expiry",
@@ -344,7 +345,7 @@
   "remoteServicesUSD": {
     "title": "Remote Services",
     "subtitle": "Choose the Right Remote Workflow Package for Your Business.",
-    "subtitle2": "Whether you're just starting or scaling complex operations, we offer flexible packages tailored to your needs.",
+    "subtitle2": "Whether you're starting or scaling operations, we offer flexible packages tailored to your needs.",
     "implementation_bundles_title": "Implementation Bundles (Hourly Packages)",
     "implementation_bundles_description": "Structured packages with a set number of hours and typical workflow outcomes.",
     "paygTitle": "Pay As You Go - Full Flexibility, No Expiry",
@@ -877,6 +878,7 @@
   },
   "ourTeam": {
     "title": "Our Global Team",
+    "description": "Meet the people behind WME Solutions, a consultancy specializing in Monday.com implementations, workflow automation, and digital process improvement. Our team brings deep expertise in optimizing operations for businesses across industries.",
     "employeeLocations": [
       {
         "id": 4,
