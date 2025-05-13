@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "home": "Accueil",
     "services": "Services",
     "remoteImplementation": "Implémentation à distance",
     "onSiteConsulting": "Conseil sur site",
@@ -886,7 +887,7 @@
       {
         "id": 4,
         "name": "Eddy Azoulay",
-        "position": "Fondateur & Directeur Générale",
+        "position": "Fondateur & Directeur Général",
         "country": "Thaïlande",
         "img": "/images/team/eddy.png",
         "lat": -2.8688,

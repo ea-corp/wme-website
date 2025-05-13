@@ -25,14 +25,7 @@ interface Dictionary {
     similarEfficiency: string;
   };
   storiesWorthTelling: any;
-  incitationbutton: {
-    title: string;
-    title2: string;
-    subtitle: string;
-    description: string;
-    cta: { text: string; url: string };
-    image: string;
-  };
+  incitationbutton: any;
   ourservices: {
     title: string;
     description: string;

@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "home": "Home",
     "services": "Services",
     "remoteImplementation": "Remote Implementation",
     "onSiteConsulting": "On-Site Consulting",

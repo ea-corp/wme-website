@@ -18,50 +18,59 @@ interface Route {
   href: string;
 }
 
-const guestRoutes: Route[] = [
+interface MobileSidebarProps {
+  dict: any; // Remplacez 'any' par le type approprié de votre dictionnaire
+  lang: string;
+}
+
+const guestRoutes = (dict: any, lang: string) => [
   {
-    label: "Home",
-    href: "/",
+    label: dict.navbar.home,
+    href: `/${lang}`,
   },
   {
-    label: "Services - Remote Services",
-    href: "/remote-services",
+    label: dict.navbar.remoteImplementation,
+    href: `/${lang}/remote-services`,
   },
   {
-    label: "Services - On Site Consulting",
-    href: "/on-site-implementation-packages",
+    label: dict.navbar.onSiteConsulting,
+    href: `/${lang}/on-site-implementation-packages`,
   },
   {
-    label: "Stories Worth Telling",
-    href: "/stories-worth-telling",
+    label: dict.navbar.storiesWorthTelling,
+    href: `/${lang}/stories-worth-telling`,
   },
   {
-    label: "Our Team",
-    href: "/our-team",
+    label: dict.navbar.ourTeam,
+    href: `/${lang}/our-team`,
   },
   {
-    label: "Portfolio",
-    href: "/portfolio-wme",
+    label: dict.navbar.portfolio,
+    href: `/${lang}/portfolio-wme`,
   },
   {
-    label: "Apps",
-    href: "/apps",
+    label: dict.navbar.apps,
+    href: `/${lang}/apps`,
   },
 ];
 
 interface SidebarItemProps {
   label: string;
   href: string;
+  lang: string;
 }
 
-const SidebarItem = ({ label, href }: SidebarItemProps) => {
+const SidebarItem = ({ label, href, lang }: SidebarItemProps) => {
   const pathname = usePathname();
   const router = useRouter();
 
+  const homeHref = `/${lang}`;
+
   const isActive =
-    (pathname === "/" && href === "/") ||
-    pathname === href ||
-    pathname?.startsWith(`${href}/`);
+    // exact match pour le home
+    (href === homeHref && pathname === homeHref) ||
+    // pour les autres routes : exact ou startsWith
+    (href !== homeHref && (pathname === href || pathname.startsWith(`${href}/`)));
 
   const onClick = () => {
     router.push(href);
@@ -87,12 +96,11 @@ const SidebarItem = ({ label, href }: SidebarItemProps) => {
   );
 };
 
-export const MobileSidebar = ({ lang }: { lang: string }) => {
+export const MobileSidebar = ({ dict, lang }: MobileSidebarProps) => {
   const pathname = usePathname();
   const router = useRouter();
 
   const handleLanguageChange = (value: string) => {
-    // Gérer le cas de la route racine et des autres routes
     const newPath = pathname === `/${lang}`
       ? `/${value}`
       : pathname.replace(`/${lang}/`, `/${value}/`);
@@ -107,14 +115,14 @@ export const MobileSidebar = ({ lang }: { lang: string }) => {
       <SheetContent side="right" className="p-0 bg-white">
         <div className="h-full border-r flex flex-col overflow-y-auto bg-gray-white shadow-sm">
           <div className="p-6">
-            <Link href="/">
+            <Link href={`/${lang}`}>
               <SheetClose>
                 <Logo />
               </SheetClose>
             </Link>
           </div>
 
-          <div className="px-6 mb-4">
+          <div className="px-6 mb-4 z-50">
             <Select onValueChange={handleLanguageChange} defaultValue={lang}>
               <SelectTrigger className="w-[100px]">
                 <div className="flex items-center">
@@ -133,9 +141,8 @@ export const MobileSidebar = ({ lang }: { lang: string }) => {
                     />
                     EN
                   </div>
-
                 </SelectItem>
-                <SelectItem value="fr" >
+                <SelectItem value="fr">
                   <div className="flex items-center gap-2">
                     <Image
                       src="/images/french_flag.png"
@@ -146,16 +153,15 @@ export const MobileSidebar = ({ lang }: { lang: string }) => {
                     />
                     FR
                   </div>
-
                 </SelectItem>
               </SelectContent>
             </Select>
           </div>
 
-          <div className="flex flex-col w-full">
-            {guestRoutes.map((route, index) => (
+          <div className="flex flex-col w-full mt-12">
+            {guestRoutes(dict, lang).map((route, index) => (
               <SheetClose key={index}>
-                <SidebarItem label={route.label} href={route.href} />
+                <SidebarItem label={route.label} href={route.href} lang={lang} />
               </SheetClose>
             ))}
           </div>

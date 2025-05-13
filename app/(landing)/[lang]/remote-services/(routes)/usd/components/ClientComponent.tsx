@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Check, Package, ScreenShare, Zap } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay"
 import Link from "next/link";
 import {
     Carousel,
@@ -33,6 +34,10 @@ const ClientComponent = ({ dict }: { dict: any }) => {
         otherPackages,
         reviews,
     } = dict.remoteServicesUSD;
+
+    const plugin = useRef(
+        Autoplay({ delay: 2000, stopOnInteraction: true })
+    )
 
     return (
         <div className="mx-auto max-w-7xl px-4">
@@ -92,7 +97,7 @@ const ClientComponent = ({ dict }: { dict: any }) => {
 
 
             <div className="flex flex-col items-center justify-center py-4 md:py-12">
-                <h2 className="text-2xl font-medium flex items-center mb-2">
+                <h2 className="text-2xl font-medium flex items-center mb-2 text-center">
                     <Zap size={35} className="text-[#f4d752]" />
                     &nbsp; {paygTitle}
                 </h2>
@@ -198,22 +203,47 @@ const ClientComponent = ({ dict }: { dict: any }) => {
             </div>
 
             <div className="flex items-center justify-center mt-16 mb-12">
-                <Carousel className="w-10/12">
-                    <CarouselContent>
-                        {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, groupIndex) => (
-                            <CarouselItem key={groupIndex} className="grid grid-cols-2 grid-rows-2 gap-4">
-                                {reviews.slice(groupIndex * 4, groupIndex * 4 + 4).map((review: any, index: number) => (
-                                    <div key={index} className="p-1 h-full">
-                                        <ReviewCard {...review} />
-                                    </div>
-                                ))}
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <CarouselPrevious aria-label="Previous review" className="-left-20" />
-                    <CarouselNext aria-label="Next review" className="-right-20" />
-                </Carousel>
+                {/* === MOBILE : 1 review per slide === */}
+                <div className="w-10/12 block sm:hidden">
+                    <Carousel
+                        plugins={[plugin.current as unknown as any]}
+                        onMouseEnter={plugin.current.stop}
+                        onMouseLeave={plugin.current.reset}
+                    >
+                        <CarouselContent>
+                            {reviews.map((review: any, idx: any) => (
+                                <CarouselItem key={idx} className="p-1">
+                                    <ReviewCard {...review} />
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious aria-label="Previous review" className="-left-20" />
+                        <CarouselNext aria-label="Next review" className="-right-20" />
+                    </Carousel>
+                </div>
+
+                {/* === DESKTOP (>=sm) : 4 reviews per slide === */}
+                <div className="w-10/12 hidden sm:block">
+                    <Carousel>
+                        <CarouselContent>
+                            {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, groupIndex) => (
+                                <CarouselItem key={groupIndex} className="grid grid-cols-2 grid-rows-2 gap-4">
+                                    {reviews
+                                        .slice(groupIndex * 4, groupIndex * 4 + 4)
+                                        .map((review: any, index: number) => (
+                                            <div key={index} className="p-1 h-full">
+                                                <ReviewCard {...review} />
+                                            </div>
+                                        ))}
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious aria-label="Previous review" className="-left-20" />
+                        <CarouselNext aria-label="Next review" className="-right-20" />
+                    </Carousel>
+                </div>
             </div>
+
 
             <ClientFaqComponent dict={dict} />
 

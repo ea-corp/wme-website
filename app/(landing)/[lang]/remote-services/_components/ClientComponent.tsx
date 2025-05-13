@@ -13,6 +13,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import Faq from "./faq";
+import Autoplay from "embla-carousel-autoplay";
 
 const ClientComponent = ({ dict }: { dict: any }) => {
     const {
@@ -37,6 +38,10 @@ const ClientComponent = ({ dict }: { dict: any }) => {
         reviews,
     } = dict.remoteServices;
 
+    const plugin = useRef(
+        Autoplay({ delay: 2000, stopOnInteraction: true })
+    )
+
     return (
         <div className="mx-auto max-w-7xl px-4">
             <div className="flex text-gray-800 items-center justify-center py-12 font-semibold leading-tight tracking-tight">
@@ -48,11 +53,11 @@ const ClientComponent = ({ dict }: { dict: any }) => {
             </div>
 
             <div className="flex flex-col items-center justify-center py-4 md:py-12">
-                <h2 className="text-2xl font-medium flex items-center mb-2">
+                <h2 className="text-2xl font-medium flex items-center mb-2 text-center">
                     <ScreenShare size={35} className="text-[#f4d752]" />
                     &nbsp; {implementation_bundles_title}
                 </h2>
-                <p>{implementation_bundles_description}</p>
+                <p className="text-center">{implementation_bundles_description}</p>
             </div>
 
             <div className="flex justify-center flex-wrap">
@@ -94,11 +99,11 @@ const ClientComponent = ({ dict }: { dict: any }) => {
             </div>
 
             <div className="flex flex-col items-center justify-center py-4 md:py-12">
-                <h2 className="text-2xl font-medium flex items-center mb-2">
+                <h2 className="text-2xl font-medium flex items-center mb-2 text-center">
                     <Zap size={35} className="text-[#f4d752]" />
                     &nbsp; {paygTitle}
                 </h2>
-                <p>{paygDescription}</p>
+                <p className="text-center">{paygDescription}</p>
             </div>
             <div className="flex justify-center flex-wrap">
                 {payg_packages.map((pkg: any) => (
@@ -197,21 +202,45 @@ const ClientComponent = ({ dict }: { dict: any }) => {
             </div>
 
             <div className="flex items-center justify-center mt-16 mb-12">
-                <Carousel className="w-10/12">
-                    <CarouselContent>
-                        {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, groupIndex) => (
-                            <CarouselItem key={groupIndex} className="grid grid-cols-2 grid-rows-2 gap-4">
-                                {reviews.slice(groupIndex * 4, groupIndex * 4 + 4).map((review: any, index: number) => (
-                                    <div key={index} className="p-1 h-full">
-                                        <ReviewCard {...review} />
-                                    </div>
-                                ))}
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <CarouselPrevious aria-label="Previous review" className="-left-20" />
-                    <CarouselNext aria-label="Next review" className="-right-20" />
-                </Carousel>
+                {/* === MOBILE : 1 review per slide === */}
+                <div className="w-10/12 block sm:hidden">
+                    <Carousel
+                        plugins={[plugin.current as unknown as any]}
+                        onMouseEnter={plugin.current.stop}
+                        onMouseLeave={plugin.current.reset}
+                    >
+                        <CarouselContent>
+                            {reviews.map((review: any, idx: any) => (
+                                <CarouselItem key={idx} className="p-1">
+                                    <ReviewCard {...review} />
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious aria-label="Previous review" className="-left-20" />
+                        <CarouselNext aria-label="Next review" className="-right-20" />
+                    </Carousel>
+                </div>
+
+                {/* === DESKTOP (>=sm) : 4 reviews per slide === */}
+                <div className="w-10/12 hidden sm:block">
+                    <Carousel>
+                        <CarouselContent>
+                            {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, groupIndex) => (
+                                <CarouselItem key={groupIndex} className="grid grid-cols-2 grid-rows-2 gap-4">
+                                    {reviews
+                                        .slice(groupIndex * 4, groupIndex * 4 + 4)
+                                        .map((review: any, index: number) => (
+                                            <div key={index} className="p-1 h-full">
+                                                <ReviewCard {...review} />
+                                            </div>
+                                        ))}
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious aria-label="Previous review" className="-left-20" />
+                        <CarouselNext aria-label="Next review" className="-right-20" />
+                    </Carousel>
+                </div>
             </div>
 
             <Faq dict={dict} />

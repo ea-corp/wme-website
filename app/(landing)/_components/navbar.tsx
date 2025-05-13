@@ -8,9 +8,9 @@ interface NavbarProps {
 
 export const Navbar = ({ dict, lang }: NavbarProps) => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-full flex items-center bg-white shadow">
+    <div className="fixed top-0 left-0 right-0 z-40 w-full flex items-center bg-white shadow">
       <NavbarRoutes dict={dict} lang={lang} />
-      <MobileSidebar lang={lang} />
+      <MobileSidebar dict={dict} lang={lang} />
     </div>
   );
 };

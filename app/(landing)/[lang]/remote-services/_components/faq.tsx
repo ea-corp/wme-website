@@ -31,7 +31,7 @@ const ClientFaqComponent = ({ dict }: { dict: any }) => {
             className="text-medium font-semibold hover:bg-gray-200 bg-gray-100 py-2 flex items-center justify-between"
           >
             <span>{section.title}</span>
-            {expanded === index ? <ChevronUp /> : <ChevronDown />}
+            <span>{expanded === index ? <ChevronUp size={20} /> : <ChevronDown size={20} />}</span>
           </AccordionSummary>
           <AccordionDetails>
             {index === 1 ? ( // Vérifie si c'est la deuxième section (index 1)
