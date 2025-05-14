@@ -992,7 +992,8 @@
         "Resource Management",
         "Survey",
         "Task Management",
-        "Time tracking"
+        "Time tracking",
+        "AI"
       ]
     },
     "projects": [
@@ -1671,6 +1672,69 @@
         "image": "/images/portfolio/hr/image-31.png",
         "tags": ["Human Resources", "Project Overview"],
         "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 94,
+        "title": "AI-Driven Material Intake and Document Matching Process 1/2",
+        "description": "This diagram illustrates an AI-powered intake and validation workflow for furniture manufacturing. It extracts materials and customer information from email updates and layout files, merges the data into a central Monday.com document, and compares it to the original order file. The system flags discrepancies automatically, reducing manual review and minimizing human error in the production process.",
+        "image": "/images/portfolio/manufacturing/image-12.png",
+        "tags": ["Manufacturing", "Process Mapping"]
+      },
+      {
+        "id": 95,
+        "title": "AI-Driven Material Intake and Document Matching Process 2/2",
+        "description": "This Monday.com board supports an AI-powered workflow for validating  furniture orders. It tracks each item’s materials and layout data extracted from the update section and files, then compares the combined results against original order files. AI triggers status highlight inconsistencies or confirm accuracy, helping reduce manual checks and minimize human error in the manufacturing process.",
+        "image": "/images/portfolio/manufacturing/image-13.png",
+        "tags": ["Manufacturing", "AI"]
+      },
+      {
+        "id": 96,
+        "title": "Product Sourcing and Manufacturing Workflow Mapping",
+        "description": "Mapped the complete sourcing and manufacturing workflow for a product sourced from China and produced in North America.The process flow outlines key steps from initial development request to final product delivery, identifies stakeholder involvement across multiple teams, maps task dependencies, and tracks critical production milestones to ensure efficient project execution.",
+        "image": "/images/portfolio/manufacturing/image-14.png",
+        "tags": ["Manufacturing", "Process Mapping"]
+      },
+      {
+        "id": 97,
+        "title": "Executives KPI Tracking – Monthly View",
+        "description": "Built a dynamic KPI dashboard in monday.com for an eCommerce fulfillment company, where each KPI has its own AI-powered calculation logic. The board enables granular, department-level tracking of key metrics on a monthly basis.",
+        "image": "/images/portfolio/logistic/image-6.png",
+        "tags": ["Logistic", "KPI", "AI"]
+      },
+      {
+        "id": 98,
+        "title": "Executives KPI Tracking – Quarterly View",
+        "description": "Monthly KPIs automatically roll up into a quarterly view, allowing leadership to monitor broader performance trends and compare departmental progress throughout each quarter.",
+        "image": "/images/portfolio/logistic/image-7.png",
+        "tags": ["Logistic", "KPI"]
+      },
+      {
+        "id": 99,
+        "title": "Executives KPI Tracking – Annual View",
+        "description": "Quarterly data is rolled into an annual dashboard, making it easy to compare quarter-over-quarter progress and evaluate year-end performance across all departments.",
+        "image": "/images/portfolio/logistic/image-8.png",
+        "tags": ["Logistic", "KPI"]
+      },
+      {
+        "id": 100,
+        "title": "Dynamic Knowledge Base in Monday.com (1)",
+        "description": "For this project, we built an AI-powered chat support bot for a real estate company's website. It helps leads find their ideal property by matching their preferences with live listings managed in monday.com, which serves as the dynamic knowledge base updated daily.",
+        "image": "/images/portfolio/real-estate/image-17.png",
+        "tags": ["Real Estate", "AI"]
+      },
+      {
+        "id": 101,
+        "title": "AI Bot Engaging with Leads (2) ",
+        "description": "The website chat bot engages visitors by asking key questions about their property needs, such as size, budget, and preferred square meters. This interactive flow captures the lead's exact requirements in a natural, user-friendly way.",
+        "image": "/images/portfolio/real-estate/image-18.png",
+        "tags": ["Real Estate", "AI"]
+      },
+      {
+        "id": 102,
+        "title": "Tailored Property Recommendations (3)",
+        "description": "Based on the lead's answers, the bot searches the monday.com database in real time and suggests the best matching units. This delivers instant, relevant results and streamlines the property search experience.",
+        "image": "/images/portfolio/real-estate/image-19.png",
+        "tags": ["Real Estate", "AI"]
       }
     ]
   },

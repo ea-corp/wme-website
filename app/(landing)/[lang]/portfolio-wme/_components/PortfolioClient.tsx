@@ -60,17 +60,19 @@ export default function Portfolio({ dict }: { dict: any }) {
         : dict.portfolio.projects
 
     // Group projects by section if the active filter is an industry
-    const groupedProjects =
-        activeFilter === "Manufacturing" || activeFilter === "Real Estate" || activeFilter === "Human Resources"
-            ? filteredProjects.reduce((acc: any, project: any) => {
-                const section = project.section || ""
-                if (!acc[section]) {
-                    acc[section] = []
-                }
-                acc[section].push(project)
-                return acc
-            }, {})
-            : { "": filteredProjects }
+    const isIndustryFilter = dict.portfolio.filterCategories.Industry.includes(activeFilter);
+
+    const groupedProjects = isIndustryFilter
+        ? filteredProjects.reduce((acc: any, project: any) => {
+            const section = project.section || "";
+            if (!acc[section]) {
+                acc[section] = [];
+            }
+            acc[section].push(project);
+            return acc;
+        }, {})
+        : { "": filteredProjects };
+
 
     // Set active filter and update filter category if necessary
     const setFilter = (tag: string) => {

@@ -995,7 +995,8 @@
         "Gestion des ressources",
         "Sondage",
         "Gestion des tâches",
-        "Suivi du temps"
+        "Suivi du temps",
+        "IA"
       ]
     },
     "projects": [
@@ -1674,6 +1675,69 @@
         "image": "/images/portfolio/hr/image-31.png",
         "tags": ["Ressources Humaines", "Vue d’ensemble du projet"],
         "section": "Onboarding/Offboarding"
+      },
+      {
+        "id": 94,
+        "title": "Processus d’Intégration des Matériaux et de Correspondance des Documents Piloté par l’IA 1/2",
+        "description": "’intégration et de validation alimenté par l’IA pour la fabrication de meubles. Il extrait les matériaux et les informations clients à partir des mises à jour par e-mail et des fichiers de plan, fusionne les données dans un document central sur Monday.com, puis les compare au fichier de commande initial. Le système signale automatiquement les écarts, réduisant ainsi les vérifications manuelles et minimisant les erreurs humaines dans le processus de production.",
+        "image": "/images/portfolio/manufacturing/image-12.png",
+        "tags": ["Production", "CartographieProcessus"]
+      },
+      {
+        "id": 95,
+        "title": "Processus d'intégration des matériaux et de rapprochement de documents piloté par l'IA 2/2",
+        "description": "Ce tableau Monday.com prend en charge un flux de travail optimisé par l'IA pour valider les commandes de mobilier. Il suit les données des matériaux et de la disposition de chaque article extraites de la section de mise à jour et des fichiers, puis compare les résultats combinés aux fichiers de commande d'origine. L'IA déclenche des alertes de statut en cas d'incohérences ou confirme l'exactitude, contribuant ainsi à réduire les vérifications manuelles et à minimiser les erreurs humaines dans le processus de fabrication.",
+        "image": "/images/portfolio/manufacturing/image-13.png",
+        "tags": ["Production", "IA"]
+      },
+      {
+        "id": 96,
+        "title": "Cartographie du flux de travail pour l’approvisionnement et la fabrication de produits",
+        "description": "Cartographie complète du flux d’approvisionnement et de fabrication pour un produit sourcé en Chine et fabriqué en Amérique du Nord. Le flux de processus détaille les étapes clés depuis la demande initiale de développement jusqu’à la livraison finale du produit, identifie l’implication des parties prenantes au sein de plusieurs équipes, cartographie les dépendances entre les tâches et suit les jalons critiques de production afin d’assurer une exécution efficace du projet.",
+        "image": "/images/portfolio/manufacturing/image-14.png",
+        "tags": ["Production", "CartographieProcessus"]
+      },
+      {
+        "id": 97,
+        "title": "Suivi des KPI pour les cadres – Vue mensuelle",
+        "description": "Création d'un tableau de bord KPI dynamique dans monday.com pour une entreprise de logistique e-commerce, où chaque KPI dispose de sa propre logique de calcul alimentée par l'IA. Le tableau permet un suivi détaillé des indicateurs clés par département sur une base mensuelle.",
+        "image": "/images/portfolio/logistic/image-6.png",
+        "tags": ["Logistique", "KPI", "IA"]
+      },
+      {
+        "id": 98,
+        "title": "Suivi des KPI pour les dirigeants – Vue trimestrielle",
+        "description": "Les KPI mensuels sont automatiquement consolidés en une vue trimestrielle, permettant à la direction de suivre les grandes tendances de performance et de comparer les progrès des différentes équipes au cours de chaque trimestre.",
+        "image": "/images/portfolio/logistic/image-7.png",
+        "tags": ["Logistique", "KPI"]
+      },
+      {
+        "id": 99,
+        "title": "Suivi des KPI des dirigeants – Vue annuelle",
+        "description": "ans un tableau de bord annuel, facilitant la comparaison des progrès d'un trimestre à l'autre et l'évaluation des performances de fin d'année dans l'ensemble des départements.",
+        "image": "/images/portfolio/logistic/image-8.png",
+        "tags": ["Logistique", "KPI"]
+      },
+      {
+        "id": 100,
+        "title": "Base de connaissances dynamique dans Monday.com (1)",
+        "description": "Pour ce projet, nous avons développé un assistant de support conversationnel alimenté par l’IA pour le site web d’une entreprise immobilière. Il aide les prospects à trouver la propriété idéale en faisant correspondre leurs préférences avec les annonces en temps réel gérées dans monday.com, qui sert de base de connaissances dynamique mise à jour quotidiennement.",
+        "image": "/images/portfolio/real-estate/image-17.png",
+        "tags": ["Immobilier", "IA"]
+      },
+      {
+        "id": 101,
+        "title": "Bot IA Engagé avec les Prospects (2) ",
+        "description": "osant des questions clés sur leurs besoins immobiliers, telles que la surface souhaitée, le budget et le nombre de mètres carrés préférés. Ce processus interactif permet de recueillir les exigences précises du prospect de manière naturelle.",
+        "image": "/images/portfolio/real-estate/image-18.png",
+        "tags": ["Immobilier", "IA"]
+      },
+      {
+        "id": 102,
+        "title": "Recommandations de biens personnalisées (3)",
+        "description": "En fonction des réponses du prospect, le bot interroge en temps réel la base de données monday.com et propose les unités les plus adaptées. Cela permet d’obtenir des résultats instantanés et pertinents, tout en simplifiant l’expérience de recherche de biens immobiliers.",
+        "image": "/images/portfolio/real-estate/image-19.png",
+        "tags": ["Immobilier", "IA"]
       }
     ]
   },

@@ -31,8 +31,6 @@ const ClientComponent = ({ dict }: { dict: any }) => {
         payg_cta_description,
         other_cta_description,
         otherPackagesTitle,
-        contactUsMessage,
-        bookFreeCallButton,
         packages,
         otherPackages,
         reviews,
