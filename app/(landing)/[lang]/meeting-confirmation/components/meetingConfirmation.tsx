@@ -180,7 +180,7 @@ function MeetingConfirmation({ dict }: any) {
                     <h2 className="text-2xl font-semibold mb-3 md:mb-6 border-b pb-3">{dict.meetingConfirmation.whileYouWait}</h2>
                     <div className="grid gap-4 sm:grid-cols-2">
                         <Link
-                            href="https://wme.us.com/remote-services"
+                            href="https://link.wme-solutions.com/remote"
                             className="group px-4 py-2 md:p-6 bg-gray-100 hover:bg-gray-200  active:bg-gray-300 rounded-xl transition-all duration-300"
                         >
                             <div className="flex flex-col h-full">
@@ -195,7 +195,7 @@ function MeetingConfirmation({ dict }: any) {
                         </Link>
 
                         <Link
-                            href="https://wme.us.com/on-site-implementation-packages"
+                            href="https://link.wme-solutions.com/onsite"
                             className="group px-4 py-2 md:p-6 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
                         >
                             <div className="flex flex-col h-full">
@@ -208,7 +208,7 @@ function MeetingConfirmation({ dict }: any) {
                         </Link>
 
                         <Link
-                            href="https://wme.us.com/stories-worth-telling"
+                            href="https://link.wme-solutions.com/success-stories"
                             className="group px-4 py-2 md:p-6 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
                         >
                             <div className="flex flex-col h-full">
@@ -223,7 +223,7 @@ function MeetingConfirmation({ dict }: any) {
                         </Link>
 
                         <Link
-                            href="https://wme.us.com/portfolio-wme"
+                            href="https://link.wme-solutions.com/portfolio"
                             className="group px-4 py-2 md:p-6 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-xl transition-all duration-300"
                         >
                             <div className="flex flex-col h-full">
