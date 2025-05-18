@@ -946,6 +946,17 @@
         "lon": -54.006,
         "offsetDirection": "left",
         "offsetDistance": 22
+      },
+      {
+        "id": 6,
+        "name": "William Ques",
+        "position": "Security & Web Expert",
+        "country": "France",
+        "img": "/images/team/william.png",
+        "lat": 45.5074,
+        "lon": -2.1278,
+        "offsetDirection": "left",
+        "offsetDistance": 34
       }
     ]
   },

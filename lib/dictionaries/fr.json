@@ -882,7 +882,7 @@
   },
   "ourTeam": {
     "title": "Notre équipe internationale",
-    "description" : "Découvrez les personnes derrière WME Solutions, un cabinet spécialisé dans les implémentations de Monday.com, l’automatisation des workflows et l’optimisation des processus digitaux.",
+    "description": "Découvrez les personnes derrière WME Solutions, un cabinet spécialisé dans les implémentations de Monday.com, l’automatisation des workflows et l’optimisation des processus digitaux.",
     "employeeLocations": [
       {
         "id": 4,
@@ -949,6 +949,17 @@
         "lon": -54.006,
         "offsetDirection": "left",
         "offsetDistance": 22
+      },
+      {
+        "id": 6,
+        "name": "William Ques",
+        "position": "Expert Sécurité & Web",
+        "country": "France",
+        "img": "/images/team/william.png",
+        "lat": 45.5074,
+        "lon": -2.1278,
+        "offsetDirection": "left",
+        "offsetDistance": 34
       }
     ]
   },
