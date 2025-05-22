@@ -6,6 +6,7 @@ interface PageProps {
   params: { lang: string };
 }
 
+
 export default async function PortfolioPage({ params }: PageProps) {
   const lang = params.lang;
   const dict = await getDictionary(lang);

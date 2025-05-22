@@ -20,9 +20,9 @@ export default function IncitationButton({ dictionary }: IncitationButtonProps) 
       <div className="flex py-20 md:py-24 flex-col md:flex-row">
         <div className="flex-1 flex justify-center items-center flex-col">
           <div>
-            <h2 className="text-4xl md:text-6xl font-bold md:font-semibold text-[#2d2d2d] text-left">
+            <h1 className="text-4xl md:text-6xl font-bold md:font-semibold text-[#2d2d2d] text-left">
               {dictionary.title}
-            </h2>
+            </h1>
             <p className="mt-8 text-xl">{dictionary.title2}</p>
             <div className="hidden md:flex">
               <a

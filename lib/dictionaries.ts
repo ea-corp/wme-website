@@ -1,6 +1,9 @@
 import "server-only";
 
 interface Dictionary {
+  appsPage: any;
+  metaDescription: string;
+  metaTitle: string;
   onsiteConsultingUSD: {
     remoteServicesTitle: any;
     remoteImplementationTitle: any;

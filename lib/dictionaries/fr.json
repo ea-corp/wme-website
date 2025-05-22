@@ -1,4 +1,6 @@
 {
+  "metaTitle": "Experts en automatisation avec Monday.com | WME Solutions",
+  "metaDescription": "Améliorez votre productivité avec des workflows personnalisés sur Monday.com et un accompagnement expert. Découvrez comment WME peut simplifier vos opérations.",
   "navbar": {
     "home": "Accueil",
     "services": "Services",
@@ -857,6 +859,8 @@
   },
 
   "storiesWorthTelling": {
+    "metaTitle": "Études de cas clients sur Monday.com | WME Solutions",
+    "metaDescription": "Découvrez comment nous avons transformé les opérations de nos clients grâce à Monday.com et à l’automatisation. Des résultats concrets à découvrir.",
     "title": "Des histoires qui méritent d'être racontées",
     "recentActivities": "Nos activités récentes",
     "successStories": "Histoires de succès d’entreprises reconnues",
@@ -881,6 +885,8 @@
     "similarEfficiency": "peut aider votre entreprise à atteindre une efficacité similaire avec des solutions Monday.com personnalisées."
   },
   "ourTeam": {
+    "metaTitle": "Rencontrez l’équipe WME Solutions | Nos experts",
+    "metaDescription": "Découvrez notre équipe d’experts Monday.com et de consultants en automatisation dédiés à la réussite des workflows de nos clients dans le monde entier.",
     "title": "Notre équipe internationale",
     "description": "Découvrez les personnes derrière WME Solutions, un cabinet spécialisé dans les implémentations de Monday.com, l’automatisation des workflows et l’optimisation des processus digitaux.",
     "employeeLocations": [
@@ -964,6 +970,8 @@
     ]
   },
   "portfolio": {
+    "metaTitle": "Portfolio de Workflows | Solutions Monday.com par WME",
+    "metaDescription": "Explorez notre galerie de workflows créés sur Monday.com : intégration, reporting, automatisation… Découvrez ce que nous pouvons faire pour vous.",
     "title": "Portfolio",
     "selectCategory": "Filter par",
     "industry": "Secteur",
@@ -1753,6 +1761,8 @@
     ]
   },
   "appsPage": {
+    "metaTitle": "Apps & Extensions pour Monday.com | Développées par WME",
+    "metaDescription": "Découvrez nos apps personnalisées pour Monday.com, conçues pour ajouter des fonctionnalités et améliorer la productivité. Parcourez nos solutions.",
     "title": "Notre sélection d'applications Monday.com pour une productivité optimale",
     "description": "Découvrez la puissance des applications Monday.com, une suite d’extensions conçues pour améliorer la plateforme Monday.com en toute simplicité. Ces applications étendent les fonctionnalités de la plateforme, offrant de nouvelles possibilités sans nécessiter de développement personnalisé. Chaque application est prête à l’emploi et disponible sur le marketplace de Monday. Explorez ces applications pour rationaliser vos processus, accroître votre productivité et enrichir votre expérience en gestion de projet grâce à des solutions prêtes à l’emploi.",
     "visitWebsite": "Voir le site",
@@ -1868,6 +1878,8 @@
     }
   ],
   "contactUs": {
+    "metaTitle": "Contactez WME Solutions | Demande de conseil Monday.com",
+    "metaDescription": "Vous avez un projet ou besoin d’assistance sur Monday.com ? Contactez notre équipe pour une consultation gratuite et des conseils personnalisés.",
     "title": "Nous contacter",
     "desc1": "Prêt à tirer le meilleur parti de monday.com pour votre entreprise ?",
     "desc2": "N’attendez plus et contactez-nous dès maintenant pour discuter de vos besoins"

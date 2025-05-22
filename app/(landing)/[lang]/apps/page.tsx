@@ -7,11 +7,14 @@ interface PageProps {
   params: { lang: string };
 }
 
-export const metadata: Metadata = {
-  title: "Apps - WME Solutions",
-  description:
-    "Explore our collection of powerful monday.com add-ons designed to enhance your workflow. Discover how these innovative tools can streamline your processes, boost productivity, and unlock new possibilities for your team. Elevate your monday.com experience with our curated selection of apps tailored to meet your unique needs.",
-};
+export async function generateMetadata({ params }: { params: { lang: string } }) {
+  const dict = await getDictionary(params.lang);
+
+  return {
+    title: dict.appsPage.metaTitle || "Bienvenue sur notre site",
+    description: dict.appsPage.metaDescription || "Explorez notre plateforme multilingue avec une navigation fluide.",
+  };
+}
 
 export default async function AppsPage({ params }: PageProps) {
   const lang = params.lang;

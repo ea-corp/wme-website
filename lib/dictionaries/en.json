@@ -1,4 +1,6 @@
 {
+  "metaTitle": "Workflow Automation with Monday.com Experts | WME Solutions",
+  "metaDescription": "Boost productivity with tailored Monday.com workflows and expert automation support. Discover how WME Solutions can streamline your business today.",
   "navbar": {
     "home": "Home",
     "services": "Services",
@@ -854,6 +856,8 @@
   },
 
   "storiesWorthTelling": {
+    "metaTitle": "Client Success Stories with Monday.com | WME Solutions",
+    "metaDescription": "See how we transformed operations for clients worldwide using Monday.com and automation tools. Real results, real impact—get inspired.",
     "title": "Stories Worth Telling",
     "recentActivities": "Our Recent Activities",
     "successStories": "Success Stories From Top Companies",
@@ -878,6 +882,8 @@
     "similarEfficiency": "can help your business achieve similar efficiency with customized Monday.com solutions."
   },
   "ourTeam": {
+    "metaTitle": "Meet the Experts Behind WME Solutions | Our Team",
+    "metaDescription": "Get to know our dedicated team of Monday.com experts and automation consultants driving workflow success for clients around the globe.",
     "title": "Our Global Team",
     "description": "Meet the people behind WME Solutions, a consultancy specializing in Monday.com implementations, workflow automation, and digital process improvement. Our team brings deep expertise in optimizing operations for businesses across industries.",
     "employeeLocations": [
@@ -961,6 +967,8 @@
     ]
   },
   "portfolio": {
+    "metaTitle": "Workflow Design Portfolio | Monday.com Solutions by WME",
+    "metaDescription": "Explore a gallery of workflow systems we’ve built for clients on Monday.com, from onboarding to reporting and automation. See what’s possible.",
     "title": "Portfolio",
     "selectCategory": "Filter by",
     "industry": "Industry",
@@ -1750,6 +1758,8 @@
     ]
   },
   "appsPage": {
+    "metaTitle": "Monday.com Apps & Add-Ons by WME | Extend Your Platform",
+    "metaDescription": "Discover our custom-built Monday.com apps that unlock new features and enhance productivity. Browse available tools built for real users.",
     "title": "Our Selection of Monday.com Apps for Advanced Productivity",
     "description": "Discover the power of Monday.com apps, a suite of add-ons designed to effortlessly enhance the Monday.com platform. These apps expand the platform’s capabilities, offering new functionalities without the need for custom development. Each app is a ready-to-use, and available on Monday marketplace. Explore these apps to streamline your processes, increase productivity, and elevate your project management experience with the convenience of out-of-the-box solutions.",
     "visitWebsite": "Visit website",
@@ -1865,6 +1875,8 @@
     }
   ],
   "contactUs": {
+    "metaTitle": "Contact WME Solutions | Monday.com Consulting Inquiry",
+    "metaDescription": "Have a project in mind or need expert support with Monday.com? Reach out to our team for a free consultation and tailored advice.",
     "title": "Contact Us",
     "desc1": "Ready to get the most out of monday.com for your company?",
     "desc2": "Do not wait and get in touch with us now to discuss your needs"

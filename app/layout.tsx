@@ -21,12 +21,15 @@ export const metadata: Metadata = {
 
 interface PageProps {
   children: React.ReactNode;
+  params: {
+    lang: string;
+  };
 }
 
-export default async function RootLayout({ children }: PageProps) {
+export default async function RootLayout({ children, params }: PageProps) {
 
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <TooltipProvider>
         <Head>
           <link rel="icon" href="/favicon.ico" />

@@ -1,6 +1,15 @@
 import { getDictionary } from "@/lib/dictionaries";
 import ContactUsClient from "./components/ContactUsClient";
 
+export async function generateMetadata({ params }: { params: { lang: string } }) {
+  const dict = await getDictionary(params.lang);
+
+  return {
+    title: dict.contactUs.metaTitle || "Bienvenue sur notre site",
+    description: dict.contactUs.metaDescription || "Explorez notre plateforme multilingue avec une navigation fluide.",
+  };
+}
+
 export default async function ContactUsPage({ params }: any) {
 
   const lang = params.lang

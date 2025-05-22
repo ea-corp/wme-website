@@ -9,6 +9,16 @@ interface PageProps {
     children: React.ReactNode;
 }
 
+export async function generateMetadata({ params }: { params: { lang: string } }) {
+    const dict = await getDictionary(params.lang);
+
+    return {
+        title: dict.metaTitle || "Bienvenue sur notre site",
+        description: dict.metaDescription || "Explorez notre plateforme multilingue avec une navigation fluide.",
+    };
+}
+
+
 export default async function RootLayout({ children, params }: PageProps) {
     const lang = params.lang;  // Maintenant ça marche ✅
     const dict = await getDictionary(lang);

@@ -7,6 +7,16 @@ interface PageProps {
   params: { lang: string };
 }
 
+export async function generateMetadata({ params }: { params: { lang: string } }) {
+  const dict = await getDictionary(params.lang);
+
+  return {
+    title: dict.storiesWorthTelling.metaTitle || "Bienvenue sur notre site",
+    description: dict.storiesWorthTelling.metaDescription || "Explorez notre plateforme multilingue avec une navigation fluide.",
+  };
+}
+
+
 export default async function ServicePage({ params }: PageProps) {
   const lang = params.lang;
   const dict = await getDictionary(lang);
