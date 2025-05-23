@@ -13,3 +13,4 @@ export default async function PortfolioPage({ params }: PageProps) {
 
   return <Portfolio dict={dict} />;
 }
+
